@@ -23,6 +23,9 @@ class App {
         this.setupModals();
         this.updateStatsDisplay();
         this.checkWords();
+
+        // Günlük hedef ve streak göster
+        window.goalsManager?.updateDisplay();
     }
 
     // ===== Tema Yönetimi =====
@@ -76,6 +79,33 @@ class App {
             document.getElementById('completionModal').classList.add('hidden');
             this.closeMode();
         });
+
+        // Ayarlar butonu
+        document.getElementById('settingsBtn').addEventListener('click', () => {
+            this.openSettings();
+        });
+
+        // Ayarlar modalı
+        document.querySelectorAll('.goal-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const goal = parseInt(btn.dataset.goal);
+                window.goalsManager?.setDailyGoal(goal);
+                document.querySelectorAll('.goal-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+            });
+        });
+
+        document.getElementById('settingsClose').addEventListener('click', () => {
+            document.getElementById('settingsModal').classList.add('hidden');
+        });
+    }
+
+    openSettings() {
+        const currentGoal = window.goalsManager?.getDailyGoal() || 20;
+        document.querySelectorAll('.goal-btn').forEach(btn => {
+            btn.classList.toggle('active', parseInt(btn.dataset.goal) === currentGoal);
+        });
+        document.getElementById('settingsModal').classList.remove('hidden');
     }
 
     openMode(mode) {
@@ -85,7 +115,7 @@ class App {
         }
 
         // Soru sayısı sorulacak modlar
-        const modesWithCount = ['flashcard', 'quiz', 'typing'];
+        const modesWithCount = ['flashcard', 'quiz', 'typing', 'sentence', 'hardwords'];
 
         if (modesWithCount.includes(mode)) {
             this.pendingMode = mode;
@@ -114,6 +144,12 @@ class App {
                     break;
                 case 'typing':
                     window.typingMode?.init(questionCount);
+                    break;
+                case 'sentence':
+                    window.sentenceMode?.init(questionCount);
+                    break;
+                case 'hardwords':
+                    window.hardWordsMode?.init(questionCount);
                     break;
                 case 'matching':
                     window.matchingMode?.init();
@@ -218,6 +254,8 @@ class App {
     recordAnswer(wordId, isCorrect) {
         if (isCorrect) {
             this.stats.totalCorrect++;
+            // Günlük hedef için kaydet
+            window.goalsManager?.recordWord();
         } else {
             this.stats.totalWrong++;
         }
