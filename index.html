@@ -89,6 +89,21 @@
                     <span class="mode-title">Zor Kelimeler</span>
                     <span class="mode-desc">Yanlış bilinenler</span>
                 </button>
+                <button class="mode-card" data-mode="timerace">
+                    <span class="mode-icon">⏱️</span>
+                    <span class="mode-title">Zaman Yarışı</span>
+                    <span class="mode-desc">60 saniyede kaç bilirsin</span>
+                </button>
+                <button class="mode-card" data-mode="reversequiz">
+                    <span class="mode-icon">🔄</span>
+                    <span class="mode-title">Tersine Quiz</span>
+                    <span class="mode-desc">Türkçe → Rusça</span>
+                </button>
+                <button class="mode-card" data-mode="listening">
+                    <span class="mode-icon">🎧</span>
+                    <span class="mode-title">Dinleme</span>
+                    <span class="mode-desc">Dinle ve yaz</span>
+                </button>
                 <button class="mode-card" data-mode="matching">
                     <span class="mode-icon">🎯</span>
                     <span class="mode-title">Eşleştirme</span>
@@ -364,6 +379,97 @@
             </div>
         </section>
 
+        <!-- Time Race Mode -->
+        <section id="timeraceMode" class="mode-screen hidden">
+            <div class="mode-header">
+                <button class="back-btn" data-back>← Geri</button>
+                <h2>Zaman Yarışı</h2>
+                <span class="progress-indicator">En yüksek: <span id="timeraceHighScore">0</span></span>
+            </div>
+
+            <div id="timeraceStart" class="timerace-start">
+                <div class="timerace-intro">
+                    <span class="timerace-icon">⏱️</span>
+                    <h3>60 Saniye</h3>
+                    <p>Süre bitene kadar doğru cevapla!</p>
+                </div>
+                <button class="start-btn" id="timeraceStartBtn">Başla!</button>
+            </div>
+
+            <div id="timeraceGame" class="quiz-container hidden">
+                <div class="timer-display">
+                    <span class="timer-value" id="timeraceTimer">60</span>
+                    <span class="timer-label">saniye</span>
+                </div>
+                <div class="timerace-score">Skor: <span id="timeraceScore">0</span></div>
+                <div class="quiz-question">
+                    <p class="question-word" id="timeraceWord">Kelime</p>
+                </div>
+                <div class="quiz-options" id="timeraceOptions"></div>
+            </div>
+
+            <div id="timeraceResult" class="timerace-result hidden">
+                <h3>⏱️ Süre Doldu!</h3>
+                <p class="result-score">Skorun: <span id="timeraceFinalScore">0</span></p>
+                <p id="timeraceNewHighScore" class="new-highscore hidden">🏆 Yeni Rekor!</p>
+                <button class="start-btn" id="timeracePlayAgain">Tekrar Oyna</button>
+            </div>
+        </section>
+
+        <!-- Reverse Quiz Mode -->
+        <section id="reversequizMode" class="mode-screen hidden">
+            <div class="mode-header">
+                <button class="back-btn" data-back>← Geri</button>
+                <h2>Tersine Quiz</h2>
+                <span class="progress-indicator">
+                    <span id="reversequizScore">0</span> puan
+                </span>
+            </div>
+            <div class="quiz-container">
+                <div class="quiz-question">
+                    <button class="favorite-btn" id="reversequizFavorite" aria-label="Favoriye ekle">☆</button>
+                    <p class="question-word" id="reversequizWord">Türkçe kelime</p>
+                    <p class="question-example" id="reversequizHint">Rusça karşılığını seç</p>
+                    <p class="hard-word-progress">
+                        <span id="reversequizCurrent">1</span>/<span id="reversequizTotal">0</span>
+                    </p>
+                </div>
+                <div class="quiz-options" id="reversequizOptions"></div>
+                <div class="quiz-feedback hidden" id="reversequizFeedback">
+                    <p id="reversequizFeedbackText"></p>
+                    <button class="next-btn" id="reversequizNext">Sonraki →</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Listening Mode -->
+        <section id="listeningMode" class="mode-screen hidden">
+            <div class="mode-header">
+                <button class="back-btn" data-back>← Geri</button>
+                <h2>Dinleme</h2>
+                <span class="progress-indicator">
+                    <span id="listeningCurrent">1</span>/<span id="listeningTotal">0</span>
+                </span>
+            </div>
+            <div class="listening-container">
+                <div class="listening-question">
+                    <button class="favorite-btn" id="listeningFavorite" aria-label="Favoriye ekle">☆</button>
+                    <button class="play-btn" id="listeningPlay">🔊</button>
+                    <p class="listening-hint" id="listeningHint">Rusça kelimeyi dinle...</p>
+                </div>
+                <div class="typing-input-wrapper">
+                    <input type="text" id="listeningInput" class="typing-input" placeholder="Türkçe karşılığını yaz..."
+                        autocomplete="off" autocapitalize="off">
+                    <button class="check-btn" id="listeningCheck">Kontrol</button>
+                </div>
+                <div class="typing-feedback hidden" id="listeningFeedback">
+                    <p id="listeningFeedbackText"></p>
+                    <p class="correct-answer" id="listeningCorrectAnswer"></p>
+                    <button class="next-btn" id="listeningNext">Sonraki →</button>
+                </div>
+            </div>
+        </section>
+
         <!-- Completion Modal -->
         <div id="completionModal" class="modal hidden">
             <div class="modal-content">
@@ -385,6 +491,9 @@
     <script src="js/srs.js"></script>
     <script src="js/hardwords.js"></script>
     <script src="js/sentence.js"></script>
+    <script src="js/timerace.js"></script>
+    <script src="js/reversequiz.js"></script>
+    <script src="js/listening.js"></script>
     <script>
         // Register Service Worker
         if ('serviceWorker' in navigator) {
