@@ -5,6 +5,8 @@
 class App {
     constructor() {
         this.currentMode = null;
+        this.pendingMode = null;
+        this.selectedQuestionCount = null;
         this.stats = this.loadStats();
         this.init();
     }
@@ -18,6 +20,7 @@ class App {
         }
 
         this.setupNavigation();
+        this.setupModals();
         this.updateStatsDisplay();
         this.checkWords();
     }
@@ -56,12 +59,45 @@ class App {
         });
     }
 
+    // ===== Modal Yönetimi =====
+    setupModals() {
+        // Soru sayısı modalı
+        document.querySelectorAll('#questionCountModal .modal-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const count = parseInt(btn.dataset.count);
+                this.selectedQuestionCount = count;
+                document.getElementById('questionCountModal').classList.add('hidden');
+                this.startMode(this.pendingMode, count);
+            });
+        });
+
+        // Tamamlama modalı
+        document.getElementById('completionClose').addEventListener('click', () => {
+            document.getElementById('completionModal').classList.add('hidden');
+            this.closeMode();
+        });
+    }
+
     openMode(mode) {
         if (WORDS.length === 0) {
             this.showNoWords();
             return;
         }
 
+        // Soru sayısı sorulacak modlar
+        const modesWithCount = ['flashcard', 'quiz', 'typing'];
+
+        if (modesWithCount.includes(mode)) {
+            this.pendingMode = mode;
+            document.getElementById('questionCountModal').classList.remove('hidden');
+        } else if (mode === 'allwords') {
+            this.showAllWords();
+        } else {
+            this.startMode(mode);
+        }
+    }
+
+    startMode(mode, questionCount = null) {
         const modeScreen = document.getElementById(`${mode}Mode`);
         if (modeScreen) {
             document.getElementById('mainMenu').classList.add('hidden');
@@ -71,13 +107,13 @@ class App {
             // Mod'u başlat
             switch (mode) {
                 case 'flashcard':
-                    window.flashcardMode?.init();
+                    window.flashcardMode?.init(questionCount);
                     break;
                 case 'quiz':
-                    window.quizMode?.init();
+                    window.quizMode?.init(questionCount);
                     break;
                 case 'typing':
-                    window.typingMode?.init();
+                    window.typingMode?.init(questionCount);
                     break;
                 case 'matching':
                     window.matchingMode?.init();
@@ -87,6 +123,51 @@ class App {
                     break;
             }
         }
+    }
+
+    showAllWords() {
+        document.getElementById('mainMenu').classList.add('hidden');
+        document.getElementById('allwordsMode').classList.remove('hidden');
+        this.currentMode = 'allwords';
+
+        const wordsList = document.getElementById('wordsList');
+        wordsList.innerHTML = '';
+
+        document.getElementById('allwordsCount').textContent = WORDS.length;
+
+        WORDS.forEach(word => {
+            const isFav = window.favoritesManager?.isFavorite(word.id);
+            const item = document.createElement('div');
+            item.className = 'word-item';
+            item.innerHTML = `
+                <button class="favorite-btn ${isFav ? 'active' : ''}" data-word-id="${word.id}">
+                    ${isFav ? '★' : '☆'}
+                </button>
+                <div class="word-text">
+                    <span class="russian">${word.russian}</span>
+                    <span class="turkish">${word.turkish}</span>
+                </div>
+            `;
+
+            item.querySelector('.favorite-btn').addEventListener('click', (e) => {
+                e.stopPropagation();
+                this.toggleWordFavorite(word.id, item.querySelector('.favorite-btn'));
+            });
+
+            wordsList.appendChild(item);
+        });
+    }
+
+    toggleWordFavorite(wordId, btn) {
+        const isNowFavorite = window.favoritesManager?.toggleFavorite(wordId);
+        btn.classList.toggle('active', isNowFavorite);
+        btn.textContent = isNowFavorite ? '★' : '☆';
+    }
+
+    showCompletion(correctCount, totalCount) {
+        const text = document.getElementById('completionText');
+        text.textContent = `${totalCount} sorudan ${correctCount} tanesini doğru bildin!`;
+        document.getElementById('completionModal').classList.remove('hidden');
     }
 
     closeMode() {

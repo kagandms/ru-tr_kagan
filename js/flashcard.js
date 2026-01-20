@@ -8,15 +8,27 @@ class FlashcardMode {
         this.currentIndex = 0;
         this.direction = 'ru-tr'; // ru-tr veya tr-ru
         this.isFlipped = false;
+        this.questionCount = null;
+        this.correctCount = 0;
     }
 
-    init() {
-        this.words = app.shuffleArray([...WORDS]);
+    init(questionCount = null) {
+        this.questionCount = questionCount;
+        this.correctCount = 0;
+        let allWords = app.shuffleArray([...WORDS]);
+
+        // Soru sayısını sınırla
+        if (questionCount && questionCount < allWords.length) {
+            allWords = allWords.slice(0, questionCount);
+        }
+
+        this.words = allWords;
         this.currentIndex = 0;
         this.isFlipped = false;
         this.setupEventListeners();
         this.updateCard();
         this.updateProgress();
+        this.updateFavoriteButton();
     }
 
     setupEventListeners() {
@@ -39,6 +51,12 @@ class FlashcardMode {
                 this.updateCard();
             };
         });
+
+        // Favori butonu
+        document.getElementById('flashcardFavorite').onclick = (e) => {
+            e.stopPropagation();
+            this.toggleFavorite();
+        };
     }
 
     flipCard() {
@@ -68,16 +86,41 @@ class FlashcardMode {
         document.getElementById('flashcardTotal').textContent = this.words.length;
     }
 
+    updateFavoriteButton() {
+        const word = this.words[this.currentIndex];
+        if (!word) return;
+
+        const btn = document.getElementById('flashcardFavorite');
+        const isFav = window.favoritesManager?.isFavorite(word.id);
+        btn.classList.toggle('active', isFav);
+        btn.textContent = isFav ? '★' : '☆';
+    }
+
+    toggleFavorite() {
+        const word = this.words[this.currentIndex];
+        if (!word) return;
+
+        const isNowFav = window.favoritesManager?.toggleFavorite(word.id);
+        const btn = document.getElementById('flashcardFavorite');
+        btn.classList.toggle('active', isNowFav);
+        btn.textContent = isNowFav ? '★' : '☆';
+    }
+
     answer(isCorrect) {
         const word = this.words[this.currentIndex];
         app.recordAnswer(word.id, isCorrect);
 
+        if (isCorrect) {
+            this.correctCount++;
+        }
+
         // Sonraki kart
         this.currentIndex++;
+
+        // Tamamlandı mı kontrol et
         if (this.currentIndex >= this.words.length) {
-            // Tekrar karıştır
-            this.words = app.shuffleArray([...WORDS]);
-            this.currentIndex = 0;
+            app.showCompletion(this.correctCount, this.words.length);
+            return;
         }
 
         // Kartı resetle
@@ -86,6 +129,7 @@ class FlashcardMode {
 
         this.updateCard();
         this.updateProgress();
+        this.updateFavoriteButton();
     }
 }
 

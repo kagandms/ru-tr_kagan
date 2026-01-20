@@ -7,10 +7,21 @@ class TypingMode {
         this.words = [];
         this.currentIndex = 0;
         this.answered = false;
+        this.questionCount = null;
+        this.correctCount = 0;
     }
 
-    init() {
-        this.words = app.shuffleArray([...WORDS]);
+    init(questionCount = null) {
+        this.questionCount = questionCount;
+        this.correctCount = 0;
+        let allWords = app.shuffleArray([...WORDS]);
+
+        // Soru sayısını sınırla
+        if (questionCount && questionCount < allWords.length) {
+            allWords = allWords.slice(0, questionCount);
+        }
+
+        this.words = allWords;
         this.currentIndex = 0;
         this.answered = false;
         this.setupEventListeners();
@@ -36,6 +47,12 @@ class TypingMode {
                 }
             }
         };
+
+        // Favori butonu
+        document.getElementById('typingFavorite').onclick = (e) => {
+            e.stopPropagation();
+            this.toggleFavorite();
+        };
     }
 
     showQuestion() {
@@ -49,6 +66,29 @@ class TypingMode {
         document.getElementById('typingInput').value = '';
         document.getElementById('typingInput').focus();
         document.getElementById('typingFeedback').classList.add('hidden');
+
+        // Favori butonunu güncelle
+        this.updateFavoriteButton();
+    }
+
+    updateFavoriteButton() {
+        const word = this.words[this.currentIndex];
+        if (!word) return;
+
+        const btn = document.getElementById('typingFavorite');
+        const isFav = window.favoritesManager?.isFavorite(word.id);
+        btn.classList.toggle('active', isFav);
+        btn.textContent = isFav ? '★' : '☆';
+    }
+
+    toggleFavorite() {
+        const word = this.words[this.currentIndex];
+        if (!word) return;
+
+        const isNowFav = window.favoritesManager?.toggleFavorite(word.id);
+        const btn = document.getElementById('typingFavorite');
+        btn.classList.toggle('active', isNowFav);
+        btn.textContent = isNowFav ? '★' : '☆';
     }
 
     checkAnswer() {
@@ -64,6 +104,7 @@ class TypingMode {
         this.answered = true;
 
         if (isCorrect) {
+            this.correctCount++;
             document.getElementById('typingFeedbackText').textContent = '✅ Doğru!';
             document.getElementById('typingFeedbackText').style.color = 'var(--success)';
         } else {
@@ -133,10 +174,13 @@ class TypingMode {
 
     nextQuestion() {
         this.currentIndex++;
+
+        // Tamamlandı mı kontrol et
         if (this.currentIndex >= this.words.length) {
-            this.words = app.shuffleArray([...WORDS]);
-            this.currentIndex = 0;
+            app.showCompletion(this.correctCount, this.words.length);
+            return;
         }
+
         this.showQuestion();
         this.updateProgress();
     }

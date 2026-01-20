@@ -8,10 +8,21 @@ class QuizMode {
         this.currentIndex = 0;
         this.score = 0;
         this.answered = false;
+        this.questionCount = null;
+        this.correctCount = 0;
     }
 
-    init() {
-        this.words = app.shuffleArray([...WORDS]);
+    init(questionCount = null) {
+        this.questionCount = questionCount;
+        this.correctCount = 0;
+        let allWords = app.shuffleArray([...WORDS]);
+
+        // Soru sayısını sınırla
+        if (questionCount && questionCount < allWords.length) {
+            allWords = allWords.slice(0, questionCount);
+        }
+
+        this.words = allWords;
         this.currentIndex = 0;
         this.score = 0;
         this.answered = false;
@@ -22,6 +33,12 @@ class QuizMode {
 
     setupEventListeners() {
         document.getElementById('quizNext').onclick = () => this.nextQuestion();
+
+        // Favori butonu
+        document.getElementById('quizFavorite').onclick = (e) => {
+            e.stopPropagation();
+            this.toggleFavorite();
+        };
     }
 
     showQuestion() {
@@ -50,6 +67,9 @@ class QuizMode {
 
         // Geri bildirimi gizle
         document.getElementById('quizFeedback').classList.add('hidden');
+
+        // Favori butonunu güncelle
+        this.updateFavoriteButton();
     }
 
     generateOptions(correctWord) {
@@ -57,6 +77,26 @@ class QuizMode {
         const wrongs = app.getRandomWords(3, correctWord.id);
         const options = [correctWord, ...wrongs];
         return app.shuffleArray(options);
+    }
+
+    updateFavoriteButton() {
+        const word = this.words[this.currentIndex];
+        if (!word) return;
+
+        const btn = document.getElementById('quizFavorite');
+        const isFav = window.favoritesManager?.isFavorite(word.id);
+        btn.classList.toggle('active', isFav);
+        btn.textContent = isFav ? '★' : '☆';
+    }
+
+    toggleFavorite() {
+        const word = this.words[this.currentIndex];
+        if (!word) return;
+
+        const isNowFav = window.favoritesManager?.toggleFavorite(word.id);
+        const btn = document.getElementById('quizFavorite');
+        btn.classList.toggle('active', isNowFav);
+        btn.textContent = isNowFav ? '★' : '☆';
     }
 
     selectOption(btn, correctId) {
@@ -76,6 +116,7 @@ class QuizMode {
         if (isCorrect) {
             btn.classList.add('correct');
             this.score += 10;
+            this.correctCount++;
             document.getElementById('quizFeedbackText').textContent = '✅ Doğru!';
         } else {
             btn.classList.add('wrong');
@@ -91,10 +132,13 @@ class QuizMode {
 
     nextQuestion() {
         this.currentIndex++;
+
+        // Tamamlandı mı kontrol et
         if (this.currentIndex >= this.words.length) {
-            this.words = app.shuffleArray([...WORDS]);
-            this.currentIndex = 0;
+            app.showCompletion(this.correctCount, this.words.length);
+            return;
         }
+
         this.showQuestion();
     }
 

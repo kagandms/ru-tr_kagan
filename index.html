@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -9,15 +10,18 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <title>Rusça-Türkçe Kelime</title>
     <link rel="manifest" href="manifest.json">
-    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇷🇺</text></svg>">
-    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇷🇺</text></svg>">
+    <link rel="icon" type="image/png"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇷🇺</text></svg>">
+    <link rel="apple-touch-icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇷🇺</text></svg>">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <div id="app">
         <!-- Header -->
         <header class="header">
-            <h1>🇷🇺 Rusça-Türkçe 🇹🇷</h1>
+            <h1>🇷🇺 Мой словарь / Sözlüğüm 🇹🇷</h1>
             <button id="themeToggle" class="theme-toggle" aria-label="Tema değiştir">
                 <span class="icon-sun">☀️</span>
                 <span class="icon-moon">🌙</span>
@@ -67,6 +71,11 @@
                     <span class="mode-title">Akıllı Tekrar</span>
                     <span class="mode-desc">Aralıklı tekrar sistemi</span>
                 </button>
+                <button class="mode-card" data-mode="allwords">
+                    <span class="mode-icon">📚</span>
+                    <span class="mode-title">Tüm Kelimeler</span>
+                    <span class="mode-desc">Kelime listesini görüntüle</span>
+                </button>
             </div>
         </main>
 
@@ -93,6 +102,7 @@
                     </div>
                 </div>
                 <p class="hint">Kartı çevirmek için dokun</p>
+                <button class="favorite-btn" id="flashcardFavorite" aria-label="Favoriye ekle">☆</button>
             </div>
             <div class="flashcard-controls">
                 <button class="control-btn wrong" id="flashcardWrong">❌ Bilmiyorum</button>
@@ -115,6 +125,7 @@
             </div>
             <div class="quiz-container">
                 <div class="quiz-question">
+                    <button class="favorite-btn" id="quizFavorite" aria-label="Favoriye ekle">☆</button>
                     <p class="question-word" id="quizWord">Kelime</p>
                     <p class="question-example" id="quizExample">Örnek cümle</p>
                 </div>
@@ -139,11 +150,13 @@
             </div>
             <div class="typing-container">
                 <div class="typing-question">
+                    <button class="favorite-btn" id="typingFavorite" aria-label="Favoriye ekle">☆</button>
                     <p class="question-word" id="typingWord">Kelime</p>
                     <p class="question-example" id="typingExample">Örnek cümle</p>
                 </div>
                 <div class="typing-input-wrapper">
-                    <input type="text" id="typingInput" class="typing-input" placeholder="Çevirisini yaz..." autocomplete="off" autocapitalize="off">
+                    <input type="text" id="typingInput" class="typing-input" placeholder="Çevirisini yaz..."
+                        autocomplete="off" autocapitalize="off">
                     <button class="check-btn" id="typingCheck">Kontrol</button>
                 </div>
                 <div class="typing-feedback hidden" id="typingFeedback">
@@ -216,9 +229,47 @@
             <p>📚 Henüz kelime eklenmemiş!</p>
             <p>Kelimeler data.js dosyasına eklenecek.</p>
         </div>
+
+        <!-- Question Count Modal -->
+        <div id="questionCountModal" class="modal hidden">
+            <div class="modal-content">
+                <h3>Kaç soru çalışmak istiyorsun?</h3>
+                <div class="modal-buttons">
+                    <button class="modal-btn" data-count="5">5</button>
+                    <button class="modal-btn" data-count="10">10</button>
+                    <button class="modal-btn" data-count="20">20</button>
+                    <button class="modal-btn" data-count="50">50</button>
+                    <button class="modal-btn" data-count="100">100</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- All Words Screen -->
+        <section id="allwordsMode" class="mode-screen hidden">
+            <div class="mode-header">
+                <button class="back-btn" data-back>← Geri</button>
+                <h2>Tüm Kelimeler</h2>
+                <span class="progress-indicator">
+                    <span id="allwordsCount">0</span> kelime
+                </span>
+            </div>
+            <div class="words-list" id="wordsList">
+                <!-- Words will be generated dynamically -->
+            </div>
+        </section>
+
+        <!-- Completion Modal -->
+        <div id="completionModal" class="modal hidden">
+            <div class="modal-content">
+                <h3>🎉 Tebrikler!</h3>
+                <p id="completionText">Tüm soruları tamamladın!</p>
+                <button class="modal-btn primary" id="completionClose">Tamam</button>
+            </div>
+        </div>
     </div>
 
     <script src="js/data.js"></script>
+    <script src="js/favorites.js"></script>
     <script src="js/app.js"></script>
     <script src="js/flashcard.js"></script>
     <script src="js/quiz.js"></script>
@@ -234,4 +285,5 @@
         }
     </script>
 </body>
+
 </html>
