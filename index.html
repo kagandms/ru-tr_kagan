@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#667eea">
+    <meta name="description" content="Rusça-Türkçe Kelime Çalışma Uygulaması">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Rusça-Türkçe Kelime</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇷🇺</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇷🇺</text></svg>">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Header -->
+        <header class="header">
+            <h1>🇷🇺 Rusça-Türkçe 🇹🇷</h1>
+            <button id="themeToggle" class="theme-toggle" aria-label="Tema değiştir">
+                <span class="icon-sun">☀️</span>
+                <span class="icon-moon">🌙</span>
+            </button>
+        </header>
+
+        <!-- Main Menu -->
+        <main id="mainMenu" class="main-menu">
+            <div class="stats-bar">
+                <div class="stat">
+                    <span class="stat-value" id="totalWords">0</span>
+                    <span class="stat-label">Kelime</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value" id="masteredWords">0</span>
+                    <span class="stat-label">Öğrenildi</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value" id="accuracy">0%</span>
+                    <span class="stat-label">Doğruluk</span>
+                </div>
+            </div>
+
+            <div class="mode-grid">
+                <button class="mode-card" data-mode="flashcard">
+                    <span class="mode-icon">🔄</span>
+                    <span class="mode-title">Flashcard</span>
+                    <span class="mode-desc">Kartları çevirerek öğren</span>
+                </button>
+                <button class="mode-card" data-mode="quiz">
+                    <span class="mode-icon">❓</span>
+                    <span class="mode-title">Quiz</span>
+                    <span class="mode-desc">Çoktan seçmeli sorular</span>
+                </button>
+                <button class="mode-card" data-mode="typing">
+                    <span class="mode-icon">⌨️</span>
+                    <span class="mode-title">Yazma</span>
+                    <span class="mode-desc">Çeviriyi yazarak pratik</span>
+                </button>
+                <button class="mode-card" data-mode="matching">
+                    <span class="mode-icon">🎯</span>
+                    <span class="mode-title">Eşleştirme</span>
+                    <span class="mode-desc">Kelime-çeviri eşleştir</span>
+                </button>
+                <button class="mode-card" data-mode="srs">
+                    <span class="mode-icon">🧠</span>
+                    <span class="mode-title">Akıllı Tekrar</span>
+                    <span class="mode-desc">Aralıklı tekrar sistemi</span>
+                </button>
+            </div>
+        </main>
+
+        <!-- Flashcard Mode -->
+        <section id="flashcardMode" class="mode-screen hidden">
+            <div class="mode-header">
+                <button class="back-btn" data-back>← Geri</button>
+                <h2>Flashcard</h2>
+                <span class="progress-indicator">
+                    <span id="flashcardCurrent">1</span>/<span id="flashcardTotal">0</span>
+                </span>
+            </div>
+            <div class="flashcard-container">
+                <div class="flashcard" id="flashcard">
+                    <div class="flashcard-inner">
+                        <div class="flashcard-front">
+                            <p class="word" id="flashcardWord">Kelime</p>
+                            <p class="example" id="flashcardExample">Örnek cümle</p>
+                        </div>
+                        <div class="flashcard-back">
+                            <p class="word" id="flashcardTranslation">Çeviri</p>
+                            <p class="example" id="flashcardExampleTr">Örnek çeviri</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="hint">Kartı çevirmek için dokun</p>
+            </div>
+            <div class="flashcard-controls">
+                <button class="control-btn wrong" id="flashcardWrong">❌ Bilmiyorum</button>
+                <button class="control-btn correct" id="flashcardCorrect">✅ Biliyorum</button>
+            </div>
+            <div class="direction-toggle">
+                <button class="dir-btn active" data-dir="ru-tr">🇷🇺 → 🇹🇷</button>
+                <button class="dir-btn" data-dir="tr-ru">🇹🇷 → 🇷🇺</button>
+            </div>
+        </section>
+
+        <!-- Quiz Mode -->
+        <section id="quizMode" class="mode-screen hidden">
+            <div class="mode-header">
+                <button class="back-btn" data-back>← Geri</button>
+                <h2>Quiz</h2>
+                <span class="progress-indicator">
+                    <span id="quizScore">0</span> puan
+                </span>
+            </div>
+            <div class="quiz-container">
+                <div class="quiz-question">
+                    <p class="question-word" id="quizWord">Kelime</p>
+                    <p class="question-example" id="quizExample">Örnek cümle</p>
+                </div>
+                <div class="quiz-options" id="quizOptions">
+                    <!-- Options will be generated dynamically -->
+                </div>
+            </div>
+            <div class="quiz-feedback hidden" id="quizFeedback">
+                <p id="quizFeedbackText"></p>
+                <button class="next-btn" id="quizNext">Sonraki →</button>
+            </div>
+        </section>
+
+        <!-- Typing Mode -->
+        <section id="typingMode" class="mode-screen hidden">
+            <div class="mode-header">
+                <button class="back-btn" data-back>← Geri</button>
+                <h2>Yazma</h2>
+                <span class="progress-indicator">
+                    <span id="typingCurrent">1</span>/<span id="typingTotal">0</span>
+                </span>
+            </div>
+            <div class="typing-container">
+                <div class="typing-question">
+                    <p class="question-word" id="typingWord">Kelime</p>
+                    <p class="question-example" id="typingExample">Örnek cümle</p>
+                </div>
+                <div class="typing-input-wrapper">
+                    <input type="text" id="typingInput" class="typing-input" placeholder="Çevirisini yaz..." autocomplete="off" autocapitalize="off">
+                    <button class="check-btn" id="typingCheck">Kontrol</button>
+                </div>
+                <div class="typing-feedback hidden" id="typingFeedback">
+                    <p id="typingFeedbackText"></p>
+                    <p class="correct-answer" id="typingCorrectAnswer"></p>
+                    <button class="next-btn" id="typingNext">Sonraki →</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Matching Mode -->
+        <section id="matchingMode" class="mode-screen hidden">
+            <div class="mode-header">
+                <button class="back-btn" data-back>← Geri</button>
+                <h2>Eşleştirme</h2>
+                <span class="progress-indicator">
+                    <span id="matchingPairs">0</span>/<span id="matchingTotal">0</span>
+                </span>
+            </div>
+            <div class="matching-container">
+                <div class="matching-column" id="matchingLeft">
+                    <!-- Russian words -->
+                </div>
+                <div class="matching-column" id="matchingRight">
+                    <!-- Turkish words -->
+                </div>
+            </div>
+            <div class="matching-result hidden" id="matchingResult">
+                <p>🎉 Tebrikler!</p>
+                <p>Süre: <span id="matchingTime">0</span> saniye</p>
+                <button class="next-btn" id="matchingRestart">Tekrar Oyna</button>
+            </div>
+        </section>
+
+        <!-- SRS Mode -->
+        <section id="srsMode" class="mode-screen hidden">
+            <div class="mode-header">
+                <button class="back-btn" data-back>← Geri</button>
+                <h2>Akıllı Tekrar</h2>
+                <span class="progress-indicator">
+                    <span id="srsDue">0</span> bekliyor
+                </span>
+            </div>
+            <div class="srs-container">
+                <div class="srs-card" id="srsCard">
+                    <p class="word" id="srsWord">Kelime</p>
+                    <p class="example" id="srsExample">Örnek cümle</p>
+                    <div class="srs-answer hidden" id="srsAnswer">
+                        <hr>
+                        <p class="word" id="srsTranslation">Çeviri</p>
+                        <p class="example" id="srsExampleTr">Örnek çeviri</p>
+                    </div>
+                </div>
+                <button class="show-answer-btn" id="srsShowAnswer">Cevabı Göster</button>
+                <div class="srs-buttons hidden" id="srsButtons">
+                    <button class="srs-btn again" data-rating="1">😞 Tekrar</button>
+                    <button class="srs-btn hard" data-rating="2">😐 Zor</button>
+                    <button class="srs-btn good" data-rating="3">🙂 İyi</button>
+                    <button class="srs-btn easy" data-rating="4">😄 Kolay</button>
+                </div>
+            </div>
+            <div class="srs-empty hidden" id="srsEmpty">
+                <p>🎉 Bugünlük tamamlandı!</p>
+                <p>Tekrar edilecek kelime kalmadı.</p>
+            </div>
+        </section>
+
+        <!-- No Words Message -->
+        <div id="noWordsMessage" class="no-words hidden">
+            <p>📚 Henüz kelime eklenmemiş!</p>
+            <p>Kelimeler data.js dosyasına eklenecek.</p>
+        </div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/flashcard.js"></script>
+    <script src="js/quiz.js"></script>
+    <script src="js/typing.js"></script>
+    <script src="js/matching.js"></script>
+    <script src="js/srs.js"></script>
+    <script>
+        // Register Service Worker
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js')
+                .then(reg => console.log('SW registered'))
+                .catch(err => console.log('SW registration failed', err));
+        }
+    </script>
+</body>
+</html>
