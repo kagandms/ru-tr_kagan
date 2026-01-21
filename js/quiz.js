@@ -126,12 +126,18 @@ class QuizMode {
 
             // AI açıklaması al
             if (window.aiManager) {
-                const aiResult = await window.aiManager.explainWord(correctWord);
-                if (aiResult) {
-                    feedbackText.innerHTML = `❌ Yanlış! Doğru: <strong>${correctWord.turkish}</strong><br><br>🤖 ${aiResult}`;
-                } else {
+                try {
+                    const aiResult = await window.aiManager.explainWord(correctWord);
+                    if (aiResult) {
+                        feedbackText.innerHTML = `❌ Yanlış! Doğru: <strong>${correctWord.turkish}</strong><br><br>🤖 ${aiResult}`;
+                    } else {
+                        feedbackText.innerHTML = `❌ Yanlış! Doğru: <strong>${correctWord.turkish}</strong>`;
+                    }
+                } catch (e) {
                     feedbackText.innerHTML = `❌ Yanlış! Doğru: <strong>${correctWord.turkish}</strong>`;
                 }
+            } else {
+                feedbackText.innerHTML = `❌ Yanlış! Doğru: <strong>${correctWord.turkish}</strong>`;
             }
         }
 

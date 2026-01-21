@@ -135,10 +135,18 @@ class ListeningMode {
             correctAnswerEl.innerHTML = `${word.russian} = ${word.turkish}<br><br>🔄 Yapay zeka cevabı değerlendiriyor...`;
 
             if (window.aiManager) {
-                const aiResult = await window.aiManager.explainWord(word);
-                if (aiResult) {
-                    correctAnswerEl.innerHTML = `${word.russian} = ${word.turkish}<br><br>🤖 ${aiResult}`;
+                try {
+                    const aiResult = await window.aiManager.explainWord(word);
+                    if (aiResult) {
+                        correctAnswerEl.innerHTML = `${word.russian} = ${word.turkish}<br><br>🤖 ${aiResult}`;
+                    } else {
+                        correctAnswerEl.innerHTML = `${word.russian} = ${word.turkish}`;
+                    }
+                } catch (e) {
+                    correctAnswerEl.innerHTML = `${word.russian} = ${word.turkish}`;
                 }
+            } else {
+                correctAnswerEl.innerHTML = `${word.russian} = ${word.turkish}`;
             }
         }
 

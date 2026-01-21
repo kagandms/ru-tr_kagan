@@ -107,7 +107,9 @@ class SentenceMode {
         }
 
         feedback.classList.remove('hidden');
+        feedback.classList.remove('hidden');
         checkBtn.textContent = 'Kontrol Et';
+        checkBtn.disabled = false;
     }
 
     skipWord() {

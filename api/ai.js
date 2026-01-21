@@ -26,22 +26,22 @@ export default async function handler(req, res) {
 
     switch (action) {
         case 'checkGrammar':
-            systemPrompt = 'Sen bir Rusça dil öğretmenisin. Kullanıcının yazdığı Rusça cümleyi kontrol et. Gramer hatalarını bul ve düzelt. Cevabını Türkçe ver. Kısa ve öz ol.';
+            systemPrompt = 'Sen bir Rusça dil öğretmenisin. Kullanıcının yazdığı Rusça cümleyi kontrol et. Gramer hatalarını bul ve düzelt. Cevabını Türkçe ver. Kısa ve öz ol. Yıldız işareti (*) veya markdown kullanma. Sadece düz metin kullan.';
             userPrompt = `Şu cümleyi kontrol et: "${sentence}"`;
             break;
 
         case 'generateExample':
-            systemPrompt = 'Sen bir Rusça dil öğretmenisin. Verilen kelime için basit ve anlaşılır bir örnek cümle oluştur. Cümleyi hem Rusça hem Türkçe yaz. Çok kısa ol.';
+            systemPrompt = 'Sen bir Rusça dil öğretmenisin. Verilen kelime için basit ve anlaşılır bir örnek cümle oluştur. Cümleyi hem Rusça hem Türkçe yaz. Çok kısa ol. Yıldız işareti (*) veya markdown kullanma. Sadece düz metin kullan.';
             userPrompt = `Şu kelime için örnek cümle yaz: ${word.russian} (${word.turkish})`;
             break;
 
         case 'explainWord':
-            systemPrompt = 'Sen bir Rusça dil öğretmenisin. Verilen kelimeyi Türkçe açıkla: kullanım alanları, dikkat edilecekler, eş/zıt anlamlar. Kısa ve öz ol, madde işaretleri kullan.';
+            systemPrompt = 'Sen bir Rusça dil öğretmenisin. Verilen kelimeyi Türkçe açıkla: kullanım alanları, dikkat edilecekler, eş/zıt anlamlar. Kısa ve öz ol. Yıldız işareti (*) veya markdown kullanma. Sadece düz metin kullan.';
             userPrompt = `Şu kelimeyi açıkla: ${word.russian} (${word.turkish})`;
             break;
 
         case 'checkTranslation':
-            systemPrompt = 'Sen bir Rusça-Türkçe çeviri uzmanısın. Kullanıcının çevirisini değerlendir. Doğruysa onayla, yanlışsa düzelt ve açıkla. Türkçe cevap ver, kısa ol.';
+            systemPrompt = 'Sen bir Rusça-Türkçe çeviri uzmanısın. Kullanıcının çevirisini değerlendir. Doğruysa onayla, yanlışsa düzelt ve açıkla. Türkçe cevap ver, kısa ol. Yıldız işareti (*) veya markdown kullanma. Sadece düz metin kullan.';
             userPrompt = `Rusça: "${word.russian}"\nKullanıcının çevirisi: "${userTranslation}"\nDoğru çeviri: "${correctTranslation}"`;
             break;
 

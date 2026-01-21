@@ -118,10 +118,19 @@ class TypingMode {
 
             // AI çeviri kontrolü (sadece yanlış cevaplar için)
             if (window.aiManager && input) {
-                const aiResult = await window.aiManager.checkTranslation(word, input, word.turkish);
-                if (aiResult) {
-                    correctAnswerEl.innerHTML = `Doğru cevap: ${word.turkish}<br><br>🤖 <strong>AI:</strong> ${aiResult}`;
+                try {
+                    const aiResult = await window.aiManager.checkTranslation(word, input, word.turkish);
+                    if (aiResult) {
+                        correctAnswerEl.innerHTML = `Doğru cevap: ${word.turkish}<br><br>🤖 <strong>AI:</strong> ${aiResult}`;
+                    } else {
+                        // AI cevap veremezse sadece doğru cevabı göster
+                        correctAnswerEl.innerHTML = `Doğru cevap: ${word.turkish}`;
+                    }
+                } catch (e) {
+                    correctAnswerEl.innerHTML = `Doğru cevap: ${word.turkish}`;
                 }
+            } else {
+                correctAnswerEl.innerHTML = `Doğru cevap: ${word.turkish}`;
             }
         }
 

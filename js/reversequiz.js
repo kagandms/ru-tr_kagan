@@ -120,12 +120,18 @@ class ReverseQuizMode {
             feedbackText.innerHTML = '❌ Yanlış!<br><br>🔄 AI açıklıyor...';
 
             if (window.aiManager) {
-                const aiResult = await window.aiManager.explainWord(correctWord);
-                if (aiResult) {
-                    feedbackText.innerHTML = `❌ Yanlış! Doğru: <strong>${correctWord.russian}</strong><br><br>🤖 ${aiResult}`;
-                } else {
+                try {
+                    const aiResult = await window.aiManager.explainWord(correctWord);
+                    if (aiResult) {
+                        feedbackText.innerHTML = `❌ Yanlış! Doğru: <strong>${correctWord.russian}</strong><br><br>🤖 ${aiResult}`;
+                    } else {
+                        feedbackText.innerHTML = `❌ Yanlış! Doğru: <strong>${correctWord.russian}</strong>`;
+                    }
+                } catch (e) {
                     feedbackText.innerHTML = `❌ Yanlış! Doğru: <strong>${correctWord.russian}</strong>`;
                 }
+            } else {
+                feedbackText.innerHTML = `❌ Yanlış! Doğru: <strong>${correctWord.russian}</strong>`;
             }
         }
 
