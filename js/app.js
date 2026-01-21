@@ -72,7 +72,7 @@ class App {
         const theme = saved || (prefersDark ? 'dark' : 'light');
         document.documentElement.setAttribute('data-theme', theme);
 
-        const toggle = document.getElementById('themeToggle');
+        const toggle = document.getElementById('theme-toggle');
         toggle.addEventListener('click', () => this.toggleTheme());
     }
 
@@ -118,7 +118,7 @@ class App {
         });
 
         // Ayarlar butonu
-        document.getElementById('settingsBtn').addEventListener('click', () => {
+        document.getElementById('settings-btn').addEventListener('click', () => {
             this.openSettings();
         });
 
