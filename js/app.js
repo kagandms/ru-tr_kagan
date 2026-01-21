@@ -128,9 +128,9 @@ class App {
             this.openSettings();
         });
 
-        // Tüm Kelimeler butonu
+        // Favoriler butonu
         document.getElementById('favorites-list-btn').addEventListener('click', () => {
-            this.showAllWords();
+            this.showFavorites();
         });
 
         // Ayarlar modalı
@@ -255,6 +255,44 @@ class App {
         const isNowFavorite = window.favoritesManager?.toggleFavorite(wordId);
         btn.classList.toggle('active', isNowFavorite);
         btn.textContent = isNowFavorite ? '★' : '☆';
+    }
+
+    showFavorites() {
+        const favoriteIds = window.favoritesManager?.getFavorites() || [];
+        const favoriteWords = WORDS.filter(word => favoriteIds.includes(word.id));
+
+        if (favoriteWords.length === 0) {
+            alert('Henüz favori kelime eklemediniz! ⭐');
+            return;
+        }
+
+        document.getElementById('mainMenu').classList.add('hidden');
+        document.getElementById('allwordsMode').classList.remove('hidden');
+        this.currentMode = 'allwords';
+
+        const wordsList = document.getElementById('wordsList');
+        wordsList.innerHTML = '';
+
+        document.getElementById('allwordsCount').textContent = favoriteWords.length;
+
+        favoriteWords.forEach(word => {
+            const item = document.createElement('div');
+            item.className = 'word-item';
+            item.innerHTML = `
+                <button class="favorite-btn active" data-word-id="${word.id}">★</button>
+                <div class="word-text">
+                    <span class="russian">${word.russian}</span>
+                    <span class="turkish">${word.turkish}</span>
+                </div>
+            `;
+
+            item.querySelector('.favorite-btn').addEventListener('click', (e) => {
+                e.stopPropagation();
+                this.toggleWordFavorite(word.id, item.querySelector('.favorite-btn'));
+            });
+
+            wordsList.appendChild(item);
+        });
     }
 
     showCompletion(correctCount, totalCount) {
