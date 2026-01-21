@@ -132,7 +132,7 @@ class ListeningMode {
         } else {
             feedbackText.textContent = '❌ Yanlış!';
             feedbackText.style.color = 'var(--error)';
-            correctAnswerEl.innerHTML = `${word.russian} = ${word.turkish}<br><br>🔄 AI açıklıyor...`;
+            correctAnswerEl.innerHTML = `${word.russian} = ${word.turkish}<br><br>🔄 Yapay zeka cevabı değerlendiriyor...`;
 
             if (window.aiManager) {
                 const aiResult = await window.aiManager.explainWord(word);
