@@ -122,6 +122,11 @@ class App {
             this.openSettings();
         });
 
+        // Tüm Kelimeler butonu
+        document.getElementById('favorites-list-btn').addEventListener('click', () => {
+            this.showAllWords();
+        });
+
         // Ayarlar modalı
         document.querySelectorAll('.goal-btn').forEach(btn => {
             btn.addEventListener('click', () => {
