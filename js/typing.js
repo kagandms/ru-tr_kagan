@@ -91,7 +91,7 @@ class TypingMode {
         btn.textContent = isNowFav ? '★' : '☆';
     }
 
-    checkAnswer() {
+    async checkAnswer() {
         if (this.answered) return;
 
         const word = this.words[this.currentIndex];
@@ -103,18 +103,29 @@ class TypingMode {
 
         this.answered = true;
 
+        const feedbackText = document.getElementById('typingFeedbackText');
+        const correctAnswerEl = document.getElementById('typingCorrectAnswer');
+
         if (isCorrect) {
             this.correctCount++;
-            document.getElementById('typingFeedbackText').textContent = '✅ Doğru!';
-            document.getElementById('typingFeedbackText').style.color = 'var(--success)';
+            feedbackText.textContent = '✅ Doğru!';
+            feedbackText.style.color = 'var(--success)';
+            correctAnswerEl.textContent = '';
         } else {
-            document.getElementById('typingFeedbackText').textContent = '❌ Yanlış!';
-            document.getElementById('typingFeedbackText').style.color = 'var(--error)';
+            feedbackText.textContent = '❌ Yanlış!';
+            feedbackText.style.color = 'var(--error)';
+            correctAnswerEl.innerHTML = `Doğru cevap: ${word.turkish}<br><br>🔄 AI değerlendiriyor...`;
+
+            // AI çeviri kontrolü (sadece yanlış cevaplar için)
+            if (window.aiManager && input) {
+                const aiResult = await window.aiManager.checkTranslation(word, input, word.turkish);
+                if (aiResult) {
+                    correctAnswerEl.innerHTML = `Doğru cevap: ${word.turkish}<br><br>🤖 <strong>AI:</strong> ${aiResult}`;
+                }
+            }
         }
 
-        document.getElementById('typingCorrectAnswer').textContent = `Doğru cevap: ${word.turkish}`;
         document.getElementById('typingFeedback').classList.remove('hidden');
-
         app.recordAnswer(word.id, isCorrect);
     }
 

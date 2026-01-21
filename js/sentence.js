@@ -61,7 +61,7 @@ class SentenceMode {
         this.updateProgress();
     }
 
-    checkSentence() {
+    async checkSentence() {
         const word = this.words[this.currentIndex];
         const input = document.getElementById('sentenceInput').value.trim();
 
@@ -70,30 +70,44 @@ class SentenceMode {
             return;
         }
 
-        // Kelimenin cümlede geçip geçmediğini kontrol et
-        // Rusça karakterler için lowercase dönüşümü
-        const inputLower = input.toLowerCase();
-        const wordLower = word.russian.toLowerCase();
-
-        // Kelime kökünü de kontrol et (en az 3 karakter)
-        const wordRoot = wordLower.length > 3 ? wordLower.substring(0, wordLower.length - 2) : wordLower;
-
-        const containsWord = inputLower.includes(wordLower) || inputLower.includes(wordRoot);
-
         const feedback = document.getElementById('sentenceFeedback');
         const feedbackText = document.getElementById('sentenceFeedbackText');
+        const checkBtn = document.getElementById('sentenceCheck');
+
+        // Kelimenin cümlede geçip geçmediğini kontrol et
+        const inputLower = input.toLowerCase();
+        const wordLower = word.russian.toLowerCase();
+        const wordRoot = wordLower.length > 3 ? wordLower.substring(0, wordLower.length - 2) : wordLower;
+        const containsWord = inputLower.includes(wordLower) || inputLower.includes(wordRoot);
+
+        checkBtn.disabled = true;
+        checkBtn.textContent = '🔄 AI Kontrol Ediyor...';
+
+        // AI gramer kontrolü
+        let aiResult = null;
+        if (window.aiManager) {
+            aiResult = await window.aiManager.checkGrammar(input);
+        }
 
         if (containsWord) {
-            feedbackText.innerHTML = `✅ <strong>Harika!</strong> Cümleniz: "${input}"`;
+            let html = `✅ <strong>Harika!</strong> Cümleniz: "${input}"`;
+            if (aiResult) {
+                html += `<br><br>🤖 <strong>AI Değerlendirmesi:</strong><br>${aiResult}`;
+            }
+            feedbackText.innerHTML = html;
             this.correctCount++;
             app.recordAnswer(word.id, true);
         } else {
-            feedbackText.innerHTML = `⚠️ Cümlede "<strong>${word.russian}</strong>" kelimesi bulunamadı. Cümleniz kaydedildi.`;
+            let html = `⚠️ Cümlede "<strong>${word.russian}</strong>" kelimesi bulunamadı.`;
+            if (aiResult) {
+                html += `<br><br>🤖 <strong>AI Değerlendirmesi:</strong><br>${aiResult}`;
+            }
+            feedbackText.innerHTML = html;
             app.recordAnswer(word.id, false);
         }
 
         feedback.classList.remove('hidden');
-        document.getElementById('sentenceCheck').disabled = true;
+        checkBtn.textContent = 'Kontrol Et';
     }
 
     skipWord() {
