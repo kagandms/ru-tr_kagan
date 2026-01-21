@@ -84,7 +84,7 @@ class HardWordsMode {
             btn.className = 'quiz-option';
             btn.textContent = opt.turkish;
             btn.dataset.correct = opt.id === word.id;
-            btn.onclick = () => this.selectOption(btn, word.id);
+            btn.onclick = () => this.selectOption(btn, word);
             container.appendChild(btn);
         });
 
@@ -119,7 +119,7 @@ class HardWordsMode {
         btn.textContent = isNowFav ? '★' : '☆';
     }
 
-    selectOption(btn, correctId) {
+    async selectOption(btn, correctWord) {
         if (this.answered) return;
         this.answered = true;
 
@@ -132,17 +132,28 @@ class HardWordsMode {
             }
         });
 
+        const feedbackText = document.getElementById('hardwordsFeedbackText');
+
         if (isCorrect) {
             btn.classList.add('correct');
             this.score += 10;
             this.correctCount++;
-            document.getElementById('hardwordsFeedbackText').textContent = '✅ Doğru!';
+            feedbackText.textContent = '✅ Doğru!';
         } else {
             btn.classList.add('wrong');
-            document.getElementById('hardwordsFeedbackText').textContent = '❌ Yanlış!';
+            feedbackText.innerHTML = '❌ Yanlış!<br><br>🔄 AI açıklıyor...';
+
+            if (window.aiManager) {
+                const aiResult = await window.aiManager.explainWord(correctWord);
+                if (aiResult) {
+                    feedbackText.innerHTML = `❌ Yanlış! Doğru: <strong>${correctWord.turkish}</strong><br><br>🤖 ${aiResult}`;
+                } else {
+                    feedbackText.innerHTML = `❌ Yanlış! Doğru: <strong>${correctWord.turkish}</strong>`;
+                }
+            }
         }
 
-        app.recordAnswer(correctId, isCorrect);
+        app.recordAnswer(correctWord.id, isCorrect);
         this.updateScore();
 
         document.getElementById('hardwordsFeedback').classList.remove('hidden');

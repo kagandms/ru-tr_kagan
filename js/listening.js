@@ -111,7 +111,7 @@ class ListeningMode {
         btn.textContent = isNowFav ? '★' : '☆';
     }
 
-    checkAnswer() {
+    async checkAnswer() {
         if (this.answered) return;
 
         const word = this.words[this.currentIndex];
@@ -121,19 +121,28 @@ class ListeningMode {
         const isCorrect = this.isAnswerCorrect(input, correct);
         this.answered = true;
 
+        const feedbackText = document.getElementById('listeningFeedbackText');
+        const correctAnswerEl = document.getElementById('listeningCorrectAnswer');
+
         if (isCorrect) {
             this.correctCount++;
-            document.getElementById('listeningFeedbackText').textContent = '✅ Doğru!';
-            document.getElementById('listeningFeedbackText').style.color = 'var(--success)';
+            feedbackText.textContent = '✅ Doğru!';
+            feedbackText.style.color = 'var(--success)';
+            correctAnswerEl.textContent = `${word.russian} = ${word.turkish}`;
         } else {
-            document.getElementById('listeningFeedbackText').textContent = '❌ Yanlış!';
-            document.getElementById('listeningFeedbackText').style.color = 'var(--error)';
+            feedbackText.textContent = '❌ Yanlış!';
+            feedbackText.style.color = 'var(--error)';
+            correctAnswerEl.innerHTML = `${word.russian} = ${word.turkish}<br><br>🔄 AI açıklıyor...`;
+
+            if (window.aiManager) {
+                const aiResult = await window.aiManager.explainWord(word);
+                if (aiResult) {
+                    correctAnswerEl.innerHTML = `${word.russian} = ${word.turkish}<br><br>🤖 ${aiResult}`;
+                }
+            }
         }
 
-        document.getElementById('listeningCorrectAnswer').textContent =
-            `${word.russian} = ${word.turkish}`;
         document.getElementById('listeningFeedback').classList.remove('hidden');
-
         app.recordAnswer(word.id, isCorrect);
     }
 
