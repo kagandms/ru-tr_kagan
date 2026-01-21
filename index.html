@@ -9,6 +9,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <title>Rusça-Türkçe Kelime</title>
+    <link rel="apple-touch-icon" href="/icon-192.png">
     <link rel="manifest" href="manifest.json">
     <link rel="icon" type="image/png"
         href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇷🇺</text></svg>">
@@ -23,11 +24,12 @@
         <header class="header">
             <h1>🇷🇺 Мой словарь / Sözlüğüm 🇹🇷</h1>
             <div class="header-actions">
-                <button id="settingsBtn" class="settings-btn" aria-label="Ayarlar">⚙️</button>
-                <button id="themeToggle" class="theme-toggle" aria-label="Tema değiştir">
-                    <span class="icon-sun">☀️</span>
-                    <span class="icon-moon">🌙</span>
-                </button>
+                <!-- PWA Install Button (Hidden by default) -->
+                <button id="install-btn" class="icon-btn" style="display: none;"
+                    aria-label="Uygulamayı Yükle">⬇️</button>
+                <button id="settings-btn" class="icon-btn" aria-label="Ayarlar">⚙️</button>
+                <button id="favorites-list-btn" class="icon-btn" aria-label="Tüm Kelimeler">📚</button>
+                <button id="theme-toggle" class="icon-btn" aria-label="Tema Değiştir">🌓</button>
             </div>
         </header>
 

@@ -26,6 +26,43 @@ class App {
 
         // Günlük hedef ve streak göster
         window.goalsManager?.updateDisplay();
+
+        this.setupPWA();
+    }
+
+    // ===== PWA Kurulum Yönetimi =====
+    setupPWA() {
+        this.deferredPrompt = null;
+        const installBtn = document.getElementById('install-btn');
+
+        window.addEventListener('beforeinstallprompt', (e) => {
+            // Chrome 67 ve öncesi için otomatik prompt'u engelle
+            e.preventDefault();
+            // Etkinliği daha sonra kullanmak üzere sakla
+            this.deferredPrompt = e;
+            // Kurulum butonunu göster
+            installBtn.style.display = 'flex';
+        });
+
+        installBtn.addEventListener('click', async () => {
+            if (!this.deferredPrompt) return;
+            // Kurulum prompt'unu göster
+            this.deferredPrompt.prompt();
+            // Kullanıcının cevabını bekle
+            const { outcome } = await this.deferredPrompt.userChoice;
+            console.log(`User response to the install prompt: ${outcome}`);
+            // Prompt bir kez kullanılabilir, sıfırla
+            this.deferredPrompt = null;
+            // Butonu gizle
+            installBtn.style.display = 'none';
+        });
+
+        window.addEventListener('appinstalled', () => {
+            // Kurulum tamamlandı, butonu gizle
+            installBtn.style.display = 'none';
+            this.deferredPrompt = null;
+            console.log('PWA installed');
+        });
     }
 
     // ===== Tema Yönetimi =====
