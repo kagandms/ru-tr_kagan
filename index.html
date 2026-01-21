@@ -358,25 +358,25 @@
         <section id="sentenceMode" class="mode-screen hidden">
             <div class="mode-header">
                 <button class="back-btn" data-back>← Geri</button>
-                <h2>Cümle Modu</h2>
+                <h2>Cümle Yaz</h2>
                 <span class="progress-indicator">
-                    <span id="sentenceScore">0</span> puan
+                    <span id="sentenceCurrent">1</span>/<span id="sentenceTotal">0</span>
                 </span>
             </div>
-            <div class="quiz-container">
-                <div class="sentence-question">
+            <div class="sentence-write-container">
+                <div class="sentence-word-card">
                     <button class="favorite-btn" id="sentenceFavorite" aria-label="Favoriye ekle">☆</button>
-                    <p class="sentence-text" id="sentenceRussian">Русское предложение</p>
-                    <p class="sentence-text-tr" id="sentenceTurkish">Türkçe cümle</p>
-                    <p class="sentence-hint" id="sentenceHint">İpucu: kelime</p>
-                    <p class="hard-word-progress">
-                        <span id="sentenceCurrent">1</span>/<span id="sentenceTotal">0</span>
-                    </p>
+                    <p class="sentence-word-ru" id="sentenceWordRu">Русское слово</p>
+                    <p class="sentence-word-tr" id="sentenceWordTr">Türkçe anlam</p>
                 </div>
-                <div class="quiz-options sentence-options" id="sentenceOptions">
-                    <!-- Options will be generated dynamically -->
+                <p class="sentence-instruction">Bu kelimeyi kullanarak Rusça bir cümle yazın:</p>
+                <textarea id="sentenceInput" class="sentence-textarea" placeholder="Rusça cümlenizi buraya yazın..."
+                    rows="3"></textarea>
+                <div class="sentence-actions">
+                    <button class="check-btn" id="sentenceCheck">Kontrol Et</button>
+                    <button class="skip-btn" id="sentenceSkip">Atla →</button>
                 </div>
-                <div class="quiz-feedback hidden" id="sentenceFeedback">
+                <div class="sentence-feedback hidden" id="sentenceFeedback">
                     <p id="sentenceFeedbackText"></p>
                     <button class="next-btn" id="sentenceNext">Sonraki →</button>
                 </div>

@@ -1151,6 +1151,124 @@ body {
     margin-top: 0.5rem;
 }
 
+/* ===== Sentence Write Mode ===== */
+.sentence-write-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.sentence-word-card {
+    background: var(--bg-card);
+    border-radius: 16px;
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.sentence-word-card .favorite-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.sentence-word-ru {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.sentence-word-tr {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+}
+
+.sentence-instruction {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.sentence-textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    border: 2px solid var(--border);
+    border-radius: 12px;
+    background: var(--bg-card);
+    color: var(--text-primary);
+    resize: none;
+    font-family: inherit;
+    transition: border-color 0.2s ease;
+}
+
+.sentence-textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+.sentence-textarea::placeholder {
+    color: var(--text-muted);
+}
+
+.sentence-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.check-btn,
+.skip-btn {
+    flex: 1;
+    padding: 1rem;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.check-btn {
+    background: var(--accent);
+    color: white;
+    border: none;
+}
+
+.check-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.check-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.skip-btn {
+    background: transparent;
+    color: var(--text-secondary);
+    border: 2px solid var(--border);
+}
+
+.skip-btn:hover {
+    background: var(--bg-card);
+}
+
+.sentence-feedback {
+    background: var(--bg-card);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.sentence-feedback p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
 /* ===== Settings Group ===== */
 .settings-group {
     margin-bottom: 1.5rem;
