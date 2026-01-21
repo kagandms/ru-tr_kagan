@@ -2,7 +2,7 @@
  * Service Worker - Offline Desteği
  */
 
-const CACHE_NAME = 'rutr-v4';
+const CACHE_NAME = 'rutr-v5';
 const ASSETS = [
     '/',
     '/index.html',
@@ -21,7 +21,9 @@ const ASSETS = [
     '/js/timerace.js',
     '/js/reversequiz.js',
     '/js/listening.js',
-    '/manifest.json'
+    '/manifest.json',
+    '/icon-192.png',
+    '/icon-512.png'
 ];
 
 // Install - Cache assets
