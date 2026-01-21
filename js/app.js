@@ -117,6 +117,12 @@ class App {
             this.closeMode();
         });
 
+        // Soru sayısı modalı geri butonu
+        document.getElementById('questionCountCancel').addEventListener('click', () => {
+            document.getElementById('questionCountModal').classList.add('hidden');
+            this.pendingMode = null;
+        });
+
         // Ayarlar butonu
         document.getElementById('settings-btn').addEventListener('click', () => {
             this.openSettings();
