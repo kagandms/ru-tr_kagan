@@ -7,6 +7,20 @@ class AIManager {
     constructor() {
         this.apiUrl = '/api/ai';
         this.loading = false;
+        // Cache'i yükle
+        try {
+            this.cache = JSON.parse(localStorage.getItem('rutr_ai_cache')) || {};
+        } catch (e) {
+            this.cache = {};
+        }
+    }
+
+    saveCache() {
+        try {
+            localStorage.setItem('rutr_ai_cache', JSON.stringify(this.cache));
+        } catch (e) {
+            console.error('Cache save failed', e);
+        }
     }
 
     async callAI(action, data) {
@@ -45,12 +59,28 @@ class AIManager {
 
     // Kelime için örnek cümle üret
     async generateExample(word) {
-        return await this.callAI('generateExample', { word });
+        const key = `ex_${word.id}`;
+        if (this.cache[key]) return this.cache[key];
+
+        const result = await this.callAI('generateExample', { word });
+        if (result) {
+            this.cache[key] = result;
+            this.saveCache();
+        }
+        return result;
     }
 
     // Kelime açıklaması
     async explainWord(word) {
-        return await this.callAI('explainWord', { word });
+        const key = `expl_${word.id}`;
+        if (this.cache[key]) return this.cache[key];
+
+        const result = await this.callAI('explainWord', { word });
+        if (result) {
+            this.cache[key] = result;
+            this.saveCache();
+        }
+        return result;
     }
 
     // Çeviri kontrolü
