@@ -57,6 +57,50 @@ class FlashcardMode {
             e.stopPropagation();
             this.toggleFavorite();
         };
+
+        // AI Açıklama butonu
+        document.getElementById('flashcardExplain').onclick = () => this.aiExplain();
+
+        // AI Örnek butonu
+        document.getElementById('flashcardGetExample').onclick = () => this.aiGetExample();
+    }
+
+    async aiExplain() {
+        const word = this.words[this.currentIndex];
+        if (!word || !window.aiManager) return;
+
+        const resultDiv = document.getElementById('flashcardAiResult');
+        const textP = document.getElementById('flashcardAiText');
+        const btn = document.getElementById('flashcardExplain');
+
+        btn.disabled = true;
+        btn.textContent = '🔄 Yükleniyor...';
+        resultDiv.classList.remove('hidden');
+        textP.innerHTML = 'AI düşünüyor...';
+
+        const result = await window.aiManager.explainWord(word);
+        textP.innerHTML = result || 'Açıklama alınamadı.';
+        btn.disabled = false;
+        btn.textContent = '🤖 Açıkla';
+    }
+
+    async aiGetExample() {
+        const word = this.words[this.currentIndex];
+        if (!word || !window.aiManager) return;
+
+        const resultDiv = document.getElementById('flashcardAiResult');
+        const textP = document.getElementById('flashcardAiText');
+        const btn = document.getElementById('flashcardGetExample');
+
+        btn.disabled = true;
+        btn.textContent = '🔄 Yükleniyor...';
+        resultDiv.classList.remove('hidden');
+        textP.innerHTML = 'AI örnek cümle oluşturuyor...';
+
+        const result = await window.aiManager.generateExample(word);
+        textP.innerHTML = result || 'Örnek alınamadı.';
+        btn.disabled = false;
+        btn.textContent = '💡 Örnek Al';
     }
 
     flipCard() {
@@ -126,6 +170,7 @@ class FlashcardMode {
         // Kartı resetle
         this.isFlipped = false;
         document.getElementById('flashcard').classList.remove('flipped');
+        document.getElementById('flashcardAiResult').classList.add('hidden');
 
         this.updateCard();
         this.updateProgress();

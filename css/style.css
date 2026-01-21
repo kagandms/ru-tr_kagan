@@ -1468,3 +1468,50 @@ body {
     top: 0.75rem;
     right: 0.75rem;
 }
+
+/* ===== AI Integration Styles ===== */
+.ai-actions {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.ai-btn {
+    padding: 0.75rem 1.25rem;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: 2px solid var(--accent);
+    background: transparent;
+    color: var(--accent);
+    transition: all 0.2s ease;
+}
+
+.ai-btn:hover:not(:disabled) {
+    background: var(--accent);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.ai-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.ai-result {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+    border: 1px solid var(--accent);
+    border-radius: 12px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.ai-result p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-primary);
+    margin: 0;
+    white-space: pre-wrap;
+}
