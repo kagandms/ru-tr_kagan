@@ -127,11 +127,6 @@
                     <span class="mode-title">Eşleştirme</span>
                     <span class="mode-desc">Kelime-çeviri eşleştir</span>
                 </button>
-                <button class="mode-card" data-mode="srs">
-                    <span class="mode-icon">🧠</span>
-                    <span class="mode-title">Akıllı Tekrar</span>
-                    <span class="mode-desc">Aralıklı tekrar sistemi</span>
-                </button>
                 <button class="mode-card" data-mode="allwords">
                     <span class="mode-icon">📚</span>
                     <span class="mode-title">Tüm Kelimeler</span>
@@ -259,39 +254,6 @@
             </div>
         </section>
 
-        <!-- SRS Mode -->
-        <section id="srsMode" class="mode-screen hidden">
-            <div class="mode-header">
-                <button class="back-btn" data-back>← Geri</button>
-                <h2>Akıllı Tekrar</h2>
-                <span class="progress-indicator">
-                    <span id="srsDue">0</span> bekliyor
-                </span>
-            </div>
-            <div class="srs-container">
-                <div class="srs-card" id="srsCard">
-                    <p class="word" id="srsWord">Kelime</p>
-                    <p class="example" id="srsExample">Örnek cümle</p>
-                    <div class="srs-answer hidden" id="srsAnswer">
-                        <hr>
-                        <p class="word" id="srsTranslation">Çeviri</p>
-                        <p class="example" id="srsExampleTr">Örnek çeviri</p>
-                    </div>
-                </div>
-                <button class="show-answer-btn" id="srsShowAnswer">Cevabı Göster</button>
-                <div class="srs-buttons hidden" id="srsButtons">
-                    <button class="srs-btn again" data-rating="1">😞 Tekrar</button>
-                    <button class="srs-btn hard" data-rating="2">😐 Zor</button>
-                    <button class="srs-btn good" data-rating="3">🙂 İyi</button>
-                    <button class="srs-btn easy" data-rating="4">😄 Kolay</button>
-                </div>
-            </div>
-            <div class="srs-empty hidden" id="srsEmpty">
-                <p>🎉 Bugünlük tamamlandı!</p>
-                <p>Tekrar edilecek kelime kalmadı.</p>
-            </div>
-        </section>
-
         <!-- No Words Message -->
         <div id="noWordsMessage" class="no-words hidden">
             <p>📚 Henüz kelime eklenmemiş!</p>
@@ -311,13 +273,13 @@
                 <!-- Daily words will be listed here -->
             </div>
             <div style="text-align: center; margin-top: 2rem;">
-                 <button class="modal-btn primary" id="dailyTestBtn">Test Çöz</button>
+                <button class="modal-btn primary" id="dailyTestBtn">Test Çöz</button>
             </div>
         </section>
 
         <!-- Synonyms Mode -->
         <section id="synonymsMode" class="mode-screen hidden">
-             <div class="mode-header">
+            <div class="mode-header">
                 <button class="back-btn" data-back>← Geri</button>
                 <h2>↔️ Eş & Zıt Anlam</h2>
                 <span class="progress-indicator">
@@ -325,12 +287,12 @@
                 </span>
             </div>
             <div class="quiz-container">
-                 <div class="quiz-question">
+                <div class="quiz-question">
                     <p class="question-word" id="synonymsWord">Kelime</p>
                     <p class="question-example" id="synonymsType">Eş Anlam</p>
-                 </div>
-                 <div class="quiz-options" id="synonymsOptions"></div>
-                  <div class="quiz-feedback hidden" id="synonymsFeedback">
+                </div>
+                <div class="quiz-options" id="synonymsOptions"></div>
+                <div class="quiz-feedback hidden" id="synonymsFeedback">
                     <p id="synonymsFeedbackText"></p>
                     <button class="next-btn" id="synonymsNext">Sonraki →</button>
                 </div>
@@ -369,7 +331,7 @@
                 <div class="torfl-list" id="torflList"></div>
             </div>
             <div id="torflQuiz" class="hidden">
-                 <div class="quiz-container">
+                <div class="quiz-container">
                     <div class="quiz-question">
                         <p class="question-word" id="torflQuestion">Soru...</p>
                     </div>
@@ -378,7 +340,7 @@
                         <p id="torflFeedbackText"></p>
                         <button class="next-btn" id="torflNext">Sonraki →</button>
                     </div>
-                 </div>
+                </div>
             </div>
         </section>
 
@@ -573,7 +535,6 @@
     <script src="js/quiz.js"></script>
     <script src="js/typing.js"></script>
     <script src="js/matching.js"></script>
-    <script src="js/srs.js"></script>
     <script src="js/hardwords.js"></script>
     <script src="js/synonyms.js"></script>
     <script src="js/ielts.js"></script>

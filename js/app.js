@@ -83,7 +83,7 @@ class App {
         localStorage.setItem('theme', newTheme);
     }
 
-// ... (previous code)
+    // ... (previous code)
 
     // ===== Navigasyon =====
     setupNavigation() {
@@ -104,7 +104,7 @@ class App {
         });
     }
 
-// ... (previous code)
+    // ... (previous code)
 
     openMode(mode) {
         if (WORDS.length === 0) {
@@ -121,7 +121,7 @@ class App {
         } else if (mode === 'allwords') {
             this.showAllWords();
         } else if (mode === 'daily') {
-             this.startMode('daily'); // Günün kelimeleri
+            this.startMode('daily'); // Günün kelimeleri
         } else {
             this.startMode(mode);
         }
@@ -129,7 +129,7 @@ class App {
 
     startMode(mode, questionCount = null) {
         const modeScreen = document.getElementById(`${mode}Mode`);
-        
+
         // Hata ayıklama: Mod ekranı var mı kontrol et
         if (!modeScreen) {
             console.error(`Mode screen for ${mode} not found!`);
@@ -167,9 +167,6 @@ class App {
                 case 'matching':
                     window.matchingMode?.init();
                     break;
-                case 'srs':
-                    window.srsMode?.init();
-                    break;
                 case 'synonyms':
                     window.synonymsMode?.init();
                     break;
@@ -186,7 +183,7 @@ class App {
         }
     }
 
-// ... (previous code)
+    // ... (previous code)
 
     closeMode() {
         if (this.currentMode) {
@@ -197,7 +194,7 @@ class App {
             document.getElementById('mainMenu').classList.remove('hidden');
             this.currentMode = null;
             this.updateStatsDisplay();
-            
+
             // Günlük kelimeler modundan çıkınca ana menüyü yenile
             if (window.dailyMode && typeof window.dailyMode.reset === 'function') {
                 window.dailyMode.reset();
@@ -205,7 +202,7 @@ class App {
         }
     }
 
-// ... (previous code)
+    // ... (previous code)
 
 
     checkWords() {
@@ -236,12 +233,14 @@ class App {
     }
 
     updateStatsDisplay() {
+        if (!this.stats) return; // Koruma
+
         document.getElementById('totalWords').textContent = WORDS.length;
-        document.getElementById('masteredWords').textContent = this.stats.masteredWords.length;
+        document.getElementById('masteredWords').textContent = this.stats.masteredWords ? this.stats.masteredWords.length : 0;
 
         const total = this.stats.totalCorrect + this.stats.totalWrong;
         const accuracy = total > 0 ? Math.round((this.stats.totalCorrect / total) * 100) : 0;
-        document.getElementById('accuracy').textContent = accuracy + '%';
+        document.getElementById('accuracy').textContent = `%${accuracy}`;
     }
 
     recordAnswer(wordId, isCorrect) {

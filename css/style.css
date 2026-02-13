@@ -108,7 +108,7 @@ body {
 .ielts-tab.active {
     background: var(--accent);
     color: white;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* TORFL List */
@@ -404,8 +404,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.5rem 0;
+    padding: 1rem 0;
+    /* Increased padding */
     margin-bottom: 1.5rem;
+    gap: 1rem;
+    /* Add gap between items */
 }
 
 .mode-header h2 {
@@ -417,17 +420,31 @@ body {
     background: none;
     border: none;
     color: var(--accent);
-    font-size: 1rem;
+    font-size: 1.1rem;
+    /* Slightly larger icon */
     cursor: pointer;
-    padding: 0.5rem;
-    margin-left: -0.5rem;
+    padding: 0.75rem;
+    /* Larger hit area */
+    margin-left: -0.75rem;
+    /* Offset to align visually */
     font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+}
+
+.back-btn:active {
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
 .progress-indicator {
     font-size: 0.9rem;
     color: var(--text-muted);
     font-weight: 500;
+    white-space: nowrap;
+    /* Prevent wrapping */
 }
 
 /* ===== Flashcard ===== */
