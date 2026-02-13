@@ -324,6 +324,52 @@ class App {
     }
 
     // Yardımcı fonksiyonlar
+    showAllWords() {
+        const container = document.getElementById('wordsList');
+        const countSpan = document.getElementById('allwordsCount');
+        const modeScreen = document.getElementById('allwordsMode');
+
+        if (!container || !modeScreen) return;
+
+        document.getElementById('mainMenu').classList.add('hidden');
+        modeScreen.classList.remove('hidden');
+        this.currentMode = 'allwords';
+
+        container.innerHTML = '';
+        countSpan.textContent = WORDS.length;
+
+        // Kelimeleri sırala (Rusça alfabetik)
+        const sortedWords = [...WORDS].sort((a, b) => a.russian.localeCompare(b.russian));
+
+        sortedWords.forEach(word => {
+            const item = document.createElement('div');
+            item.className = 'word-item';
+
+            const isFav = window.favoritesManager?.isFavorite(word.id);
+            const starClass = isFav ? 'active' : '';
+            const starText = isFav ? '★' : '☆';
+
+            item.innerHTML = `
+                <div class="word-text">
+                    <span class="russian">${word.russian}</span>
+                    <span class="turkish">${word.turkish}</span>
+                </div>
+                <button class="favorite-btn ${starClass}" data-id="${word.id}">${starText}</button>
+            `;
+
+            // Favori butonu olayı
+            const favBtn = item.querySelector('.favorite-btn');
+            favBtn.onclick = (e) => {
+                e.stopPropagation();
+                const newStatus = window.favoritesManager?.toggleFavorite(word.id);
+                favBtn.classList.toggle('active', newStatus);
+                favBtn.textContent = newStatus ? '★' : '☆';
+            };
+
+            container.appendChild(item);
+        });
+    }
+
     shuffleArray(array) {
         const shuffled = [...array];
         for (let i = shuffled.length - 1; i > 0; i--) {

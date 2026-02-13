@@ -22,7 +22,14 @@ class DailyMode {
             // Bugünün kelimeleri zaten var
             const ids = JSON.parse(savedIds);
             this.dailyWords = WORDS.filter(w => ids.includes(w.id));
-        } else {
+
+            // Eğer kelime sayısı 5'ten azsa (örn: kelime silinmişse) yeniden seç
+            if (this.dailyWords.length < 5) {
+                this.dailyWords = []; // Reset triggers re-selection below
+            }
+        }
+
+        if (this.dailyWords.length === 0) {
             // Yeni kelime seç
             // Öğrenilmemiş kelimelerden seçmeye çalış
             const savedStats = JSON.parse(localStorage.getItem('stats') || '{"masteredWords":[]}');
