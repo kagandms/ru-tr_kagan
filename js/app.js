@@ -305,6 +305,42 @@ class App {
         let available = WORDS.filter(w => w.id !== excludeId);
         return this.shuffleArray(available).slice(0, count);
     }
+
+    showCompletion(score, total) {
+        const modal = document.getElementById('completionModal');
+        const text = document.getElementById('completionText');
+        const title = modal.querySelector('h3');
+
+        const percentage = (score / total) * 100;
+        let message = '';
+        let emoji = '';
+
+        if (percentage === 100) {
+            emoji = '🏆';
+            message = 'Mükemmel! Hepsini doğru bildin!';
+        } else if (percentage >= 80) {
+            emoji = '🎉';
+            message = 'Harika iş! Çok iyisin.';
+        } else if (percentage >= 60) {
+            emoji = '👍';
+            message = 'Güzel, ama daha iyisini yapabilirsin.';
+        } else {
+            emoji = '📚';
+            message = 'Biraz daha pratik yapmalısın.';
+        }
+
+        title.textContent = `${emoji} Sonuç: ${score}/${total}`;
+        text.textContent = message;
+
+        modal.classList.remove('hidden');
+
+        // Close button handler
+        const closeBtn = document.getElementById('completionClose');
+        closeBtn.onclick = () => {
+            modal.classList.add('hidden');
+            this.closeMode();
+        };
+    }
 }
 
 // Global app instance
