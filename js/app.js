@@ -113,7 +113,7 @@ class App {
         }
 
         // Soru sayısı sorulacak modlar
-        const modesWithCount = ['flashcard', 'quiz', 'typing', 'hardwords', 'reversequiz', 'listening'];
+        const modesWithCount = ['flashcard', 'quiz', 'typing', 'hardwords', 'reversequiz'];
 
         if (modesWithCount.includes(mode)) {
             this.pendingMode = mode;
@@ -155,14 +155,8 @@ class App {
                 case 'hardwords':
                     window.hardWordsMode?.init(questionCount);
                     break;
-                case 'timerace':
-                    window.timeRaceMode?.init();
-                    break;
                 case 'reversequiz':
                     window.reverseQuizMode?.init(questionCount);
-                    break;
-                case 'listening':
-                    window.listeningMode?.init(questionCount);
                     break;
                 case 'matching':
                     window.matchingMode?.init();

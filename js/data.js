@@ -33,16 +33,30 @@ async function loadWords() {
                 if (russian && turkish) {
                     // Eş/Zıt Anlam kontrolü (Her iki tarafta da "-" varsa)
                     // Örn: Радость - Грусть : Neşe - Hüzün
-                    if (russian.includes(' - ') && turkish.includes(' - ')) {
-                        const ruParts = russian.split(' - ').map(s => s.trim());
-                        const trParts = turkish.split(' - ').map(s => s.trim());
+                    // Eş/Zıt Anlam kontrolü (Her iki tarafta da "-" varsa)
+                    // Örn: Радость - Грусть : Neşe - Hüzün
+                    // Regex kullanarak - işaretini kontrol et (boşluklu veya boşluksuz olabilir ama standart ' - ' dedik)
+
+                    // Daha gevşek kontrol: İçinde tire var mı?
+                    if (russian.includes('-') && turkish.includes('-')) {
+                        // ' - ' ayracına göre bölmeye çalış, eğer başarısız olursa sadece '-' ile dene
+                        let ruParts = russian.split(' - ').map(s => s.trim());
+                        let trParts = turkish.split(' - ').map(s => s.trim());
+
+                        // Eğer ' - ' ile bölünemediyse ama tire varsa (örn: kelime-kelime bitişik)
+                        if (ruParts.length < 2 && russian.includes('-')) {
+                            ruParts = russian.split('-').map(s => s.trim());
+                        }
+                        if (trParts.length < 2 && turkish.includes('-')) {
+                            trParts = turkish.split('-').map(s => s.trim());
+                        }
 
                         if (ruParts.length === 2 && trParts.length === 2) {
                             SYNONYMS.push({
                                 id: idCounter++,
                                 w1: { ru: ruParts[0], tr: trParts[0] },
                                 w2: { ru: ruParts[1], tr: trParts[1] },
-                                type: 'antonym' // Varsayılan olarak zıt anlam kabul ediyoruz (listeye göre)
+                                type: 'antonym' // Varsayılan olarak zıt anlam
                             });
                         }
                     }
