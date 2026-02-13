@@ -83,6 +83,8 @@ class App {
         localStorage.setItem('theme', newTheme);
     }
 
+// ... (previous code)
+
     // ===== Navigasyon =====
     setupNavigation() {
         // Mod kartlarına tıklama
@@ -95,66 +97,14 @@ class App {
 
         // Geri butonları
         document.querySelectorAll('[data-back]').forEach(btn => {
-            btn.addEventListener('click', () => this.closeMode());
-        });
-    }
-
-    // ===== Modal Yönetimi =====
-    setupModals() {
-        // Soru sayısı modalı
-        document.querySelectorAll('#questionCountModal .modal-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const count = parseInt(btn.dataset.count);
-                this.selectedQuestionCount = count;
-                document.getElementById('questionCountModal').classList.add('hidden');
-                this.startMode(this.pendingMode, count);
+            btn.addEventListener('click', (e) => {
+                e.preventDefault(); // Prevent double firing
+                this.closeMode();
             });
         });
-
-        // Tamamlama modalı
-        document.getElementById('completionClose').addEventListener('click', () => {
-            document.getElementById('completionModal').classList.add('hidden');
-            this.closeMode();
-        });
-
-        // Soru sayısı modalı geri butonu
-        document.getElementById('questionCountCancel').addEventListener('click', () => {
-            document.getElementById('questionCountModal').classList.add('hidden');
-            this.pendingMode = null;
-        });
-
-        // Ayarlar butonu
-        document.getElementById('settings-btn').addEventListener('click', () => {
-            this.openSettings();
-        });
-
-        // Favoriler butonu
-        document.getElementById('favorites-list-btn').addEventListener('click', () => {
-            this.showFavorites();
-        });
-
-        // Ayarlar modalı
-        document.querySelectorAll('.goal-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const goal = parseInt(btn.dataset.goal);
-                window.goalsManager?.setDailyGoal(goal);
-                document.querySelectorAll('.goal-btn').forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-            });
-        });
-
-        document.getElementById('settingsClose').addEventListener('click', () => {
-            document.getElementById('settingsModal').classList.add('hidden');
-        });
     }
 
-    openSettings() {
-        const currentGoal = window.goalsManager?.getDailyGoal() || 20;
-        document.querySelectorAll('.goal-btn').forEach(btn => {
-            btn.classList.toggle('active', parseInt(btn.dataset.goal) === currentGoal);
-        });
-        document.getElementById('settingsModal').classList.remove('hidden');
-    }
+// ... (previous code)
 
     openMode(mode) {
         if (WORDS.length === 0) {
@@ -163,13 +113,15 @@ class App {
         }
 
         // Soru sayısı sorulacak modlar
-        const modesWithCount = ['flashcard', 'quiz', 'typing', 'sentence', 'hardwords', 'reversequiz', 'listening'];
+        const modesWithCount = ['flashcard', 'quiz', 'typing', 'hardwords', 'reversequiz', 'listening'];
 
         if (modesWithCount.includes(mode)) {
             this.pendingMode = mode;
             document.getElementById('questionCountModal').classList.remove('hidden');
         } else if (mode === 'allwords') {
             this.showAllWords();
+        } else if (mode === 'daily') {
+             this.startMode('daily'); // Günün kelimeleri
         } else {
             this.startMode(mode);
         }
@@ -177,6 +129,13 @@ class App {
 
     startMode(mode, questionCount = null) {
         const modeScreen = document.getElementById(`${mode}Mode`);
+        
+        // Hata ayıklama: Mod ekranı var mı kontrol et
+        if (!modeScreen) {
+            console.error(`Mode screen for ${mode} not found!`);
+            return;
+        }
+
         if (modeScreen) {
             document.getElementById('mainMenu').classList.add('hidden');
             modeScreen.classList.remove('hidden');
@@ -192,9 +151,6 @@ class App {
                     break;
                 case 'typing':
                     window.typingMode?.init(questionCount);
-                    break;
-                case 'sentence':
-                    window.sentenceMode?.init(questionCount);
                     break;
                 case 'hardwords':
                     window.hardWordsMode?.init(questionCount);
@@ -214,101 +170,43 @@ class App {
                 case 'srs':
                     window.srsMode?.init();
                     break;
+                case 'synonyms':
+                    window.synonymsMode?.init();
+                    break;
+                case 'ielts':
+                    window.ieltsMode?.init();
+                    break;
+                case 'torfl':
+                    window.torflMode?.init();
+                    break;
+                case 'daily':
+                    window.dailyMode?.init();
+                    break;
             }
         }
     }
 
-    showAllWords() {
-        document.getElementById('mainMenu').classList.add('hidden');
-        document.getElementById('allwordsMode').classList.remove('hidden');
-        this.currentMode = 'allwords';
-
-        const wordsList = document.getElementById('wordsList');
-        wordsList.innerHTML = '';
-
-        document.getElementById('allwordsCount').textContent = WORDS.length;
-
-        WORDS.forEach(word => {
-            const isFav = window.favoritesManager?.isFavorite(word.id);
-            const item = document.createElement('div');
-            item.className = 'word-item';
-            item.innerHTML = `
-                <button class="favorite-btn ${isFav ? 'active' : ''}" data-word-id="${word.id}">
-                    ${isFav ? '★' : '☆'}
-                </button>
-                <div class="word-text">
-                    <span class="russian">${word.russian}</span>
-                    <span class="turkish">${word.turkish}</span>
-                </div>
-            `;
-
-            item.querySelector('.favorite-btn').addEventListener('click', (e) => {
-                e.stopPropagation();
-                this.toggleWordFavorite(word.id, item.querySelector('.favorite-btn'));
-            });
-
-            wordsList.appendChild(item);
-        });
-    }
-
-    toggleWordFavorite(wordId, btn) {
-        const isNowFavorite = window.favoritesManager?.toggleFavorite(wordId);
-        btn.classList.toggle('active', isNowFavorite);
-        btn.textContent = isNowFavorite ? '★' : '☆';
-    }
-
-    showFavorites() {
-        const favoriteIds = window.favoritesManager?.getFavorites() || [];
-        const favoriteWords = WORDS.filter(word => favoriteIds.includes(word.id));
-
-        if (favoriteWords.length === 0) {
-            alert('Henüz favori kelime eklemediniz! ⭐');
-            return;
-        }
-
-        document.getElementById('mainMenu').classList.add('hidden');
-        document.getElementById('allwordsMode').classList.remove('hidden');
-        this.currentMode = 'allwords';
-
-        const wordsList = document.getElementById('wordsList');
-        wordsList.innerHTML = '';
-
-        document.getElementById('allwordsCount').textContent = favoriteWords.length;
-
-        favoriteWords.forEach(word => {
-            const item = document.createElement('div');
-            item.className = 'word-item';
-            item.innerHTML = `
-                <button class="favorite-btn active" data-word-id="${word.id}">★</button>
-                <div class="word-text">
-                    <span class="russian">${word.russian}</span>
-                    <span class="turkish">${word.turkish}</span>
-                </div>
-            `;
-
-            item.querySelector('.favorite-btn').addEventListener('click', (e) => {
-                e.stopPropagation();
-                this.toggleWordFavorite(word.id, item.querySelector('.favorite-btn'));
-            });
-
-            wordsList.appendChild(item);
-        });
-    }
-
-    showCompletion(correctCount, totalCount) {
-        const text = document.getElementById('completionText');
-        text.textContent = `${totalCount} sorudan ${correctCount} tanesini doğru bildin!`;
-        document.getElementById('completionModal').classList.remove('hidden');
-    }
+// ... (previous code)
 
     closeMode() {
         if (this.currentMode) {
-            document.getElementById(`${this.currentMode}Mode`).classList.add('hidden');
+            const modeScreen = document.getElementById(`${this.currentMode}Mode`);
+            if (modeScreen) {
+                modeScreen.classList.add('hidden');
+            }
             document.getElementById('mainMenu').classList.remove('hidden');
             this.currentMode = null;
             this.updateStatsDisplay();
+            
+            // Günlük kelimeler modundan çıkınca ana menüyü yenile
+            if (window.dailyMode && typeof window.dailyMode.reset === 'function') {
+                window.dailyMode.reset();
+            }
         }
     }
+
+// ... (previous code)
+
 
     checkWords() {
         if (WORDS.length === 0) {

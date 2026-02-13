@@ -67,6 +67,11 @@
             </div>
 
             <div class="mode-grid">
+                <button class="mode-card" data-mode="daily">
+                    <span class="mode-icon">📅</span>
+                    <span class="mode-title">Günün Kelimeleri</span>
+                    <span class="mode-desc">Her gün 5 yeni kelime</span>
+                </button>
                 <button class="mode-card" data-mode="flashcard">
                     <span class="mode-icon">🔄</span>
                     <span class="mode-title">Flashcard</span>
@@ -82,15 +87,25 @@
                     <span class="mode-title">Yazma</span>
                     <span class="mode-desc">Çeviriyi yazarak pratik</span>
                 </button>
-                <button class="mode-card" data-mode="sentence">
-                    <span class="mode-icon">📝</span>
-                    <span class="mode-title">Cümle Modu</span>
-                    <span class="mode-desc">Cümle içinde kullanım</span>
-                </button>
                 <button class="mode-card" data-mode="hardwords">
                     <span class="mode-icon">💪</span>
                     <span class="mode-title">Zor Kelimeler</span>
                     <span class="mode-desc">Yanlış bilinenler</span>
+                </button>
+                <button class="mode-card" data-mode="synonyms">
+                    <span class="mode-icon">↔️</span>
+                    <span class="mode-title">Eş/Zıt Anlam</span>
+                    <span class="mode-desc">Zıt ve eş anlamlılar</span>
+                </button>
+                <button class="mode-card" data-mode="ielts">
+                    <span class="mode-icon">🎓</span>
+                    <span class="mode-title">IELTS (EN)</span>
+                    <span class="mode-desc">B1-B2-C1 Kelimeler</span>
+                </button>
+                <button class="mode-card" data-mode="torfl">
+                    <span class="mode-icon">🇷🇺</span>
+                    <span class="mode-title">TORFL</span>
+                    <span class="mode-desc">Rusça Sınav Hazırlık</span>
                 </button>
                 <button class="mode-card" data-mode="timerace">
                     <span class="mode-icon">⏱️</span>
@@ -283,6 +298,93 @@
             <p>Kelimeler data.js dosyasına eklenecek.</p>
         </div>
 
+        <!-- Start NEW Modes -->
+
+        <!-- Daily Words Mode -->
+        <section id="dailyMode" class="mode-screen hidden">
+            <div class="mode-header">
+                <button class="back-btn" data-back>← Geri</button>
+                <h2>📅 Günün Kelimeleri</h2>
+                <span class="progress-indicator" id="dailyDate">Bugün</span>
+            </div>
+            <div class="words-list" id="dailyWordsList">
+                <!-- Daily words will be listed here -->
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                 <button class="modal-btn primary" id="dailyTestBtn">Test Çöz</button>
+            </div>
+        </section>
+
+        <!-- Synonyms Mode -->
+        <section id="synonymsMode" class="mode-screen hidden">
+             <div class="mode-header">
+                <button class="back-btn" data-back>← Geri</button>
+                <h2>↔️ Eş & Zıt Anlam</h2>
+                <span class="progress-indicator">
+                    <span id="synonymsCurrent">1</span>/<span id="synonymsTotal">0</span>
+                </span>
+            </div>
+            <div class="quiz-container">
+                 <div class="quiz-question">
+                    <p class="question-word" id="synonymsWord">Kelime</p>
+                    <p class="question-example" id="synonymsType">Eş Anlam</p>
+                 </div>
+                 <div class="quiz-options" id="synonymsOptions"></div>
+                  <div class="quiz-feedback hidden" id="synonymsFeedback">
+                    <p id="synonymsFeedbackText"></p>
+                    <button class="next-btn" id="synonymsNext">Sonraki →</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- IELTS Mode -->
+        <section id="ieltsMode" class="mode-screen hidden">
+            <div class="mode-header">
+                <button class="back-btn" data-back>← Geri</button>
+                <h2>🎓 IELTS Vocab</h2>
+            </div>
+            <div class="ielts-tabs">
+                <button class="ielts-tab active" data-level="b1">B1</button>
+                <button class="ielts-tab" data-level="b2">B2</button>
+                <button class="ielts-tab" data-level="c1">C1</button>
+            </div>
+            <div class="words-list" id="ieltsWordsList">
+                <!-- Words go here -->
+            </div>
+        </section>
+
+        <!-- TORFL Mode -->
+        <section id="torflMode" class="mode-screen hidden">
+            <div class="mode-header">
+                <button class="back-btn" data-back>← Geri</button>
+                <h2>🇷🇺 TORFL Hazırlık</h2>
+                <label for="torflUpload" class="icon-btn" style="font-size: 1.2rem; cursor: pointer;">📤</label>
+                <input type="file" id="torflUpload" accept=".json,.txt" style="display: none;">
+            </div>
+            <div id="torflMenu">
+                <div class="torfl-empty" id="torflEmpty">
+                    <p>Henüz soru yüklenmedi.</p>
+                    <p>Soru paketi yüklemek için yukarıdaki butonu kullanın.</p>
+                </div>
+                <div class="torfl-list" id="torflList"></div>
+            </div>
+            <div id="torflQuiz" class="hidden">
+                 <div class="quiz-container">
+                    <div class="quiz-question">
+                        <p class="question-word" id="torflQuestion">Soru...</p>
+                    </div>
+                    <div class="quiz-options" id="torflOptions"></div>
+                    <div class="quiz-feedback hidden" id="torflFeedback">
+                        <p id="torflFeedbackText"></p>
+                        <button class="next-btn" id="torflNext">Sonraki →</button>
+                    </div>
+                 </div>
+            </div>
+        </section>
+
+        <!-- End NEW Modes -->
+
+
         <!-- Question Count Modal -->
         <div id="questionCountModal" class="modal hidden">
             <div class="modal-content">
@@ -358,35 +460,6 @@
             <div class="srs-empty hidden" id="hardwordsEmpty">
                 <p>🎉 Harika!</p>
                 <p>Şu an zor kelimen yok. Alıştırmalara devam et!</p>
-            </div>
-        </section>
-
-        <!-- Sentence Mode Screen -->
-        <section id="sentenceMode" class="mode-screen hidden">
-            <div class="mode-header">
-                <button class="back-btn" data-back>← Geri</button>
-                <h2>Cümle Yaz</h2>
-                <span class="progress-indicator">
-                    <span id="sentenceCurrent">1</span>/<span id="sentenceTotal">0</span>
-                </span>
-            </div>
-            <div class="sentence-write-container">
-                <div class="sentence-word-card">
-                    <button class="favorite-btn" id="sentenceFavorite" aria-label="Favoriye ekle">☆</button>
-                    <p class="sentence-word-ru" id="sentenceWordRu">Русское слово</p>
-                    <p class="sentence-word-tr" id="sentenceWordTr">Türkçe anlam</p>
-                </div>
-                <p class="sentence-instruction">Bu kelimeyi kullanarak Rusça bir cümle yazın:</p>
-                <textarea id="sentenceInput" class="sentence-textarea" placeholder="Rusça cümlenizi buraya yazın..."
-                    rows="3"></textarea>
-                <div class="sentence-actions">
-                    <button class="check-btn" id="sentenceCheck">Kontrol Et</button>
-                    <button class="skip-btn" id="sentenceSkip">Atla →</button>
-                </div>
-                <div class="sentence-feedback hidden" id="sentenceFeedback">
-                    <p id="sentenceFeedbackText"></p>
-                    <button class="next-btn" id="sentenceNext">Sonraki →</button>
-                </div>
             </div>
         </section>
 
@@ -502,7 +575,10 @@
     <script src="js/matching.js"></script>
     <script src="js/srs.js"></script>
     <script src="js/hardwords.js"></script>
-    <script src="js/sentence.js"></script>
+    <script src="js/synonyms.js"></script>
+    <script src="js/ielts.js"></script>
+    <script src="js/torfl.js"></script>
+    <script src="js/daily.js"></script>
     <script src="js/timerace.js"></script>
     <script src="js/reversequiz.js"></script>
     <script src="js/listening.js"></script>

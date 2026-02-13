@@ -3,6 +3,7 @@
  */
 
 let WORDS = [];
+let SYNONYMS = [];
 
 async function loadWords() {
     try {
@@ -10,34 +11,48 @@ async function loadWords() {
         if (!response.ok) {
             throw new Error('Dosya yüklenemedi');
         }
-        
+
         const text = await response.text();
         const lines = text.split('\n');
-        
+
         WORDS = []; // Reset words
         let idCounter = 1;
-        
+
         lines.forEach(line => {
             line = line.trim();
             if (!line) return;
-            
+
             // "Rusça : Türkçe" formatını işle
             // Bazen birden fazla : olabilir, ilkini ayırıcı olarak alacağız
             const separatorIndex = line.indexOf(':');
-            
+
             if (separatorIndex !== -1) {
                 const russian = line.substring(0, separatorIndex).trim();
                 const turkish = line.substring(separatorIndex + 1).trim();
-                
+
                 if (russian && turkish) {
+                    // Eş/Zıt Anlam kontrolü (Her iki tarafta da "-" varsa)
+                    // Örn: Радость - Грусть : Neşe - Hüzün
+                    if (russian.includes(' - ') && turkish.includes(' - ')) {
+                        const ruParts = russian.split(' - ').map(s => s.trim());
+                        const trParts = turkish.split(' - ').map(s => s.trim());
+
+                        if (ruParts.length === 2 && trParts.length === 2) {
+                            SYNONYMS.push({
+                                id: idCounter++,
+                                w1: { ru: ruParts[0], tr: trParts[0] },
+                                w2: { ru: ruParts[1], tr: trParts[1] },
+                                type: 'antonym' // Varsayılan olarak zıt anlam kabul ediyoruz (listeye göre)
+                            });
+                        }
+                    }
+
+                    // Standart kelime olarak da ekle (Flashcard vb. için)
                     WORDS.push({
                         id: idCounter++,
                         russian: russian,
                         turkish: turkish,
-                        example: {
-                            russian: "", // Metin dosyasında örnek cümle yok
-                            turkish: ""
-                        }
+                        example: { russian: "", turkish: "" }
                     });
                 }
             } else {
@@ -47,9 +62,9 @@ async function loadWords() {
                 if (equalIndex !== -1) {
                     const russian = line.substring(0, equalIndex).trim();
                     const turkish = line.substring(equalIndex + 1).trim();
-                    
+
                     if (russian && turkish) {
-                         WORDS.push({
+                        WORDS.push({
                             id: idCounter++,
                             russian: russian,
                             turkish: turkish,
@@ -59,10 +74,10 @@ async function loadWords() {
                 }
             }
         });
-        
+
         console.log(`${WORDS.length} kelime yüklendi.`);
         return true;
-        
+
     } catch (error) {
         console.error('Kelimeler yüklenirken hata:', error);
         // Hata durumunda boş dizi veya yedek veri kullanılabilir

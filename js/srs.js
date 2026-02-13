@@ -47,7 +47,10 @@ class SRSMode {
         const now = Date.now();
         this.dueWords = WORDS.filter(word => {
             const data = this.srsData[word.id];
-            return data && data.nextReview <= now;
+            // Eğer srs verisi yoksa (yeni kelime), varsayılan olarak hemen göster (due)
+            // Ya da init() çalışırken loadSRSData zaten oluşturuyor ama yine de koruma ekleyelim.
+            if (!data) return true;
+            return data.nextReview <= now;
         });
 
         // Öncelik sıralaması: daha düşük ease factor = daha zor = önce göster

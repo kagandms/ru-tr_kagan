@@ -31,6 +31,23 @@ class QuizMode {
         this.updateScore();
     }
 
+    startWithWords(specificWords) {
+        this.words = app.shuffleArray([...specificWords]);
+        this.questionCount = this.words.length;
+        this.currentIndex = 0;
+        this.score = 0;
+        this.answered = false;
+        this.correctCount = 0;
+
+        // Event listener'ları tekrar eklememek için kontrol edebiliriz veya 
+        // init'te bir kere eklendiğinden emin olabiliriz. 
+        // Ancak basitlik adına burada tekrar çağırmak sorun olmaz (onclick override eder).
+        this.setupEventListeners();
+
+        this.showQuestion();
+        this.updateScore();
+    }
+
     setupEventListeners() {
         document.getElementById('quizNext').onclick = () => this.nextQuestion();
 
