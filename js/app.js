@@ -102,6 +102,27 @@ class App {
                 this.closeMode();
             });
         });
+
+        // Soru Sayısı Modal Butonları - EKLENDI
+        document.querySelectorAll('#questionCountModal .modal-btn[data-count]').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const count = parseInt(btn.dataset.count);
+                if (this.pendingMode) {
+                    this.startMode(this.pendingMode, count);
+                    document.getElementById('questionCountModal').classList.add('hidden');
+                    this.pendingMode = null;
+                }
+            });
+        });
+
+        // Modal İptal Butonu
+        const cancelBtn = document.getElementById('questionCountCancel');
+        if (cancelBtn) {
+            cancelBtn.addEventListener('click', () => {
+                document.getElementById('questionCountModal').classList.add('hidden');
+                this.pendingMode = null;
+            });
+        }
     }
 
     // ... (previous code)

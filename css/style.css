@@ -401,42 +401,50 @@ body {
 }
 
 .mode-header {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    /* Back - Title (Centered) - Stats */
     align-items: center;
-    justify-content: space-between;
     padding: 1rem 0;
-    /* Increased padding */
     margin-bottom: 1.5rem;
     gap: 1rem;
-    /* Add gap between items */
+    width: 100%;
 }
 
 .mode-header h2 {
     font-size: 1.25rem;
     font-weight: 600;
+    text-align: center;
+    /* Center the title */
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .back-btn {
     background: none;
     border: none;
     color: var(--accent);
-    font-size: 1.1rem;
-    /* Slightly larger icon */
+    font-size: 1.2rem;
     cursor: pointer;
-    padding: 0.75rem;
-    /* Larger hit area */
-    margin-left: -0.75rem;
-    /* Offset to align visually */
+    padding: 0.5rem;
     font-weight: 500;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
+    border-radius: 8px;
+    /* Square/Rect button looks cleaner than circle mostly */
     transition: background-color 0.2s;
+    width: auto;
+}
+
+.back-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
 .back-btn:active {
-    background-color: rgba(0, 0, 0, 0.05);
+    transform: scale(0.95);
 }
 
 .progress-indicator {
