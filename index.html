@@ -82,11 +82,6 @@
                     <span class="mode-title">Quiz</span>
                     <span class="mode-desc">Çoktan seçmeli sorular</span>
                 </button>
-                <button class="mode-card" data-mode="typing">
-                    <span class="mode-icon">⌨️</span>
-                    <span class="mode-title">Yazma</span>
-                    <span class="mode-desc">Çeviriyi yazarak pratik</span>
-                </button>
                 <button class="mode-card" data-mode="hardwords">
                     <span class="mode-icon">💪</span>
                     <span class="mode-title">Zor Kelimeler</span>
@@ -189,34 +184,6 @@
             <div class="quiz-feedback hidden" id="quizFeedback">
                 <p id="quizFeedbackText"></p>
                 <button class="next-btn" id="quizNext">Sonraki →</button>
-            </div>
-        </section>
-
-        <!-- Typing Mode -->
-        <section id="typingMode" class="mode-screen hidden">
-            <div class="mode-header">
-                <button class="back-btn" data-back>← Geri</button>
-                <h2>Yazma</h2>
-                <span class="progress-indicator">
-                    <span id="typingCurrent">1</span>/<span id="typingTotal">0</span>
-                </span>
-            </div>
-            <div class="typing-container">
-                <div class="typing-question">
-                    <button class="favorite-btn" id="typingFavorite" aria-label="Favoriye ekle">☆</button>
-                    <p class="question-word" id="typingWord">Kelime</p>
-                    <p class="question-example" id="typingExample">Örnek cümle</p>
-                </div>
-                <div class="typing-input-wrapper">
-                    <input type="text" id="typingInput" class="typing-input" placeholder="Çevirisini yaz..."
-                        autocomplete="off" autocapitalize="off">
-                    <button class="check-btn" id="typingCheck">Kontrol</button>
-                </div>
-                <div class="typing-feedback hidden" id="typingFeedback">
-                    <p id="typingFeedbackText"></p>
-                    <p class="correct-answer" id="typingCorrectAnswer"></p>
-                    <button class="next-btn" id="typingNext">Sonraki →</button>
-                </div>
             </div>
         </section>
 
@@ -460,7 +427,6 @@
     <script src="js/app.js"></script>
     <script src="js/flashcard.js"></script>
     <script src="js/quiz.js"></script>
-    <script src="js/typing.js"></script>
     <script src="js/matching.js"></script>
     <script src="js/hardwords.js"></script>
     <script src="js/synonyms.js"></script>

@@ -123,9 +123,44 @@ class App {
                 this.pendingMode = null;
             });
         }
+
+        // Header Butonları
+        const settingsBtn = document.getElementById('settings-btn');
+        if (settingsBtn) {
+            settingsBtn.addEventListener('click', () => {
+                document.getElementById('settingsModal').classList.remove('hidden');
+            });
+        }
+
+        const favListBtn = document.getElementById('favorites-list-btn');
+        if (favListBtn) {
+            favListBtn.addEventListener('click', () => {
+                this.openMode('allwords');
+            });
+        }
+
+        // Ayarlar Modal Kapatma
+        const settingsClose = document.getElementById('settingsClose');
+        if (settingsClose) {
+            settingsClose.addEventListener('click', () => {
+                document.getElementById('settingsModal').classList.add('hidden');
+            });
+        }
     }
 
-    // ... (previous code)
+    setupModals() {
+        // Hedef butonları
+        document.querySelectorAll('.goal-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const goal = parseInt(btn.dataset.goal);
+                window.goalsManager?.setGoal(goal);
+
+                // Visual feedback
+                document.querySelectorAll('.goal-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+            });
+        });
+    }
 
     openMode(mode) {
         if (WORDS.length === 0) {
@@ -133,8 +168,8 @@ class App {
             return;
         }
 
-        // Soru sayısı sorulacak modlar
-        const modesWithCount = ['flashcard', 'quiz', 'typing', 'hardwords', 'reversequiz'];
+        // Soru sayısı sorulacak modlar (Typing kaldırıldı)
+        const modesWithCount = ['flashcard', 'quiz', 'hardwords', 'reversequiz'];
 
         if (modesWithCount.includes(mode)) {
             this.pendingMode = mode;
@@ -169,9 +204,6 @@ class App {
                     break;
                 case 'quiz':
                     window.quizMode?.init(questionCount);
-                    break;
-                case 'typing':
-                    window.typingMode?.init(questionCount);
                     break;
                 case 'hardwords':
                     window.hardWordsMode?.init(questionCount);
