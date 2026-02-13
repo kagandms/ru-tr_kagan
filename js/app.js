@@ -135,7 +135,7 @@ class App {
         const favListBtn = document.getElementById('favorites-list-btn');
         if (favListBtn) {
             favListBtn.addEventListener('click', () => {
-                this.openMode('allwords');
+                this.showFavorites();
             });
         }
 
@@ -328,12 +328,16 @@ class App {
         const container = document.getElementById('wordsList');
         const countSpan = document.getElementById('allwordsCount');
         const modeScreen = document.getElementById('allwordsMode');
+        const titleEl = modeScreen.querySelector('h2');
 
         if (!container || !modeScreen) return;
 
         document.getElementById('mainMenu').classList.add('hidden');
         modeScreen.classList.remove('hidden');
         this.currentMode = 'allwords';
+
+        // Başlığı güncelle
+        if (titleEl) titleEl.textContent = '📚 Tüm Kelimeler';
 
         container.innerHTML = '';
         countSpan.textContent = WORDS.length;
@@ -364,6 +368,68 @@ class App {
                 const newStatus = window.favoritesManager?.toggleFavorite(word.id);
                 favBtn.classList.toggle('active', newStatus);
                 favBtn.textContent = newStatus ? '★' : '☆';
+            };
+
+            container.appendChild(item);
+        });
+    }
+
+    showFavorites() {
+        const container = document.getElementById('wordsList');
+        const countSpan = document.getElementById('allwordsCount');
+        const modeScreen = document.getElementById('allwordsMode');
+        const titleEl = modeScreen.querySelector('h2');
+
+        if (!container || !modeScreen) return;
+
+        document.getElementById('mainMenu').classList.add('hidden');
+        modeScreen.classList.remove('hidden');
+        this.currentMode = 'allwords';
+
+        // Başlığı güncelle
+        if (titleEl) titleEl.textContent = '⭐ Favoriler';
+
+        container.innerHTML = '';
+
+        // Sadece favori kelimeleri al
+        const favoriteWords = window.favoritesManager?.getFavoriteWords() || [];
+        countSpan.textContent = favoriteWords.length;
+
+        if (favoriteWords.length === 0) {
+            container.innerHTML = '<div class="no-favorites"><p>⭐ Henüz favori kelime yok</p><p>Kelime listesinden favori ekleyebilirsiniz.</p></div>';
+            return;
+        }
+
+        // Kelimeleri sırala (Rusça alfabetik)
+        const sortedWords = [...favoriteWords].sort((a, b) => a.russian.localeCompare(b.russian));
+
+        sortedWords.forEach(word => {
+            const item = document.createElement('div');
+            item.className = 'word-item';
+
+            item.innerHTML = `
+                <div class="word-text">
+                    <span class="russian">${word.russian}</span>
+                    <span class="turkish">${word.turkish}</span>
+                </div>
+                <button class="favorite-btn active" data-id="${word.id}">★</button>
+            `;
+
+            // Favori butonu olayı
+            const favBtn = item.querySelector('.favorite-btn');
+            favBtn.onclick = (e) => {
+                e.stopPropagation();
+                const newStatus = window.favoritesManager?.toggleFavorite(word.id);
+                favBtn.classList.toggle('active', newStatus);
+                favBtn.textContent = newStatus ? '★' : '☆';
+                // Favorilerden çıkarılırsa listeden kaldır
+                if (!newStatus) {
+                    item.remove();
+                    countSpan.textContent = parseInt(countSpan.textContent) - 1;
+                    if (parseInt(countSpan.textContent) === 0) {
+                        container.innerHTML = '<div class="no-favorites"><p>⭐ Henüz favori kelime yok</p><p>Kelime listesinden favori ekleyebilirsiniz.</p></div>';
+                    }
+                }
             };
 
             container.appendChild(item);

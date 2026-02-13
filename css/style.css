@@ -1169,6 +1169,24 @@ body {
     right: 1rem;
 }
 
+/* ===== No Favorites Message ===== */
+.no-favorites {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: var(--text-secondary);
+}
+
+.no-favorites p:first-child {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.no-favorites p:last-child {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
 .flashcard-container {
     position: relative;
 }
