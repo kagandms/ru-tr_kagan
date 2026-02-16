@@ -179,6 +179,43 @@ body {
     margin-bottom: 1rem;
 }
 
+/* IELTS Count Selector */
+.ielts-count-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+}
+
+.ielts-count-btn {
+    padding: 1.25rem 1rem;
+    background: var(--gradient-card);
+    border: 2px solid var(--border);
+    border-radius: 16px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: var(--card-shadow);
+}
+
+.ielts-count-btn:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.2);
+}
+
+.ielts-count-btn:active {
+    transform: scale(0.97);
+}
+
+.ielts-count-btn.all {
+    grid-column: span 3;
+    background: var(--gradient-primary);
+    color: white;
+    border-color: transparent;
+}
+
 /* TORFL List */
 .torfl-list {
     display: flex;

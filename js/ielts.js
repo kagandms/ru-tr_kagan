@@ -1,23 +1,27 @@
 /**
  * IELTS Mode (B2, C1 Vocabulary) — Multi-Activity Engine
  * Activities: Word List, Flashcard, Quiz
+ * Includes count selection for Flashcard & Quiz
  */
 class IELTSMode {
     constructor() {
         this.currentLevel = 'b2';
         this.allWords = Array.isArray(window.IELTS_DATA) ? window.IELTS_DATA : [];
         this.filteredWords = [];
+        this.activeWords = []; // Words used in current session (limited by count)
         this.flashcardIndex = 0;
         this.quizIndex = 0;
         this.quizScore = 0;
         this.quizTotal = 10;
         this.quizWords = [];
+        this.pendingActivity = null; // 'flashcard' or 'quiz'
     }
 
     init() {
         this.updateCounts();
         this.setupTabs();
         this.setupActivities();
+        this.setupCountSelector();
         this.setupFlashcard();
         this.setupQuiz();
         this.filterByLevel(this.currentLevel);
@@ -27,7 +31,6 @@ class IELTSMode {
     updateCounts() {
         const b2Count = this.allWords.filter(w => w.level === 'B2').length;
         const c1Count = this.allWords.filter(w => w.level === 'C1').length;
-
         const b2El = document.getElementById('countB2');
         const c1El = document.getElementById('countC1');
         if (b2El) b2El.textContent = `(${b2Count})`;
@@ -56,26 +59,75 @@ class IELTSMode {
         document.querySelectorAll('.ielts-activity-card').forEach(card => {
             card.addEventListener('click', () => {
                 const activity = card.dataset.activity;
-                this.showSubView(activity);
+                if (activity === 'words') {
+                    this.showSubView('words');
+                } else {
+                    // Show count selector for flashcard/quiz
+                    this.pendingActivity = activity;
+                    this.showCountSelector(activity);
+                }
             });
         });
 
-        // Back buttons
+        // Back buttons from sub-views
         const wordsBack = document.getElementById('ieltsWordsBack');
         const flashBack = document.getElementById('ieltsFlashcardBack');
         const quizBack = document.getElementById('ieltsQuizBack');
-
         if (wordsBack) wordsBack.addEventListener('click', () => this.hideAllSubViews());
         if (flashBack) flashBack.addEventListener('click', () => this.hideAllSubViews());
         if (quizBack) quizBack.addEventListener('click', () => this.hideAllSubViews());
     }
 
+    // ─── Count Selector ────────────────────────
+    showCountSelector(activity) {
+        const grid = document.getElementById('ieltsActivityGrid');
+        const countDiv = document.getElementById('ieltsCountSelect');
+        const title = document.getElementById('ieltsCountTitle');
+
+        if (grid) grid.classList.add('hidden');
+        if (countDiv) countDiv.classList.remove('hidden');
+        if (title) {
+            title.textContent = activity === 'flashcard'
+                ? '🃏 Kaç kart çalışmak istiyorsun?'
+                : '❓ Kaç soru çözmek istiyorsun?';
+        }
+    }
+
+    setupCountSelector() {
+        // Count buttons
+        document.querySelectorAll('.ielts-count-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const countStr = btn.dataset.count;
+                const count = countStr === 'all' ? this.filteredWords.length : parseInt(countStr);
+                this.startActivityWithCount(this.pendingActivity, count);
+            });
+        });
+
+        // Back button from count selector
+        const countBack = document.getElementById('ieltsCountBack');
+        if (countBack) {
+            countBack.addEventListener('click', () => {
+                document.getElementById('ieltsCountSelect').classList.add('hidden');
+                document.getElementById('ieltsActivityGrid').classList.remove('hidden');
+            });
+        }
+    }
+
+    startActivityWithCount(activity, count) {
+        // Hide count selector and landing
+        document.getElementById('ieltsCountSelect').classList.add('hidden');
+        document.getElementById('ieltsActivityGrid').classList.remove('hidden');
+
+        // Limit words to count
+        const shuffled = [...this.filteredWords].sort(() => Math.random() - 0.5);
+        this.activeWords = shuffled.slice(0, Math.min(count, shuffled.length));
+
+        this.showSubView(activity);
+    }
+
     showSubView(activity) {
-        // Hide landing
         const landing = document.getElementById('ieltsLanding');
         if (landing) landing.classList.add('hidden');
-
-        // Hide all sub-views first
         document.querySelectorAll('.ielts-subview').forEach(v => v.classList.add('hidden'));
 
         if (activity === 'words') {
@@ -110,10 +162,8 @@ class IELTSMode {
         this.filteredWords.forEach(word => {
             const item = document.createElement('div');
             item.className = 'word-item';
-
             let badgeColor = '#8b5cf6';
             if (word.level === 'C1') badgeColor = '#ef4444';
-
             item.innerHTML = `
                 <div class="word-content" style="display:flex;align-items:center;width:100%;gap:1rem;">
                     <div style="background:${badgeColor};color:white;padding:2px 6px;border-radius:4px;font-size:0.7rem;font-weight:bold;min-width:25px;text-align:center;">${word.level}</div>
@@ -134,35 +184,20 @@ class IELTSMode {
         const prevBtn = document.getElementById('ieltsFlashcardPrev');
         const nextBtn = document.getElementById('ieltsFlashcardNext');
 
-        if (card) {
-            card.addEventListener('click', () => {
-                card.classList.toggle('flipped');
-            });
-        }
-
-        if (prevBtn) {
-            prevBtn.addEventListener('click', () => {
-                if (this.flashcardIndex > 0) {
-                    this.flashcardIndex--;
-                    this.showFlashcard();
-                }
-            });
-        }
-
-        if (nextBtn) {
-            nextBtn.addEventListener('click', () => {
-                if (this.flashcardIndex < this.filteredWords.length - 1) {
-                    this.flashcardIndex++;
-                    this.showFlashcard();
-                }
-            });
-        }
+        if (card) card.addEventListener('click', () => card.classList.toggle('flipped'));
+        if (prevBtn) prevBtn.addEventListener('click', () => {
+            if (this.flashcardIndex > 0) { this.flashcardIndex--; this.showFlashcard(); }
+        });
+        if (nextBtn) nextBtn.addEventListener('click', () => {
+            if (this.flashcardIndex < this.activeWords.length - 1) {
+                this.flashcardIndex++;
+                this.showFlashcard();
+            }
+        });
     }
 
     startFlashcard() {
         this.flashcardIndex = 0;
-        // Shuffle array
-        this.filteredWords = this.filteredWords.sort(() => Math.random() - 0.5);
         this.showFlashcard();
     }
 
@@ -170,7 +205,7 @@ class IELTSMode {
         const card = document.getElementById('ieltsFlashcard');
         if (card) card.classList.remove('flipped');
 
-        const word = this.filteredWords[this.flashcardIndex];
+        const word = this.activeWords[this.flashcardIndex];
         if (!word) return;
 
         const wordEl = document.getElementById('ieltsFlashcardWord');
@@ -181,7 +216,7 @@ class IELTSMode {
         if (wordEl) wordEl.textContent = word.en;
         if (ruEl) ruEl.textContent = word.ru;
         if (trEl) trEl.textContent = word.tr;
-        if (progressEl) progressEl.textContent = `${this.flashcardIndex + 1}/${this.filteredWords.length}`;
+        if (progressEl) progressEl.textContent = `${this.flashcardIndex + 1}/${this.activeWords.length}`;
     }
 
     // ─── Quiz ──────────────────────────────────
@@ -202,12 +237,8 @@ class IELTSMode {
     startQuiz() {
         this.quizIndex = 0;
         this.quizScore = 0;
-        this.quizTotal = Math.min(10, this.filteredWords.length);
-
-        // Shuffle and pick quizTotal words
-        const shuffled = [...this.filteredWords].sort(() => Math.random() - 0.5);
-        this.quizWords = shuffled.slice(0, this.quizTotal);
-
+        this.quizTotal = this.activeWords.length;
+        this.quizWords = [...this.activeWords];
         this.showQuizQuestion();
     }
 
@@ -224,9 +255,7 @@ class IELTSMode {
         if (feedbackEl) feedbackEl.classList.add('hidden');
         if (progressEl) progressEl.textContent = `${this.quizIndex + 1}/${this.quizTotal}`;
 
-        // Generate 4 options (1 correct + 3 distractors)
         const options = this.generateOptions(word);
-
         if (optionsEl) {
             optionsEl.innerHTML = '';
             options.forEach(opt => {
@@ -243,27 +272,20 @@ class IELTSMode {
         const options = [{ text: correctWord.tr, correct: true }];
         const pool = this.allWords.filter(w => w.en !== correctWord.en);
         const shuffledPool = pool.sort(() => Math.random() - 0.5);
-
         for (let i = 0; i < Math.min(3, shuffledPool.length); i++) {
             options.push({ text: shuffledPool[i].tr, correct: false });
         }
-
-        // Shuffle options
         return options.sort(() => Math.random() - 0.5);
     }
 
     checkQuizAnswer(btn, opt, word) {
-        // Disable all options
-        document.querySelectorAll('#ieltsQuizOptions .quiz-option').forEach(b => {
-            b.classList.add('disabled');
-        });
+        document.querySelectorAll('#ieltsQuizOptions .quiz-option').forEach(b => b.classList.add('disabled'));
 
         if (opt.correct) {
             btn.classList.add('correct');
             this.quizScore++;
         } else {
             btn.classList.add('wrong');
-            // Highlight correct answer
             document.querySelectorAll('#ieltsQuizOptions .quiz-option').forEach(b => {
                 if (b.textContent === word.tr) b.classList.add('correct');
             });
@@ -271,7 +293,6 @@ class IELTSMode {
 
         const feedbackEl = document.getElementById('ieltsQuizFeedback');
         const feedbackText = document.getElementById('ieltsQuizFeedbackText');
-
         if (feedbackEl) feedbackEl.classList.remove('hidden');
         if (feedbackText) {
             feedbackText.innerHTML = opt.correct
@@ -301,13 +322,15 @@ class IELTSMode {
         if (feedbackText) {
             feedbackText.innerHTML = `${emoji} Sonuç: <strong>${this.quizScore}/${this.quizTotal}</strong> (%${pct})`;
         }
-        if (nextBtn) nextBtn.textContent = 'Tekrar Başla 🔄';
-        nextBtn.onclick = () => {
-            nextBtn.textContent = 'Sonraki Soru →';
-            nextBtn.onclick = null;
-            this.setupQuiz();
-            this.startQuiz();
-        };
+        if (nextBtn) {
+            nextBtn.textContent = 'Tekrar Başla 🔄';
+            nextBtn.onclick = () => {
+                nextBtn.textContent = 'Sonraki Soru →';
+                nextBtn.onclick = null;
+                this.setupQuiz();
+                this.startQuiz();
+            };
+        }
     }
 }
 

@@ -272,7 +272,7 @@
                             id="countC1">(0)</span></button>
                 </div>
 
-                <div class="ielts-activity-grid">
+                <div class="ielts-activity-grid" id="ieltsActivityGrid">
                     <button class="ielts-activity-card" data-activity="words">
                         <span class="activity-icon">📖</span>
                         <span class="activity-title">Kelimeleri Görüntüle</span>
@@ -288,6 +288,20 @@
                         <span class="activity-title">Quiz</span>
                         <span class="activity-desc">Bilgini test et</span>
                     </button>
+                </div>
+
+                <!-- Count Selector (shown after clicking Flashcard/Quiz) -->
+                <div id="ieltsCountSelect" class="hidden">
+                    <h3 style="text-align:center;margin-bottom:1rem;color:var(--text-primary);" id="ieltsCountTitle">Kaç
+                        soru?</h3>
+                    <div class="ielts-count-grid">
+                        <button class="ielts-count-btn" data-count="10">10</button>
+                        <button class="ielts-count-btn" data-count="20">20</button>
+                        <button class="ielts-count-btn" data-count="50">50</button>
+                        <button class="ielts-count-btn" data-count="100">100</button>
+                        <button class="ielts-count-btn all" data-count="all">Tümü</button>
+                    </div>
+                    <button class="back-btn" id="ieltsCountBack" style="margin-top:1rem;">← Geri</button>
                 </div>
             </div>
 
