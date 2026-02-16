@@ -111,6 +111,74 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.tab-count {
+    font-size: 0.75rem;
+    opacity: 0.8;
+}
+
+/* IELTS Activity Grid */
+.ielts-activity-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.ielts-activity-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.25rem 1.5rem;
+    background: var(--gradient-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: var(--card-shadow);
+    text-align: left;
+}
+
+.ielts-activity-card:hover {
+    border-color: var(--accent);
+    box-shadow: 0 8px 30px rgba(102, 126, 234, 0.2);
+    transform: translateY(-2px);
+}
+
+.ielts-activity-card:active {
+    transform: scale(0.98);
+}
+
+.activity-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.activity-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    display: block;
+}
+
+.activity-desc {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    display: block;
+    margin-top: 0.15rem;
+}
+
+/* IELTS Sub-Views */
+.ielts-subview.hidden {
+    display: none;
+}
+
+.ielts-subview-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
 /* TORFL List */
 .torfl-list {
     display: flex;

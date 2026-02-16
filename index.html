@@ -259,16 +259,88 @@
         <!-- IELTS Mode -->
         <section id="ieltsMode" class="mode-screen hidden">
             <div class="mode-header">
-                <button class="back-btn" data-back>← Geri</button>
+                <button class="back-btn" id="ieltsBackBtn" data-back>← Geri</button>
                 <h2>🎓 IELTS Vocab</h2>
             </div>
-            <div class="ielts-tabs">
-                <button class="ielts-tab active" data-level="b1">B1</button>
-                <button class="ielts-tab" data-level="b2">B2</button>
-                <button class="ielts-tab" data-level="c1">C1</button>
+
+            <!-- IELTS Landing: Activity Selection -->
+            <div id="ieltsLanding">
+                <div class="ielts-tabs" id="ieltsLevelTabs">
+                    <button class="ielts-tab active" data-level="b2">B2 <span class="tab-count"
+                            id="countB2">(0)</span></button>
+                    <button class="ielts-tab" data-level="c1">C1 <span class="tab-count"
+                            id="countC1">(0)</span></button>
+                </div>
+
+                <div class="ielts-activity-grid">
+                    <button class="ielts-activity-card" data-activity="words">
+                        <span class="activity-icon">📖</span>
+                        <span class="activity-title">Kelimeleri Görüntüle</span>
+                        <span class="activity-desc">Tüm kelimeleri listele</span>
+                    </button>
+                    <button class="ielts-activity-card" data-activity="flashcard">
+                        <span class="activity-icon">🃏</span>
+                        <span class="activity-title">Flashcard</span>
+                        <span class="activity-desc">Kartlarla öğren</span>
+                    </button>
+                    <button class="ielts-activity-card" data-activity="quiz">
+                        <span class="activity-icon">❓</span>
+                        <span class="activity-title">Quiz</span>
+                        <span class="activity-desc">Bilgini test et</span>
+                    </button>
+                </div>
             </div>
-            <div class="words-list" id="ieltsWordsList">
-                <!-- Words go here -->
+
+            <!-- IELTS Sub-View: Word List -->
+            <div id="ieltsWordsView" class="ielts-subview hidden">
+                <div class="ielts-subview-header">
+                    <button class="back-btn" id="ieltsWordsBack">← Listeye Dön</button>
+                </div>
+                <div class="words-list" id="ieltsWordsList"></div>
+            </div>
+
+            <!-- IELTS Sub-View: Flashcard -->
+            <div id="ieltsFlashcardView" class="ielts-subview hidden">
+                <div class="ielts-subview-header">
+                    <button class="back-btn" id="ieltsFlashcardBack">← Listeye Dön</button>
+                    <span class="progress-indicator" id="ieltsFlashcardProgress">1/100</span>
+                </div>
+                <div class="flashcard-container">
+                    <div class="flashcard" id="ieltsFlashcard">
+                        <div class="flashcard-inner">
+                            <div class="flashcard-front">
+                                <div class="word" id="ieltsFlashcardWord">word</div>
+                                <div class="hint">Kartı çevirmek için dokun</div>
+                            </div>
+                            <div class="flashcard-back">
+                                <div class="word" id="ieltsFlashcardRu">русский</div>
+                                <div class="example" id="ieltsFlashcardTr">Türkçe</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flashcard-controls">
+                    <button class="control-btn wrong" id="ieltsFlashcardPrev">⬅️ Önceki</button>
+                    <button class="control-btn correct" id="ieltsFlashcardNext">Sonraki ➡️</button>
+                </div>
+            </div>
+
+            <!-- IELTS Sub-View: Quiz -->
+            <div id="ieltsQuizView" class="ielts-subview hidden">
+                <div class="ielts-subview-header">
+                    <button class="back-btn" id="ieltsQuizBack">← Listeye Dön</button>
+                    <span class="progress-indicator" id="ieltsQuizProgress">0/10</span>
+                </div>
+                <div class="quiz-container">
+                    <div class="quiz-question">
+                        <div class="question-word" id="ieltsQuizWord">word</div>
+                    </div>
+                    <div class="quiz-options" id="ieltsQuizOptions"></div>
+                    <div class="quiz-feedback hidden" id="ieltsQuizFeedback">
+                        <p id="ieltsQuizFeedbackText"></p>
+                        <button class="next-btn" id="ieltsQuizNext">Sonraki Soru →</button>
+                    </div>
+                </div>
             </div>
         </section>
 
