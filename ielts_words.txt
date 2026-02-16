@@ -1,7 +1,3 @@
-AIDS
-B2
-C1
-ID
 abolish
 abortion
 absence
@@ -31,6 +27,7 @@ accurately
 accusation
 accused
 acid
+acid  B2
 acquisition
 acre
 activate
@@ -63,8 +60,10 @@ aggression
 agricultural
 agriculture
 aide
+AIDS
 alert
 alien
+alien  B2
 align
 alignment
 alike
@@ -152,6 +151,7 @@ availability
 await
 awareness
 awkward
+B2
 backdrop
 backing
 backup
@@ -171,6 +171,7 @@ basement
 basket
 bass1
 bat
+bat  B2
 battlefield
 bay
 beam
@@ -233,6 +234,7 @@ burden
 bureaucracy
 burial
 burst
+C1
 cabin
 cabinet
 calculation
@@ -432,6 +434,7 @@ costly
 councilor
 counseling
 counselor
+counter
 counter (argue against)
 counter (long flat surface)
 counterpart
@@ -442,6 +445,7 @@ coverage
 cowboy
 crack
 craft
+craft  B2
 crawl
 creativity
 creator
@@ -610,6 +614,7 @@ dump
 duo
 duration
 dynamic
+dynamic  B2
 eager
 earnings
 ease
@@ -723,6 +728,7 @@ extension
 extensive
 extensively
 extract
+extract  B2
 extremist
 fabric
 fabulous
@@ -834,6 +840,7 @@ grace
 graphic
 graphics
 grasp
+grave
 grave (for dead person)
 grave (serious)
 gravity
@@ -900,6 +907,7 @@ hunger
 hydrogen
 hypothesis
 icon
+ID
 identical
 identification
 ideological
@@ -986,6 +994,7 @@ integrated
 integration
 integrity
 intellectual
+intellectual  B2
 intensify
 intensity
 intensive
@@ -1021,6 +1030,7 @@ irrelevant
 isolate
 isolated
 isolation
+it includes an additional 2000 words for learners at - level which are listed here
 jail
 jet
 joint
@@ -1328,6 +1338,7 @@ persistent
 personnel
 petition
 pharmacy
+pharmacy B2
 philosopher
 philosophical
 physician
@@ -1388,6 +1399,8 @@ prevention
 prey
 pride
 primarily
+principal
+principal  B2
 prior
 privatization
 privilege
@@ -1547,6 +1560,7 @@ retreat
 retrieve
 reve
 revelation
+revenge
 revenue
 reverse
 revision
@@ -1581,67 +1595,108 @@ rumor
 résumé
 sacred
 sacrifice
+sacrifice ,  C1
 saint
 sake
 sanction
+sanction  C1
 satisfaction
 say
 scandal
 scare
+scare ,  B2
 scattered
+scattered  C1
 scenario
 scholar
+scholar  B2
 scholarship
+scope
 scratch
+scratch   B
+scratch ,  B
 screening
+screening  B2
 screw
+screw ,  C1
 scrutiny
 se
 seal
 secondly
+secondly  C1
 secular
+secular  C1
 seeker
+seeker  B2
 seemingly
+seemingly  C1
 segment
 seize
 seldom
+seldom  C1
 selective
+selective  C1
 seminar
+seminar  B2
 sensation
+sensation  C1
 sensitivity
+sensitivity  C1
 sentiment
+sentiment  C1
 separation
+separation  C1
+serial
+serial  C1
 settlement
+settlement  C1
 settler
 setup
 severely
+severely  B2
 sexuality
 sexy
 shaped
+shaped  B2
 shareholder
+shareholder  C1
 shatter
 shed
 sheer
+sheer  C1
 shipping
+shipping  C1
 shocking
+shocking  B2
 shoot
 shore
 short-term
+short-term  B2
 shortage
+shortage  B2
 shortly
 shrink
 shrug
 sibling
+sibling  B2
 sidewalk
 sigh
+sigh ,  C1
 signature
+signature  B2
 significance
+significance  B2
 simulate
+simulate  C1
 simulation
+simulation  C1
 simultaneously
+simultaneously  C1
 sin
 situated
+situated  C1
 skeptical
+skeptical  C1
 sketch
 skilled
 skip
@@ -1671,8 +1726,10 @@ sovereignty
 spam
 span
 spare
+spare  B2
 spark
 specialize
+specialize  B1
 specialized
 specification
 specify
@@ -1726,6 +1783,7 @@ strategic
 strengthen
 strictly
 striking
+strip
 strip (long narrow piece)
 strip (remove clothes/a layer)
 strive
@@ -1733,6 +1791,7 @@ stroke
 structural
 stumble
 stun
+stun C1
 stunning
 submission
 subscriber
@@ -1746,6 +1805,7 @@ substitute
 substitution
 subtle
 suburb
+suburb B2
 suburban
 succession
 successive
@@ -1793,12 +1853,15 @@ syndrome
 synthesis
 systematic
 tackle
+tackle  B2
 tactic
 tactical
 tag
 tap
 taxpayer
 technological
+teen
+teen  adj
 teen , adj
 temple
 temporarily
@@ -1809,6 +1872,7 @@ tender
 tension
 tenure
 terminal
+terminal  B2
 terminate
 terms
 terrain
@@ -1827,6 +1891,7 @@ texture
 thankfully
 theatrical
 theft
+theft B2
 theology
 theoretical
 therapist
@@ -1859,6 +1924,7 @@ total
 tournament
 toxic
 trace
+trace B2
 trademark
 trading
 tragedy
@@ -1883,6 +1949,7 @@ tribal
 tribe
 tribute
 trigger
+trigger  B2
 trillion number
 trio
 triumph
@@ -1998,72 +2065,6 @@ worship
 worthwhile
 worthy
 wrist
+wrist B2
 yell
 yield
-acid  B2
-alien  B2
-bat  B2
-craft  B2
-dynamic  B2
-extract  B2
-intellectual  B2
-pharmacy B2
-principal  B2
-revenge
-sacrifice ,  C1
-sanction  C1
-scare ,  B2
-scattered  C1
-scholar  B2
-scope
-scratch ,  B
-screening  B2
-screw ,  C1
-secondly  C1
-secular  C1
-seeker  B2
-seemingly  C1
-seldom  C1
-selective  C1
-seminar  B2
-sensation  C1
-sensitivity  C1
-sentiment  C1
-separation  C1
-serial  C1
-settlement  C1
-severely  B2
-shaped  B2
-shareholder  C1
-sheer  C1
-shipping  C1
-shocking  B2
-short-term  B2
-shortage  B2
-sibling  B2
-sigh ,  C1
-signature  B2
-significance  B2
-simulate  C1
-simulation  C1
-simultaneously  C1
-situated  C1
-skeptical  C1
-spare  B2
-specialize  B1
-stun C1
-suburb B2
-tackle  B2
-teen
-terminal  B2
-theft B2
-trace B2
-trigger  B2
-wrist B2
-it includes an additional 2000 words for learners at - level which are listed here
-principal
-scratch   B
-serial
-counter
-grave
-strip

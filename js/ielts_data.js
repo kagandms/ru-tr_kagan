@@ -1,7 +1,7 @@
 
 // Auto-generated IELTS Data (B2 Level)
 // Source: ielts_words.txt
-// Count: 2069
+// Count: 2070
 
 const IELTS_DATA = {
     'b1': [],
@@ -9320,6 +9320,11 @@ const IELTS_DATA = {
         "en": "teen",
         "ru": "подросток",
         "tr": "genç"
+    },
+    {
+        "en": "teen  adj",
+        "ru": "подросток прил.",
+        "tr": "genç adj"
     },
     {
         "en": "teen , adj",

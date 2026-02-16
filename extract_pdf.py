@@ -2,7 +2,7 @@ import pypdf
 import re
 import os
 
-PDF_FILE = "b2_c1.pdf"
+PDF_FILES = ["b2_oxford.pdf", "b2_c1.pdf"]
 OUTPUT_FILE = "ielts_words.txt"
 
 def clean_line(line):
@@ -34,45 +34,65 @@ def clean_line(line):
     return line
 
 def extract_and_append():
-    # Load existing words
-    existing_words = set()
+    # Load existing words from file if exists, to avoid re-adding
+    # But since we want to ensure *completeness* from these 2 PDFs, 
+    # we might want to start fresh or just append differences.
+    # The user said "skisksiz" (flawless) and "çakışma olmadan" (without conflict).
+    # Best approach: Read all words from both PDFs, merge them, then write to file.
+    # We will read existing file just to know what we had, but we'll overwrite 
+    # or ensure the final list contains everything.
+    
+    all_words = set()
+    
+    # If we want to preserve words that were ALREADY in ielts_words.txt but NOT in these PDFs
+    # (e.g. if user added some manually), we should load them.
     if os.path.exists(OUTPUT_FILE):
         with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
             for line in f:
-                existing_words.add(line.strip().lower())
+                all_words.add(line.strip())
     
-    print(f"📚 Loaded {len(existing_words)} existing words.")
-    print(f"📄 Reading {PDF_FILE}...")
+    print(f"📚 Initially loaded {len(all_words)} words from {OUTPUT_FILE}")
+
+    for pdf_file in PDF_FILES:
+        print(f"📄 Processing {pdf_file}...")
+        try:
+            reader = pypdf.PdfReader(pdf_file)
+            text = ""
+            for page in reader.pages:
+                text += page.extract_text() + "\n"
+            
+            count = 0
+            for line in text.split('\n'):
+                cleaned = clean_line(line)
+                if cleaned:
+                    # case-insensitive check but store original case
+                    # Actually, let's store exactly what clean_line returns
+                    # But we need to avoid duplicates like "Abandon" and "abandon".
+                    # The list seems to be lowercase mostly, or capitalized.
+                    # Let's check if the lowercase version exists.
+                    
+                    is_duplicate = False
+                    for w in all_words:
+                        if w.lower() == cleaned.lower():
+                            is_duplicate = True
+                            break
+                    
+                    if not is_duplicate:
+                        all_words.add(cleaned)
+                        count += 1
+            print(f"   ✅ Found {count} new unique words in {pdf_file}")
+            
+        except Exception as e:
+            print(f"   ❌ Error reading {pdf_file}: {e}")
+
+    # Sort and write back
+    sorted_words = sorted(list(all_words), key=lambda x: x.lower())
     
-    try:
-        reader = pypdf.PdfReader(PDF_FILE)
-        text = ""
-        for page in reader.pages:
-            text += page.extract_text() + "\n"
-        
-        new_words = []
-        
-        for line in text.split('\n'):
-            cleaned = clean_line(line)
-            if cleaned:
-                word_lower = cleaned.lower()
-                if word_lower not in existing_words:
-                    new_words.append(cleaned)
-                    existing_words.add(word_lower)
-
-        # Sort new words
-        new_words.sort()
-        
-        if new_words:
-            with open(OUTPUT_FILE, "a", encoding="utf-8") as f:
-                for word in new_words:
-                    f.write(word + "\n")
-            print(f"✅ Added {len(new_words)} NEW unique words to {OUTPUT_FILE}")
-        else:
-            print("⚠️ No new unique words found.")
-
-    except Exception as e:
-        print(f"❌ Error: {e}")
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+        for word in sorted_words:
+            f.write(word + "\n")
+            
+    print(f"💾 Final total: {len(sorted_words)} words written to {OUTPUT_FILE}")
 
 if __name__ == "__main__":
     extract_and_append()
