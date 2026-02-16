@@ -19,20 +19,22 @@ class DailyMode {
         const savedIds = localStorage.getItem('dailyWordsIds');
 
         if (savedDate === today && savedIds) {
-            // Bugünün kelimeleri zaten var
-            const ids = JSON.parse(savedIds);
-            this.dailyWords = WORDS.filter(w => ids.includes(w.id));
-
-            // Eğer kelime sayısı 5'ten azsa (örn: kelime silinmişse) yeniden seç
-            if (this.dailyWords.length < 5) {
-                this.dailyWords = []; // Reset triggers re-selection below
+            try {
+                const ids = JSON.parse(savedIds);
+                this.dailyWords = WORDS.filter(w => ids.includes(w.id));
+                if (this.dailyWords.length < 5) {
+                    this.dailyWords = [];
+                }
+            } catch (e) {
+                this.dailyWords = [];
             }
         }
 
         if (this.dailyWords.length === 0) {
             // Yeni kelime seç
             // Öğrenilmemiş kelimelerden seçmeye çalış
-            const savedStats = JSON.parse(localStorage.getItem('stats') || '{"masteredWords":[]}');
+            let savedStats;
+            try { savedStats = JSON.parse(localStorage.getItem('stats') || '{"masteredWords":[]}'); } catch (e) { savedStats = { masteredWords: [] }; }
             const masteredIds = savedStats.masteredWords || [];
 
             let candidates = WORDS.filter(w => !masteredIds.includes(w.id));

@@ -141,22 +141,7 @@ class HardWordsMode {
             feedbackText.textContent = '✅ Doğru!';
         } else {
             btn.classList.add('wrong');
-            feedbackText.innerHTML = '❌ Yanlış!<br><br>🔄 AI açıklıyor...';
-
-            if (window.aiManager) {
-                try {
-                    const aiResult = await window.aiManager.explainWord(correctWord);
-                    if (aiResult) {
-                        feedbackText.innerHTML = `❌ Yanlış! Doğru: <strong>${correctWord.turkish}</strong><br><br>🤖 ${aiResult}`;
-                    } else {
-                        feedbackText.innerHTML = `❌ Yanlış! Doğru: <strong>${correctWord.turkish}</strong>`;
-                    }
-                } catch (e) {
-                    feedbackText.innerHTML = `❌ Yanlış! Doğru: <strong>${correctWord.turkish}</strong>`;
-                }
-            } else {
-                feedbackText.innerHTML = `❌ Yanlış! Doğru: <strong>${correctWord.turkish}</strong>`;
-            }
+            await app.showWrongFeedback(feedbackText, correctWord.turkish, correctWord);
         }
 
         app.recordAnswer(correctWord.id, isCorrect);

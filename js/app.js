@@ -83,7 +83,25 @@ class App {
         localStorage.setItem('theme', newTheme);
     }
 
-    // ===== Navigasyon =====
+    // ===== Güvenlik Yardımcıları =====
+    sanitizeHTML(str) {
+        if (!str) return '';
+        const div = document.createElement('div');
+        div.textContent = str;
+        return div.innerHTML;
+    }
+
+    async showWrongFeedback(feedbackEl, correctText, word) {
+        feedbackEl.innerHTML = `❌ Yanlış! Doğru: <strong>${this.sanitizeHTML(correctText)}</strong>`;
+        if (window.aiManager) {
+            try {
+                const aiResult = await window.aiManager.explainWord(word);
+                if (aiResult) {
+                    feedbackEl.innerHTML += `<br><br>🤖 ${this.sanitizeHTML(aiResult)}`;
+                }
+            } catch (e) { /* silent */ }
+        }
+    }
 
     // ===== Navigasyon =====
     setupNavigation() {
@@ -261,13 +279,18 @@ class App {
 
     // ===== İstatistikler =====
     loadStats() {
-        const saved = localStorage.getItem('stats');
-        return saved ? JSON.parse(saved) : {
+        const defaults = {
             totalCorrect: 0,
             totalWrong: 0,
             masteredWords: [],
             wordProgress: {}
         };
+        try {
+            const saved = localStorage.getItem('stats');
+            return saved ? { ...defaults, ...JSON.parse(saved) } : defaults;
+        } catch (e) {
+            return defaults;
+        }
     }
 
     saveStats() {

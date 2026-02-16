@@ -119,8 +119,8 @@ class IELTSMode {
         document.getElementById('ieltsActivityGrid').classList.remove('hidden');
 
         // Limit words to count
-        const shuffled = [...this.filteredWords].sort(() => Math.random() - 0.5);
-        this.activeWords = shuffled.slice(0, Math.min(count, shuffled.length));
+        const shuffledWords = app.shuffleArray(this.filteredWords);
+        this.activeWords = shuffledWords.slice(0, Math.min(count, shuffledWords.length));
 
         this.showSubView(activity);
     }
@@ -271,11 +271,16 @@ class IELTSMode {
     generateOptions(correctWord) {
         const options = [{ text: correctWord.tr, correct: true }];
         const pool = this.allWords.filter(w => w.en !== correctWord.en);
-        const shuffledPool = pool.sort(() => Math.random() - 0.5);
-        for (let i = 0; i < Math.min(3, shuffledPool.length); i++) {
-            options.push({ text: shuffledPool[i].tr, correct: false });
+        if (pool.length < 3) {
+            // Not enough words for proper quiz, add all available
+            pool.forEach(w => options.push({ text: w.tr, correct: false }));
+        } else {
+            const shuffledPool = app.shuffleArray(pool);
+            for (let i = 0; i < 3; i++) {
+                options.push({ text: shuffledPool[i].tr, correct: false });
+            }
         }
-        return options.sort(() => Math.random() - 0.5);
+        return app.shuffleArray(options);
     }
 
     checkQuizAnswer(btn, opt, word) {
@@ -301,8 +306,8 @@ class IELTSMode {
         if (feedbackEl) feedbackEl.classList.remove('hidden');
         if (feedbackText) {
             feedbackText.innerHTML = opt.correct
-                ? `✅ Doğru! <strong>${word.en}</strong> = ${word.ru} / ${word.tr}`
-                : `❌ Yanlış! <strong>${word.en}</strong> = ${word.ru} / ${word.tr}`;
+                ? `✅ Doğru! <strong>${app.sanitizeHTML(word.en)}</strong> = ${app.sanitizeHTML(word.ru)} / ${app.sanitizeHTML(word.tr)}`
+                : `❌ Yanlış! <strong>${app.sanitizeHTML(word.en)}</strong> = ${app.sanitizeHTML(word.ru)} / ${app.sanitizeHTML(word.tr)}`;
         }
     }
 

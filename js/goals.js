@@ -9,7 +9,6 @@ class GoalsManager {
     }
 
     loadData() {
-        const saved = localStorage.getItem('goals');
         const defaults = {
             dailyGoal: 20,
             todayProgress: 0,
@@ -17,7 +16,12 @@ class GoalsManager {
             lastActiveDate: null,
             totalWordsLearned: 0
         };
-        return saved ? { ...defaults, ...JSON.parse(saved) } : defaults;
+        try {
+            const saved = localStorage.getItem('goals');
+            return saved ? { ...defaults, ...JSON.parse(saved) } : defaults;
+        } catch (e) {
+            return defaults;
+        }
     }
 
     saveData() {
@@ -35,8 +39,8 @@ class GoalsManager {
                 if (lastActive === yesterday && this.data.todayProgress >= this.data.dailyGoal) {
                     // Dün hedef tamamlandı, streak devam
                     this.data.streak++;
-                } else if (lastActive !== yesterday) {
-                    // Bir gün atlandı, streak sıfırla
+                } else {
+                    // Gün atlandı veya hedef tamamlanmadı — streak sıfırla
                     this.data.streak = 0;
                 }
             }

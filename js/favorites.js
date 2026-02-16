@@ -8,8 +8,12 @@ class FavoritesManager {
     }
 
     loadFavorites() {
-        const saved = localStorage.getItem('favorites');
-        return saved ? JSON.parse(saved) : [];
+        try {
+            const saved = localStorage.getItem('favorites');
+            return saved ? JSON.parse(saved) : [];
+        } catch (e) {
+            return [];
+        }
     }
 
     saveFavorites() {

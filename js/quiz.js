@@ -122,8 +122,8 @@ class QuizMode {
 
         const isCorrect = btn.dataset.correct === 'true';
 
-        // Tüm butonları devre dışı bırak
-        document.querySelectorAll('.quiz-option').forEach(opt => {
+        // Scoped to #quizOptions to avoid cross-contamination with other quiz modes
+        document.querySelectorAll('#quizOptions .quiz-option').forEach(opt => {
             opt.classList.add('disabled');
             if (opt.dataset.correct === 'true') {
                 opt.classList.add('correct');
@@ -139,23 +139,7 @@ class QuizMode {
             feedbackText.textContent = '✅ Doğru!';
         } else {
             btn.classList.add('wrong');
-            feedbackText.innerHTML = '❌ Yanlış!<br><br>🔄 AI açıklıyor...';
-
-            // AI açıklaması al
-            if (window.aiManager) {
-                try {
-                    const aiResult = await window.aiManager.explainWord(correctWord);
-                    if (aiResult) {
-                        feedbackText.innerHTML = `❌ Yanlış! Doğru: <strong>${correctWord.turkish}</strong><br><br>🤖 ${aiResult}`;
-                    } else {
-                        feedbackText.innerHTML = `❌ Yanlış! Doğru: <strong>${correctWord.turkish}</strong>`;
-                    }
-                } catch (e) {
-                    feedbackText.innerHTML = `❌ Yanlış! Doğru: <strong>${correctWord.turkish}</strong>`;
-                }
-            } else {
-                feedbackText.innerHTML = `❌ Yanlış! Doğru: <strong>${correctWord.turkish}</strong>`;
-            }
+            await app.showWrongFeedback(feedbackText, correctWord.turkish, correctWord);
         }
 
         app.recordAnswer(correctWord.id, isCorrect);

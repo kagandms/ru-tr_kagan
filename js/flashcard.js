@@ -79,7 +79,7 @@ class FlashcardMode {
         textP.innerHTML = 'AI düşünüyor...';
 
         const result = await window.aiManager.explainWord(word);
-        textP.innerHTML = result || 'Açıklama alınamadı.';
+        textP.innerHTML = app.sanitizeHTML(result) || 'Açıklama alınamadı.';
         btn.disabled = false;
         btn.textContent = '🤖 Açıkla';
     }
@@ -98,7 +98,7 @@ class FlashcardMode {
         textP.innerHTML = 'AI örnek cümle oluşturuyor...';
 
         const result = await window.aiManager.generateExample(word);
-        textP.innerHTML = result || 'Örnek alınamadı.';
+        textP.innerHTML = app.sanitizeHTML(result) || 'Örnek alınamadı.';
         btn.disabled = false;
         btn.textContent = '💡 Örnek Al';
     }

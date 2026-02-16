@@ -1,6 +1,13 @@
+const RATE_LIMIT = new Map();
+const MAX_REQ_PER_MIN = 30;
+
 export default async function handler(req, res) {
-    // CORS headers
-    res.setHeader('Access-Control-Allow-Origin', '*');
+    // CORS headers — restrict to production domain
+    const allowedOrigins = ['https://moyslovar.vercel.app', 'http://localhost:3000'];
+    const origin = req.headers.origin;
+    if (allowedOrigins.includes(origin)) {
+        res.setHeader('Access-Control-Allow-Origin', origin);
+    }
     res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 
@@ -10,6 +17,17 @@ export default async function handler(req, res) {
 
     if (req.method !== 'POST') {
         return res.status(405).json({ error: 'Method not allowed' });
+    }
+
+    // Rate limiting
+    const ip = req.headers['x-forwarded-for'] || req.socket?.remoteAddress || 'unknown';
+    const now = Date.now();
+    const entry = RATE_LIMIT.get(ip) || { count: 0, ts: now };
+    if (now - entry.ts > 60000) { entry.count = 0; entry.ts = now; }
+    entry.count++;
+    RATE_LIMIT.set(ip, entry);
+    if (entry.count > MAX_REQ_PER_MIN) {
+        return res.status(429).json({ error: 'Too many requests. Please wait.' });
     }
 
     const { action, word, sentence, userTranslation, correctTranslation } = req.body;
@@ -71,7 +89,6 @@ export default async function handler(req, res) {
 
         if (!response.ok) {
             const error = await response.text();
-            console.error('API Error:', error);
             return res.status(response.status).json({ error: 'AI API error' });
         }
 
@@ -81,7 +98,6 @@ export default async function handler(req, res) {
         return res.status(200).json({ result: aiResponse });
 
     } catch (error) {
-        console.error('Fetch error:', error);
         return res.status(500).json({ error: 'Internal server error' });
     }
 }

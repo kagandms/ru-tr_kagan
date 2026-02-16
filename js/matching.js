@@ -98,7 +98,7 @@ class MatchingMode {
             this.selectedRight.classList.remove('selected');
 
             this.matchedPairs++;
-            app.recordAnswer(parseInt(leftId), true);
+            app.recordAnswer(leftId, true);
             this.updateProgress();
 
             if (this.matchedPairs === this.totalPairs) {

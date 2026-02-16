@@ -90,7 +90,7 @@ def translate_and_generate():
                 for item in existing_list:
                     processed_map[item['en']] = item
             print(f"🔄 Loaded existing translations for {len(processed_map)} words.", flush=True)
-        except:
+        except (json.JSONDecodeError, KeyError, TypeError):
             print("⚠️ Corrupt progress file, starting fresh.", flush=True)
 
     # Rebuild translated_data list based on CURRENT input file

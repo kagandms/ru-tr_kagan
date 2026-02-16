@@ -82,7 +82,7 @@ def process_new_words(existing_keys: Set[str]) -> None:
                 print(f"  - {dup}")
         
         print("\n---------------------------------------------------")
-        print(f"İşlem tamamlandı. '{OUTPUT_FILE}' dosyasındaki kelimeleri '${EXISTING_FILE}' dosyasına ekleyebilirsiniz.")
+        print(f"\nİşlem tamamlandı. '{OUTPUT_FILE}' dosyasındaki kelimeleri '{EXISTING_FILE}' dosyasına ekleyebilirsiniz.")
 
     except Exception as e:
         print(f"KRİTİK HATA: {e}")
