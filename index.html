@@ -265,13 +265,6 @@
 
             <!-- IELTS Landing: Activity Selection -->
             <div id="ieltsLanding">
-                <div class="ielts-tabs" id="ieltsLevelTabs">
-                    <button class="ielts-tab active" data-level="b2">B2 <span class="tab-count"
-                            id="countB2">(0)</span></button>
-                    <button class="ielts-tab" data-level="c1">C1 <span class="tab-count"
-                            id="countC1">(0)</span></button>
-                </div>
-
                 <div class="ielts-activity-grid" id="ieltsActivityGrid">
                     <button class="ielts-activity-card" data-activity="words">
                         <span class="activity-icon">📖</span>
@@ -305,10 +298,15 @@
                 </div>
             </div>
 
-            <!-- IELTS Sub-View: Word List -->
             <div id="ieltsWordsView" class="ielts-subview hidden">
                 <div class="ielts-subview-header">
                     <button class="back-btn" id="ieltsWordsBack">← Listeye Dön</button>
+                </div>
+                <div class="ielts-tabs" id="ieltsLevelTabs">
+                    <button class="ielts-tab active" data-level="b2">B2 <span class="tab-count"
+                            id="countB2">(0)</span></button>
+                    <button class="ielts-tab" data-level="c1">C1 <span class="tab-count"
+                            id="countC1">(0)</span></button>
                 </div>
                 <div class="words-list" id="ieltsWordsList"></div>
             </div>

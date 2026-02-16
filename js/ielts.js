@@ -44,6 +44,11 @@ class IELTSMode {
                 document.querySelectorAll('#ieltsLevelTabs .ielts-tab').forEach(t => t.classList.remove('active'));
                 tab.classList.add('active');
                 this.filterByLevel(tab.dataset.level);
+                // Re-render word list if words view is visible
+                const wordsView = document.getElementById('ieltsWordsView');
+                if (wordsView && !wordsView.classList.contains('hidden')) {
+                    this.loadWords();
+                }
             });
         });
     }
