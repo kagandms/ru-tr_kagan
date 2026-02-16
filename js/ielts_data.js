@@ -1,10363 +1,12135 @@
 
-// Auto-generated IELTS Data (B2 Level)
+// Auto-generated IELTS Data (B1-C1 Levels)
 // Source: ielts_words.txt
-// Count: 2070
+// Count: 2021
 
-const IELTS_DATA = {
-    'b1': [],
-    'b2': [
+const IELTS_DATA = [
     {
         "en": "AIDS",
         "ru": "СПИД",
-        "tr": "AIDS"
-    },
-    {
-        "en": "B2",
-        "ru": "Б2",
-        "tr": "B2"
-    },
-    {
-        "en": "C1",
-        "ru": "С1",
-        "tr": "C1"
+        "tr": "AIDS",
+        "level": "B2"
     },
     {
         "en": "ID",
         "ru": "ИДЕНТИФИКАТОР",
-        "tr": "İD"
+        "tr": "İD",
+        "level": "B2"
     },
     {
         "en": "abolish",
         "ru": "отменять",
-        "tr": "ortadan kaldırmak"
+        "tr": "ortadan kaldırmak",
+        "level": "C1"
     },
     {
         "en": "abortion",
         "ru": "аборт",
-        "tr": "kürtaj"
+        "tr": "kürtaj",
+        "level": "C1"
     },
     {
         "en": "absence",
         "ru": "отсутствие",
-        "tr": "yokluk"
+        "tr": "yokluk",
+        "level": "C1"
     },
     {
         "en": "absent",
         "ru": "отсутствующий",
-        "tr": "mevcut olmayan"
+        "tr": "mevcut olmayan",
+        "level": "C1"
     },
     {
         "en": "absorb",
         "ru": "поглощать",
-        "tr": "emmek"
+        "tr": "emmek",
+        "level": "B2"
     },
     {
         "en": "abstract",
         "ru": "абстрактный",
-        "tr": "soyut"
+        "tr": "soyut",
+        "level": "B2"
     },
     {
         "en": "absurd",
         "ru": "абсурдный",
-        "tr": "saçma"
+        "tr": "saçma",
+        "level": "C1"
     },
     {
         "en": "abuse",
         "ru": "злоупотреблять",
-        "tr": "suistimal etmek"
+        "tr": "suistimal etmek",
+        "level": "C1"
     },
     {
         "en": "academy",
         "ru": "академия",
-        "tr": "akademi"
+        "tr": "akademi",
+        "level": "C1"
     },
     {
         "en": "accelerate",
         "ru": "ускоряться",
-        "tr": "hızlanmak"
+        "tr": "hızlanmak",
+        "level": "C1"
     },
     {
         "en": "accent",
         "ru": "акцент",
-        "tr": "aksan"
+        "tr": "aksan",
+        "level": "B2"
     },
     {
         "en": "acceptance",
         "ru": "принятие",
-        "tr": "kabul"
+        "tr": "kabul",
+        "level": "C1"
     },
     {
         "en": "accessible",
         "ru": "доступный",
-        "tr": "erişilebilir"
+        "tr": "erişilebilir",
+        "level": "C1"
     },
     {
         "en": "accidentally",
         "ru": "случайно",
-        "tr": "kazara"
+        "tr": "kazara",
+        "level": "B2"
     },
     {
         "en": "accommodate",
         "ru": "разместить",
-        "tr": "karşılamak"
+        "tr": "karşılamak",
+        "level": "B2"
     },
     {
         "en": "accommodation",
         "ru": "размещение",
-        "tr": "konaklama"
+        "tr": "konaklama",
+        "level": "B2"
     },
     {
         "en": "accomplish",
         "ru": "выполнить",
-        "tr": "sonuçlandırmak"
+        "tr": "sonuçlandırmak",
+        "level": "B2"
     },
     {
         "en": "accomplishment",
         "ru": "достижение",
-        "tr": "başarı"
+        "tr": "başarı",
+        "level": "C1"
     },
     {
         "en": "accordingly",
         "ru": "соответственно",
-        "tr": "buna göre"
+        "tr": "buna göre",
+        "level": "C1"
     },
     {
         "en": "accountability",
         "ru": "подотчетность",
-        "tr": "sorumluluk"
+        "tr": "sorumluluk",
+        "level": "C1"
     },
     {
         "en": "accountable",
         "ru": "подотчетный",
-        "tr": "sorumlu"
+        "tr": "sorumlu",
+        "level": "C1"
     },
     {
         "en": "accountant",
         "ru": "бухгалтер",
-        "tr": "muhasebeci"
+        "tr": "muhasebeci",
+        "level": "B2"
     },
     {
         "en": "accumulate",
         "ru": "накапливать",
-        "tr": "biriktirmek"
+        "tr": "biriktirmek",
+        "level": "C1"
     },
     {
         "en": "accumulation",
         "ru": "накопление",
-        "tr": "birikim"
+        "tr": "birikim",
+        "level": "C1"
     },
     {
         "en": "accuracy",
         "ru": "точность",
-        "tr": "kesinlik"
+        "tr": "kesinlik",
+        "level": "B2"
     },
     {
         "en": "accurately",
         "ru": "точно",
-        "tr": "doğru bir şekilde"
+        "tr": "doğru bir şekilde",
+        "level": "B2"
     },
     {
         "en": "accusation",
         "ru": "обвинение",
-        "tr": "suçlama"
+        "tr": "suçlama",
+        "level": "C1"
     },
     {
         "en": "accused",
         "ru": "обвиняемый",
-        "tr": "sanık"
+        "tr": "sanık",
+        "level": "C1"
     },
     {
         "en": "acid",
         "ru": "кислота",
-        "tr": "asit"
+        "tr": "asit",
+        "level": "C1"
     },
     {
         "en": "acid  B2",
         "ru": "кислота В2",
-        "tr": "asit B2"
+        "tr": "asit B2",
+        "level": "C1"
     },
     {
         "en": "acquisition",
         "ru": "приобретение",
-        "tr": "kazanma"
+        "tr": "kazanma",
+        "level": "C1"
     },
     {
         "en": "acre",
         "ru": "акр",
-        "tr": "dönüm"
+        "tr": "dönüm",
+        "level": "B2"
     },
     {
         "en": "activate",
         "ru": "активировать",
-        "tr": "etkinleştir"
+        "tr": "etkinleştir",
+        "level": "B2"
     },
     {
         "en": "activation",
         "ru": "активация",
-        "tr": "aktivasyon"
+        "tr": "aktivasyon",
+        "level": "C1"
     },
     {
         "en": "activist",
         "ru": "активист",
-        "tr": "aktivist"
+        "tr": "aktivist",
+        "level": "C1"
     },
     {
         "en": "acute",
         "ru": "острый",
-        "tr": "akut"
+        "tr": "akut",
+        "level": "C1"
     },
     {
         "en": "adaptation",
         "ru": "приспособление",
-        "tr": "adaptasyon"
+        "tr": "adaptasyon",
+        "level": "C1"
     },
     {
         "en": "addiction",
         "ru": "зависимость",
-        "tr": "bağımlılık"
+        "tr": "bağımlılık",
+        "level": "B2"
     },
     {
         "en": "additionally",
         "ru": "кроме того",
-        "tr": "ayrıca"
+        "tr": "ayrıca",
+        "level": "B2"
     },
     {
         "en": "adequate",
         "ru": "адекватный",
-        "tr": "yeterli"
+        "tr": "yeterli",
+        "level": "B2"
     },
     {
         "en": "adequately",
         "ru": "адекватно",
-        "tr": "yeterince"
+        "tr": "yeterince",
+        "level": "B2"
     },
     {
         "en": "adhere",
         "ru": "придерживаться",
-        "tr": "bağlı kalmak"
+        "tr": "bağlı kalmak",
+        "level": "C1"
     },
     {
         "en": "adjacent",
         "ru": "соседний",
-        "tr": "bitişik"
+        "tr": "bitişik",
+        "level": "C1"
     },
     {
         "en": "adjust",
         "ru": "регулировать",
-        "tr": "ayarlamak"
+        "tr": "ayarlamak",
+        "level": "B2"
     },
     {
         "en": "adjustment",
         "ru": "корректирование",
-        "tr": "ayar"
+        "tr": "ayar",
+        "level": "C1"
     },
     {
         "en": "administer",
         "ru": "управлять",
-        "tr": "yönetmek"
+        "tr": "yönetmek",
+        "level": "C1"
     },
     {
         "en": "administrative",
         "ru": "административный",
-        "tr": "idari"
+        "tr": "idari",
+        "level": "C1"
     },
     {
         "en": "administrator",
         "ru": "администратор",
-        "tr": "yönetici"
+        "tr": "yönetici",
+        "level": "C1"
     },
     {
         "en": "admission",
         "ru": "допуск",
-        "tr": "kabul"
+        "tr": "kabul",
+        "level": "C1"
     },
     {
         "en": "adolescent",
         "ru": "подросток",
-        "tr": "ergen"
+        "tr": "ergen",
+        "level": "C1"
     },
     {
         "en": "adoption",
         "ru": "принятие",
-        "tr": "evlat edinme"
+        "tr": "evlat edinme",
+        "level": "C1"
     },
     {
         "en": "adverse",
         "ru": "неблагоприятный",
-        "tr": "olumsuz"
+        "tr": "olumsuz",
+        "level": "C1"
     },
     {
         "en": "advocate",
         "ru": "защитник",
-        "tr": "avukat"
+        "tr": "avukat",
+        "level": "C1"
     },
     {
         "en": "aesthetic",
         "ru": "эстетический",
-        "tr": "estetik"
+        "tr": "estetik",
+        "level": "C1"
     },
     {
         "en": "affection",
         "ru": "привязанность",
-        "tr": "alaka"
+        "tr": "alaka",
+        "level": "C1"
     },
     {
         "en": "affordable",
         "ru": "доступный",
-        "tr": "ekonomik"
+        "tr": "ekonomik",
+        "level": "B2"
     },
     {
         "en": "aftermath",
         "ru": "последствия",
-        "tr": "sonrası"
+        "tr": "sonrası",
+        "level": "C1"
     },
     {
         "en": "aged",
         "ru": "в возрасте",
-        "tr": "yaşlı"
+        "tr": "yaşlı",
+        "level": "B2"
     },
     {
         "en": "aggression",
         "ru": "агрессия",
-        "tr": "saldırganlık"
+        "tr": "saldırganlık",
+        "level": "C1"
     },
     {
         "en": "agricultural",
         "ru": "сельскохозяйственный",
-        "tr": "tarımsal"
+        "tr": "tarımsal",
+        "level": "C1"
     },
     {
         "en": "agriculture",
         "ru": "сельское хозяйство",
-        "tr": "tarım"
+        "tr": "tarım",
+        "level": "B2"
     },
     {
         "en": "aide",
         "ru": "помощник",
-        "tr": "yardımcı"
+        "tr": "yardımcı",
+        "level": "C1"
     },
     {
         "en": "alert",
         "ru": "тревога",
-        "tr": "uyarı"
+        "tr": "uyarı",
+        "level": "C1"
     },
     {
         "en": "alien",
         "ru": "чужак",
-        "tr": "yabancı"
+        "tr": "yabancı",
+        "level": "C1"
     },
     {
         "en": "alien  B2",
         "ru": "инопланетянин Б2",
-        "tr": "uzaylı B2"
+        "tr": "uzaylı B2",
+        "level": "C1"
     },
     {
         "en": "align",
         "ru": "выровнять",
-        "tr": "hizalamak"
+        "tr": "hizalamak",
+        "level": "C1"
     },
     {
         "en": "alignment",
         "ru": "выравнивание",
-        "tr": "hizalama"
+        "tr": "hizalama",
+        "level": "C1"
     },
     {
         "en": "alike",
         "ru": "одинаково",
-        "tr": "benzer"
+        "tr": "benzer",
+        "level": "C1"
     },
     {
         "en": "allegation",
         "ru": "обвинение",
-        "tr": "iddia"
+        "tr": "iddia",
+        "level": "C1"
     },
     {
         "en": "allege",
         "ru": "утверждать",
-        "tr": "iddia etmek"
+        "tr": "iddia etmek",
+        "level": "C1"
     },
     {
         "en": "allegedly",
         "ru": "якобы",
-        "tr": "İddiaya göre"
+        "tr": "İddiaya göre",
+        "level": "C1"
     },
     {
         "en": "alliance",
         "ru": "альянс",
-        "tr": "ittifak"
+        "tr": "ittifak",
+        "level": "C1"
     },
     {
         "en": "allocate",
         "ru": "выделять",
-        "tr": "tahsis etmek"
+        "tr": "tahsis etmek",
+        "level": "C1"
     },
     {
         "en": "allocation",
         "ru": "распределение",
-        "tr": "paylaştırma"
+        "tr": "paylaştırma",
+        "level": "C1"
     },
     {
         "en": "allowance",
         "ru": "разрешение",
-        "tr": "ödenek"
+        "tr": "ödenek",
+        "level": "C1"
     },
     {
         "en": "ally",
         "ru": "союзник",
-        "tr": "müttefik"
+        "tr": "müttefik",
+        "level": "C1"
     },
     {
         "en": "alongside",
         "ru": "рядом",
-        "tr": "yanında"
+        "tr": "yanında",
+        "level": "B2"
     },
     {
         "en": "altogether",
         "ru": "вообще",
-        "tr": "tamamen"
+        "tr": "tamamen",
+        "level": "B2"
     },
     {
         "en": "aluminum",
         "ru": "алюминий",
-        "tr": "alüminyum"
+        "tr": "alüminyum",
+        "level": "C1"
     },
     {
         "en": "amateur",
         "ru": "любитель",
-        "tr": "amatör"
+        "tr": "amatör",
+        "level": "C1"
     },
     {
         "en": "ambassador",
         "ru": "посол",
-        "tr": "büyükelçi"
+        "tr": "büyükelçi",
+        "level": "C1"
     },
     {
         "en": "ambitious",
         "ru": "амбициозный",
-        "tr": "hırslı"
+        "tr": "hırslı",
+        "level": "B2"
     },
     {
         "en": "ambulance",
         "ru": "машина скорой помощи",
-        "tr": "ambulans"
+        "tr": "ambulans",
+        "level": "B2"
     },
     {
         "en": "amend",
         "ru": "исправлять",
-        "tr": "değiştirmek"
+        "tr": "değiştirmek",
+        "level": "C1"
     },
     {
         "en": "amendment",
         "ru": "поправка",
-        "tr": "değişiklik"
+        "tr": "değişiklik",
+        "level": "C1"
     },
     {
         "en": "amid",
         "ru": "среди",
-        "tr": "ortasında"
+        "tr": "ortasında",
+        "level": "C1"
     },
     {
         "en": "amusing",
         "ru": "занимательный",
-        "tr": "eğlenceli"
+        "tr": "eğlenceli",
+        "level": "B2"
     },
     {
         "en": "analogy",
         "ru": "аналогия",
-        "tr": "benzetme"
+        "tr": "benzetme",
+        "level": "C1"
     },
     {
         "en": "analyst",
         "ru": "аналитик",
-        "tr": "analist"
+        "tr": "analist",
+        "level": "B2"
     },
     {
         "en": "ancestor",
         "ru": "предок",
-        "tr": "ata"
+        "tr": "ata",
+        "level": "B2"
     },
     {
         "en": "anchor",
         "ru": "якорь",
-        "tr": "çapa"
+        "tr": "çapa",
+        "level": "C1"
     },
     {
         "en": "angel",
         "ru": "ангел",
-        "tr": "melek"
+        "tr": "melek",
+        "level": "C1"
     },
     {
         "en": "animation",
         "ru": "анимация",
-        "tr": "animasyon"
+        "tr": "animasyon",
+        "level": "B2"
     },
     {
         "en": "annually",
         "ru": "ежегодно",
-        "tr": "yıllık"
+        "tr": "yıllık",
+        "level": "B2"
     },
     {
         "en": "anonymous",
         "ru": "анонимный",
-        "tr": "anonim"
+        "tr": "anonim",
+        "level": "C1"
     },
     {
         "en": "anticipate",
         "ru": "предвидеть",
-        "tr": "beklemek"
+        "tr": "beklemek",
+        "level": "B2"
     },
     {
         "en": "anxiety",
         "ru": "беспокойство",
-        "tr": "endişe"
+        "tr": "endişe",
+        "level": "B2"
     },
     {
         "en": "apology",
         "ru": "извинение",
-        "tr": "özür"
+        "tr": "özür",
+        "level": "B2"
     },
     {
         "en": "apparatus",
         "ru": "аппарат",
-        "tr": "aparat"
+        "tr": "aparat",
+        "level": "C1"
     },
     {
         "en": "apparel",
         "ru": "одежда",
-        "tr": "giyim"
+        "tr": "giyim",
+        "level": "C1"
     },
     {
         "en": "appealing",
         "ru": "привлекательный",
-        "tr": "çekici"
+        "tr": "çekici",
+        "level": "C1"
     },
     {
         "en": "appetite",
         "ru": "аппетит",
-        "tr": "iştah"
+        "tr": "iştah",
+        "level": "C1"
     },
     {
         "en": "applaud",
         "ru": "аплодировать",
-        "tr": "alkışlamak"
+        "tr": "alkışlamak",
+        "level": "C1"
     },
     {
         "en": "applicable",
         "ru": "применимый",
-        "tr": "uygulanabilir"
+        "tr": "uygulanabilir",
+        "level": "C1"
     },
     {
         "en": "applicant",
         "ru": "заявитель",
-        "tr": "başvuru sahibi"
+        "tr": "başvuru sahibi",
+        "level": "B2"
     },
     {
         "en": "appoint",
         "ru": "назначать",
-        "tr": "atamak"
+        "tr": "atamak",
+        "level": "C1"
     },
     {
         "en": "appreciation",
         "ru": "признательность",
-        "tr": "takdir"
+        "tr": "takdir",
+        "level": "C1"
     },
     {
         "en": "appropriately",
         "ru": "соответственно",
-        "tr": "uygun şekilde"
+        "tr": "uygun şekilde",
+        "level": "B2"
     },
     {
         "en": "arbitrary",
         "ru": "произвольный",
-        "tr": "keyfi"
+        "tr": "keyfi",
+        "level": "C1"
     },
     {
         "en": "architectural",
         "ru": "архитектурный",
-        "tr": "mimari"
+        "tr": "mimari",
+        "level": "C1"
     },
     {
         "en": "archive",
         "ru": "архив",
-        "tr": "arşiv"
+        "tr": "arşiv",
+        "level": "C1"
     },
     {
         "en": "arena",
         "ru": "арена",
-        "tr": "arena"
+        "tr": "arena",
+        "level": "C1"
     },
     {
         "en": "arm",
         "ru": "рука",
-        "tr": "kol"
+        "tr": "kol",
+        "level": "C1"
     },
     {
         "en": "array",
         "ru": "множество",
-        "tr": "sıralamak"
+        "tr": "sıralamak",
+        "level": "C1"
     },
     {
         "en": "arrow",
         "ru": "стрелка",
-        "tr": "ok"
+        "tr": "ok",
+        "level": "B2"
     },
     {
         "en": "articulate",
         "ru": "формулировать",
-        "tr": "açıkça ifade etmek"
+        "tr": "açıkça ifade etmek",
+        "level": "C1"
     },
     {
         "en": "artwork",
         "ru": "произведение искусства",
-        "tr": "sanat eseri"
+        "tr": "sanat eseri",
+        "level": "B2"
     },
     {
         "en": "ash",
         "ru": "пепел",
-        "tr": "kül"
+        "tr": "kül",
+        "level": "C1"
     },
     {
         "en": "aspiration",
         "ru": "стремление",
-        "tr": "aspirasyon"
+        "tr": "aspirasyon",
+        "level": "C1"
     },
     {
         "en": "aspire",
         "ru": "стремиться",
-        "tr": "arzulamak"
+        "tr": "arzulamak",
+        "level": "C1"
     },
     {
         "en": "assassination",
         "ru": "убийство",
-        "tr": "suikast"
+        "tr": "suikast",
+        "level": "C1"
     },
     {
         "en": "assault",
         "ru": "атаковать",
-        "tr": "saldırı"
+        "tr": "saldırı",
+        "level": "C1"
     },
     {
         "en": "assemble",
         "ru": "собрать",
-        "tr": "bir araya getirmek"
+        "tr": "bir araya getirmek",
+        "level": "C1"
     },
     {
         "en": "assembly",
         "ru": "сборка",
-        "tr": "toplantı"
+        "tr": "toplantı",
+        "level": "C1"
     },
     {
         "en": "assert",
         "ru": "утверждать",
-        "tr": "ileri sürmek"
+        "tr": "ileri sürmek",
+        "level": "C1"
     },
     {
         "en": "assertion",
         "ru": "утверждение",
-        "tr": "iddia"
+        "tr": "iddia",
+        "level": "C1"
     },
     {
         "en": "asset",
         "ru": "объект",
-        "tr": "varlık"
+        "tr": "varlık",
+        "level": "B2"
     },
     {
         "en": "assign",
         "ru": "назначать",
-        "tr": "atamak"
+        "tr": "atamak",
+        "level": "B2"
     },
     {
         "en": "assistance",
         "ru": "помощь",
-        "tr": "yardım"
+        "tr": "yardım",
+        "level": "B2"
     },
     {
         "en": "assumption",
         "ru": "предположение",
-        "tr": "varsayım"
+        "tr": "varsayım",
+        "level": "B2"
     },
     {
         "en": "assurance",
         "ru": "гарантия",
-        "tr": "güvence"
+        "tr": "güvence",
+        "level": "C1"
     },
     {
         "en": "assure",
         "ru": "гарантировать",
-        "tr": "garanti etmek"
+        "tr": "garanti etmek",
+        "level": "B2"
     },
     {
         "en": "astonishing",
         "ru": "удивительный",
-        "tr": "şaşırtıcı"
+        "tr": "şaşırtıcı",
+        "level": "B2"
     },
     {
         "en": "asylum",
         "ru": "убежище",
-        "tr": "iltica"
+        "tr": "iltica",
+        "level": "C1"
     },
     {
         "en": "athletic",
         "ru": "спортивный",
-        "tr": "atletik"
+        "tr": "atletik",
+        "level": "B2"
     },
     {
         "en": "atrocity",
         "ru": "злодеяние",
-        "tr": "vahşet"
+        "tr": "vahşet",
+        "level": "C1"
     },
     {
         "en": "attachment",
         "ru": "вложение",
-        "tr": "EK"
+        "tr": "EK",
+        "level": "B2"
     },
     {
         "en": "attain",
         "ru": "достичь",
-        "tr": "ulaşmak"
+        "tr": "ulaşmak",
+        "level": "C1"
     },
     {
         "en": "attendance",
         "ru": "посещаемость",
-        "tr": "katılım"
+        "tr": "katılım",
+        "level": "C1"
     },
     {
         "en": "attribute",
         "ru": "атрибут",
-        "tr": "bağlanmak"
+        "tr": "bağlanmak",
+        "level": "C1"
     },
     {
         "en": "auction",
         "ru": "аукцион",
-        "tr": "açık artırma"
+        "tr": "açık artırma",
+        "level": "C1"
     },
     {
         "en": "audio",
         "ru": "аудио",
-        "tr": "ses"
+        "tr": "ses",
+        "level": "B2"
     },
     {
         "en": "audit",
         "ru": "аудит",
-        "tr": "denetim"
+        "tr": "denetim",
+        "level": "C1"
     },
     {
         "en": "authentic",
         "ru": "аутентичный",
-        "tr": "otantik"
+        "tr": "otantik",
+        "level": "C1"
     },
     {
         "en": "authorize",
         "ru": "разрешать",
-        "tr": "yetki vermek"
+        "tr": "yetki vermek",
+        "level": "C1"
     },
     {
         "en": "auto",
         "ru": "авто",
-        "tr": "otomatik"
+        "tr": "otomatik",
+        "level": "C1"
     },
     {
         "en": "autonomy",
         "ru": "автономия",
-        "tr": "özerklik"
+        "tr": "özerklik",
+        "level": "C1"
     },
     {
         "en": "autumn",
         "ru": "осень",
-        "tr": "sonbahar"
+        "tr": "sonbahar",
+        "level": "C1"
     },
     {
         "en": "availability",
         "ru": "доступность",
-        "tr": "kullanılabilirlik"
+        "tr": "kullanılabilirlik",
+        "level": "C1"
     },
     {
         "en": "await",
         "ru": "ждать",
-        "tr": "beklemek"
+        "tr": "beklemek",
+        "level": "C1"
     },
     {
         "en": "awareness",
         "ru": "осведомленность",
-        "tr": "farkındalık"
+        "tr": "farkındalık",
+        "level": "B2"
     },
     {
         "en": "awkward",
         "ru": "неуклюжий",
-        "tr": "garip"
+        "tr": "garip",
+        "level": "B2"
     },
     {
         "en": "backdrop",
         "ru": "фон",
-        "tr": "zemin"
+        "tr": "zemin",
+        "level": "C1"
     },
     {
         "en": "backing",
         "ru": "поддержка",
-        "tr": "destek"
+        "tr": "destek",
+        "level": "C1"
     },
     {
         "en": "backup",
         "ru": "резервное копирование",
-        "tr": "yedekleme"
+        "tr": "yedekleme",
+        "level": "C1"
     },
     {
         "en": "badge",
         "ru": "значок",
-        "tr": "rozet"
+        "tr": "rozet",
+        "level": "B2"
     },
     {
         "en": "bail",
         "ru": "залог",
-        "tr": "kefaletle serbest bırakmak"
+        "tr": "kefaletle serbest bırakmak",
+        "level": "C1"
     },
     {
         "en": "balanced",
         "ru": "сбалансированный",
-        "tr": "dengeli"
+        "tr": "dengeli",
+        "level": "B2"
     },
     {
         "en": "ballet",
         "ru": "балет",
-        "tr": "bale"
+        "tr": "bale",
+        "level": "B2"
     },
     {
         "en": "balloon",
         "ru": "воздушный шар",
-        "tr": "balon"
+        "tr": "balon",
+        "level": "B2"
     },
     {
         "en": "ballot",
         "ru": "избирательный бюллетень",
-        "tr": "oy pusulası"
+        "tr": "oy pusulası",
+        "level": "C1"
     },
     {
         "en": "bankruptcy",
         "ru": "банкротство",
-        "tr": "iflas"
+        "tr": "iflas",
+        "level": "C1"
     },
     {
         "en": "banner",
         "ru": "баннер",
-        "tr": "afiş"
+        "tr": "afiş",
+        "level": "C1"
     },
     {
         "en": "bare",
         "ru": "голый",
-        "tr": "çıplak"
+        "tr": "çıplak",
+        "level": "C1"
     },
     {
         "en": "barely",
         "ru": "едва",
-        "tr": "neredeyse"
+        "tr": "neredeyse",
+        "level": "B2"
     },
     {
         "en": "bargain",
         "ru": "торговаться",
-        "tr": "pazarlık"
+        "tr": "pazarlık",
+        "level": "B2"
     },
     {
         "en": "barrel",
         "ru": "бочка",
-        "tr": "varil"
+        "tr": "varil",
+        "level": "C1"
     },
     {
         "en": "basement",
         "ru": "подвал",
-        "tr": "bodrum"
+        "tr": "bodrum",
+        "level": "B2"
     },
     {
         "en": "basket",
         "ru": "корзина",
-        "tr": "sepet"
+        "tr": "sepet",
+        "level": "B2"
     },
     {
         "en": "bass1",
         "ru": "бас1",
-        "tr": "bas1"
+        "tr": "bas1",
+        "level": "C1"
     },
     {
         "en": "bat",
         "ru": "летучая мышь",
-        "tr": "yarasa"
+        "tr": "yarasa",
+        "level": "C1"
     },
     {
         "en": "bat  B2",
         "ru": "летучая мышь B2",
-        "tr": "yarasa B2"
+        "tr": "yarasa B2",
+        "level": "C1"
     },
     {
         "en": "battlefield",
         "ru": "поле битвы",
-        "tr": "savaş alanı"
+        "tr": "savaş alanı",
+        "level": "C1"
     },
     {
         "en": "bay",
         "ru": "залив",
-        "tr": "koy"
+        "tr": "koy",
+        "level": "C1"
     },
     {
         "en": "beam",
         "ru": "луч",
-        "tr": "ışın"
+        "tr": "ışın",
+        "level": "C1"
     },
     {
         "en": "beast",
         "ru": "зверь",
-        "tr": "canavar"
+        "tr": "canavar",
+        "level": "C1"
     },
     {
         "en": "behalf",
         "ru": "от имени",
-        "tr": "adına"
+        "tr": "adına",
+        "level": "C1"
     },
     {
         "en": "behavioral",
         "ru": "поведенческий",
-        "tr": "davranışsal"
+        "tr": "davranışsal",
+        "level": "C1"
     },
     {
         "en": "beloved",
         "ru": "возлюбленный",
-        "tr": "sevgili"
+        "tr": "sevgili",
+        "level": "C1"
     },
     {
         "en": "bench",
         "ru": "лавка",
-        "tr": "tezgah"
+        "tr": "tezgah",
+        "level": "C1"
     },
     {
         "en": "benchmark",
         "ru": "эталон",
-        "tr": "kalite testi"
+        "tr": "kalite testi",
+        "level": "C1"
     },
     {
         "en": "beneath",
         "ru": "под",
-        "tr": "altında"
+        "tr": "altında",
+        "level": "C1"
     },
     {
         "en": "beneficial",
         "ru": "выгодный",
-        "tr": "yararlı"
+        "tr": "yararlı",
+        "level": "B2"
     },
     {
         "en": "beneficiary",
         "ru": "бенефициар",
-        "tr": "yararlanıcı"
+        "tr": "yararlanıcı",
+        "level": "C1"
     },
     {
         "en": "beside",
         "ru": "рядом",
-        "tr": "yanında"
+        "tr": "yanında",
+        "level": "B2"
     },
     {
         "en": "besides",
         "ru": "кроме",
-        "tr": "Ayrıca"
+        "tr": "Ayrıca",
+        "level": "B2"
     },
     {
         "en": "betray",
         "ru": "предавать",
-        "tr": "ihanet etmek"
+        "tr": "ihanet etmek",
+        "level": "C1"
     },
     {
         "en": "beverage",
         "ru": "напиток",
-        "tr": "içecek"
+        "tr": "içecek",
+        "level": "C1"
     },
     {
         "en": "bias",
         "ru": "предвзятость",
-        "tr": "ön yargı"
+        "tr": "ön yargı",
+        "level": "B2"
     },
     {
         "en": "bid",
         "ru": "делать ставку",
-        "tr": "teklif etmek"
+        "tr": "teklif etmek",
+        "level": "B2"
     },
     {
         "en": "bind",
         "ru": "связывать",
-        "tr": "bağlamak"
+        "tr": "bağlamak",
+        "level": "C1"
     },
     {
         "en": "biography",
         "ru": "биография",
-        "tr": "biyografi"
+        "tr": "biyografi",
+        "level": "C1"
     },
     {
         "en": "biological",
         "ru": "биологический",
-        "tr": "biyolojik"
+        "tr": "biyolojik",
+        "level": "B2"
     },
     {
         "en": "bishop",
         "ru": "епископ",
-        "tr": "piskopos"
+        "tr": "piskopos",
+        "level": "C1"
     },
     {
         "en": "bizarre",
         "ru": "странный",
-        "tr": "tuhaf"
+        "tr": "tuhaf",
+        "level": "C1"
     },
     {
         "en": "blade",
         "ru": "лезвие",
-        "tr": "bıçak"
+        "tr": "bıçak",
+        "level": "C1"
     },
     {
         "en": "blanket",
         "ru": "одеяло",
-        "tr": "battaniye"
+        "tr": "battaniye",
+        "level": "B2"
     },
     {
         "en": "blast",
         "ru": "взрыв",
-        "tr": "büyük patlama"
+        "tr": "büyük patlama",
+        "level": "C1"
     },
     {
         "en": "bleed",
         "ru": "истекать кровью",
-        "tr": "kanama"
+        "tr": "kanama",
+        "level": "C1"
     },
     {
         "en": "blend",
         "ru": "смешивать",
-        "tr": "karışım"
+        "tr": "karışım",
+        "level": "C1"
     },
     {
         "en": "bless",
         "ru": "благословить",
-        "tr": "korusun"
+        "tr": "korusun",
+        "level": "C1"
     },
     {
         "en": "blessing",
         "ru": "благословение",
-        "tr": "nimet"
+        "tr": "nimet",
+        "level": "C1"
     },
     {
         "en": "blow",
         "ru": "дуть",
-        "tr": "üflemek"
+        "tr": "üflemek",
+        "level": "B2"
     },
     {
         "en": "boast",
         "ru": "хвастаться",
-        "tr": "övünme"
+        "tr": "övünme",
+        "level": "C1"
     },
     {
         "en": "bold",
         "ru": "смелый",
-        "tr": "gözü pek"
+        "tr": "gözü pek",
+        "level": "B2"
     },
     {
         "en": "bombing",
         "ru": "бомбардировка",
-        "tr": "bombalama"
+        "tr": "bombalama",
+        "level": "B2"
     },
     {
         "en": "bonus",
         "ru": "бонус",
-        "tr": "bonus"
+        "tr": "bonus",
+        "level": "C1"
     },
     {
         "en": "booking",
         "ru": "бронирование",
-        "tr": "rezervasyon"
+        "tr": "rezervasyon",
+        "level": "C1"
     },
     {
         "en": "boom",
         "ru": "бум",
-        "tr": "patlama"
+        "tr": "patlama",
+        "level": "C1"
     },
     {
         "en": "boost",
         "ru": "способствовать росту",
-        "tr": "artırmak"
+        "tr": "artırmak",
+        "level": "B2"
     },
     {
         "en": "bounce",
         "ru": "подпрыгивать",
-        "tr": "sıçrama"
+        "tr": "sıçrama",
+        "level": "C1"
     },
     {
         "en": "bound",
         "ru": "граница",
-        "tr": "bağlı"
+        "tr": "bağlı",
+        "level": "B2"
     },
     {
         "en": "boundary",
         "ru": "граница",
-        "tr": "sınır"
+        "tr": "sınır",
+        "level": "C1"
     },
     {
         "en": "bow1",
         "ru": "лук1",
-        "tr": "yay1"
+        "tr": "yay1",
+        "level": "C1"
     },
     {
         "en": "breach",
         "ru": "нарушение",
-        "tr": "çiğneme"
+        "tr": "çiğneme",
+        "level": "C1"
     },
     {
         "en": "breakdown",
         "ru": "авария",
-        "tr": "bozulma"
+        "tr": "bozulma",
+        "level": "C1"
     },
     {
         "en": "breakthrough",
         "ru": "прорыв",
-        "tr": "atılım"
+        "tr": "atılım",
+        "level": "C1"
     },
     {
         "en": "breed",
         "ru": "порода",
-        "tr": "yavrulamak"
+        "tr": "yavrulamak",
+        "level": "C1"
     },
     {
         "en": "brick",
         "ru": "кирпич",
-        "tr": "tuğla"
+        "tr": "tuğla",
+        "level": "B2"
     },
     {
         "en": "briefly",
         "ru": "кратко",
-        "tr": "kısaca"
+        "tr": "kısaca",
+        "level": "B2"
     },
     {
         "en": "broadband",
         "ru": "широкополосный доступ",
-        "tr": "geniş bant"
+        "tr": "geniş bant",
+        "level": "C1"
     },
     {
         "en": "broadcaster",
         "ru": "телеведущий",
-        "tr": "yayıncı"
+        "tr": "yayıncı",
+        "level": "B2"
     },
     {
         "en": "broadly",
         "ru": "широко",
-        "tr": "genel olarak"
+        "tr": "genel olarak",
+        "level": "B2"
     },
     {
         "en": "browser",
         "ru": "браузер",
-        "tr": "tarayıcı"
+        "tr": "tarayıcı",
+        "level": "C1"
     },
     {
         "en": "brutal",
         "ru": "жестокий",
-        "tr": "vahşi"
+        "tr": "vahşi",
+        "level": "C1"
     },
     {
         "en": "buck",
         "ru": "доллар",
-        "tr": "para"
+        "tr": "para",
+        "level": "B2"
     },
     {
         "en": "buddy",
         "ru": "приятель",
-        "tr": "ahbap"
+        "tr": "ahbap",
+        "level": "C1"
     },
     {
         "en": "buffer",
         "ru": "буфер",
-        "tr": "tampon"
+        "tr": "tampon",
+        "level": "C1"
     },
     {
         "en": "bug",
         "ru": "ошибка",
-        "tr": "böcek"
+        "tr": "böcek",
+        "level": "B2"
     },
     {
         "en": "bulk",
         "ru": "масса",
-        "tr": "toplu"
+        "tr": "toplu",
+        "level": "C1"
     },
     {
         "en": "burden",
         "ru": "груз",
-        "tr": "yük"
+        "tr": "yük",
+        "level": "C1"
     },
     {
         "en": "bureaucracy",
         "ru": "бюрократия",
-        "tr": "bürokrasi"
+        "tr": "bürokrasi",
+        "level": "C1"
     },
     {
         "en": "burial",
         "ru": "захоронение",
-        "tr": "cenaze"
+        "tr": "cenaze",
+        "level": "C1"
     },
     {
         "en": "burst",
         "ru": "лопаться",
-        "tr": "patlamak"
+        "tr": "patlamak",
+        "level": "C1"
     },
     {
         "en": "cabin",
         "ru": "каюта",
-        "tr": "kabin"
+        "tr": "kabin",
+        "level": "B2"
     },
     {
         "en": "cabinet",
         "ru": "кабинет",
-        "tr": "kabine"
+        "tr": "kabine",
+        "level": "C1"
     },
     {
         "en": "calculation",
         "ru": "расчет",
-        "tr": "hesaplama"
+        "tr": "hesaplama",
+        "level": "C1"
     },
     {
         "en": "canal",
         "ru": "канал",
-        "tr": "kanal"
+        "tr": "kanal",
+        "level": "B2"
     },
     {
         "en": "candle",
         "ru": "свеча",
-        "tr": "mum"
+        "tr": "mum",
+        "level": "B2"
     },
     {
         "en": "canvas",
         "ru": "холст",
-        "tr": "tuval"
+        "tr": "tuval",
+        "level": "C1"
     },
     {
         "en": "capability",
         "ru": "способность",
-        "tr": "yetenek"
+        "tr": "yetenek",
+        "level": "C1"
     },
     {
         "en": "capitalism",
         "ru": "капитализм",
-        "tr": "kapitalizm"
+        "tr": "kapitalizm",
+        "level": "C1"
     },
     {
         "en": "capitalist",
         "ru": "капиталистический",
-        "tr": "kapitalist"
+        "tr": "kapitalist",
+        "level": "C1"
     },
     {
         "en": "carbon",
         "ru": "углерод",
-        "tr": "karbon"
+        "tr": "karbon",
+        "level": "B2"
     },
     {
         "en": "cargo",
         "ru": "груз",
-        "tr": "kargo"
+        "tr": "kargo",
+        "level": "C1"
     },
     {
         "en": "carriage",
         "ru": "перевозка",
-        "tr": "taşıma"
+        "tr": "taşıma",
+        "level": "C1"
     },
     {
         "en": "carve",
         "ru": "вырезать",
-        "tr": "oymak"
+        "tr": "oymak",
+        "level": "C1"
     },
     {
         "en": "casino",
         "ru": "казино",
-        "tr": "kumarhane"
+        "tr": "kumarhane",
+        "level": "C1"
     },
     {
         "en": "castle",
         "ru": "замок",
-        "tr": "kale"
+        "tr": "kale",
+        "level": "B2"
     },
     {
         "en": "casual",
         "ru": "повседневный",
-        "tr": "gündelik"
+        "tr": "gündelik",
+        "level": "B2"
     },
     {
         "en": "casualty",
         "ru": "жертва",
-        "tr": "zayiat"
+        "tr": "zayiat",
+        "level": "C1"
     },
     {
         "en": "catalog",
         "ru": "каталог",
-        "tr": "katalog"
+        "tr": "katalog",
+        "level": "C1"
     },
     {
         "en": "cater",
         "ru": "обслуживать",
-        "tr": "yiyecek ve içecek"
+        "tr": "yiyecek ve içecek",
+        "level": "C1"
     },
     {
         "en": "cattle",
         "ru": "крупный рогатый скот",
-        "tr": "sığır"
+        "tr": "sığır",
+        "level": "C1"
     },
     {
         "en": "caution",
         "ru": "осторожность",
-        "tr": "Dikkat"
+        "tr": "Dikkat",
+        "level": "C1"
     },
     {
         "en": "cautious",
         "ru": "осторожный",
-        "tr": "dikkatli"
+        "tr": "dikkatli",
+        "level": "C1"
     },
     {
         "en": "cave",
         "ru": "пещера",
-        "tr": "mağara"
+        "tr": "mağara",
+        "level": "B2"
     },
     {
         "en": "cease",
         "ru": "прекратить",
-        "tr": "durdurmak"
+        "tr": "durdurmak",
+        "level": "C1"
     },
     {
         "en": "cemetery",
         "ru": "кладбище",
-        "tr": "mezarlık"
+        "tr": "mezarlık",
+        "level": "C1"
     },
     {
         "en": "certainty",
         "ru": "уверенность",
-        "tr": "kesinlik"
+        "tr": "kesinlik",
+        "level": "B2"
     },
     {
         "en": "certificate",
         "ru": "сертификат",
-        "tr": "sertifika"
+        "tr": "sertifika",
+        "level": "B2"
     },
     {
         "en": "challenging",
         "ru": "испытывающий",
-        "tr": "zorlu"
+        "tr": "zorlu",
+        "level": "B2"
     },
     {
         "en": "chamber",
         "ru": "камера",
-        "tr": "odacık"
+        "tr": "odacık",
+        "level": "C1"
     },
     {
         "en": "championship",
         "ru": "чемпионат",
-        "tr": "şampiyonluk"
+        "tr": "şampiyonluk",
+        "level": "B2"
     },
     {
         "en": "chaos",
         "ru": "хаос",
-        "tr": "kaos"
+        "tr": "kaos",
+        "level": "C1"
     },
     {
         "en": "characterize",
         "ru": "характеризовать",
-        "tr": "karakterize etmek"
+        "tr": "karakterize etmek",
+        "level": "C1"
     },
     {
         "en": "charm",
         "ru": "очарование",
-        "tr": "cazibe"
+        "tr": "cazibe",
+        "level": "C1"
     },
     {
         "en": "charming",
         "ru": "очаровательный",
-        "tr": "alımlı"
+        "tr": "alımlı",
+        "level": "B2"
     },
     {
         "en": "charter",
         "ru": "устав",
-        "tr": "kiralama"
+        "tr": "kiralama",
+        "level": "C1"
     },
     {
         "en": "chase",
         "ru": "гнаться",
-        "tr": "takip etmek"
+        "tr": "takip etmek",
+        "level": "B2"
     },
     {
         "en": "cheek",
         "ru": "щека",
-        "tr": "yanak"
+        "tr": "yanak",
+        "level": "B2"
     },
     {
         "en": "cheer",
         "ru": "радость",
-        "tr": "tezahürat"
+        "tr": "tezahürat",
+        "level": "B2"
     },
     {
         "en": "choir",
         "ru": "хор",
-        "tr": "koro"
+        "tr": "koro",
+        "level": "C1"
     },
     {
         "en": "chop",
         "ru": "нарезать",
-        "tr": "kesmek"
+        "tr": "kesmek",
+        "level": "B2"
     },
     {
         "en": "chronic",
         "ru": "хронический",
-        "tr": "kronik"
+        "tr": "kronik",
+        "level": "C1"
     },
     {
         "en": "chunk",
         "ru": "кусок",
-        "tr": "yığın"
+        "tr": "yığın",
+        "level": "C1"
     },
     {
         "en": "circuit",
         "ru": "схема",
-        "tr": "devre"
+        "tr": "devre",
+        "level": "B2"
     },
     {
         "en": "circulate",
         "ru": "распространять",
-        "tr": "dolaşıma sokmak"
+        "tr": "dolaşıma sokmak",
+        "level": "C1"
     },
     {
         "en": "circulation",
         "ru": "обращение",
-        "tr": "dolaşım"
+        "tr": "dolaşım",
+        "level": "C1"
     },
     {
         "en": "citizenship",
         "ru": "гражданство",
-        "tr": "vatandaşlık"
+        "tr": "vatandaşlık",
+        "level": "C1"
     },
     {
         "en": "civic",
         "ru": "гражданский",
-        "tr": "sivil"
+        "tr": "sivil",
+        "level": "C1"
     },
     {
         "en": "civilian",
         "ru": "гражданский",
-        "tr": "sivil"
+        "tr": "sivil",
+        "level": "C1"
     },
     {
         "en": "civilization",
         "ru": "цивилизация",
-        "tr": "uygarlık"
+        "tr": "uygarlık",
+        "level": "B2"
     },
     {
         "en": "clarify",
         "ru": "объяснить",
-        "tr": "açıklamak"
+        "tr": "açıklamak",
+        "level": "B2"
     },
     {
         "en": "clarity",
         "ru": "ясность",
-        "tr": "açıklık"
+        "tr": "açıklık",
+        "level": "C1"
     },
     {
         "en": "clash",
         "ru": "столкновение",
-        "tr": "çarpışma"
+        "tr": "çarpışma",
+        "level": "C1"
     },
     {
         "en": "classification",
         "ru": "классификация",
-        "tr": "sınıflandırma"
+        "tr": "sınıflandırma",
+        "level": "C1"
     },
     {
         "en": "classify",
         "ru": "классифицировать",
-        "tr": "sınıflandırmak"
+        "tr": "sınıflandırmak",
+        "level": "B2"
     },
     {
         "en": "cliff",
         "ru": "утес",
-        "tr": "uçurum"
+        "tr": "uçurum",
+        "level": "B2"
     },
     {
         "en": "cling",
         "ru": "цепляться",
-        "tr": "sarılmak"
+        "tr": "sarılmak",
+        "level": "C1"
     },
     {
         "en": "clinic",
         "ru": "клиника",
-        "tr": "klinik"
+        "tr": "klinik",
+        "level": "B2"
     },
     {
         "en": "clinical",
         "ru": "клинический",
-        "tr": "klinik"
+        "tr": "klinik",
+        "level": "C1"
     },
     {
         "en": "clip",
         "ru": "клип",
-        "tr": "klip"
+        "tr": "klip",
+        "level": "B2"
     },
     {
         "en": "closure",
         "ru": "закрытие",
-        "tr": "kapatma"
+        "tr": "kapatma",
+        "level": "C1"
     },
     {
         "en": "cluster",
         "ru": "кластер",
-        "tr": "küme"
+        "tr": "küme",
+        "level": "C1"
     },
     {
         "en": "coalition",
         "ru": "коалиция",
-        "tr": "koalisyon"
+        "tr": "koalisyon",
+        "level": "C1"
     },
     {
         "en": "coastal",
         "ru": "прибрежный",
-        "tr": "kıyı"
+        "tr": "kıyı",
+        "level": "C1"
     },
     {
         "en": "cocktail",
         "ru": "коктейль",
-        "tr": "kokteyl"
+        "tr": "kokteyl",
+        "level": "C1"
     },
     {
         "en": "cognitive",
         "ru": "познавательный",
-        "tr": "bilişsel"
+        "tr": "bilişsel",
+        "level": "C1"
     },
     {
         "en": "coincide",
         "ru": "совпадать",
-        "tr": "çakışmak"
+        "tr": "çakışmak",
+        "level": "C1"
     },
     {
         "en": "coincidence",
         "ru": "совпадение",
-        "tr": "tesadüf"
+        "tr": "tesadüf",
+        "level": "B2"
     },
     {
         "en": "collaborate",
         "ru": "сотрудничать",
-        "tr": "işbirliği yapmak"
+        "tr": "işbirliği yapmak",
+        "level": "C1"
     },
     {
         "en": "collaboration",
         "ru": "сотрудничество",
-        "tr": "işbirliği"
+        "tr": "işbirliği",
+        "level": "C1"
     },
     {
         "en": "collective",
         "ru": "коллектив",
-        "tr": "kolektif"
+        "tr": "kolektif",
+        "level": "C1"
     },
     {
         "en": "collector",
         "ru": "коллекционер",
-        "tr": "kolektör"
+        "tr": "kolektör",
+        "level": "B2"
     },
     {
         "en": "collision",
         "ru": "столкновение",
-        "tr": "çarpışma"
+        "tr": "çarpışma",
+        "level": "C1"
     },
     {
         "en": "colonial",
         "ru": "колониальный",
-        "tr": "sömürge"
+        "tr": "sömürge",
+        "level": "C1"
     },
     {
         "en": "colony",
         "ru": "колония",
-        "tr": "koloni"
+        "tr": "koloni",
+        "level": "B2"
     },
     {
         "en": "colorful",
         "ru": "красочный",
-        "tr": "renkli"
+        "tr": "renkli",
+        "level": "B2"
     },
     {
         "en": "columnist",
         "ru": "обозреватель",
-        "tr": "köşe yazarı"
+        "tr": "köşe yazarı",
+        "level": "C1"
     },
     {
         "en": "combat",
         "ru": "бой",
-        "tr": "dövüş"
+        "tr": "dövüş",
+        "level": "C1"
     },
     {
         "en": "comic",
         "ru": "комикс",
-        "tr": "komik"
+        "tr": "komik",
+        "level": "B2"
     },
     {
         "en": "commander",
         "ru": "командир",
-        "tr": "komutan"
+        "tr": "komutan",
+        "level": "B2"
     },
     {
         "en": "commence",
         "ru": "начинать",
-        "tr": "başlamak"
+        "tr": "başlamak",
+        "level": "C1"
     },
     {
         "en": "commentary",
         "ru": "комментарий",
-        "tr": "yorum"
+        "tr": "yorum",
+        "level": "C1"
     },
     {
         "en": "commentator",
         "ru": "комментатор",
-        "tr": "yorumcu"
+        "tr": "yorumcu",
+        "level": "C1"
     },
     {
         "en": "commerce",
         "ru": "коммерция",
-        "tr": "ticaret"
+        "tr": "ticaret",
+        "level": "C1"
     },
     {
         "en": "commissioner",
         "ru": "комиссар",
-        "tr": "komiser"
+        "tr": "komiser",
+        "level": "C1"
     },
     {
         "en": "commodity",
         "ru": "товар",
-        "tr": "emtia"
+        "tr": "emtia",
+        "level": "C1"
     },
     {
         "en": "communist",
         "ru": "коммунист",
-        "tr": "komünist"
+        "tr": "komünist",
+        "level": "C1"
     },
     {
         "en": "companion",
         "ru": "компаньон",
-        "tr": "arkadaş"
+        "tr": "arkadaş",
+        "level": "C1"
     },
     {
         "en": "comparable",
         "ru": "сопоставимый",
-        "tr": "karşılaştırılabilir"
+        "tr": "karşılaştırılabilir",
+        "level": "C1"
     },
     {
         "en": "comparative",
         "ru": "сравнительный",
-        "tr": "karşılaştırmalı"
+        "tr": "karşılaştırmalı",
+        "level": "B2"
     },
     {
         "en": "compassion",
         "ru": "сострадание",
-        "tr": "merhamet"
+        "tr": "merhamet",
+        "level": "C1"
     },
     {
         "en": "compel",
         "ru": "принуждать",
-        "tr": "zorlamak"
+        "tr": "zorlamak",
+        "level": "C1"
     },
     {
         "en": "compelling",
         "ru": "неотразимый",
-        "tr": "zorlayıcı"
+        "tr": "zorlayıcı",
+        "level": "C1"
     },
     {
         "en": "compensate",
         "ru": "компенсировать",
-        "tr": "telafi etmek"
+        "tr": "telafi etmek",
+        "level": "C1"
     },
     {
         "en": "compensation",
         "ru": "компенсация",
-        "tr": "tazminat"
+        "tr": "tazminat",
+        "level": "C1"
     },
     {
         "en": "competence",
         "ru": "компетентность",
-        "tr": "yeterlilik"
+        "tr": "yeterlilik",
+        "level": "C1"
     },
     {
         "en": "competent",
         "ru": "компетентный",
-        "tr": "yetkili"
+        "tr": "yetkili",
+        "level": "C1"
     },
     {
         "en": "compile",
         "ru": "компилировать",
-        "tr": "derlemek"
+        "tr": "derlemek",
+        "level": "C1"
     },
     {
         "en": "complement",
         "ru": "дополнять",
-        "tr": "tamamlayıcı"
+        "tr": "tamamlayıcı",
+        "level": "C1"
     },
     {
         "en": "completion",
         "ru": "завершение",
-        "tr": "tamamlama"
+        "tr": "tamamlama",
+        "level": "B2"
     },
     {
         "en": "complexity",
         "ru": "сложность",
-        "tr": "karmaşıklık"
+        "tr": "karmaşıklık",
+        "level": "C1"
     },
     {
         "en": "compliance",
         "ru": "согласие",
-        "tr": "uyumluluk"
+        "tr": "uyumluluk",
+        "level": "C1"
     },
     {
         "en": "complication",
         "ru": "осложнение",
-        "tr": "komplikasyon"
+        "tr": "komplikasyon",
+        "level": "C1"
     },
     {
         "en": "comply",
         "ru": "исполнять",
-        "tr": "uymak"
+        "tr": "uymak",
+        "level": "C1"
     },
     {
         "en": "compose",
         "ru": "сочинять",
-        "tr": "beste yapmak"
+        "tr": "beste yapmak",
+        "level": "B2"
     },
     {
         "en": "composer",
         "ru": "композитор",
-        "tr": "besteci"
+        "tr": "besteci",
+        "level": "B2"
     },
     {
         "en": "composition",
         "ru": "композиция",
-        "tr": "kompozisyon"
+        "tr": "kompozisyon",
+        "level": "C1"
     },
     {
         "en": "compound",
         "ru": "сложный",
-        "tr": "birleştirmek"
+        "tr": "birleştirmek",
+        "level": "B2"
     },
     {
         "en": "comprehensive",
         "ru": "всесторонний",
-        "tr": "kapsayıcı"
+        "tr": "kapsayıcı",
+        "level": "B2"
     },
     {
         "en": "comprise",
         "ru": "включать в себя",
-        "tr": "içermek"
+        "tr": "içermek",
+        "level": "B2"
     },
     {
         "en": "compromise",
         "ru": "компромисс",
-        "tr": "anlaşmak"
+        "tr": "anlaşmak",
+        "level": "C1"
     },
     {
         "en": "compulsory",
         "ru": "принудительный",
-        "tr": "zorunlu"
+        "tr": "zorunlu",
+        "level": "B2"
     },
     {
         "en": "compute",
         "ru": "вычислить",
-        "tr": "hesaplama"
+        "tr": "hesaplama",
+        "level": "C1"
     },
     {
         "en": "conceal",
         "ru": "скрывать",
-        "tr": "gizlemek"
+        "tr": "gizlemek",
+        "level": "C1"
     },
     {
         "en": "concede",
         "ru": "уступать",
-        "tr": "teslim olmak"
+        "tr": "teslim olmak",
+        "level": "C1"
     },
     {
         "en": "conceive",
         "ru": "зачать",
-        "tr": "hamile kalmak"
+        "tr": "hamile kalmak",
+        "level": "C1"
     },
     {
         "en": "conception",
         "ru": "концепция",
-        "tr": "anlayış"
+        "tr": "anlayış",
+        "level": "C1"
     },
     {
         "en": "concession",
         "ru": "уступка",
-        "tr": "imtiyaz"
+        "tr": "imtiyaz",
+        "level": "C1"
     },
     {
         "en": "concrete",
         "ru": "конкретный",
-        "tr": "beton"
+        "tr": "beton",
+        "level": "B2"
     },
     {
         "en": "condemn",
         "ru": "осуждать",
-        "tr": "kınamak"
+        "tr": "kınamak",
+        "level": "C1"
     },
     {
         "en": "confer",
         "ru": "назначать",
-        "tr": "görüşmek"
+        "tr": "görüşmek",
+        "level": "C1"
     },
     {
         "en": "confess",
         "ru": "признаваться",
-        "tr": "itiraf etmek"
+        "tr": "itiraf etmek",
+        "level": "B2"
     },
     {
         "en": "confession",
         "ru": "признание",
-        "tr": "itiraf"
+        "tr": "itiraf",
+        "level": "C1"
     },
     {
         "en": "configuration",
         "ru": "конфигурация",
-        "tr": "yapılandırma"
+        "tr": "yapılandırma",
+        "level": "C1"
     },
     {
         "en": "confine",
         "ru": "ограничивать",
-        "tr": "sınırlamak"
+        "tr": "sınırlamak",
+        "level": "C1"
     },
     {
         "en": "confirmation",
         "ru": "подтверждение",
-        "tr": "onay"
+        "tr": "onay",
+        "level": "C1"
     },
     {
         "en": "confront",
         "ru": "противостоять",
-        "tr": "yüzleşmek"
+        "tr": "yüzleşmek",
+        "level": "C1"
     },
     {
         "en": "confrontation",
         "ru": "конфронтация",
-        "tr": "yüzleşme"
+        "tr": "yüzleşme",
+        "level": "C1"
     },
     {
         "en": "confusion",
         "ru": "путаница",
-        "tr": "bilinç bulanıklığı, konfüzyon"
+        "tr": "bilinç bulanıklığı, konfüzyon",
+        "level": "B2"
     },
     {
         "en": "congratulate",
         "ru": "поздравлять",
-        "tr": "tebrik etmek"
+        "tr": "tebrik etmek",
+        "level": "C1"
     },
     {
         "en": "congregation",
         "ru": "собрание",
-        "tr": "cemaat"
+        "tr": "cemaat",
+        "level": "C1"
     },
     {
         "en": "congressional",
         "ru": "Конгресс",
-        "tr": "kongre"
+        "tr": "kongre",
+        "level": "C1"
     },
     {
         "en": "conquer",
         "ru": "завоевывать",
-        "tr": "fethetmek"
+        "tr": "fethetmek",
+        "level": "C1"
     },
     {
         "en": "conscience",
         "ru": "совесть",
-        "tr": "vicdan"
+        "tr": "vicdan",
+        "level": "C1"
     },
     {
         "en": "consciousness",
         "ru": "сознание",
-        "tr": "bilinç"
+        "tr": "bilinç",
+        "level": "C1"
     },
     {
         "en": "consecutive",
         "ru": "последовательный",
-        "tr": "ardışık"
+        "tr": "ardışık",
+        "level": "C1"
     },
     {
         "en": "consensus",
         "ru": "консенсус",
-        "tr": "fikir birliği"
+        "tr": "fikir birliği",
+        "level": "C1"
     },
     {
         "en": "consent",
         "ru": "согласие",
-        "tr": "onay"
+        "tr": "onay",
+        "level": "C1"
     },
     {
         "en": "consequently",
         "ru": "следовательно",
-        "tr": "sonuç olarak"
+        "tr": "sonuç olarak",
+        "level": "B2"
     },
     {
         "en": "conservation",
         "ru": "сохранение",
-        "tr": "koruma"
+        "tr": "koruma",
+        "level": "B2"
     },
     {
         "en": "conserve",
         "ru": "сохранять",
-        "tr": "korumak"
+        "tr": "korumak",
+        "level": "C1"
     },
     {
         "en": "considerable",
         "ru": "значительный",
-        "tr": "hatırı sayılır"
+        "tr": "hatırı sayılır",
+        "level": "B2"
     },
     {
         "en": "considerably",
         "ru": "значительно",
-        "tr": "önemli ölçüde"
+        "tr": "önemli ölçüde",
+        "level": "B2"
     },
     {
         "en": "consistency",
         "ru": "последовательность",
-        "tr": "tutarlılık"
+        "tr": "tutarlılık",
+        "level": "C1"
     },
     {
         "en": "consistently",
         "ru": "последовательно",
-        "tr": "sürekli olarak"
+        "tr": "sürekli olarak",
+        "level": "B2"
     },
     {
         "en": "consolidate",
         "ru": "консолидировать",
-        "tr": "pekiştirmek"
+        "tr": "pekiştirmek",
+        "level": "C1"
     },
     {
         "en": "conspiracy",
         "ru": "заговор",
-        "tr": "komplo"
+        "tr": "komplo",
+        "level": "B2"
     },
     {
         "en": "constitute",
         "ru": "составляют",
-        "tr": "oluşturmak"
+        "tr": "oluşturmak",
+        "level": "C1"
     },
     {
         "en": "constitution",
         "ru": "конституция",
-        "tr": "anayasa"
+        "tr": "anayasa",
+        "level": "C1"
     },
     {
         "en": "constitutional",
         "ru": "конституционный",
-        "tr": "anayasal"
+        "tr": "anayasal",
+        "level": "C1"
     },
     {
         "en": "constraint",
         "ru": "ограничение",
-        "tr": "kısıtlama"
+        "tr": "kısıtlama",
+        "level": "C1"
     },
     {
         "en": "consult",
         "ru": "проконсультироваться",
-        "tr": "danışmak"
+        "tr": "danışmak",
+        "level": "B2"
     },
     {
         "en": "consultant",
         "ru": "консультант",
-        "tr": "danışman"
+        "tr": "danışman",
+        "level": "B2"
     },
     {
         "en": "consultation",
         "ru": "консультация",
-        "tr": "danışma"
+        "tr": "danışma",
+        "level": "C1"
     },
     {
         "en": "consumption",
         "ru": "потребление",
-        "tr": "tüketim"
+        "tr": "tüketim",
+        "level": "B2"
     },
     {
         "en": "contemplate",
         "ru": "созерцать",
-        "tr": "tasarlamak"
+        "tr": "tasarlamak",
+        "level": "C1"
     },
     {
         "en": "contempt",
         "ru": "презрение",
-        "tr": "küçümseme"
+        "tr": "küçümseme",
+        "level": "C1"
     },
     {
         "en": "contend",
         "ru": "бороться",
-        "tr": "çekişmek"
+        "tr": "çekişmek",
+        "level": "C1"
     },
     {
         "en": "contender",
         "ru": "претендент",
-        "tr": "yarışmacı"
+        "tr": "yarışmacı",
+        "level": "C1"
     },
     {
         "en": "content2",
         "ru": "контент2",
-        "tr": "içerik2"
+        "tr": "içerik2",
+        "level": "C1"
     },
     {
         "en": "contention",
         "ru": "раздор",
-        "tr": "çekişme"
+        "tr": "çekişme",
+        "level": "C1"
     },
     {
         "en": "continually",
         "ru": "постоянно",
-        "tr": "sürekli"
+        "tr": "sürekli",
+        "level": "C1"
     },
     {
         "en": "contractor",
         "ru": "подрядчик",
-        "tr": "müteahhit"
+        "tr": "müteahhit",
+        "level": "C1"
     },
     {
         "en": "contradiction",
         "ru": "противоречие",
-        "tr": "çelişki"
+        "tr": "çelişki",
+        "level": "C1"
     },
     {
         "en": "contrary",
         "ru": "вопреки",
-        "tr": "aksine"
+        "tr": "aksine",
+        "level": "C1"
     },
     {
         "en": "contributor",
         "ru": "участник",
-        "tr": "katkıda bulunan"
+        "tr": "katkıda bulunan",
+        "level": "C1"
     },
     {
         "en": "controversial",
         "ru": "спорный",
-        "tr": "tartışmalı"
+        "tr": "tartışmalı",
+        "level": "B2"
     },
     {
         "en": "controversy",
         "ru": "полемика",
-        "tr": "tartışma"
+        "tr": "tartışma",
+        "level": "B2"
     },
     {
         "en": "convenience",
         "ru": "удобство",
-        "tr": "kolaylık"
+        "tr": "kolaylık",
+        "level": "B2"
     },
     {
         "en": "convention",
         "ru": "соглашение",
-        "tr": "kongre"
+        "tr": "kongre",
+        "level": "B2"
     },
     {
         "en": "conventional",
         "ru": "общепринятый",
-        "tr": "geleneksel"
+        "tr": "geleneksel",
+        "level": "B2"
     },
     {
         "en": "conversion",
         "ru": "преобразование",
-        "tr": "dönüşüm"
+        "tr": "dönüşüm",
+        "level": "C1"
     },
     {
         "en": "convey",
         "ru": "передавать",
-        "tr": "iletmek"
+        "tr": "iletmek",
+        "level": "B2"
     },
     {
         "en": "convict",
         "ru": "осужденный",
-        "tr": "mahkum"
+        "tr": "mahkum",
+        "level": "C1"
     },
     {
         "en": "conviction",
         "ru": "убеждение",
-        "tr": "mahkumiyet"
+        "tr": "mahkumiyet",
+        "level": "C1"
     },
     {
         "en": "convincing",
         "ru": "убедительный",
-        "tr": "inandırıcı"
+        "tr": "inandırıcı",
+        "level": "B2"
     },
     {
         "en": "cooperate",
         "ru": "сотрудничать",
-        "tr": "işbirliği yapmak"
+        "tr": "işbirliği yapmak",
+        "level": "C1"
     },
     {
         "en": "cooperative",
         "ru": "кооператив",
-        "tr": "kooperatif"
+        "tr": "kooperatif",
+        "level": "C1"
     },
     {
         "en": "coordinate",
         "ru": "координировать",
-        "tr": "koordinat"
+        "tr": "koordinat",
+        "level": "C1"
     },
     {
         "en": "coordination",
         "ru": "координация",
-        "tr": "koordinasyon"
+        "tr": "koordinasyon",
+        "level": "C1"
     },
     {
         "en": "coordinator",
         "ru": "координатор",
-        "tr": "koordinatör"
+        "tr": "koordinatör",
+        "level": "C1"
     },
     {
         "en": "cop",
         "ru": "полицейский",
-        "tr": "polis"
+        "tr": "polis",
+        "level": "B2"
     },
     {
         "en": "cope",
         "ru": "справляться",
-        "tr": "başa çıkmak"
+        "tr": "başa çıkmak",
+        "level": "B2"
     },
     {
         "en": "copper",
         "ru": "медь",
-        "tr": "bakır"
+        "tr": "bakır",
+        "level": "C1"
     },
     {
         "en": "copyright",
         "ru": "авторское право",
-        "tr": "telif hakkı"
+        "tr": "telif hakkı",
+        "level": "C1"
     },
     {
         "en": "corporation",
         "ru": "корпорация",
-        "tr": "şirket"
+        "tr": "şirket",
+        "level": "B2"
     },
     {
         "en": "correction",
         "ru": "исправление",
-        "tr": "düzeltme"
+        "tr": "düzeltme",
+        "level": "C1"
     },
     {
         "en": "correlate",
         "ru": "коррелировать",
-        "tr": "ilişkilendirmek"
+        "tr": "ilişkilendirmek",
+        "level": "C1"
     },
     {
         "en": "correlation",
         "ru": "корреляция",
-        "tr": "korelasyon"
+        "tr": "korelasyon",
+        "level": "C1"
     },
     {
         "en": "correspond",
         "ru": "переписываться",
-        "tr": "karşılık gelmek"
+        "tr": "karşılık gelmek",
+        "level": "C1"
     },
     {
         "en": "correspondence",
         "ru": "переписка",
-        "tr": "yazışma"
+        "tr": "yazışma",
+        "level": "C1"
     },
     {
         "en": "correspondent",
         "ru": "корреспондент",
-        "tr": "muhabir"
+        "tr": "muhabir",
+        "level": "C1"
     },
     {
         "en": "corresponding",
         "ru": "соответствующий",
-        "tr": "karşılık gelen"
+        "tr": "karşılık gelen",
+        "level": "C1"
     },
     {
         "en": "corridor",
         "ru": "коридор",
-        "tr": "koridor"
+        "tr": "koridor",
+        "level": "B2"
     },
     {
         "en": "corrupt",
         "ru": "коррумпированный",
-        "tr": "yozlaşmış"
+        "tr": "yozlaşmış",
+        "level": "C1"
     },
     {
         "en": "corruption",
         "ru": "коррупция",
-        "tr": "yolsuzluk"
+        "tr": "yolsuzluk",
+        "level": "C1"
     },
     {
         "en": "costly",
         "ru": "дорогостоящий",
-        "tr": "pahalı"
+        "tr": "pahalı",
+        "level": "C1"
     },
     {
         "en": "councilor",
         "ru": "советник",
-        "tr": "meclis üyesi"
+        "tr": "meclis üyesi",
+        "level": "C1"
     },
     {
         "en": "counseling",
         "ru": "консультирование",
-        "tr": "danışmanlık"
+        "tr": "danışmanlık",
+        "level": "C1"
     },
     {
         "en": "counselor",
         "ru": "консультант",
-        "tr": "danışman"
+        "tr": "danışman",
+        "level": "C1"
     },
     {
         "en": "counter",
         "ru": "прилавок",
-        "tr": "tezgah"
-    },
-    {
-        "en": "counter (argue against)",
-        "ru": "возражать (спорить)",
-        "tr": "karşı çıkmak (karşı çıkmak)"
-    },
-    {
-        "en": "counter (long flat surface)",
-        "ru": "стойка (длинная плоская поверхность)",
-        "tr": "sayaç (uzun düz yüzey)"
+        "tr": "tezgah",
+        "level": "C1"
     },
     {
         "en": "counterpart",
         "ru": "коллега",
-        "tr": "muadili"
+        "tr": "muadili",
+        "level": "C1"
     },
     {
         "en": "countless",
         "ru": "бесчисленное множество",
-        "tr": "sayısız"
+        "tr": "sayısız",
+        "level": "C1"
     },
     {
         "en": "coup",
         "ru": "переворот",
-        "tr": "darbe"
+        "tr": "darbe",
+        "level": "C1"
     },
     {
         "en": "courtesy",
         "ru": "учтивость",
-        "tr": "nezaket"
+        "tr": "nezaket",
+        "level": "C1"
     },
     {
         "en": "coverage",
         "ru": "покрытие",
-        "tr": "kapsama"
+        "tr": "kapsama",
+        "level": "B2"
     },
     {
         "en": "cowboy",
         "ru": "ковбой",
-        "tr": "kovboy"
+        "tr": "kovboy",
+        "level": "B2"
     },
     {
         "en": "crack",
         "ru": "трескаться",
-        "tr": "çatırtı"
+        "tr": "çatırtı",
+        "level": "B2"
     },
     {
         "en": "craft",
         "ru": "ремесло",
-        "tr": "zanaat"
+        "tr": "zanaat",
+        "level": "C1"
     },
     {
         "en": "craft  B2",
         "ru": "ремесло Б2",
-        "tr": "zanaat B2"
+        "tr": "zanaat B2",
+        "level": "C1"
     },
     {
         "en": "crawl",
         "ru": "ползти",
-        "tr": "sürünmek"
+        "tr": "sürünmek",
+        "level": "C1"
     },
     {
         "en": "creativity",
         "ru": "креативность",
-        "tr": "yaratıcılık"
+        "tr": "yaratıcılık",
+        "level": "B2"
     },
     {
         "en": "creator",
         "ru": "создатель",
-        "tr": "yaratıcı"
+        "tr": "yaratıcı",
+        "level": "C1"
     },
     {
         "en": "credibility",
         "ru": "авторитет",
-        "tr": "güvenilirlik"
+        "tr": "güvenilirlik",
+        "level": "C1"
     },
     {
         "en": "credible",
         "ru": "заслуживающий доверия",
-        "tr": "güvenilir"
+        "tr": "güvenilir",
+        "level": "C1"
     },
     {
         "en": "creep",
         "ru": "слизняк",
-        "tr": "sürünme"
+        "tr": "sürünme",
+        "level": "C1"
     },
     {
         "en": "critically",
         "ru": "критически",
-        "tr": "eleştirel olarak"
+        "tr": "eleştirel olarak",
+        "level": "B2"
     },
     {
         "en": "critique",
         "ru": "критика",
-        "tr": "eleştiri"
+        "tr": "eleştiri",
+        "level": "C1"
     },
     {
         "en": "crown",
         "ru": "корона",
-        "tr": "taç"
+        "tr": "taç",
+        "level": "C1"
     },
     {
         "en": "crude",
         "ru": "сырой",
-        "tr": "ham"
+        "tr": "ham",
+        "level": "C1"
     },
     {
         "en": "cruise",
         "ru": "круиз",
-        "tr": "dolaşmak"
+        "tr": "dolaşmak",
+        "level": "B2"
     },
     {
         "en": "crush",
         "ru": "раздавить",
-        "tr": "ezmek"
+        "tr": "ezmek",
+        "level": "C1"
     },
     {
         "en": "crystal",
         "ru": "кристалл",
-        "tr": "kristal"
+        "tr": "kristal",
+        "level": "C1"
     },
     {
         "en": "cue",
         "ru": "сигнал",
-        "tr": "işaret"
+        "tr": "işaret",
+        "level": "B2"
     },
     {
         "en": "cult",
         "ru": "культ",
-        "tr": "kült"
+        "tr": "kült",
+        "level": "C1"
     },
     {
         "en": "cultivate",
         "ru": "культивировать",
-        "tr": "yetiştirmek"
+        "tr": "yetiştirmek",
+        "level": "C1"
     },
     {
         "en": "curiosity",
         "ru": "любопытство",
-        "tr": "merak"
+        "tr": "merak",
+        "level": "C1"
     },
     {
         "en": "curious",
         "ru": "любопытный",
-        "tr": "meraklı"
+        "tr": "meraklı",
+        "level": "B2"
     },
     {
         "en": "curriculum",
         "ru": "учебный план",
-        "tr": "müfredat"
+        "tr": "müfredat",
+        "level": "B2"
     },
     {
         "en": "custody",
         "ru": "попечение",
-        "tr": "velayet"
+        "tr": "velayet",
+        "level": "C1"
     },
     {
         "en": "cute",
         "ru": "милый",
-        "tr": "Sevimli"
+        "tr": "Sevimli",
+        "level": "B2"
     },
     {
         "en": "cutting",
         "ru": "резка",
-        "tr": "kesme"
+        "tr": "kesme",
+        "level": "C1"
     },
     {
         "en": "cynical",
         "ru": "циничный",
-        "tr": "alaycı"
+        "tr": "alaycı",
+        "level": "C1"
     },
     {
         "en": "dairy",
         "ru": "молочный",
-        "tr": "günlük"
+        "tr": "günlük",
+        "level": "B2"
     },
     {
         "en": "dam",
         "ru": "плотина",
-        "tr": "baraj"
+        "tr": "baraj",
+        "level": "C1"
     },
     {
         "en": "damaging",
         "ru": "повреждающий",
-        "tr": "zarar verici"
+        "tr": "zarar verici",
+        "level": "C1"
     },
     {
         "en": "dare",
         "ru": "осмелиться",
-        "tr": "cesaret"
+        "tr": "cesaret",
+        "level": "B2"
     },
     {
         "en": "darkness",
         "ru": "темнота",
-        "tr": "karanlık"
+        "tr": "karanlık",
+        "level": "B2"
     },
     {
         "en": "database",
         "ru": "база данных",
-        "tr": "veritabanı"
+        "tr": "veritabanı",
+        "level": "B2"
     },
     {
         "en": "dawn",
         "ru": "рассвет",
-        "tr": "şafak"
+        "tr": "şafak",
+        "level": "C1"
     },
     {
         "en": "deadline",
         "ru": "крайний срок",
-        "tr": "son teslim tarihi"
+        "tr": "son teslim tarihi",
+        "level": "B2"
     },
     {
         "en": "deadly",
         "ru": "смертоносный",
-        "tr": "ölümcül"
+        "tr": "ölümcül",
+        "level": "B2"
     },
     {
         "en": "dealer",
         "ru": "дилер",
-        "tr": "satıcı"
+        "tr": "satıcı",
+        "level": "B2"
     },
     {
         "en": "debris",
         "ru": "обломки",
-        "tr": "enkaz"
+        "tr": "enkaz",
+        "level": "C1"
     },
     {
         "en": "debut",
         "ru": "дебют",
-        "tr": "ilk çıkış"
+        "tr": "ilk çıkış",
+        "level": "C1"
     },
     {
         "en": "decision-making",
         "ru": "принятие решений",
-        "tr": "karar verme"
+        "tr": "karar verme",
+        "level": "C1"
     },
     {
         "en": "decisive",
         "ru": "решающий",
-        "tr": "belirleyici"
+        "tr": "belirleyici",
+        "level": "C1"
     },
     {
         "en": "deck",
         "ru": "палуба",
-        "tr": "güverte"
+        "tr": "güverte",
+        "level": "B2"
     },
     {
         "en": "declaration",
         "ru": "декларация",
-        "tr": "beyan"
+        "tr": "beyan",
+        "level": "C1"
     },
     {
         "en": "dedicated",
         "ru": "преданный",
-        "tr": "özel"
+        "tr": "özel",
+        "level": "C1"
     },
     {
         "en": "dedication",
         "ru": "преданность",
-        "tr": "özveri"
+        "tr": "özveri",
+        "level": "C1"
     },
     {
         "en": "deed",
         "ru": "поступок",
-        "tr": "senet"
+        "tr": "senet",
+        "level": "C1"
     },
     {
         "en": "deem",
         "ru": "считать",
-        "tr": "düşünmek"
+        "tr": "düşünmek",
+        "level": "C1"
     },
     {
         "en": "default",
         "ru": "по умолчанию",
-        "tr": "varsayılan"
+        "tr": "varsayılan",
+        "level": "C1"
     },
     {
         "en": "defect",
         "ru": "дефект",
-        "tr": "kusur"
+        "tr": "kusur",
+        "level": "C1"
     },
     {
         "en": "defender",
         "ru": "защитник",
-        "tr": "defans oyuncusu"
+        "tr": "defans oyuncusu",
+        "level": "B2"
     },
     {
         "en": "defensive",
         "ru": "оборонительный",
-        "tr": "savunma"
+        "tr": "savunma",
+        "level": "C1"
     },
     {
         "en": "deficiency",
         "ru": "недостаток",
-        "tr": "eksiklik"
+        "tr": "eksiklik",
+        "level": "C1"
     },
     {
         "en": "deficit",
         "ru": "дефицит",
-        "tr": "açık"
+        "tr": "açık",
+        "level": "C1"
     },
     {
         "en": "defy",
         "ru": "бросать вызов",
-        "tr": "meydan okumak"
+        "tr": "meydan okumak",
+        "level": "C1"
     },
     {
         "en": "delegate",
         "ru": "делегат",
-        "tr": "temsilci"
+        "tr": "temsilci",
+        "level": "C1"
     },
     {
         "en": "delegation",
         "ru": "делегация",
-        "tr": "heyet"
+        "tr": "heyet",
+        "level": "C1"
     },
     {
         "en": "delete",
         "ru": "удалить",
-        "tr": "silmek"
+        "tr": "silmek",
+        "level": "B2"
     },
     {
         "en": "delicate",
         "ru": "нежный",
-        "tr": "narin"
+        "tr": "narin",
+        "level": "C1"
     },
     {
         "en": "delighted",
         "ru": "получивший удовольствие",
-        "tr": "memnun"
+        "tr": "memnun",
+        "level": "B2"
     },
     {
         "en": "democracy",
         "ru": "демократия",
-        "tr": "demokrasi"
+        "tr": "demokrasi",
+        "level": "B2"
     },
     {
         "en": "democratic",
         "ru": "демократический",
-        "tr": "demokratik"
+        "tr": "demokratik",
+        "level": "B2"
     },
     {
         "en": "demon",
         "ru": "демон",
-        "tr": "şeytan"
+        "tr": "şeytan",
+        "level": "C1"
     },
     {
         "en": "demonstration",
         "ru": "демонстрация",
-        "tr": "gösteri"
+        "tr": "gösteri",
+        "level": "B2"
     },
     {
         "en": "denial",
         "ru": "отрицание",
-        "tr": "inkar"
+        "tr": "inkar",
+        "level": "C1"
     },
     {
         "en": "denounce",
         "ru": "денонсировать",
-        "tr": "kınamak"
+        "tr": "kınamak",
+        "level": "C1"
     },
     {
         "en": "dense",
         "ru": "плотный",
-        "tr": "yoğun"
+        "tr": "yoğun",
+        "level": "C1"
     },
     {
         "en": "density",
         "ru": "плотность",
-        "tr": "yoğunluk"
+        "tr": "yoğunluk",
+        "level": "C1"
     },
     {
         "en": "depart",
         "ru": "уйти",
-        "tr": "ayrılmak"
+        "tr": "ayrılmak",
+        "level": "B2"
     },
     {
         "en": "dependence",
         "ru": "зависимость",
-        "tr": "bağımlılık"
+        "tr": "bağımlılık",
+        "level": "C1"
     },
     {
         "en": "dependent",
         "ru": "зависимый",
-        "tr": "bağımlı"
+        "tr": "bağımlı",
+        "level": "B2"
     },
     {
         "en": "depict",
         "ru": "изображать",
-        "tr": "tasvir etmek"
+        "tr": "tasvir etmek",
+        "level": "C1"
     },
     {
         "en": "deploy",
         "ru": "развертывать",
-        "tr": "dağıtmak"
+        "tr": "dağıtmak",
+        "level": "C1"
     },
     {
         "en": "deployment",
         "ru": "развертывание",
-        "tr": "konuşlandırma"
+        "tr": "konuşlandırma",
+        "level": "C1"
     },
     {
         "en": "deposit",
         "ru": "депозит",
-        "tr": "mevduat"
+        "tr": "mevduat",
+        "level": "B2"
     },
     {
         "en": "depression",
         "ru": "депрессия",
-        "tr": "depresyon"
+        "tr": "depresyon",
+        "level": "B2"
     },
     {
         "en": "deprive",
         "ru": "лишать",
-        "tr": "mahrum etmek"
+        "tr": "mahrum etmek",
+        "level": "C1"
     },
     {
         "en": "deputy",
         "ru": "депутат",
-        "tr": "milletvekili"
+        "tr": "milletvekili",
+        "level": "C1"
     },
     {
         "en": "derive",
         "ru": "вывести",
-        "tr": "türetmek"
+        "tr": "türetmek",
+        "level": "B2"
     },
     {
         "en": "descend",
         "ru": "спуститься",
-        "tr": "inmek"
+        "tr": "inmek",
+        "level": "C1"
     },
     {
         "en": "descent",
         "ru": "спуск",
-        "tr": "iniş"
+        "tr": "iniş",
+        "level": "C1"
     },
     {
         "en": "designate",
         "ru": "назначать",
-        "tr": "belirlemek"
+        "tr": "belirlemek",
+        "level": "C1"
     },
     {
         "en": "desirable",
         "ru": "желательно",
-        "tr": "arzu edilen"
+        "tr": "arzu edilen",
+        "level": "C1"
     },
     {
         "en": "desktop",
         "ru": "рабочий стол",
-        "tr": "masaüstü"
+        "tr": "masaüstü",
+        "level": "C1"
     },
     {
         "en": "desperately",
         "ru": "отчаянно",
-        "tr": "umutsuzca"
+        "tr": "umutsuzca",
+        "level": "B2"
     },
     {
         "en": "destruction",
         "ru": "разрушение",
-        "tr": "yıkım"
+        "tr": "yıkım",
+        "level": "B2"
     },
     {
         "en": "destructive",
         "ru": "разрушительный",
-        "tr": "yıkıcı"
+        "tr": "yıkıcı",
+        "level": "C1"
     },
     {
         "en": "detain",
         "ru": "задерживать",
-        "tr": "gözaltına almak"
+        "tr": "gözaltına almak",
+        "level": "C1"
     },
     {
         "en": "detection",
         "ru": "обнаружение",
-        "tr": "algılama"
+        "tr": "algılama",
+        "level": "C1"
     },
     {
         "en": "detention",
         "ru": "задержание",
-        "tr": "gözaltı"
+        "tr": "gözaltı",
+        "level": "C1"
     },
     {
         "en": "deteriorate",
         "ru": "ухудшаться",
-        "tr": "bozulmak"
+        "tr": "bozulmak",
+        "level": "C1"
     },
     {
         "en": "determination",
         "ru": "определение",
-        "tr": "kararlılık"
+        "tr": "kararlılık",
+        "level": "B2"
     },
     {
         "en": "devastate",
         "ru": "опустошать",
-        "tr": "harap etmek"
+        "tr": "harap etmek",
+        "level": "C1"
     },
     {
         "en": "devil",
         "ru": "дьявол",
-        "tr": "şeytan"
+        "tr": "şeytan",
+        "level": "C1"
     },
     {
         "en": "devise",
         "ru": "придумать",
-        "tr": "tasarlamak"
+        "tr": "tasarlamak",
+        "level": "C1"
     },
     {
         "en": "devote",
         "ru": "посвящать",
-        "tr": "adamak"
+        "tr": "adamak",
+        "level": "B2"
     },
     {
         "en": "diagnose",
         "ru": "диагностировать",
-        "tr": "teşhis etmek"
+        "tr": "teşhis etmek",
+        "level": "C1"
     },
     {
         "en": "diagnosis",
         "ru": "диагноз",
-        "tr": "tanı"
+        "tr": "tanı",
+        "level": "C1"
     },
     {
         "en": "dictate",
         "ru": "диктовать",
-        "tr": "dikte"
+        "tr": "dikte",
+        "level": "C1"
     },
     {
         "en": "dictator",
         "ru": "диктатор",
-        "tr": "diktatör"
+        "tr": "diktatör",
+        "level": "C1"
     },
     {
         "en": "differ",
         "ru": "отличаться",
-        "tr": "farklı"
+        "tr": "farklı",
+        "level": "B2"
     },
     {
         "en": "differentiate",
         "ru": "дифференцировать",
-        "tr": "farklılaştırmak"
+        "tr": "farklılaştırmak",
+        "level": "C1"
     },
     {
         "en": "dignity",
         "ru": "достоинство",
-        "tr": "itibar"
+        "tr": "itibar",
+        "level": "C1"
     },
     {
         "en": "dilemma",
         "ru": "дилемма",
-        "tr": "ikilem"
+        "tr": "ikilem",
+        "level": "C1"
     },
     {
         "en": "dime",
         "ru": "десять центов",
-        "tr": "on sent"
+        "tr": "on sent",
+        "level": "B2"
     },
     {
         "en": "dimension",
         "ru": "измерение",
-        "tr": "boyut"
+        "tr": "boyut",
+        "level": "C1"
     },
     {
         "en": "diminish",
         "ru": "уменьшать",
-        "tr": "azaltmak"
+        "tr": "azaltmak",
+        "level": "C1"
     },
     {
         "en": "dip",
         "ru": "окунать",
-        "tr": "daldırma"
+        "tr": "daldırma",
+        "level": "C1"
     },
     {
         "en": "diplomat",
         "ru": "дипломат",
-        "tr": "diplomat"
+        "tr": "diplomat",
+        "level": "C1"
     },
     {
         "en": "diplomatic",
         "ru": "дипломатический",
-        "tr": "diplomatik"
+        "tr": "diplomatik",
+        "level": "C1"
     },
     {
         "en": "directory",
         "ru": "каталог",
-        "tr": "dizin"
+        "tr": "dizin",
+        "level": "C1"
     },
     {
         "en": "disability",
         "ru": "инвалидность",
-        "tr": "sakatlık"
+        "tr": "sakatlık",
+        "level": "B2"
     },
     {
         "en": "disabled",
         "ru": "неполноценный",
-        "tr": "engelli"
+        "tr": "engelli",
+        "level": "B2"
     },
     {
         "en": "disagreement",
         "ru": "несогласие",
-        "tr": "anlaşmazlık"
+        "tr": "anlaşmazlık",
+        "level": "B2"
     },
     {
         "en": "disappoint",
         "ru": "разочаровывать",
-        "tr": "hayal kırıklığına uğratmak"
+        "tr": "hayal kırıklığına uğratmak",
+        "level": "B2"
     },
     {
         "en": "disappointment",
         "ru": "разочарование",
-        "tr": "hayal kırıklığı"
+        "tr": "hayal kırıklığı",
+        "level": "B2"
     },
     {
         "en": "disastrous",
         "ru": "катастрофический",
-        "tr": "felaket"
+        "tr": "felaket",
+        "level": "C1"
     },
     {
         "en": "discard",
         "ru": "отказаться",
-        "tr": "atmak"
+        "tr": "atmak",
+        "level": "C1"
     },
     {
         "en": "discharge",
         "ru": "увольнять",
-        "tr": "deşarj"
+        "tr": "deşarj",
+        "level": "C1"
     },
     {
         "en": "disclose",
         "ru": "раскрывать",
-        "tr": "ifşa etmek"
+        "tr": "ifşa etmek",
+        "level": "C1"
     },
     {
         "en": "disclosure",
         "ru": "раскрытие информации",
-        "tr": "ifşa"
+        "tr": "ifşa",
+        "level": "C1"
     },
     {
         "en": "discourage",
         "ru": "обескураживать",
-        "tr": "vazgeçirmek"
+        "tr": "vazgeçirmek",
+        "level": "B2"
     },
     {
         "en": "discourse",
         "ru": "дискурс",
-        "tr": "söylem"
+        "tr": "söylem",
+        "level": "C1"
     },
     {
         "en": "discretion",
         "ru": "осмотрительность",
-        "tr": "takdir yetkisi"
+        "tr": "takdir yetkisi",
+        "level": "C1"
     },
     {
         "en": "discrimination",
         "ru": "дискриминация",
-        "tr": "ayrımcılık"
+        "tr": "ayrımcılık",
+        "level": "C1"
     },
     {
         "en": "dismissal",
         "ru": "увольнение",
-        "tr": "işten çıkarılma"
+        "tr": "işten çıkarılma",
+        "level": "C1"
     },
     {
         "en": "disorder",
         "ru": "беспорядок",
-        "tr": "düzensizlik"
+        "tr": "düzensizlik",
+        "level": "B2"
     },
     {
         "en": "displace",
         "ru": "вытеснять",
-        "tr": "yerinden etmek"
+        "tr": "yerinden etmek",
+        "level": "C1"
     },
     {
         "en": "disposal",
         "ru": "утилизация",
-        "tr": "imha etmek"
+        "tr": "imha etmek",
+        "level": "C1"
     },
     {
         "en": "dispose",
         "ru": "распоряжаться",
-        "tr": "elden çıkarmak"
+        "tr": "elden çıkarmak",
+        "level": "C1"
     },
     {
         "en": "dispute",
         "ru": "спор",
-        "tr": "anlaşmazlık"
+        "tr": "anlaşmazlık",
+        "level": "C1"
     },
     {
         "en": "disrupt",
         "ru": "нарушать",
-        "tr": "bozmak"
+        "tr": "bozmak",
+        "level": "C1"
     },
     {
         "en": "disruption",
         "ru": "нарушение",
-        "tr": "bozulma"
+        "tr": "bozulma",
+        "level": "C1"
     },
     {
         "en": "dissolve",
         "ru": "растворяться",
-        "tr": "çözünmek"
+        "tr": "çözünmek",
+        "level": "C1"
     },
     {
         "en": "distant",
         "ru": "далекий",
-        "tr": "mesafe"
+        "tr": "mesafe",
+        "level": "B2"
     },
     {
         "en": "distinct",
         "ru": "отчетливый",
-        "tr": "belirgin"
+        "tr": "belirgin",
+        "level": "B2"
     },
     {
         "en": "distinction",
         "ru": "различие",
-        "tr": "ayrım"
+        "tr": "ayrım",
+        "level": "C1"
     },
     {
         "en": "distinctive",
         "ru": "отличительный",
-        "tr": "ayırt edici"
+        "tr": "ayırt edici",
+        "level": "C1"
     },
     {
         "en": "distinguish",
         "ru": "различать",
-        "tr": "ayırt etmek"
+        "tr": "ayırt etmek",
+        "level": "B2"
     },
     {
         "en": "distort",
         "ru": "искажать",
-        "tr": "çarpıtmak"
+        "tr": "çarpıtmak",
+        "level": "C1"
     },
     {
         "en": "distract",
         "ru": "отвлекать",
-        "tr": "dikkatini dağıtmak"
+        "tr": "dikkatini dağıtmak",
+        "level": "B2"
     },
     {
         "en": "distress",
         "ru": "бедствие",
-        "tr": "sıkıntı"
+        "tr": "sıkıntı",
+        "level": "C1"
     },
     {
         "en": "disturb",
         "ru": "беспокоить",
-        "tr": "rahatsız etmek"
+        "tr": "rahatsız etmek",
+        "level": "B2"
     },
     {
         "en": "disturbing",
         "ru": "тревожный",
-        "tr": "rahatsız edici"
+        "tr": "rahatsız edici",
+        "level": "C1"
     },
     {
         "en": "dive",
         "ru": "нырять",
-        "tr": "dalmak"
+        "tr": "dalmak",
+        "level": "B2"
     },
     {
         "en": "diverse",
         "ru": "разнообразный",
-        "tr": "türlü"
+        "tr": "türlü",
+        "level": "B2"
     },
     {
         "en": "diversity",
         "ru": "разнообразие",
-        "tr": "çeşitlilik"
+        "tr": "çeşitlilik",
+        "level": "B2"
     },
     {
         "en": "divert",
         "ru": "отвлекать",
-        "tr": "yönlendirmek"
+        "tr": "yönlendirmek",
+        "level": "C1"
     },
     {
         "en": "divine",
         "ru": "божественный",
-        "tr": "ilahi"
+        "tr": "ilahi",
+        "level": "C1"
     },
     {
         "en": "divorce",
         "ru": "развод",
-        "tr": "boşanmak"
+        "tr": "boşanmak",
+        "level": "B2"
     },
     {
         "en": "doctrine",
         "ru": "доктрина",
-        "tr": "doktrin"
+        "tr": "doktrin",
+        "level": "C1"
     },
     {
         "en": "documentation",
         "ru": "документация",
-        "tr": "dokümantasyon"
+        "tr": "dokümantasyon",
+        "level": "C1"
     },
     {
         "en": "domain",
         "ru": "домен",
-        "tr": "ihtisas"
+        "tr": "ihtisas",
+        "level": "C1"
     },
     {
         "en": "dominance",
         "ru": "доминирование",
-        "tr": "hakimiyet"
+        "tr": "hakimiyet",
+        "level": "C1"
     },
     {
         "en": "dominant",
         "ru": "доминирующий",
-        "tr": "baskın"
+        "tr": "baskın",
+        "level": "B2"
     },
     {
         "en": "donation",
         "ru": "пожертвование",
-        "tr": "bağış"
+        "tr": "bağış",
+        "level": "B2"
     },
     {
         "en": "donor",
         "ru": "донор",
-        "tr": "bağışçı"
+        "tr": "bağışçı",
+        "level": "C1"
     },
     {
         "en": "dose",
         "ru": "доза",
-        "tr": "doz"
+        "tr": "doz",
+        "level": "C1"
     },
     {
         "en": "dot",
         "ru": "точка",
-        "tr": "nokta"
+        "tr": "nokta",
+        "level": "B2"
     },
     {
         "en": "drain",
         "ru": "осушать",
-        "tr": "boşaltmak"
+        "tr": "boşaltmak",
+        "level": "C1"
     },
     {
         "en": "dramatically",
         "ru": "резко",
-        "tr": "dramatik bir şekilde"
+        "tr": "dramatik bir şekilde",
+        "level": "B2"
     },
     {
         "en": "drift",
         "ru": "дрейфовать",
-        "tr": "sürüklenme"
+        "tr": "sürüklenme",
+        "level": "C1"
     },
     {
         "en": "driving",
         "ru": "вождение",
-        "tr": "araba kullanmak"
+        "tr": "araba kullanmak",
+        "level": "C1"
     },
     {
         "en": "drought",
         "ru": "засуха",
-        "tr": "kuraklık"
+        "tr": "kuraklık",
+        "level": "B2"
     },
     {
         "en": "drown",
         "ru": "тонуть",
-        "tr": "boğulmak"
+        "tr": "boğulmak",
+        "level": "C1"
     },
     {
         "en": "dual",
         "ru": "двойной",
-        "tr": "çift"
+        "tr": "çift",
+        "level": "C1"
     },
     {
         "en": "dub",
         "ru": "дублировать",
-        "tr": "dublaj"
+        "tr": "dublaj",
+        "level": "C1"
     },
     {
         "en": "dull",
         "ru": "тупой",
-        "tr": "sıkıcı"
+        "tr": "sıkıcı",
+        "level": "B2"
     },
     {
         "en": "dumb",
         "ru": "тупой",
-        "tr": "sersem"
+        "tr": "sersem",
+        "level": "C1"
     },
     {
         "en": "dump",
         "ru": "свалка",
-        "tr": "çöplük"
+        "tr": "çöplük",
+        "level": "B2"
     },
     {
         "en": "duo",
         "ru": "дуэт",
-        "tr": "ikili"
+        "tr": "ikili",
+        "level": "C1"
     },
     {
         "en": "duration",
         "ru": "продолжительность",
-        "tr": "süre"
+        "tr": "süre",
+        "level": "B2"
     },
     {
         "en": "dynamic",
         "ru": "динамичный",
-        "tr": "dinamik"
+        "tr": "dinamik",
+        "level": "C1"
     },
     {
         "en": "dynamic  B2",
         "ru": "динамический B2",
-        "tr": "dinamik B2"
+        "tr": "dinamik B2",
+        "level": "C1"
     },
     {
         "en": "eager",
         "ru": "жаждущий",
-        "tr": "istekli"
+        "tr": "istekli",
+        "level": "B2"
     },
     {
         "en": "earnings",
         "ru": "заработок",
-        "tr": "kazanç"
+        "tr": "kazanç",
+        "level": "C1"
     },
     {
         "en": "ease",
         "ru": "простота",
-        "tr": "kolaylaştırmak"
+        "tr": "kolaylaştırmak",
+        "level": "C1"
     },
     {
         "en": "echo",
         "ru": "эхо",
-        "tr": "yankı"
+        "tr": "yankı",
+        "level": "C1"
     },
     {
         "en": "ecological",
         "ru": "экологический",
-        "tr": "ekolojik"
+        "tr": "ekolojik",
+        "level": "C1"
     },
     {
         "en": "economics",
         "ru": "экономика",
-        "tr": "ekonomi"
+        "tr": "ekonomi",
+        "level": "B2"
     },
     {
         "en": "economist",
         "ru": "экономист",
-        "tr": "iktisatçı"
+        "tr": "iktisatçı",
+        "level": "B2"
     },
     {
         "en": "editorial",
         "ru": "редакционная статья",
-        "tr": "editoryal"
+        "tr": "editoryal",
+        "level": "B2"
     },
     {
         "en": "educator",
         "ru": "педагог",
-        "tr": "eğitimci"
+        "tr": "eğitimci",
+        "level": "C1"
     },
     {
         "en": "effectiveness",
         "ru": "эффективность",
-        "tr": "verimlilik"
+        "tr": "verimlilik",
+        "level": "C1"
     },
     {
         "en": "efficiency",
         "ru": "эффективность",
-        "tr": "yeterlik"
+        "tr": "yeterlik",
+        "level": "C1"
     },
     {
         "en": "efficiently",
         "ru": "эффективно",
-        "tr": "verimli bir şekilde"
+        "tr": "verimli bir şekilde",
+        "level": "B2"
     },
     {
         "en": "ego",
         "ru": "эго",
-        "tr": "ego"
+        "tr": "ego",
+        "level": "C1"
     },
     {
         "en": "elaborate",
         "ru": "разрабатывать",
-        "tr": "detaylandırmak"
+        "tr": "detaylandırmak",
+        "level": "C1"
     },
     {
         "en": "elbow",
         "ru": "локоть",
-        "tr": "dirsek"
+        "tr": "dirsek",
+        "level": "B2"
     },
     {
         "en": "electoral",
         "ru": "избирательный",
-        "tr": "seçim"
+        "tr": "seçim",
+        "level": "C1"
     },
     {
         "en": "electronics",
         "ru": "электроника",
-        "tr": "elektronik"
+        "tr": "elektronik",
+        "level": "B2"
     },
     {
         "en": "elegant",
         "ru": "элегантный",
-        "tr": "zarif"
+        "tr": "zarif",
+        "level": "B2"
     },
     {
         "en": "elementary",
         "ru": "элементарный",
-        "tr": "temel"
+        "tr": "temel",
+        "level": "B2"
     },
     {
         "en": "elevate",
         "ru": "возвышать",
-        "tr": "yükseltmek"
+        "tr": "yükseltmek",
+        "level": "C1"
     },
     {
         "en": "eligible",
         "ru": "имеющий право",
-        "tr": "hak sahibi"
+        "tr": "hak sahibi",
+        "level": "C1"
     },
     {
         "en": "eliminate",
         "ru": "устранять",
-        "tr": "elemek"
+        "tr": "elemek",
+        "level": "B2"
     },
     {
         "en": "elite",
         "ru": "элита",
-        "tr": "elit"
+        "tr": "elit",
+        "level": "C1"
     },
     {
         "en": "embark",
         "ru": "отправляться в путь",
-        "tr": "gemiye binmek"
+        "tr": "gemiye binmek",
+        "level": "C1"
     },
     {
         "en": "embarrassment",
         "ru": "смущение",
-        "tr": "utanç"
+        "tr": "utanç",
+        "level": "C1"
     },
     {
         "en": "embassy",
         "ru": "посольство",
-        "tr": "elçilik"
+        "tr": "elçilik",
+        "level": "C1"
     },
     {
         "en": "embed",
         "ru": "вставлять",
-        "tr": "gömmek"
+        "tr": "gömmek",
+        "level": "C1"
     },
     {
         "en": "embody",
         "ru": "воплощать",
-        "tr": "somutlaştırmak"
+        "tr": "somutlaştırmak",
+        "level": "C1"
     },
     {
         "en": "embrace",
         "ru": "объятие",
-        "tr": "kucaklamak"
+        "tr": "kucaklamak",
+        "level": "B2"
     },
     {
         "en": "emergence",
         "ru": "появление",
-        "tr": "ortaya çıkış"
+        "tr": "ortaya çıkış",
+        "level": "C1"
     },
     {
         "en": "emission",
         "ru": "выбросы",
-        "tr": "emisyon"
+        "tr": "emisyon",
+        "level": "B2"
     },
     {
         "en": "emotionally",
         "ru": "эмоционально",
-        "tr": "duygusal olarak"
+        "tr": "duygusal olarak",
+        "level": "B2"
     },
     {
         "en": "empire",
         "ru": "империя",
-        "tr": "imparatorluk"
+        "tr": "imparatorluk",
+        "level": "B2"
     },
     {
         "en": "empirical",
         "ru": "эмпирический",
-        "tr": "ampirik"
+        "tr": "ampirik",
+        "level": "C1"
     },
     {
         "en": "empower",
         "ru": "расширять возможности",
-        "tr": "güçlendirmek"
+        "tr": "güçlendirmek",
+        "level": "C1"
     },
     {
         "en": "enact",
         "ru": "принять",
-        "tr": "sahnelemek"
+        "tr": "sahnelemek",
+        "level": "C1"
     },
     {
         "en": "encompass",
         "ru": "охватывать",
-        "tr": "kapsamak"
+        "tr": "kapsamak",
+        "level": "C1"
     },
     {
         "en": "encouragement",
         "ru": "поощрение",
-        "tr": "teşvik"
+        "tr": "teşvik",
+        "level": "C1"
     },
     {
         "en": "encouraging",
         "ru": "обнадеживающий",
-        "tr": "teşvik edici"
+        "tr": "teşvik edici",
+        "level": "C1"
     },
     {
         "en": "endeavor",
         "ru": "стараться",
-        "tr": "çaba"
+        "tr": "çaba",
+        "level": "C1"
     },
     {
         "en": "endless",
         "ru": "бесконечный",
-        "tr": "sonsuz"
+        "tr": "sonsuz",
+        "level": "C1"
     },
     {
         "en": "endorse",
         "ru": "одобрять",
-        "tr": "onaylamak"
+        "tr": "onaylamak",
+        "level": "C1"
     },
     {
         "en": "endorsement",
         "ru": "поддержка",
-        "tr": "onay"
+        "tr": "onay",
+        "level": "C1"
     },
     {
         "en": "endure",
         "ru": "терпеть",
-        "tr": "dayanmak"
+        "tr": "dayanmak",
+        "level": "C1"
     },
     {
         "en": "enforce",
         "ru": "обеспечивать соблюдение",
-        "tr": "zorlamak"
+        "tr": "zorlamak",
+        "level": "C1"
     },
     {
         "en": "enforcement",
         "ru": "исполнение",
-        "tr": "icra"
+        "tr": "icra",
+        "level": "C1"
     },
     {
         "en": "engagement",
         "ru": "обручение",
-        "tr": "nişanlanmak"
+        "tr": "nişanlanmak",
+        "level": "C1"
     },
     {
         "en": "engaging",
         "ru": "привлекательный",
-        "tr": "ilgi çekici"
+        "tr": "ilgi çekici",
+        "level": "C1"
     },
     {
         "en": "enjoyable",
         "ru": "приятный",
-        "tr": "eğlenceli"
+        "tr": "eğlenceli",
+        "level": "B2"
     },
     {
         "en": "enrich",
         "ru": "обогащать",
-        "tr": "zenginleştirmek"
+        "tr": "zenginleştirmek",
+        "level": "C1"
     },
     {
         "en": "enroll",
         "ru": "зарегистрироваться",
-        "tr": "kaydolmak"
+        "tr": "kaydolmak",
+        "level": "C1"
     },
     {
         "en": "ensue",
         "ru": "следовать",
-        "tr": "meydana gelmek"
+        "tr": "meydana gelmek",
+        "level": "C1"
     },
     {
         "en": "enterprise",
         "ru": "предприятие",
-        "tr": "girişim"
+        "tr": "girişim",
+        "level": "C1"
     },
     {
         "en": "entertaining",
         "ru": "развлекательный",
-        "tr": "eğlenceli"
+        "tr": "eğlenceli",
+        "level": "B2"
     },
     {
         "en": "enthusiast",
         "ru": "энтузиаст",
-        "tr": "meraklı"
+        "tr": "meraklı",
+        "level": "C1"
     },
     {
         "en": "entitle",
         "ru": "давать право",
-        "tr": "hak vermek"
+        "tr": "hak vermek",
+        "level": "C1"
     },
     {
         "en": "entity",
         "ru": "сущность",
-        "tr": "varlık"
+        "tr": "varlık",
+        "level": "C1"
     },
     {
         "en": "entrepreneur",
         "ru": "предприниматель",
-        "tr": "girişimci"
+        "tr": "girişimci",
+        "level": "B2"
     },
     {
         "en": "envelope",
         "ru": "конверт",
-        "tr": "mektup"
+        "tr": "mektup",
+        "level": "B2"
     },
     {
         "en": "epidemic",
         "ru": "эпидемия",
-        "tr": "epidemi"
+        "tr": "epidemi",
+        "level": "C1"
     },
     {
         "en": "equality",
         "ru": "равенство",
-        "tr": "eşitlik"
+        "tr": "eşitlik",
+        "level": "C1"
     },
     {
         "en": "equation",
         "ru": "уравнение",
-        "tr": "denklem"
+        "tr": "denklem",
+        "level": "C1"
     },
     {
         "en": "equip",
         "ru": "оборудовать",
-        "tr": "donatmak"
+        "tr": "donatmak",
+        "level": "B2"
     },
     {
         "en": "equivalent",
         "ru": "эквивалент",
-        "tr": "eş değer"
+        "tr": "eş değer",
+        "level": "B2"
     },
     {
         "en": "era",
         "ru": "эпоха",
-        "tr": "dönem"
+        "tr": "dönem",
+        "level": "B2"
     },
     {
         "en": "erect",
         "ru": "возводить",
-        "tr": "dik"
+        "tr": "dik",
+        "level": "C1"
     },
     {
         "en": "erupt",
         "ru": "извергаться",
-        "tr": "patlamak"
+        "tr": "patlamak",
+        "level": "B2"
     },
     {
         "en": "escalate",
         "ru": "обострять",
-        "tr": "gerilimi tırmandırmak"
+        "tr": "gerilimi tırmandırmak",
+        "level": "C1"
     },
     {
         "en": "essence",
         "ru": "сущность",
-        "tr": "öz"
+        "tr": "öz",
+        "level": "C1"
     },
     {
         "en": "essentially",
         "ru": "по сути",
-        "tr": "esasen"
+        "tr": "esasen",
+        "level": "B2"
     },
     {
         "en": "establishment",
         "ru": "учреждение",
-        "tr": "kuruluş"
+        "tr": "kuruluş",
+        "level": "C1"
     },
     {
         "en": "eternal",
         "ru": "вечный",
-        "tr": "sonsuz"
+        "tr": "sonsuz",
+        "level": "C1"
     },
     {
         "en": "ethic",
         "ru": "этика",
-        "tr": "etik"
+        "tr": "etik",
+        "level": "B2"
     },
     {
         "en": "ethnic",
         "ru": "этнический",
-        "tr": "etnik"
+        "tr": "etnik",
+        "level": "B2"
     },
     {
         "en": "evacuate",
         "ru": "эвакуируюсь",
-        "tr": "tahliye ediyorum"
+        "tr": "tahliye ediyorum",
+        "level": "C1"
     },
     {
         "en": "evaluation",
         "ru": "оценка",
-        "tr": "değerlendirme"
+        "tr": "değerlendirme",
+        "level": "B2"
     },
     {
         "en": "evident",
         "ru": "очевидный",
-        "tr": "apaçık"
+        "tr": "apaçık",
+        "level": "B2"
     },
     {
         "en": "evoke",
         "ru": "вызывать",
-        "tr": "uyandırmak"
+        "tr": "uyandırmak",
+        "level": "C1"
     },
     {
         "en": "evolution",
         "ru": "эволюция",
-        "tr": "evrim"
+        "tr": "evrim",
+        "level": "B2"
     },
     {
         "en": "evolutionary",
         "ru": "эволюционный",
-        "tr": "evrimsel"
+        "tr": "evrimsel",
+        "level": "C1"
     },
     {
         "en": "evolve",
         "ru": "эволюционировать",
-        "tr": "evrim geçirmek"
+        "tr": "evrim geçirmek",
+        "level": "B2"
     },
     {
         "en": "exaggerate",
         "ru": "преувеличивать",
-        "tr": "abartmak"
+        "tr": "abartmak",
+        "level": "C1"
     },
     {
         "en": "exceed",
         "ru": "превосходить",
-        "tr": "aşmak"
+        "tr": "aşmak",
+        "level": "B2"
     },
     {
         "en": "excellence",
         "ru": "превосходство",
-        "tr": "mükemmellik"
+        "tr": "mükemmellik",
+        "level": "C1"
     },
     {
         "en": "exception",
         "ru": "исключение",
-        "tr": "istisna"
+        "tr": "istisna",
+        "level": "B2"
     },
     {
         "en": "exceptional",
         "ru": "исключительный",
-        "tr": "olağanüstü"
+        "tr": "olağanüstü",
+        "level": "C1"
     },
     {
         "en": "excess",
         "ru": "избыток",
-        "tr": "aşırı"
+        "tr": "aşırı",
+        "level": "C1"
     },
     {
         "en": "excessive",
         "ru": "излишний",
-        "tr": "aşırı"
+        "tr": "aşırı",
+        "level": "B2"
     },
     {
         "en": "exclude",
         "ru": "исключать",
-        "tr": "hariç tutmak"
+        "tr": "hariç tutmak",
+        "level": "B2"
     },
     {
         "en": "exclusion",
         "ru": "исключение",
-        "tr": "dışlama"
+        "tr": "dışlama",
+        "level": "C1"
     },
     {
         "en": "exclusive",
         "ru": "эксклюзивный",
-        "tr": "özel"
+        "tr": "özel",
+        "level": "C1"
     },
     {
         "en": "exclusively",
         "ru": "исключительно",
-        "tr": "münhasıran"
+        "tr": "münhasıran",
+        "level": "C1"
     },
     {
         "en": "execute",
         "ru": "выполнять",
-        "tr": "uygulamak"
+        "tr": "uygulamak",
+        "level": "C1"
     },
     {
         "en": "execution",
         "ru": "исполнение",
-        "tr": "uygulamak"
+        "tr": "uygulamak",
+        "level": "C1"
     },
     {
         "en": "exert",
         "ru": "оказывать",
-        "tr": "çaba harcamak"
+        "tr": "çaba harcamak",
+        "level": "C1"
     },
     {
         "en": "exile",
         "ru": "изгнание",
-        "tr": "sürgün"
+        "tr": "sürgün",
+        "level": "C1"
     },
     {
         "en": "exotic",
         "ru": "экзотика",
-        "tr": "egzotik"
+        "tr": "egzotik",
+        "level": "B2"
     },
     {
         "en": "expansion",
         "ru": "расширение",
-        "tr": "genleşme"
+        "tr": "genleşme",
+        "level": "B2"
     },
     {
         "en": "expedition",
         "ru": "экспедиция",
-        "tr": "sefer"
+        "tr": "sefer",
+        "level": "B2"
     },
     {
         "en": "expenditure",
         "ru": "расходы",
-        "tr": "harcama"
+        "tr": "harcama",
+        "level": "C1"
     },
     {
         "en": "experimental",
         "ru": "экспериментальный",
-        "tr": "deneysel"
+        "tr": "deneysel",
+        "level": "C1"
     },
     {
         "en": "expertise",
         "ru": "экспертиза",
-        "tr": "uzmanlık"
+        "tr": "uzmanlık",
+        "level": "B2"
     },
     {
         "en": "expire",
         "ru": "истекает",
-        "tr": "süresi dolmak"
+        "tr": "süresi dolmak",
+        "level": "C1"
     },
     {
         "en": "explicit",
         "ru": "явный",
-        "tr": "açık"
+        "tr": "açık",
+        "level": "C1"
     },
     {
         "en": "explicitly",
         "ru": "явно",
-        "tr": "açıkça"
+        "tr": "açıkça",
+        "level": "C1"
     },
     {
         "en": "exploit",
         "ru": "эксплуатировать",
-        "tr": "faydalanmak"
+        "tr": "faydalanmak",
+        "level": "B2"
     },
     {
         "en": "exploitation",
         "ru": "эксплуатация",
-        "tr": "sömürü"
+        "tr": "sömürü",
+        "level": "C1"
     },
     {
         "en": "explosive",
         "ru": "взрывчатый",
-        "tr": "patlayıcı"
+        "tr": "patlayıcı",
+        "level": "C1"
     },
     {
         "en": "exposure",
         "ru": "контакт",
-        "tr": "maruziyet"
+        "tr": "maruziyet",
+        "level": "B2"
     },
     {
         "en": "extension",
         "ru": "расширение",
-        "tr": "eklenti"
+        "tr": "eklenti",
+        "level": "B2"
     },
     {
         "en": "extensive",
         "ru": "обширный",
-        "tr": "yaygın"
+        "tr": "yaygın",
+        "level": "B2"
     },
     {
         "en": "extensively",
         "ru": "широко",
-        "tr": "kapsamlı olarak"
+        "tr": "kapsamlı olarak",
+        "level": "B2"
     },
     {
         "en": "extract",
         "ru": "извлекать",
-        "tr": "çıkarmak"
+        "tr": "çıkarmak",
+        "level": "C1"
     },
     {
         "en": "extract  B2",
         "ru": "экстракт B2",
-        "tr": "B2'yi çıkar"
+        "tr": "B2'yi çıkar",
+        "level": "C1"
     },
     {
         "en": "extremist",
         "ru": "экстремистский",
-        "tr": "aşırılık yanlısı"
+        "tr": "aşırılık yanlısı",
+        "level": "C1"
     },
     {
         "en": "fabric",
         "ru": "ткань",
-        "tr": "kumaş"
+        "tr": "kumaş",
+        "level": "B2"
     },
     {
         "en": "fabulous",
         "ru": "поразительнй",
-        "tr": "efsanevi"
+        "tr": "efsanevi",
+        "level": "B2"
     },
     {
         "en": "facilitate",
         "ru": "способствовать",
-        "tr": "kolaylaştırmak"
+        "tr": "kolaylaştırmak",
+        "level": "C1"
     },
     {
         "en": "faction",
         "ru": "фракция",
-        "tr": "hizip"
+        "tr": "hizip",
+        "level": "C1"
     },
     {
         "en": "faculty",
         "ru": "факультет",
-        "tr": "fakülte"
+        "tr": "fakülte",
+        "level": "B2"
     },
     {
         "en": "fade",
         "ru": "тускнеть",
-        "tr": "solmak"
+        "tr": "solmak",
+        "level": "C1"
     },
     {
         "en": "failed",
         "ru": "неуспешный",
-        "tr": "arızalı"
+        "tr": "arızalı",
+        "level": "B2"
     },
     {
         "en": "fairness",
         "ru": "справедливость",
-        "tr": "adalet"
+        "tr": "adalet",
+        "level": "C1"
     },
     {
         "en": "fake",
         "ru": "фальшивый",
-        "tr": "sahte"
+        "tr": "sahte",
+        "level": "B2"
     },
     {
         "en": "fame",
         "ru": "слава",
-        "tr": "şöhret"
+        "tr": "şöhret",
+        "level": "B2"
     },
     {
         "en": "fantasy",
         "ru": "фантастика",
-        "tr": "fantezi"
+        "tr": "fantezi",
+        "level": "B2"
     },
     {
         "en": "fare",
         "ru": "стоимость проезда",
-        "tr": "ücret"
+        "tr": "ücret",
+        "level": "B2"
     },
     {
         "en": "fatal",
         "ru": "смертельный",
-        "tr": "ölümcül"
+        "tr": "ölümcül",
+        "level": "C1"
     },
     {
         "en": "fate",
         "ru": "судьба",
-        "tr": "kader"
+        "tr": "kader",
+        "level": "C1"
     },
     {
         "en": "favorable",
         "ru": "благоприятный",
-        "tr": "uygun"
+        "tr": "uygun",
+        "level": "C1"
     },
     {
         "en": "feat",
         "ru": "подвиг",
-        "tr": "ustalık"
+        "tr": "ustalık",
+        "level": "C1"
     },
     {
         "en": "felony",
         "ru": "уголовное преступление",
-        "tr": "suç"
+        "tr": "suç",
+        "level": "C1"
     },
     {
         "en": "feminist",
         "ru": "феминистка",
-        "tr": "feminist"
+        "tr": "feminist",
+        "level": "C1"
     },
     {
         "en": "fiber",
         "ru": "волокно",
-        "tr": "lif"
+        "tr": "lif",
+        "level": "C1"
     },
     {
         "en": "fierce",
         "ru": "яростный",
-        "tr": "şiddetli"
+        "tr": "şiddetli",
+        "level": "C1"
     },
     {
         "en": "filmmaker",
         "ru": "режиссер",
-        "tr": "film yapımcısı"
+        "tr": "film yapımcısı",
+        "level": "C1"
     },
     {
         "en": "filter",
         "ru": "фильтр",
-        "tr": "filtre"
+        "tr": "filtre",
+        "level": "C1"
     },
     {
         "en": "fine",
         "ru": "отлично",
-        "tr": "iyi"
+        "tr": "iyi",
+        "level": "C1"
     },
     {
         "en": "firearm",
         "ru": "огнестрельное оружие",
-        "tr": "ateşli silah"
+        "tr": "ateşli silah",
+        "level": "C1"
     },
     {
         "en": "firefighter",
         "ru": "пожарный",
-        "tr": "itfaiyeci"
+        "tr": "itfaiyeci",
+        "level": "B2"
     },
     {
         "en": "firework",
         "ru": "фейерверк",
-        "tr": "havai fişek"
+        "tr": "havai fişek",
+        "level": "B2"
     },
     {
         "en": "firm",
         "ru": "твердый",
-        "tr": "firma"
+        "tr": "firma",
+        "level": "B2"
     },
     {
         "en": "firmly",
         "ru": "твердо",
-        "tr": "sıkıca"
+        "tr": "sıkıca",
+        "level": "B2"
     },
     {
         "en": "fiscal",
         "ru": "фискальный",
-        "tr": "mali"
+        "tr": "mali",
+        "level": "C1"
     },
     {
         "en": "fit",
         "ru": "соответствовать",
-        "tr": "yerleştirmek"
+        "tr": "yerleştirmek",
+        "level": "C1"
     },
     {
         "en": "flavor",
         "ru": "вкус",
-        "tr": "lezzet"
+        "tr": "lezzet",
+        "level": "B2"
     },
     {
         "en": "flaw",
         "ru": "недостаток",
-        "tr": "kusur"
+        "tr": "kusur",
+        "level": "C1"
     },
     {
         "en": "flawed",
         "ru": "ошибочный",
-        "tr": "kusurlu"
+        "tr": "kusurlu",
+        "level": "C1"
     },
     {
         "en": "flee",
         "ru": "бежать",
-        "tr": "kaçmak"
+        "tr": "kaçmak",
+        "level": "C1"
     },
     {
         "en": "fleet",
         "ru": "флот",
-        "tr": "filo"
+        "tr": "filo",
+        "level": "C1"
     },
     {
         "en": "flesh",
         "ru": "плоть",
-        "tr": "et"
+        "tr": "et",
+        "level": "C1"
     },
     {
         "en": "flexibility",
         "ru": "гибкость",
-        "tr": "esneklik"
+        "tr": "esneklik",
+        "level": "C1"
     },
     {
         "en": "flourish",
         "ru": "процветать",
-        "tr": "güzelleşmek"
+        "tr": "güzelleşmek",
+        "level": "C1"
     },
     {
         "en": "fluid",
         "ru": "жидкость",
-        "tr": "sıvı"
+        "tr": "sıvı",
+        "level": "C1"
     },
     {
         "en": "fond",
         "ru": "любящий",
-        "tr": "düşkün"
+        "tr": "düşkün",
+        "level": "B2"
     },
     {
         "en": "fool",
         "ru": "дурак",
-        "tr": "aptal"
+        "tr": "aptal",
+        "level": "B2"
     },
     {
         "en": "footage",
         "ru": "отснятый материал",
-        "tr": "görüntüleri"
+        "tr": "görüntüleri",
+        "level": "C1"
     },
     {
         "en": "forbid",
         "ru": "запретить",
-        "tr": "yasaklamak"
+        "tr": "yasaklamak",
+        "level": "B2"
     },
     {
         "en": "forecast",
         "ru": "прогноз",
-        "tr": "tahmin etmek"
+        "tr": "tahmin etmek",
+        "level": "B2"
     },
     {
         "en": "foreigner",
         "ru": "иностранец",
-        "tr": "yabancı"
+        "tr": "yabancı",
+        "level": "C1"
     },
     {
         "en": "forge",
         "ru": "ковать",
-        "tr": "dövmek"
+        "tr": "dövmek",
+        "level": "C1"
     },
     {
         "en": "format",
         "ru": "формат",
-        "tr": "biçim"
+        "tr": "biçim",
+        "level": "B2"
     },
     {
         "en": "formation",
         "ru": "формирование",
-        "tr": "formasyon"
+        "tr": "formasyon",
+        "level": "B2"
     },
     {
         "en": "formerly",
         "ru": "раньше",
-        "tr": "eskiden"
+        "tr": "eskiden",
+        "level": "B2"
     },
     {
         "en": "formula",
         "ru": "формула",
-        "tr": "formül"
+        "tr": "formül",
+        "level": "C1"
     },
     {
         "en": "formulate",
         "ru": "формулировать",
-        "tr": "formüle etmek"
+        "tr": "formüle etmek",
+        "level": "C1"
     },
     {
         "en": "forth",
         "ru": "вперед",
-        "tr": "ileri"
+        "tr": "ileri",
+        "level": "C1"
     },
     {
         "en": "forthcoming",
         "ru": "предстоящий",
-        "tr": "gelecek"
+        "tr": "gelecek",
+        "level": "C1"
     },
     {
         "en": "fortunate",
         "ru": "удачливый",
-        "tr": "şanslı"
+        "tr": "şanslı",
+        "level": "B2"
     },
     {
         "en": "forum",
         "ru": "форум",
-        "tr": "forum"
+        "tr": "forum",
+        "level": "B2"
     },
     {
         "en": "fossil",
         "ru": "ископаемое",
-        "tr": "fosil"
+        "tr": "fosil",
+        "level": "B2"
     },
     {
         "en": "foster",
         "ru": "взращивать",
-        "tr": "bakmak"
+        "tr": "bakmak",
+        "level": "C1"
     },
     {
         "en": "foundation",
         "ru": "фундамент",
-        "tr": "temel"
+        "tr": "temel",
+        "level": "B2"
     },
     {
         "en": "founder",
         "ru": "основатель",
-        "tr": "kurucu"
+        "tr": "kurucu",
+        "level": "B2"
     },
     {
         "en": "fraction",
         "ru": "дробь",
-        "tr": "kesir"
+        "tr": "kesir",
+        "level": "B2"
     },
     {
         "en": "fragile",
         "ru": "хрупкий",
-        "tr": "kırılgan"
+        "tr": "kırılgan",
+        "level": "C1"
     },
     {
         "en": "fragment",
         "ru": "фрагмент",
-        "tr": "parça"
+        "tr": "parça",
+        "level": "B2"
     },
     {
         "en": "framework",
         "ru": "рамки",
-        "tr": "çerçeve"
+        "tr": "çerçeve",
+        "level": "B2"
     },
     {
         "en": "franchise",
         "ru": "франшиза",
-        "tr": "imtiyaz"
+        "tr": "imtiyaz",
+        "level": "C1"
     },
     {
         "en": "frankly",
         "ru": "честно говоря",
-        "tr": "açıkçası"
+        "tr": "açıkçası",
+        "level": "C1"
     },
     {
         "en": "fraud",
         "ru": "мошенничество",
-        "tr": "sahtekar"
+        "tr": "sahtekar",
+        "level": "B2"
     },
     {
         "en": "freely",
         "ru": "свободно",
-        "tr": "özgürce"
+        "tr": "özgürce",
+        "level": "B2"
     },
     {
         "en": "frequent",
         "ru": "частый",
-        "tr": "sık"
+        "tr": "sık",
+        "level": "B2"
     },
     {
         "en": "freshman",
         "ru": "первокурсник",
-        "tr": "birinci sınıf öğrencisi"
+        "tr": "birinci sınıf öğrencisi",
+        "level": "C1"
     },
     {
         "en": "frustrated",
         "ru": "расстроенный",
-        "tr": "hüsrana uğramış"
+        "tr": "hüsrana uğramış",
+        "level": "C1"
     },
     {
         "en": "frustrating",
         "ru": "раздражающий",
-        "tr": "sinir bozucu"
+        "tr": "sinir bozucu",
+        "level": "C1"
     },
     {
         "en": "frustration",
         "ru": "разочарование",
-        "tr": "hayal kırıklığı"
+        "tr": "hayal kırıklığı",
+        "level": "C1"
     },
     {
         "en": "fulfill",
         "ru": "выполнить",
-        "tr": "yerine getirmek"
+        "tr": "yerine getirmek",
+        "level": "B2"
     },
     {
         "en": "full-time /",
         "ru": "на постоянной основе /",
-        "tr": "tam zamanlı /"
+        "tr": "tam zamanlı /",
+        "level": "B2"
     },
     {
         "en": "functional",
         "ru": "функциональный",
-        "tr": "işlevsel"
+        "tr": "işlevsel",
+        "level": "C1"
     },
     {
         "en": "fundamentally",
         "ru": "принципиально",
-        "tr": "temelde"
+        "tr": "temelde",
+        "level": "B2"
     },
     {
         "en": "fundraising",
         "ru": "сбор средств",
-        "tr": "bağış toplama"
+        "tr": "bağış toplama",
+        "level": "C1"
     },
     {
         "en": "funeral",
         "ru": "похороны",
-        "tr": "cenaze"
+        "tr": "cenaze",
+        "level": "C1"
     },
     {
         "en": "furious",
         "ru": "яростный",
-        "tr": "çok öfkeli"
+        "tr": "çok öfkeli",
+        "level": "B2"
     },
     {
         "en": "gallon",
         "ru": "галлон",
-        "tr": "galon"
+        "tr": "galon",
+        "level": "B2"
     },
     {
         "en": "gambling",
         "ru": "играть в азартные игры",
-        "tr": "kumar"
+        "tr": "kumar",
+        "level": "C1"
     },
     {
         "en": "gaming",
         "ru": "игры",
-        "tr": "oyun"
+        "tr": "oyun",
+        "level": "B2"
     },
     {
         "en": "gathering",
         "ru": "встреча",
-        "tr": "toplama"
+        "tr": "toplama",
+        "level": "C1"
     },
     {
         "en": "gay",
         "ru": "гей",
-        "tr": "eşcinsel"
+        "tr": "eşcinsel",
+        "level": "B2"
     },
     {
         "en": "gaze",
         "ru": "взгляд",
-        "tr": "bakış"
+        "tr": "bakış",
+        "level": "C1"
     },
     {
         "en": "gear",
         "ru": "механизм",
-        "tr": "vites"
+        "tr": "vites",
+        "level": "C1"
     },
     {
         "en": "gender",
         "ru": "пол",
-        "tr": "cinsiyet"
+        "tr": "cinsiyet",
+        "level": "B2"
     },
     {
         "en": "gene",
         "ru": "ген",
-        "tr": "gen"
+        "tr": "gen",
+        "level": "B2"
     },
     {
         "en": "generic",
         "ru": "универсальный",
-        "tr": "genel"
+        "tr": "genel",
+        "level": "C1"
     },
     {
         "en": "genetic",
         "ru": "генетический",
-        "tr": "genetik"
+        "tr": "genetik",
+        "level": "B2"
     },
     {
         "en": "genius",
         "ru": "гений",
-        "tr": "dahi"
+        "tr": "dahi",
+        "level": "B2"
     },
     {
         "en": "genocide",
         "ru": "геноцид",
-        "tr": "soykırım"
+        "tr": "soykırım",
+        "level": "C1"
     },
     {
         "en": "genuine",
         "ru": "подлинный",
-        "tr": "eşsiz"
+        "tr": "eşsiz",
+        "level": "B2"
     },
     {
         "en": "genuinely",
         "ru": "искренне",
-        "tr": "gerçekten"
+        "tr": "gerçekten",
+        "level": "B2"
     },
     {
         "en": "gesture",
         "ru": "жест",
-        "tr": "jest yapmak"
+        "tr": "jest yapmak",
+        "level": "B2"
     },
     {
         "en": "gig",
         "ru": "концерт",
-        "tr": "konser"
+        "tr": "konser",
+        "level": "C1"
     },
     {
         "en": "glance",
         "ru": "взглянуть мельком",
-        "tr": "bakış atmak"
+        "tr": "bakış atmak",
+        "level": "C1"
     },
     {
         "en": "glimpse",
         "ru": "случайно заметить",
-        "tr": "bakış"
+        "tr": "bakış",
+        "level": "C1"
     },
     {
         "en": "globalization",
         "ru": "глобализация",
-        "tr": "küreselleşme"
+        "tr": "küreselleşme",
+        "level": "B2"
     },
     {
         "en": "globe",
         "ru": "глобус",
-        "tr": "küre"
+        "tr": "küre",
+        "level": "B2"
     },
     {
         "en": "glorious",
         "ru": "славный",
-        "tr": "görkemli"
+        "tr": "görkemli",
+        "level": "C1"
     },
     {
         "en": "glory",
         "ru": "слава",
-        "tr": "görkem"
+        "tr": "görkem",
+        "level": "C1"
     },
     {
         "en": "golden",
         "ru": "золотой",
-        "tr": "altın"
+        "tr": "altın",
+        "level": "B2"
     },
     {
         "en": "goodness",
         "ru": "доброта",
-        "tr": "iyilik"
+        "tr": "iyilik",
+        "level": "B2"
     },
     {
         "en": "gorgeous",
         "ru": "великолепный",
-        "tr": "muhteşem"
+        "tr": "muhteşem",
+        "level": "B2"
     },
     {
         "en": "governance",
         "ru": "управление",
-        "tr": "yönetişim"
+        "tr": "yönetişim",
+        "level": "C1"
     },
     {
         "en": "grace",
         "ru": "милость",
-        "tr": "lütuf"
+        "tr": "lütuf",
+        "level": "C1"
     },
     {
         "en": "graphic",
         "ru": "графика",
-        "tr": "grafik"
+        "tr": "grafik",
+        "level": "B2"
     },
     {
         "en": "graphics",
         "ru": "графика",
-        "tr": "grafikler"
+        "tr": "grafikler",
+        "level": "B2"
     },
     {
         "en": "grasp",
         "ru": "понять",
-        "tr": "sıkı sıkı tutmak"
+        "tr": "sıkı sıkı tutmak",
+        "level": "C1"
     },
     {
         "en": "grave",
         "ru": "могила",
-        "tr": "mezar"
-    },
-    {
-        "en": "grave (for dead person)",
-        "ru": "могила (для умершего)",
-        "tr": "mezar (ölü için)"
-    },
-    {
-        "en": "grave (serious)",
-        "ru": "серьезный (серьёзный)",
-        "tr": "ciddi (ciddi)"
+        "tr": "mezar",
+        "level": "C1"
     },
     {
         "en": "gravity",
         "ru": "гравитация",
-        "tr": "yer çekimi"
+        "tr": "yer çekimi",
+        "level": "C1"
     },
     {
         "en": "greatly",
         "ru": "значительно",
-        "tr": "büyük ölçüde"
+        "tr": "büyük ölçüde",
+        "level": "B2"
     },
     {
         "en": "greenhouse",
         "ru": "теплица",
-        "tr": "sera"
+        "tr": "sera",
+        "level": "B2"
     },
     {
         "en": "grid",
         "ru": "сетка",
-        "tr": "ızgara"
+        "tr": "ızgara",
+        "level": "C1"
     },
     {
         "en": "grief",
         "ru": "горе",
-        "tr": "yas"
+        "tr": "yas",
+        "level": "C1"
     },
     {
         "en": "grin",
         "ru": "ухмылка",
-        "tr": "sırıtış"
+        "tr": "sırıtış",
+        "level": "C1"
     },
     {
         "en": "grind",
         "ru": "молоть",
-        "tr": "öğütmek"
+        "tr": "öğütmek",
+        "level": "C1"
     },
     {
         "en": "grip",
         "ru": "схватить",
-        "tr": "kavramak"
+        "tr": "kavramak",
+        "level": "C1"
     },
     {
         "en": "gross",
         "ru": "валовой",
-        "tr": "brüt"
+        "tr": "brüt",
+        "level": "C1"
     },
     {
         "en": "guerrilla",
         "ru": "партизан",
-        "tr": "gerilla"
+        "tr": "gerilla",
+        "level": "C1"
     },
     {
         "en": "guidance",
         "ru": "руководство",
-        "tr": "rehberlik"
+        "tr": "rehberlik",
+        "level": "C1"
     },
     {
         "en": "guideline",
         "ru": "ориентир",
-        "tr": "kılavuz"
+        "tr": "kılavuz",
+        "level": "B2"
     },
     {
         "en": "guilt",
         "ru": "вина",
-        "tr": "suçluluk"
+        "tr": "suçluluk",
+        "level": "C1"
     },
     {
         "en": "gut",
         "ru": "кишка",
-        "tr": "bağırsak"
+        "tr": "bağırsak",
+        "level": "C1"
     },
     {
         "en": "habitat",
         "ru": "среда обитания",
-        "tr": "doğal ortam"
+        "tr": "doğal ortam",
+        "level": "B2"
     },
     {
         "en": "hail",
         "ru": "град",
-        "tr": "dolu"
+        "tr": "dolu",
+        "level": "C1"
     },
     {
         "en": "halfway",
         "ru": "наполовину",
-        "tr": "yarı yolda"
+        "tr": "yarı yolda",
+        "level": "C1"
     },
     {
         "en": "halt",
         "ru": "остановка",
-        "tr": "dur"
+        "tr": "dur",
+        "level": "C1"
     },
     {
         "en": "handful",
         "ru": "горстка",
-        "tr": "avuç"
+        "tr": "avuç",
+        "level": "C1"
     },
     {
         "en": "handling",
         "ru": "умение обращаться",
-        "tr": "elleçleme"
+        "tr": "elleçleme",
+        "level": "C1"
     },
     {
         "en": "handy",
         "ru": "удобный",
-        "tr": "kullanışlı"
+        "tr": "kullanışlı",
+        "level": "C1"
     },
     {
         "en": "harassment",
         "ru": "домогательство",
-        "tr": "taciz"
+        "tr": "taciz",
+        "level": "C1"
     },
     {
         "en": "harbor",
         "ru": "гавань",
-        "tr": "liman"
+        "tr": "liman",
+        "level": "B2"
     },
     {
         "en": "hardware",
         "ru": "аппаратное обеспечение",
-        "tr": "donanım"
+        "tr": "donanım",
+        "level": "C1"
     },
     {
         "en": "harmony",
         "ru": "гармония",
-        "tr": "uyum"
+        "tr": "uyum",
+        "level": "C1"
     },
     {
         "en": "harsh",
         "ru": "жесткий",
-        "tr": "sert"
+        "tr": "sert",
+        "level": "C1"
     },
     {
         "en": "harvest",
         "ru": "урожай",
-        "tr": "hasat"
+        "tr": "hasat",
+        "level": "C1"
     },
     {
         "en": "hatred",
         "ru": "ненависть",
-        "tr": "nefret"
+        "tr": "nefret",
+        "level": "C1"
     },
     {
         "en": "haunt",
         "ru": "преследовать",
-        "tr": "uğrak"
+        "tr": "uğrak",
+        "level": "C1"
     },
     {
         "en": "hazard",
         "ru": "опасность",
-        "tr": "tehlike"
+        "tr": "tehlike",
+        "level": "C1"
     },
     {
         "en": "headquarters",
         "ru": "штаб-квартира",
-        "tr": "karargah"
+        "tr": "karargah",
+        "level": "B2"
     },
     {
         "en": "heal",
         "ru": "лечить",
-        "tr": "iyileştirmek"
+        "tr": "iyileştirmek",
+        "level": "B2"
     },
     {
         "en": "healthcare",
         "ru": "здравоохранение",
-        "tr": "sağlık hizmeti"
+        "tr": "sağlık hizmeti",
+        "level": "B2"
     },
     {
         "en": "heighten",
         "ru": "повысить",
-        "tr": "yükseltmek"
+        "tr": "yükseltmek",
+        "level": "C1"
     },
     {
         "en": "helmet",
         "ru": "шлем",
-        "tr": "kask"
+        "tr": "kask",
+        "level": "B2"
     },
     {
         "en": "hence",
         "ru": "следовательно",
-        "tr": "buradan"
+        "tr": "buradan",
+        "level": "B2"
     },
     {
         "en": "herb",
         "ru": "трава",
-        "tr": "bitki"
+        "tr": "bitki",
+        "level": "B2"
     },
     {
         "en": "heritage",
         "ru": "наследство",
-        "tr": "miras"
+        "tr": "miras",
+        "level": "C1"
     },
     {
         "en": "hidden",
         "ru": "скрытый",
-        "tr": "gizlenmiş"
+        "tr": "gizlenmiş",
+        "level": "B2"
     },
     {
         "en": "hierarchy",
         "ru": "иерархия",
-        "tr": "hiyerarşi"
+        "tr": "hiyerarşi",
+        "level": "C1"
     },
     {
         "en": "high-profile",
         "ru": "громкий",
-        "tr": "yüksek profilli"
+        "tr": "yüksek profilli",
+        "level": "C1"
     },
     {
         "en": "hilarious",
         "ru": "веселый",
-        "tr": "gülünç"
+        "tr": "gülünç",
+        "level": "B2"
     },
     {
         "en": "hint",
         "ru": "намекать",
-        "tr": "ipucu"
+        "tr": "ipucu",
+        "level": "C1"
     },
     {
         "en": "hip",
         "ru": "бедро",
-        "tr": "belki"
+        "tr": "belki",
+        "level": "B2"
     },
     {
         "en": "historian",
         "ru": "историк",
-        "tr": "tarihçi"
+        "tr": "tarihçi",
+        "level": "B2"
     },
     {
         "en": "homeland",
         "ru": "родина",
-        "tr": "vatan"
+        "tr": "vatan",
+        "level": "C1"
     },
     {
         "en": "homeless",
         "ru": "бездомный",
-        "tr": "evsiz"
+        "tr": "evsiz",
+        "level": "B2"
     },
     {
         "en": "honesty",
         "ru": "честность",
-        "tr": "dürüstlük"
+        "tr": "dürüstlük",
+        "level": "B2"
     },
     {
         "en": "honey",
         "ru": "мед",
-        "tr": "Bal"
+        "tr": "Bal",
+        "level": "B2"
     },
     {
         "en": "hook",
         "ru": "крюк",
-        "tr": "kanca"
+        "tr": "kanca",
+        "level": "B2"
     },
     {
         "en": "hopeful",
         "ru": "обнадеживающий",
-        "tr": "umutlu"
+        "tr": "umutlu",
+        "level": "C1"
     },
     {
         "en": "hopefully",
         "ru": "с надеждой",
-        "tr": "umutla"
+        "tr": "umutla",
+        "level": "B2"
     },
     {
         "en": "horizon",
         "ru": "горизонт",
-        "tr": "ufuk"
+        "tr": "ufuk",
+        "level": "C1"
     },
     {
         "en": "horn",
         "ru": "рог",
-        "tr": "korna"
+        "tr": "korna",
+        "level": "C1"
     },
     {
         "en": "hostage",
         "ru": "заложник",
-        "tr": "rehin"
+        "tr": "rehin",
+        "level": "C1"
     },
     {
         "en": "hostile",
         "ru": "враждебный",
-        "tr": "düşmanca"
+        "tr": "düşmanca",
+        "level": "C1"
     },
     {
         "en": "hostility",
         "ru": "враждебность",
-        "tr": "düşmanlık"
+        "tr": "düşmanlık",
+        "level": "C1"
     },
     {
         "en": "humanitarian",
         "ru": "гуманитарный",
-        "tr": "insani"
+        "tr": "insani",
+        "level": "C1"
     },
     {
         "en": "humanity",
         "ru": "человечество",
-        "tr": "insanlık"
+        "tr": "insanlık",
+        "level": "C1"
     },
     {
         "en": "humble",
         "ru": "скромный",
-        "tr": "mütevazı"
+        "tr": "mütevazı",
+        "level": "C1"
     },
     {
         "en": "hunger",
         "ru": "голод",
-        "tr": "açlık"
+        "tr": "açlık",
+        "level": "B2"
     },
     {
         "en": "hydrogen",
         "ru": "водород",
-        "tr": "hidrojen"
+        "tr": "hidrojen",
+        "level": "C1"
     },
     {
         "en": "hypothesis",
         "ru": "гипотеза",
-        "tr": "hipotez"
+        "tr": "hipotez",
+        "level": "B2"
     },
     {
         "en": "icon",
         "ru": "икона",
-        "tr": "simge"
+        "tr": "simge",
+        "level": "B2"
     },
     {
         "en": "identical",
         "ru": "идентичный",
-        "tr": "birebir aynı"
+        "tr": "birebir aynı",
+        "level": "B2"
     },
     {
         "en": "identification",
         "ru": "идентификация",
-        "tr": "Tanılama"
+        "tr": "Tanılama",
+        "level": "C1"
     },
     {
         "en": "ideological",
         "ru": "идеологический",
-        "tr": "ideolojik"
+        "tr": "ideolojik",
+        "level": "C1"
     },
     {
         "en": "ideology",
         "ru": "идеология",
-        "tr": "ideoloji"
+        "tr": "ideoloji",
+        "level": "C1"
     },
     {
         "en": "idiot",
         "ru": "идиот",
-        "tr": "salak"
+        "tr": "salak",
+        "level": "C1"
     },
     {
         "en": "ignorance",
         "ru": "невежество",
-        "tr": "cehalet"
+        "tr": "cehalet",
+        "level": "C1"
     },
     {
         "en": "illusion",
         "ru": "иллюзия",
-        "tr": "yanılsama"
+        "tr": "yanılsama",
+        "level": "B2"
     },
     {
         "en": "imagery",
         "ru": "образы",
-        "tr": "görüntüler"
+        "tr": "görüntüler",
+        "level": "C1"
     },
     {
         "en": "immense",
         "ru": "огромный",
-        "tr": "engin"
+        "tr": "engin",
+        "level": "C1"
     },
     {
         "en": "immigration",
         "ru": "иммиграция",
-        "tr": "göç"
+        "tr": "göç",
+        "level": "B2"
     },
     {
         "en": "imminent",
         "ru": "неизбежный",
-        "tr": "yakın"
+        "tr": "yakın",
+        "level": "C1"
     },
     {
         "en": "immune",
         "ru": "иммунитет",
-        "tr": "bağışıklık"
+        "tr": "bağışıklık",
+        "level": "B2"
     },
     {
         "en": "implement",
         "ru": "осуществлять",
-        "tr": "uygulamak"
+        "tr": "uygulamak",
+        "level": "B2"
     },
     {
         "en": "implementation",
         "ru": "выполнение",
-        "tr": "uygulama"
+        "tr": "uygulama",
+        "level": "C1"
     },
     {
         "en": "implication",
         "ru": "импликация",
-        "tr": "ima"
+        "tr": "ima",
+        "level": "B2"
     },
     {
         "en": "imprison",
         "ru": "заключать в тюрьму",
-        "tr": "hapis"
+        "tr": "hapis",
+        "level": "C1"
     },
     {
         "en": "inability",
         "ru": "неспособность",
-        "tr": "yetersizlik"
+        "tr": "yetersizlik",
+        "level": "C1"
     },
     {
         "en": "inadequate",
         "ru": "неадекватный",
-        "tr": "yetersiz"
+        "tr": "yetersiz",
+        "level": "C1"
     },
     {
         "en": "inappropriate",
         "ru": "неприличный",
-        "tr": "uygunsuz"
+        "tr": "uygunsuz",
+        "level": "C1"
     },
     {
         "en": "incarcerate",
         "ru": "заключать в тюрьму",
-        "tr": "hapsetmek"
+        "tr": "hapsetmek",
+        "level": "C1"
     },
     {
         "en": "incarceration",
         "ru": "заключение под стражу",
-        "tr": "hapsetme"
+        "tr": "hapsetme",
+        "level": "C1"
     },
     {
         "en": "incentive",
         "ru": "стимул",
-        "tr": "teşvik"
+        "tr": "teşvik",
+        "level": "B2"
     },
     {
         "en": "incidence",
         "ru": "заболеваемость",
-        "tr": "görülme sıklığı"
+        "tr": "görülme sıklığı",
+        "level": "C1"
     },
     {
         "en": "inclined",
         "ru": "наклоненный",
-        "tr": "eğimli"
+        "tr": "eğimli",
+        "level": "C1"
     },
     {
         "en": "inclusion",
         "ru": "включение",
-        "tr": "içerme"
+        "tr": "içerme",
+        "level": "C1"
     },
     {
         "en": "incorporate",
         "ru": "включать",
-        "tr": "firma kurmak"
+        "tr": "firma kurmak",
+        "level": "B2"
     },
     {
         "en": "incorrect",
         "ru": "неправильный",
-        "tr": "yanlış"
+        "tr": "yanlış",
+        "level": "B2"
     },
     {
         "en": "incur",
         "ru": "понести",
-        "tr": "katlanmak"
+        "tr": "katlanmak",
+        "level": "C1"
     },
     {
         "en": "independence",
         "ru": "независимость",
-        "tr": "bağımsızlık"
+        "tr": "bağımsızlık",
+        "level": "B2"
     },
     {
         "en": "index",
         "ru": "индекс",
-        "tr": "dizin"
+        "tr": "dizin",
+        "level": "B2"
     },
     {
         "en": "indication",
         "ru": "указание",
-        "tr": "gösterge"
+        "tr": "gösterge",
+        "level": "B2"
     },
     {
         "en": "indicator",
         "ru": "индикатор",
-        "tr": "gösterge"
+        "tr": "gösterge",
+        "level": "C1"
     },
     {
         "en": "indictment",
         "ru": "обвинительное заключение",
-        "tr": "iddianame"
+        "tr": "iddianame",
+        "level": "C1"
     },
     {
         "en": "indigenous",
         "ru": "местный",
-        "tr": "yerli"
+        "tr": "yerli",
+        "level": "C1"
     },
     {
         "en": "induce",
         "ru": "вызывать",
-        "tr": "teşvik etmek"
+        "tr": "teşvik etmek",
+        "level": "C1"
     },
     {
         "en": "indulge",
         "ru": "предаваться",
-        "tr": "şımartmak"
+        "tr": "şımartmak",
+        "level": "C1"
     },
     {
         "en": "inequality",
         "ru": "неравенство",
-        "tr": "eşitsizlik"
+        "tr": "eşitsizlik",
+        "level": "C1"
     },
     {
         "en": "inevitable",
         "ru": "неизбежный",
-        "tr": "kaçınılmaz"
+        "tr": "kaçınılmaz",
+        "level": "B2"
     },
     {
         "en": "inevitably",
         "ru": "неизбежно",
-        "tr": "kaçınılmaz olarak"
+        "tr": "kaçınılmaz olarak",
+        "level": "B2"
     },
     {
         "en": "infamous",
         "ru": "печально известный",
-        "tr": "rezil"
+        "tr": "rezil",
+        "level": "C1"
     },
     {
         "en": "infant",
         "ru": "младенец",
-        "tr": "bebek"
+        "tr": "bebek",
+        "level": "C1"
     },
     {
         "en": "infect",
         "ru": "заразить",
-        "tr": "enfekte etmek"
+        "tr": "enfekte etmek",
+        "level": "C1"
     },
     {
         "en": "infer",
         "ru": "сделать вывод",
-        "tr": "çıkarım yapmak"
+        "tr": "çıkarım yapmak",
+        "level": "B2"
     },
     {
         "en": "inflation",
         "ru": "инфляция",
-        "tr": "enflasyon"
+        "tr": "enflasyon",
+        "level": "B2"
     },
     {
         "en": "inflict",
         "ru": "нанести",
-        "tr": "zarar vermek"
+        "tr": "zarar vermek",
+        "level": "C1"
     },
     {
         "en": "influential",
         "ru": "влиятельный",
-        "tr": "etkili"
+        "tr": "etkili",
+        "level": "C1"
     },
     {
         "en": "info",
         "ru": "информация",
-        "tr": "bilgi"
+        "tr": "bilgi",
+        "level": "B2"
     },
     {
         "en": "infrastructure",
         "ru": "инфраструктура",
-        "tr": "altyapı"
+        "tr": "altyapı",
+        "level": "B2"
     },
     {
         "en": "inhabitant",
         "ru": "житель",
-        "tr": "bölge sakini"
+        "tr": "bölge sakini",
+        "level": "B2"
     },
     {
         "en": "inherent",
         "ru": "присущий",
-        "tr": "doğuştan"
+        "tr": "doğuştan",
+        "level": "C1"
     },
     {
         "en": "inherit",
         "ru": "наследовать",
-        "tr": "miras almak"
+        "tr": "miras almak",
+        "level": "B2"
     },
     {
         "en": "inhibit",
         "ru": "тормозить",
-        "tr": "engellemek"
+        "tr": "engellemek",
+        "level": "C1"
     },
     {
         "en": "initiate",
         "ru": "инициировать",
-        "tr": "başlatmak"
+        "tr": "başlatmak",
+        "level": "C1"
     },
     {
         "en": "inject",
         "ru": "вводить",
-        "tr": "enjekte etmek"
+        "tr": "enjekte etmek",
+        "level": "C1"
     },
     {
         "en": "injection",
         "ru": "инъекция",
-        "tr": "enjeksiyon"
+        "tr": "enjeksiyon",
+        "level": "C1"
     },
     {
         "en": "injustice",
         "ru": "несправедливость",
-        "tr": "adaletsizlik"
+        "tr": "adaletsizlik",
+        "level": "C1"
     },
     {
         "en": "ink",
         "ru": "чернила",
-        "tr": "mürekkep"
+        "tr": "mürekkep",
+        "level": "B2"
     },
     {
         "en": "inmate",
         "ru": "заключенный",
-        "tr": "mahkum"
+        "tr": "mahkum",
+        "level": "C1"
     },
     {
         "en": "innovation",
         "ru": "инновации",
-        "tr": "yenilik"
+        "tr": "yenilik",
+        "level": "B2"
     },
     {
         "en": "innovative",
         "ru": "инновационный",
-        "tr": "yenilikçi"
+        "tr": "yenilikçi",
+        "level": "B2"
     },
     {
         "en": "input",
         "ru": "вход",
-        "tr": "giriş"
+        "tr": "giriş",
+        "level": "B2"
     },
     {
         "en": "inquire",
         "ru": "спрашивать",
-        "tr": "araştırmak"
+        "tr": "araştırmak",
+        "level": "C1"
     },
     {
         "en": "insert",
         "ru": "вставлять",
-        "tr": "sokmak"
+        "tr": "sokmak",
+        "level": "B2"
     },
     {
         "en": "insertion",
         "ru": "вставка",
-        "tr": "ekleme"
+        "tr": "ekleme",
+        "level": "C1"
     },
     {
         "en": "insider",
         "ru": "инсайдер",
-        "tr": "içeriden bilgi"
+        "tr": "içeriden bilgi",
+        "level": "C1"
     },
     {
         "en": "inspect",
         "ru": "проверять",
-        "tr": "incelemek"
+        "tr": "incelemek",
+        "level": "C1"
     },
     {
         "en": "inspection",
         "ru": "инспекция",
-        "tr": "denetleme"
+        "tr": "denetleme",
+        "level": "C1"
     },
     {
         "en": "inspector",
         "ru": "инспектор",
-        "tr": "müfettiş"
+        "tr": "müfettiş",
+        "level": "B2"
     },
     {
         "en": "inspiration",
         "ru": "вдохновение",
-        "tr": "esin"
+        "tr": "esin",
+        "level": "C1"
     },
     {
         "en": "installation",
         "ru": "установка",
-        "tr": "kurulum"
+        "tr": "kurulum",
+        "level": "B2"
     },
     {
         "en": "instant",
         "ru": "мгновенный",
-        "tr": "ani"
+        "tr": "ani",
+        "level": "B2"
     },
     {
         "en": "instantly",
         "ru": "немедленно",
-        "tr": "aniden"
+        "tr": "aniden",
+        "level": "B2"
     },
     {
         "en": "instinct",
         "ru": "инстинкт",
-        "tr": "içgüdü"
+        "tr": "içgüdü",
+        "level": "C1"
     },
     {
         "en": "institutional",
         "ru": "институциональный",
-        "tr": "kurumsal"
+        "tr": "kurumsal",
+        "level": "C1"
     },
     {
         "en": "instruct",
         "ru": "инструктировать",
-        "tr": "talimat vermek"
+        "tr": "talimat vermek",
+        "level": "C1"
     },
     {
         "en": "instrumental",
         "ru": "инструментальный",
-        "tr": "enstrümantal"
+        "tr": "enstrümantal",
+        "level": "C1"
     },
     {
         "en": "insufficient",
         "ru": "недостаточный",
-        "tr": "yetersiz"
+        "tr": "yetersiz",
+        "level": "C1"
     },
     {
         "en": "insult",
         "ru": "оскорблять",
-        "tr": "hakaret"
+        "tr": "hakaret",
+        "level": "C1"
     },
     {
         "en": "intact",
         "ru": "нетронутый",
-        "tr": "bozulmamış"
+        "tr": "bozulmamış",
+        "level": "C1"
     },
     {
         "en": "intake",
         "ru": "прием",
-        "tr": "giriş"
+        "tr": "giriş",
+        "level": "C1"
     },
     {
         "en": "integral",
         "ru": "интеграл",
-        "tr": "integral"
+        "tr": "integral",
+        "level": "C1"
     },
     {
         "en": "integrate",
         "ru": "интегрировать",
-        "tr": "entegre etmek"
+        "tr": "entegre etmek",
+        "level": "B2"
     },
     {
         "en": "integrated",
         "ru": "интегрированный",
-        "tr": "entegre"
+        "tr": "entegre",
+        "level": "C1"
     },
     {
         "en": "integration",
         "ru": "интеграция",
-        "tr": "entegrasyon"
+        "tr": "entegrasyon",
+        "level": "C1"
     },
     {
         "en": "integrity",
         "ru": "честность",
-        "tr": "bütünlük"
+        "tr": "bütünlük",
+        "level": "C1"
     },
     {
         "en": "intellectual",
         "ru": "интеллектуальный",
-        "tr": "entelektüel"
+        "tr": "entelektüel",
+        "level": "C1"
     },
     {
         "en": "intellectual  B2",
         "ru": "интеллектуальный B2",
-        "tr": "entelektüel B2"
+        "tr": "entelektüel B2",
+        "level": "C1"
     },
     {
         "en": "intensify",
         "ru": "усиливать",
-        "tr": "yoğunlaştırmak"
+        "tr": "yoğunlaştırmak",
+        "level": "C1"
     },
     {
         "en": "intensity",
         "ru": "интенсивность",
-        "tr": "yoğunluk"
+        "tr": "yoğunluk",
+        "level": "C1"
     },
     {
         "en": "intensive",
         "ru": "интенсивный",
-        "tr": "yoğun"
+        "tr": "yoğun",
+        "level": "C1"
     },
     {
         "en": "intent",
         "ru": "намерение",
-        "tr": "niyet"
+        "tr": "niyet",
+        "level": "C1"
     },
     {
         "en": "interact",
         "ru": "взаимодействовать",
-        "tr": "etkileşime girmek"
+        "tr": "etkileşime girmek",
+        "level": "B2"
     },
     {
         "en": "interaction",
         "ru": "взаимодействие",
-        "tr": "etkileşim"
+        "tr": "etkileşim",
+        "level": "B2"
     },
     {
         "en": "interactive",
         "ru": "интерактивный",
-        "tr": "etkileşimli"
+        "tr": "etkileşimli",
+        "level": "C1"
     },
     {
         "en": "interface",
         "ru": "интерфейс",
-        "tr": "arayüz"
+        "tr": "arayüz",
+        "level": "C1"
     },
     {
         "en": "interfere",
         "ru": "вмешиваться",
-        "tr": "müdahale etmek"
+        "tr": "müdahale etmek",
+        "level": "C1"
     },
     {
         "en": "interference",
         "ru": "вмешательство",
-        "tr": "parazit yapmak"
+        "tr": "parazit yapmak",
+        "level": "C1"
     },
     {
         "en": "interim",
         "ru": "временный",
-        "tr": "geçici"
+        "tr": "geçici",
+        "level": "C1"
     },
     {
         "en": "interior",
         "ru": "интерьер",
-        "tr": "iç mekan"
+        "tr": "iç mekan",
+        "level": "C1"
     },
     {
         "en": "intermediate",
         "ru": "средний",
-        "tr": "orta seviye"
+        "tr": "orta seviye",
+        "level": "C1"
     },
     {
         "en": "interpretation",
         "ru": "интерпретация",
-        "tr": "tercüme"
+        "tr": "tercüme",
+        "level": "B2"
     },
     {
         "en": "intersection",
         "ru": "пересечение",
-        "tr": "kavşak"
+        "tr": "kavşak",
+        "level": "C1"
     },
     {
         "en": "interval",
         "ru": "интервал",
-        "tr": "aralık"
+        "tr": "aralık",
+        "level": "B2"
     },
     {
         "en": "intervene",
         "ru": "вмешиваться",
-        "tr": "müdahale etmek"
+        "tr": "müdahale etmek",
+        "level": "C1"
     },
     {
         "en": "intervention",
         "ru": "вмешательство",
-        "tr": "araya girmek"
+        "tr": "araya girmek",
+        "level": "C1"
     },
     {
         "en": "intimate",
         "ru": "интимный",
-        "tr": "samimi"
+        "tr": "samimi",
+        "level": "C1"
     },
     {
         "en": "intriguing",
         "ru": "интригующий",
-        "tr": "ilgi çekici"
+        "tr": "ilgi çekici",
+        "level": "C1"
     },
     {
         "en": "invade",
         "ru": "вторгаться",
-        "tr": "istila etmek"
+        "tr": "istila etmek",
+        "level": "B2"
     },
     {
         "en": "invasion",
         "ru": "вторжение",
-        "tr": "istila"
+        "tr": "istila",
+        "level": "B2"
     },
     {
         "en": "inventory",
         "ru": "инвентарь",
-        "tr": "envanter"
+        "tr": "envanter",
+        "level": "C1"
     },
     {
         "en": "investigator",
         "ru": "следователь",
-        "tr": "araştırmacı"
+        "tr": "araştırmacı",
+        "level": "C1"
     },
     {
         "en": "investor",
         "ru": "инвестор",
-        "tr": "yatırımcı"
+        "tr": "yatırımcı",
+        "level": "B2"
     },
     {
         "en": "invisible",
         "ru": "невидимый",
-        "tr": "görünmez"
+        "tr": "görünmez",
+        "level": "C1"
     },
     {
         "en": "invoke",
         "ru": "вызывать",
-        "tr": "çağırmak"
+        "tr": "çağırmak",
+        "level": "C1"
     },
     {
         "en": "involvement",
         "ru": "участие",
-        "tr": "katılım"
+        "tr": "katılım",
+        "level": "C1"
     },
     {
         "en": "ironic",
         "ru": "ироничный",
-        "tr": "ironik"
+        "tr": "ironik",
+        "level": "C1"
     },
     {
         "en": "ironically",
         "ru": "по иронии судьбы",
-        "tr": "ironik bir şekilde"
+        "tr": "ironik bir şekilde",
+        "level": "C1"
     },
     {
         "en": "irony",
         "ru": "ирония",
-        "tr": "ironi"
+        "tr": "ironi",
+        "level": "C1"
     },
     {
         "en": "irrelevant",
         "ru": "не имеющий отношения",
-        "tr": "alakasız"
+        "tr": "alakasız",
+        "level": "C1"
     },
     {
         "en": "isolate",
         "ru": "изолировать",
-        "tr": "izole etmek"
+        "tr": "izole etmek",
+        "level": "B2"
     },
     {
         "en": "isolated",
         "ru": "изолированный",
-        "tr": "izole edilmiş"
+        "tr": "izole edilmiş",
+        "level": "B2"
     },
     {
         "en": "isolation",
         "ru": "изоляция",
-        "tr": "izolasyon"
+        "tr": "izolasyon",
+        "level": "C1"
     },
     {
-        "en": "it includes an additional 2000 words for learners at - level which are listed here",
-        "ru": "он включает дополнительные 2000 слов для учащихся на уровне, которые перечислены здесь.",
-        "tr": "- seviyesindeki öğrenciler için burada listelenen ilave 2000 kelimeyi içerir"
+        "en": "it includes an additional 2000 words for learners at B2-C1 level which are listed here",
+        "ru": "он включает дополнительные 2000 слов для учащихся на уровне B2-C1, которые перечислены здесь.",
+        "tr": "burada listelenen B2-C1 düzeyindeki öğrenciler için ek 2000 kelime içerir",
+        "level": "B2"
     },
     {
         "en": "jail",
         "ru": "тюрьма",
-        "tr": "hapishane"
+        "tr": "hapishane",
+        "level": "B2"
     },
     {
         "en": "jet",
         "ru": "реактивный самолет",
-        "tr": "jet"
+        "tr": "jet",
+        "level": "B2"
     },
     {
         "en": "joint",
         "ru": "соединение",
-        "tr": "eklem yeri"
+        "tr": "eklem yeri",
+        "level": "B2"
     },
     {
         "en": "journalism",
         "ru": "журналистика",
-        "tr": "gazetecilik"
+        "tr": "gazetecilik",
+        "level": "B2"
     },
     {
         "en": "judicial",
         "ru": "судебный",
-        "tr": "adli"
+        "tr": "adli",
+        "level": "C1"
     },
     {
         "en": "jurisdiction",
         "ru": "юрисдикция",
-        "tr": "yargı yetkisi"
+        "tr": "yargı yetkisi",
+        "level": "C1"
     },
     {
         "en": "jury",
         "ru": "жюри",
-        "tr": "jüri"
+        "tr": "jüri",
+        "level": "B2"
     },
     {
         "en": "just",
         "ru": "только",
-        "tr": "Sadece"
+        "tr": "Sadece",
+        "level": "C1"
     },
     {
         "en": "justification",
         "ru": "оправдание",
-        "tr": "gerekçe"
+        "tr": "gerekçe",
+        "level": "C1"
     },
     {
         "en": "keen",
         "ru": "увлеченный",
-        "tr": "hevesli"
+        "tr": "hevesli",
+        "level": "C1"
     },
     {
         "en": "kidnap",
         "ru": "похитить",
-        "tr": "kaçırmak"
+        "tr": "kaçırmak",
+        "level": "C1"
     },
     {
         "en": "kidney",
         "ru": "почка",
-        "tr": "böbrek"
+        "tr": "böbrek",
+        "level": "C1"
     },
     {
         "en": "kindergarten",
         "ru": "детский сад",
-        "tr": "anaokulu"
+        "tr": "anaokulu",
+        "level": "B2"
     },
     {
         "en": "kingdom",
         "ru": "королевство",
-        "tr": "krallık"
+        "tr": "krallık",
+        "level": "C1"
     },
     {
         "en": "kit",
         "ru": "набор",
-        "tr": "kiti"
+        "tr": "kiti",
+        "level": "B2"
     },
     {
         "en": "ladder",
         "ru": "лестница",
-        "tr": "merdiven"
+        "tr": "merdiven",
+        "level": "B2"
     },
     {
         "en": "landing",
         "ru": "приземление",
-        "tr": "iniş"
+        "tr": "iniş",
+        "level": "B2"
     },
     {
         "en": "landlord",
         "ru": "домовладелец",
-        "tr": "ev sahibi"
+        "tr": "ev sahibi",
+        "level": "C1"
     },
     {
         "en": "landmark",
         "ru": "ориентир",
-        "tr": "dönüm noktası"
+        "tr": "dönüm noktası",
+        "level": "C1"
     },
     {
         "en": "lane",
         "ru": "переулок",
-        "tr": "Lane"
+        "tr": "Lane",
+        "level": "B2"
     },
     {
         "en": "lap",
         "ru": "колени",
-        "tr": "kucak"
+        "tr": "kucak",
+        "level": "C1"
     },
     {
         "en": "large-scale",
         "ru": "крупномасштабный",
-        "tr": "büyük ölçekli"
+        "tr": "büyük ölçekli",
+        "level": "C1"
     },
     {
         "en": "laser",
         "ru": "лазер",
-        "tr": "lazer"
+        "tr": "lazer",
+        "level": "C1"
     },
     {
         "en": "lately",
         "ru": "недавно",
-        "tr": "son zamanlarda"
+        "tr": "son zamanlarda",
+        "level": "B2"
     },
     {
         "en": "latter",
         "ru": "последний",
-        "tr": "ikincisi"
+        "tr": "ikincisi",
+        "level": "C1"
     },
     {
         "en": "lawmaker",
         "ru": "законодатель",
-        "tr": "yasa koyucu"
+        "tr": "yasa koyucu",
+        "level": "C1"
     },
     {
         "en": "lawn",
         "ru": "лужайка",
-        "tr": "çim"
+        "tr": "çim",
+        "level": "C1"
     },
     {
         "en": "lawsuit",
         "ru": "иск",
-        "tr": "dava"
+        "tr": "dava",
+        "level": "C1"
     },
     {
         "en": "layout",
         "ru": "макет",
-        "tr": "düzen"
+        "tr": "düzen",
+        "level": "C1"
     },
     {
         "en": "leak",
         "ru": "утечка",
-        "tr": "sızıntı"
+        "tr": "sızıntı",
+        "level": "C1"
     },
     {
         "en": "leap",
         "ru": "прыгнуть",
-        "tr": "sıçramak"
+        "tr": "sıçramak",
+        "level": "C1"
     },
     {
         "en": "legacy",
         "ru": "наследие",
-        "tr": "miras"
+        "tr": "miras",
+        "level": "C1"
     },
     {
         "en": "legend",
         "ru": "легенда",
-        "tr": "efsane"
+        "tr": "efsane",
+        "level": "B2"
     },
     {
         "en": "legendary",
         "ru": "легендарный",
-        "tr": "efsanevi"
+        "tr": "efsanevi",
+        "level": "C1"
     },
     {
         "en": "legislation",
         "ru": "законодательство",
-        "tr": "mevzuat"
+        "tr": "mevzuat",
+        "level": "C1"
     },
     {
         "en": "legislative",
         "ru": "законодательный",
-        "tr": "yasama"
+        "tr": "yasama",
+        "level": "C1"
     },
     {
         "en": "legislature",
         "ru": "законодательный орган",
-        "tr": "yasama organı"
+        "tr": "yasama organı",
+        "level": "C1"
     },
     {
         "en": "legitimate",
         "ru": "законный",
-        "tr": "meşru"
+        "tr": "meşru",
+        "level": "C1"
     },
     {
         "en": "lengthy",
         "ru": "длинный",
-        "tr": "uzun"
+        "tr": "uzun",
+        "level": "C1"
     },
     {
         "en": "lens",
         "ru": "линза",
-        "tr": "mercek"
+        "tr": "mercek",
+        "level": "B2"
     },
     {
         "en": "lesbian",
         "ru": "лесбиянка",
-        "tr": "lezbiyen"
+        "tr": "lezbiyen",
+        "level": "C1"
     },
     {
         "en": "lesser",
         "ru": "меньший",
-        "tr": "daha az"
+        "tr": "daha az",
+        "level": "C1"
     },
     {
         "en": "lethal",
         "ru": "смертельный",
-        "tr": "öldürücü"
+        "tr": "öldürücü",
+        "level": "C1"
     },
     {
         "en": "liable",
         "ru": "ответственный",
-        "tr": "sorumlu"
+        "tr": "sorumlu",
+        "level": "C1"
     },
     {
         "en": "liberal",
         "ru": "либеральный",
-        "tr": "liberal"
+        "tr": "liberal",
+        "level": "C1"
     },
     {
         "en": "liberation",
         "ru": "освобождение",
-        "tr": "kurtuluş"
+        "tr": "kurtuluş",
+        "level": "C1"
     },
     {
         "en": "liberty",
         "ru": "свобода",
-        "tr": "özgürlük"
+        "tr": "özgürlük",
+        "level": "C1"
     },
     {
         "en": "lifelong",
         "ru": "пожизненный",
-        "tr": "ömür boyu"
+        "tr": "ömür boyu",
+        "level": "C1"
     },
     {
         "en": "lifetime",
         "ru": "продолжительность жизни",
-        "tr": "ömür boyu"
+        "tr": "ömür boyu",
+        "level": "B2"
     },
     {
         "en": "lighting",
         "ru": "освещение",
-        "tr": "aydınlatma"
+        "tr": "aydınlatma",
+        "level": "B2"
     },
     {
         "en": "likelihood",
         "ru": "вероятность",
-        "tr": "olasılık"
+        "tr": "olasılık",
+        "level": "C1"
     },
     {
         "en": "likewise",
         "ru": "так же",
-        "tr": "aynı şekilde"
+        "tr": "aynı şekilde",
+        "level": "B2"
     },
     {
         "en": "limb",
         "ru": "конечность",
-        "tr": "uzuv"
+        "tr": "uzuv",
+        "level": "C1"
     },
     {
         "en": "limitation",
         "ru": "ограничение",
-        "tr": "sınırlama"
+        "tr": "sınırlama",
+        "level": "B2"
     },
     {
         "en": "linear",
         "ru": "линейный",
-        "tr": "doğrusal"
+        "tr": "doğrusal",
+        "level": "C1"
     },
     {
         "en": "lineup",
         "ru": "расстановка",
-        "tr": "sıralanmak"
+        "tr": "sıralanmak",
+        "level": "C1"
     },
     {
         "en": "linger",
         "ru": "задерживаться",
-        "tr": "oyalanmak"
+        "tr": "oyalanmak",
+        "level": "C1"
     },
     {
         "en": "listing",
         "ru": "листинг",
-        "tr": "listeleme"
+        "tr": "listeleme",
+        "level": "C1"
     },
     {
         "en": "liter",
         "ru": "литр",
-        "tr": "litre"
+        "tr": "litre",
+        "level": "C1"
     },
     {
         "en": "literacy",
         "ru": "грамотность",
-        "tr": "okuryazarlık"
+        "tr": "okuryazarlık",
+        "level": "C1"
     },
     {
         "en": "literally",
         "ru": "буквально",
-        "tr": "gerçekten"
+        "tr": "gerçekten",
+        "level": "B2"
     },
     {
         "en": "literary",
         "ru": "литературный",
-        "tr": "edebi"
+        "tr": "edebi",
+        "level": "B2"
     },
     {
         "en": "litter",
         "ru": "мусор",
-        "tr": "yavrulamak"
+        "tr": "yavrulamak",
+        "level": "B2"
     },
     {
         "en": "liver",
         "ru": "печень",
-        "tr": "karaciğer"
+        "tr": "karaciğer",
+        "level": "C1"
     },
     {
         "en": "lobby",
         "ru": "лобби",
-        "tr": "lobi"
+        "tr": "lobi",
+        "level": "C1"
     },
     {
         "en": "log",
         "ru": "бревно",
-        "tr": "kayıt"
+        "tr": "kayıt",
+        "level": "C1"
     },
     {
         "en": "logic",
         "ru": "логика",
-        "tr": "mantık"
+        "tr": "mantık",
+        "level": "C1"
     },
     {
         "en": "logo",
         "ru": "логотип",
-        "tr": "logo"
+        "tr": "logo",
+        "level": "B2"
     },
     {
         "en": "long-standing",
         "ru": "давний",
-        "tr": "uzun süredir devam eden"
+        "tr": "uzun süredir devam eden",
+        "level": "C1"
     },
     {
         "en": "longtime",
         "ru": "много времени",
-        "tr": "uzun süredir"
+        "tr": "uzun süredir",
+        "level": "C1"
     },
     {
         "en": "loom",
         "ru": "ткацкий станок",
-        "tr": "tezgâh"
+        "tr": "tezgâh",
+        "level": "C1"
     },
     {
         "en": "loop",
         "ru": "петля",
-        "tr": "döngü"
+        "tr": "döngü",
+        "level": "C1"
     },
     {
         "en": "lottery",
         "ru": "лотерея",
-        "tr": "piyango"
+        "tr": "piyango",
+        "level": "B2"
     },
     {
         "en": "loyal",
         "ru": "лояльный",
-        "tr": "sadık"
+        "tr": "sadık",
+        "level": "B2"
     },
     {
         "en": "loyalty",
         "ru": "верность",
-        "tr": "bağlılık"
+        "tr": "bağlılık",
+        "level": "C1"
     },
     {
         "en": "lyric",
         "ru": "лирический",
-        "tr": "lirik"
+        "tr": "lirik",
+        "level": "B2"
     },
     {
         "en": "machinery",
         "ru": "техника",
-        "tr": "makineler"
+        "tr": "makineler",
+        "level": "C1"
     },
     {
         "en": "magical",
         "ru": "волшебный",
-        "tr": "büyülü"
+        "tr": "büyülü",
+        "level": "C1"
     },
     {
         "en": "magnetic",
         "ru": "магнитный",
-        "tr": "manyetik"
+        "tr": "manyetik",
+        "level": "C1"
     },
     {
         "en": "magnificent",
         "ru": "великолепный",
-        "tr": "muhteşem"
+        "tr": "muhteşem",
+        "level": "B2"
     },
     {
         "en": "magnitude",
         "ru": "величина",
-        "tr": "büyüklük"
+        "tr": "büyüklük",
+        "level": "C1"
     },
     {
         "en": "mainland",
         "ru": "материк",
-        "tr": "anakara"
+        "tr": "anakara",
+        "level": "C1"
     },
     {
         "en": "mainstream",
         "ru": "мейнстрим",
-        "tr": "ana akım"
+        "tr": "ana akım",
+        "level": "C1"
     },
     {
         "en": "maintenance",
         "ru": "обслуживание",
-        "tr": "Bakım"
+        "tr": "Bakım",
+        "level": "C1"
     },
     {
         "en": "makeup",
         "ru": "составить",
-        "tr": "makyaj yapmak"
+        "tr": "makyaj yapmak",
+        "level": "B2"
     },
     {
         "en": "making",
         "ru": "изготовление",
-        "tr": "yapma"
+        "tr": "yapma",
+        "level": "B2"
     },
     {
         "en": "mandate",
         "ru": "мандат",
-        "tr": "yetki"
+        "tr": "yetki",
+        "level": "C1"
     },
     {
         "en": "mandatory",
         "ru": "обязательный",
-        "tr": "zorunlu"
+        "tr": "zorunlu",
+        "level": "C1"
     },
     {
         "en": "manifest",
         "ru": "манифестировать",
-        "tr": "açık"
+        "tr": "açık",
+        "level": "C1"
     },
     {
         "en": "manipulate",
         "ru": "манипулировать",
-        "tr": "manipüle etmek"
+        "tr": "manipüle etmek",
+        "level": "C1"
     },
     {
         "en": "manipulation",
         "ru": "манипуляция",
-        "tr": "manipülasyon"
+        "tr": "manipülasyon",
+        "level": "C1"
     },
     {
         "en": "manufacture",
         "ru": "производство",
-        "tr": "imalat"
+        "tr": "imalat",
+        "level": "B2"
     },
     {
         "en": "manufacturing",
         "ru": "производство",
-        "tr": "üretme"
+        "tr": "üretme",
+        "level": "B2"
     },
     {
         "en": "manuscript",
         "ru": "рукопись",
-        "tr": "el yazması"
+        "tr": "el yazması",
+        "level": "C1"
     },
     {
         "en": "marathon",
         "ru": "марафон",
-        "tr": "maraton"
+        "tr": "maraton",
+        "level": "B2"
     },
     {
         "en": "march",
         "ru": "маршировать",
-        "tr": "mart"
+        "tr": "mart",
+        "level": "C1"
     },
     {
         "en": "margin",
         "ru": "допуск",
-        "tr": "marj"
+        "tr": "marj",
+        "level": "B2"
     },
     {
         "en": "marginal",
         "ru": "маргинальный",
-        "tr": "marjinal"
+        "tr": "marjinal",
+        "level": "C1"
     },
     {
         "en": "marine",
         "ru": "морской",
-        "tr": "deniz"
+        "tr": "deniz",
+        "level": "C1"
     },
     {
         "en": "marker",
         "ru": "маркер",
-        "tr": "işaretleyici"
+        "tr": "işaretleyici",
+        "level": "B2"
     },
     {
         "en": "marketplace",
         "ru": "рынок",
-        "tr": "Pazar yeri"
+        "tr": "Pazar yeri",
+        "level": "C1"
     },
     {
         "en": "martial",
         "ru": "боевой",
-        "tr": "dövüş"
+        "tr": "dövüş",
+        "level": "B2"
     },
     {
         "en": "mask",
         "ru": "маска",
-        "tr": "maske"
+        "tr": "maske",
+        "level": "C1"
     },
     {
         "en": "massacre",
         "ru": "резня",
-        "tr": "katliam"
+        "tr": "katliam",
+        "level": "C1"
     },
     {
         "en": "mate",
         "ru": "приятель",
-        "tr": "mat"
+        "tr": "mat",
+        "level": "B2"
     },
     {
         "en": "mathematical",
         "ru": "математический",
-        "tr": "matematiksel"
+        "tr": "matematiksel",
+        "level": "C1"
     },
     {
         "en": "mature",
         "ru": "зрелый",
-        "tr": "olgun"
+        "tr": "olgun",
+        "level": "C1"
     },
     {
         "en": "maximize",
         "ru": "максимизировать",
-        "tr": "maksimize etmek"
+        "tr": "maksimize etmek",
+        "level": "C1"
     },
     {
         "en": "meaningful",
         "ru": "значимый",
-        "tr": "anlamlı"
+        "tr": "anlamlı",
+        "level": "C1"
     },
     {
         "en": "meantime",
         "ru": "тем временем",
-        "tr": "bu arada"
+        "tr": "bu arada",
+        "level": "C1"
     },
     {
         "en": "mechanic",
         "ru": "механик",
-        "tr": "mekanik"
+        "tr": "mekanik",
+        "level": "B2"
     },
     {
         "en": "mechanical",
         "ru": "механический",
-        "tr": "mekanik"
+        "tr": "mekanik",
+        "level": "B2"
     },
     {
         "en": "mechanism",
         "ru": "механизм",
-        "tr": "mekanizma"
+        "tr": "mekanizma",
+        "level": "B2"
     },
     {
         "en": "medal",
         "ru": "медаль",
-        "tr": "madalya"
+        "tr": "madalya",
+        "level": "B2"
     },
     {
         "en": "medication",
         "ru": "медикамент",
-        "tr": "ilaç tedavisi"
+        "tr": "ilaç tedavisi",
+        "level": "B2"
     },
     {
         "en": "medieval",
         "ru": "средневековый",
-        "tr": "ortaçağ"
+        "tr": "ortaçağ",
+        "level": "C1"
     },
     {
         "en": "meditation",
         "ru": "медитация",
-        "tr": "meditasyon"
+        "tr": "meditasyon",
+        "level": "C1"
     },
     {
         "en": "melody",
         "ru": "мелодия",
-        "tr": "melodi"
+        "tr": "melodi",
+        "level": "C1"
     },
     {
         "en": "membership",
         "ru": "членство",
-        "tr": "üyelik"
+        "tr": "üyelik",
+        "level": "B2"
     },
     {
         "en": "memo",
         "ru": "памятка",
-        "tr": "hafıza"
+        "tr": "hafıza",
+        "level": "C1"
     },
     {
         "en": "memoir",
         "ru": "мемуары",
-        "tr": "anı"
+        "tr": "anı",
+        "level": "C1"
     },
     {
         "en": "memorable",
         "ru": "запоминающийся",
-        "tr": "unutulmaz"
+        "tr": "unutulmaz",
+        "level": "B2"
     },
     {
         "en": "memorial",
         "ru": "мемориал",
-        "tr": "anıt"
+        "tr": "anıt",
+        "level": "C1"
     },
     {
         "en": "mentor",
         "ru": "наставник",
-        "tr": "akıl hocası"
+        "tr": "akıl hocası",
+        "level": "C1"
     },
     {
         "en": "merchant",
         "ru": "торговец",
-        "tr": "tüccar"
+        "tr": "tüccar",
+        "level": "C1"
     },
     {
         "en": "mercy",
         "ru": "милосердие",
-        "tr": "merhamet"
+        "tr": "merhamet",
+        "level": "C1"
     },
     {
         "en": "mere",
         "ru": "просто",
-        "tr": "sadece"
+        "tr": "sadece",
+        "level": "C1"
     },
     {
         "en": "merely",
         "ru": "просто",
-        "tr": "sadece"
+        "tr": "sadece",
+        "level": "C1"
     },
     {
         "en": "merge",
         "ru": "слить",
-        "tr": "birleştirme"
+        "tr": "birleştirme",
+        "level": "C1"
     },
     {
         "en": "merger",
         "ru": "слияние",
-        "tr": "birleşme"
+        "tr": "birleşme",
+        "level": "C1"
     },
     {
         "en": "merit",
         "ru": "заслуга",
-        "tr": "liyakat"
+        "tr": "liyakat",
+        "level": "C1"
     },
     {
         "en": "metaphor",
         "ru": "метафора",
-        "tr": "metafor"
+        "tr": "metafor",
+        "level": "B2"
     },
     {
         "en": "methodology",
         "ru": "методология",
-        "tr": "metodoloji"
+        "tr": "metodoloji",
+        "level": "C1"
     },
     {
         "en": "midst",
         "ru": "посреди",
-        "tr": "ortasında"
+        "tr": "ortasında",
+        "level": "C1"
     },
     {
         "en": "migration",
         "ru": "миграция",
-        "tr": "göç"
+        "tr": "göç",
+        "level": "C1"
     },
     {
         "en": "militant",
         "ru": "воинственный",
-        "tr": "militan"
+        "tr": "militan",
+        "level": "C1"
     },
     {
         "en": "militia",
         "ru": "милиция",
-        "tr": "milis"
+        "tr": "milis",
+        "level": "C1"
     },
     {
         "en": "mill",
         "ru": "мельница",
-        "tr": "değirmen"
+        "tr": "değirmen",
+        "level": "C1"
     },
     {
         "en": "miner",
         "ru": "шахтер",
-        "tr": "madenci"
+        "tr": "madenci",
+        "level": "B2"
     },
     {
         "en": "minimal",
         "ru": "минимальный",
-        "tr": "asgari"
+        "tr": "asgari",
+        "level": "C1"
     },
     {
         "en": "minimize",
         "ru": "минимизировать",
-        "tr": "en aza indirmek"
+        "tr": "en aza indirmek",
+        "level": "C1"
     },
     {
         "en": "mining",
         "ru": "добыча полезных ископаемых",
-        "tr": "madencilik"
+        "tr": "madencilik",
+        "level": "C1"
     },
     {
         "en": "ministry",
         "ru": "министерство",
-        "tr": "bakanlık"
+        "tr": "bakanlık",
+        "level": "C1"
     },
     {
         "en": "minute2",
         "ru": "минута2",
-        "tr": "dakika2"
+        "tr": "dakika2",
+        "level": "C1"
     },
     {
         "en": "miracle",
         "ru": "чудо",
-        "tr": "mucize"
+        "tr": "mucize",
+        "level": "C1"
     },
     {
         "en": "miserable",
         "ru": "убогий",
-        "tr": "acınası"
+        "tr": "acınası",
+        "level": "B2"
     },
     {
         "en": "misery",
         "ru": "невзгоды",
-        "tr": "sefalet"
+        "tr": "sefalet",
+        "level": "C1"
     },
     {
         "en": "misleading",
         "ru": "вводящий в заблуждение",
-        "tr": "yanıltıcı"
+        "tr": "yanıltıcı",
+        "level": "C1"
     },
     {
         "en": "missile",
         "ru": "ракета",
-        "tr": "füze"
+        "tr": "füze",
+        "level": "C1"
     },
     {
         "en": "mob",
         "ru": "толпа",
-        "tr": "mafya"
+        "tr": "mafya",
+        "level": "C1"
     },
     {
         "en": "mobile",
         "ru": "мобильный",
-        "tr": "mobil"
+        "tr": "mobil",
+        "level": "C1"
     },
     {
         "en": "mobility",
         "ru": "мобильность",
-        "tr": "hareketlilik"
+        "tr": "hareketlilik",
+        "level": "C1"
     },
     {
         "en": "mobilize",
         "ru": "мобилизовать",
-        "tr": "harekete geçirmek"
+        "tr": "harekete geçirmek",
+        "level": "C1"
     },
     {
         "en": "mode",
         "ru": "режим",
-        "tr": "mod"
+        "tr": "mod",
+        "level": "B2"
     },
     {
         "en": "moderate",
         "ru": "умеренный",
-        "tr": "ılıman"
+        "tr": "ılıman",
+        "level": "C1"
     },
     {
         "en": "modest",
         "ru": "скромный",
-        "tr": "mütevazı"
+        "tr": "mütevazı",
+        "level": "B2"
     },
     {
         "en": "modification",
         "ru": "модификация",
-        "tr": "modifikasyon"
+        "tr": "modifikasyon",
+        "level": "C1"
     },
     {
         "en": "module",
         "ru": "модуль",
-        "tr": "modül"
+        "tr": "modül",
+        "level": "C1"
     },
     {
         "en": "momentum",
         "ru": "импульс",
-        "tr": "ivme"
+        "tr": "ivme",
+        "level": "C1"
     },
     {
         "en": "monk",
         "ru": "монах",
-        "tr": "keşiş"
+        "tr": "keşiş",
+        "level": "C1"
     },
     {
         "en": "monopoly",
         "ru": "монополия",
-        "tr": "tekel"
+        "tr": "tekel",
+        "level": "C1"
     },
     {
         "en": "monster",
         "ru": "монстр",
-        "tr": "canavar"
+        "tr": "canavar",
+        "level": "B2"
     },
     {
         "en": "monthly",
         "ru": "ежемесячно",
-        "tr": "aylık"
+        "tr": "aylık",
+        "level": "B2"
     },
     {
         "en": "monument",
         "ru": "памятник",
-        "tr": "anıt"
+        "tr": "anıt",
+        "level": "B2"
     },
     {
         "en": "morality",
         "ru": "мораль",
-        "tr": "ahlak"
+        "tr": "ahlak",
+        "level": "C1"
     },
     {
         "en": "moreover",
         "ru": "более того",
-        "tr": "Dahası"
+        "tr": "Dahası",
+        "level": "B2"
     },
     {
         "en": "mortgage",
         "ru": "ипотека",
-        "tr": "ipotek"
+        "tr": "ipotek",
+        "level": "B2"
     },
     {
         "en": "mosque",
         "ru": "мечеть",
-        "tr": "cami"
+        "tr": "cami",
+        "level": "B2"
     },
     {
         "en": "mosquito",
         "ru": "комар",
-        "tr": "sivrisinek"
+        "tr": "sivrisinek",
+        "level": "B2"
     },
     {
         "en": "motion",
         "ru": "движение",
-        "tr": "hareket"
+        "tr": "hareket",
+        "level": "B2"
     },
     {
         "en": "motivate",
         "ru": "мотивировать",
-        "tr": "motive etmek"
+        "tr": "motive etmek",
+        "level": "B2"
     },
     {
         "en": "motivation",
         "ru": "мотивация",
-        "tr": "motivasyon"
+        "tr": "motivasyon",
+        "level": "B2"
     },
     {
         "en": "motive",
         "ru": "мотив",
-        "tr": "sebep"
+        "tr": "sebep",
+        "level": "C1"
     },
     {
         "en": "moving",
         "ru": "движущийся",
-        "tr": "hareketli"
+        "tr": "hareketli",
+        "level": "B2"
     },
     {
         "en": "municipal",
         "ru": "муниципальный",
-        "tr": "belediye"
+        "tr": "belediye",
+        "level": "C1"
     },
     {
         "en": "mutual",
         "ru": "взаимный",
-        "tr": "karşılıklı"
+        "tr": "karşılıklı",
+        "level": "C1"
     },
     {
         "en": "myth",
         "ru": "миф",
-        "tr": "efsane"
+        "tr": "efsane",
+        "level": "B2"
     },
     {
         "en": "naked",
         "ru": "голый",
-        "tr": "çıplak"
+        "tr": "çıplak",
+        "level": "B2"
     },
     {
         "en": "namely",
         "ru": "а именно",
-        "tr": "yani"
+        "tr": "yani",
+        "level": "C1"
     },
     {
         "en": "nasty",
         "ru": "противный",
-        "tr": "edepsiz"
+        "tr": "edepsiz",
+        "level": "B2"
     },
     {
         "en": "nationwide",
         "ru": "общенациональный",
-        "tr": "ülke çapında"
+        "tr": "ülke çapında",
+        "level": "C1"
     },
     {
         "en": "naval",
         "ru": "военно-морской",
-        "tr": "deniz"
+        "tr": "deniz",
+        "level": "C1"
     },
     {
         "en": "navigation",
         "ru": "навигация",
-        "tr": "navigasyon"
+        "tr": "navigasyon",
+        "level": "B2"
     },
     {
         "en": "nearby",
         "ru": "рядом",
-        "tr": "yakında"
+        "tr": "yakında",
+        "level": "B2"
     },
     {
         "en": "necessity",
         "ru": "необходимость",
-        "tr": "gereklilik"
+        "tr": "gereklilik",
+        "level": "B2"
     },
     {
         "en": "neglect",
         "ru": "пренебрегать",
-        "tr": "ihmal etmek"
+        "tr": "ihmal etmek",
+        "level": "C1"
     },
     {
         "en": "negotiate",
         "ru": "вести переговоры",
-        "tr": "müzakere etmek"
+        "tr": "müzakere etmek",
+        "level": "B2"
     },
     {
         "en": "negotiation",
         "ru": "переговоры",
-        "tr": "müzakere"
+        "tr": "müzakere",
+        "level": "B2"
     },
     {
         "en": "neighboring",
         "ru": "соседний",
-        "tr": "komşu"
+        "tr": "komşu",
+        "level": "C1"
     },
     {
         "en": "nest",
         "ru": "гнездо",
-        "tr": "yuva"
+        "tr": "yuva",
+        "level": "C1"
     },
     {
         "en": "net",
         "ru": "сеть",
-        "tr": "açık"
+        "tr": "açık",
+        "level": "C1"
     },
     {
         "en": "neutral",
         "ru": "нейтральный",
-        "tr": "doğal"
+        "tr": "doğal",
+        "level": "B2"
     },
     {
         "en": "newly",
         "ru": "недавно",
-        "tr": "yeni"
+        "tr": "yeni",
+        "level": "B2"
     },
     {
         "en": "newsletter",
         "ru": "информационный бюллетень",
-        "tr": "haber bülteni"
+        "tr": "haber bülteni",
+        "level": "C1"
     },
     {
         "en": "nge",
         "ru": "нге",
-        "tr": "nge"
+        "tr": "nge",
+        "level": "C1"
     },
     {
         "en": "niche",
         "ru": "ниша",
-        "tr": "niş"
+        "tr": "niş",
+        "level": "C1"
     },
     {
         "en": "nickel",
         "ru": "никель",
-        "tr": "nikel"
+        "tr": "nikel",
+        "level": "B2"
     },
     {
         "en": "noble",
         "ru": "благородный",
-        "tr": "soylu"
+        "tr": "soylu",
+        "level": "C1"
     },
     {
         "en": "nod",
         "ru": "кивок",
-        "tr": "başını sallamak"
+        "tr": "başını sallamak",
+        "level": "C1"
     },
     {
         "en": "nominate",
         "ru": "номинировать",
-        "tr": "aday göstermek"
+        "tr": "aday göstermek",
+        "level": "C1"
     },
     {
         "en": "nomination",
         "ru": "номинация",
-        "tr": "adaylık"
+        "tr": "adaylık",
+        "level": "C1"
     },
     {
         "en": "nominee",
         "ru": "кандидат",
-        "tr": "aday"
+        "tr": "aday",
+        "level": "C1"
     },
     {
         "en": "nonetheless",
         "ru": "тем не менее",
-        "tr": "yine de"
+        "tr": "yine de",
+        "level": "C1"
     },
     {
         "en": "nonprofit",
         "ru": "некоммерческая организация",
-        "tr": "kar amacı gütmeyen"
+        "tr": "kar amacı gütmeyen",
+        "level": "C1"
     },
     {
         "en": "nonsense",
         "ru": "ерунда",
-        "tr": "anlamsız"
+        "tr": "anlamsız",
+        "level": "C1"
     },
     {
         "en": "noon",
         "ru": "полдень",
-        "tr": "öğlen"
+        "tr": "öğlen",
+        "level": "C1"
     },
     {
         "en": "norm",
         "ru": "норма",
-        "tr": "norm"
+        "tr": "norm",
+        "level": "B2"
     },
     {
         "en": "notable",
         "ru": "заметный",
-        "tr": "dikkate değer"
+        "tr": "dikkate değer",
+        "level": "C1"
     },
     {
         "en": "notably",
         "ru": "особенно",
-        "tr": "özellikle"
+        "tr": "özellikle",
+        "level": "C1"
     },
     {
         "en": "notebook",
         "ru": "блокнот",
-        "tr": "not defteri"
+        "tr": "not defteri",
+        "level": "B2"
     },
     {
         "en": "notify",
         "ru": "уведомить",
-        "tr": "bildirmek"
+        "tr": "bildirmek",
+        "level": "C1"
     },
     {
         "en": "notorious",
         "ru": "печально известный",
-        "tr": "kötü şöhretli"
+        "tr": "kötü şöhretli",
+        "level": "C1"
     },
     {
         "en": "novel",
         "ru": "роман",
-        "tr": "roman"
+        "tr": "roman",
+        "level": "C1"
     },
     {
         "en": "novelist",
         "ru": "писатель",
-        "tr": "romancı"
+        "tr": "romancı",
+        "level": "B2"
     },
     {
         "en": "nowadays",
         "ru": "настоящее время",
-        "tr": "bu günlerde"
+        "tr": "bu günlerde",
+        "level": "B2"
     },
     {
         "en": "nursery",
         "ru": "детская",
-        "tr": "kreş"
+        "tr": "kreş",
+        "level": "C1"
     },
     {
         "en": "nursing",
         "ru": "уход за больными",
-        "tr": "hemşirelik"
+        "tr": "hemşirelik",
+        "level": "B2"
     },
     {
         "en": "nutrition",
         "ru": "питание",
-        "tr": "beslenme"
+        "tr": "beslenme",
+        "level": "B2"
     },
     {
         "en": "obesity",
         "ru": "ожирение",
-        "tr": "obezite"
+        "tr": "obezite",
+        "level": "B2"
     },
     {
         "en": "objection",
         "ru": "возражение",
-        "tr": "itiraz"
+        "tr": "itiraz",
+        "level": "C1"
     },
     {
         "en": "oblige",
         "ru": "обязывать",
-        "tr": "mecbur etmek"
+        "tr": "mecbur etmek",
+        "level": "C1"
     },
     {
         "en": "observer",
         "ru": "наблюдатель",
-        "tr": "gözlemci"
+        "tr": "gözlemci",
+        "level": "B2"
     },
     {
         "en": "obsess",
         "ru": "одержим",
-        "tr": "takıntılı olmak"
+        "tr": "takıntılı olmak",
+        "level": "C1"
     },
     {
         "en": "obsession",
         "ru": "одержимость",
-        "tr": "takıntı"
+        "tr": "takıntı",
+        "level": "C1"
     },
     {
         "en": "obstacle",
         "ru": "препятствие",
-        "tr": "engel"
+        "tr": "engel",
+        "level": "B2"
     },
     {
         "en": "occasional",
         "ru": "случайный",
-        "tr": "ara sıra"
+        "tr": "ara sıra",
+        "level": "C1"
     },
     {
         "en": "occupation",
         "ru": "занятие",
-        "tr": "meslek"
+        "tr": "meslek",
+        "level": "B2"
     },
     {
         "en": "occupy",
         "ru": "занимать",
-        "tr": "işgal etmek"
+        "tr": "işgal etmek",
+        "level": "B2"
     },
     {
         "en": "occurrence",
         "ru": "возникновение",
-        "tr": "meydana gelme"
+        "tr": "meydana gelme",
+        "level": "C1"
     },
     {
         "en": "odds",
         "ru": "шансы",
-        "tr": "ihtimaller"
+        "tr": "ihtimaller",
+        "level": "C1"
     },
     {
         "en": "offender",
         "ru": "преступник",
-        "tr": "suçlu"
+        "tr": "suçlu",
+        "level": "B2"
     },
     {
         "en": "offering",
         "ru": "предложение",
-        "tr": "sunan"
+        "tr": "sunan",
+        "level": "C1"
     },
     {
         "en": "offspring",
         "ru": "потомство",
-        "tr": "yavru"
+        "tr": "yavru",
+        "level": "C1"
     },
     {
         "en": "ongoing",
         "ru": "непрерывный",
-        "tr": "devam ediyor"
+        "tr": "devam ediyor",
+        "level": "B2"
     },
     {
         "en": "openly",
         "ru": "открыто",
-        "tr": "açıkça"
+        "tr": "açıkça",
+        "level": "B2"
     },
     {
         "en": "opera",
         "ru": "опера",
-        "tr": "opera"
+        "tr": "opera",
+        "level": "B2"
     },
     {
         "en": "operational",
         "ru": "оперативный",
-        "tr": "operasyonel"
+        "tr": "operasyonel",
+        "level": "C1"
     },
     {
         "en": "operator",
         "ru": "оператор",
-        "tr": "operatör"
+        "tr": "operatör",
+        "level": "B2"
     },
     {
         "en": "opt",
         "ru": "выбрать",
-        "tr": "tercih"
+        "tr": "tercih",
+        "level": "C1"
     },
     {
         "en": "optical",
         "ru": "оптический",
-        "tr": "optik"
+        "tr": "optik",
+        "level": "C1"
     },
     {
         "en": "optimism",
         "ru": "оптимизм",
-        "tr": "iyimserlik"
+        "tr": "iyimserlik",
+        "level": "C1"
     },
     {
         "en": "optimistic",
         "ru": "оптимистичный",
-        "tr": "iyimser"
+        "tr": "iyimser",
+        "level": "B2"
     },
     {
         "en": "oral",
         "ru": "оральный",
-        "tr": "sözlü"
+        "tr": "sözlü",
+        "level": "C1"
     },
     {
         "en": "orchestra",
         "ru": "оркестр",
-        "tr": "orkestra"
+        "tr": "orkestra",
+        "level": "B2"
     },
     {
         "en": "organic",
         "ru": "органический",
-        "tr": "organik"
+        "tr": "organik",
+        "level": "B2"
     },
     {
         "en": "organizational",
         "ru": "организационный",
-        "tr": "organizasyonel"
+        "tr": "organizasyonel",
+        "level": "C1"
     },
     {
         "en": "orientation",
         "ru": "ориентация",
-        "tr": "yönlendirme"
+        "tr": "yönlendirme",
+        "level": "C1"
     },
     {
         "en": "originate",
         "ru": "возникать",
-        "tr": "kaynaklanmak"
+        "tr": "kaynaklanmak",
+        "level": "C1"
     },
     {
         "en": "outbreak",
         "ru": "вспышка",
-        "tr": "salgın"
+        "tr": "salgın",
+        "level": "C1"
     },
     {
         "en": "outfit",
         "ru": "одежда",
-        "tr": "kıyafet"
+        "tr": "kıyafet",
+        "level": "B2"
     },
     {
         "en": "outing",
         "ru": "прогулка",
-        "tr": "gezi"
+        "tr": "gezi",
+        "level": "C1"
     },
     {
         "en": "outlet",
         "ru": "выход",
-        "tr": "çıkış"
+        "tr": "çıkış",
+        "level": "C1"
     },
     {
         "en": "outlook",
         "ru": "мировоззрение",
-        "tr": "görünüm"
+        "tr": "görünüm",
+        "level": "C1"
     },
     {
         "en": "output",
         "ru": "выход",
-        "tr": "çıktı"
+        "tr": "çıktı",
+        "level": "B2"
     },
     {
         "en": "outrage",
         "ru": "возмущение",
-        "tr": "öfke"
+        "tr": "öfke",
+        "level": "C1"
     },
     {
         "en": "outsider",
         "ru": "посторонний",
-        "tr": "yabancı"
+        "tr": "yabancı",
+        "level": "C1"
     },
     {
         "en": "outstanding",
         "ru": "выдающийся",
-        "tr": "üstün"
+        "tr": "üstün",
+        "level": "B2"
     },
     {
         "en": "overcome",
         "ru": "преодолеть",
-        "tr": "üstesinden gelmek"
+        "tr": "üstesinden gelmek",
+        "level": "B2"
     },
     {
         "en": "overlook",
         "ru": "игнорировать",
-        "tr": "gözden kaçırmak"
+        "tr": "gözden kaçırmak",
+        "level": "C1"
     },
     {
         "en": "overly",
         "ru": "чрезмерно",
-        "tr": "aşırı"
+        "tr": "aşırı",
+        "level": "C1"
     },
     {
         "en": "overnight",
         "ru": "ночь",
-        "tr": "gecede"
+        "tr": "gecede",
+        "level": "B2"
     },
     {
         "en": "oversee",
         "ru": "наблюдать",
-        "tr": "denetlemek"
+        "tr": "denetlemek",
+        "level": "C1"
     },
     {
         "en": "overturn",
         "ru": "опрокидывать",
-        "tr": "devirmek"
+        "tr": "devirmek",
+        "level": "C1"
     },
     {
         "en": "overwhelm",
         "ru": "подавлять",
-        "tr": "bunaltmak"
+        "tr": "bunaltmak",
+        "level": "C1"
     },
     {
         "en": "overwhelming",
         "ru": "подавляющий",
-        "tr": "ezici"
+        "tr": "ezici",
+        "level": "C1"
     },
     {
         "en": "ownership",
         "ru": "собственность",
-        "tr": "mülkiyet"
+        "tr": "mülkiyet",
+        "level": "B2"
     },
     {
         "en": "oxygen",
         "ru": "кислород",
-        "tr": "oksijen"
+        "tr": "oksijen",
+        "level": "B2"
     },
     {
         "en": "packet",
         "ru": "пакет",
-        "tr": "paket"
+        "tr": "paket",
+        "level": "B2"
     },
     {
         "en": "pad",
         "ru": "подушечка",
-        "tr": "ped"
+        "tr": "ped",
+        "level": "C1"
     },
     {
         "en": "palm",
         "ru": "ладонь",
-        "tr": "palmiye"
+        "tr": "palmiye",
+        "level": "B2"
     },
     {
         "en": "panic",
         "ru": "паника",
-        "tr": "panik"
+        "tr": "panik",
+        "level": "B2"
     },
     {
         "en": "parade",
         "ru": "парад",
-        "tr": "geçit töreni"
+        "tr": "geçit töreni",
+        "level": "B2"
     },
     {
         "en": "parallel",
         "ru": "параллельный",
-        "tr": "paralel"
+        "tr": "paralel",
+        "level": "B2"
     },
     {
         "en": "parameter",
         "ru": "параметр",
-        "tr": "parametre"
+        "tr": "parametre",
+        "level": "C1"
     },
     {
         "en": "parental",
         "ru": "родительский",
-        "tr": "ebeveyn"
+        "tr": "ebeveyn",
+        "level": "C1"
     },
     {
         "en": "parliament",
         "ru": "парламент",
-        "tr": "parlamento"
+        "tr": "parlamento",
+        "level": "C1"
     },
     {
         "en": "part-time /",
         "ru": "неполная занятость /",
-        "tr": "yarı zamanlı /"
+        "tr": "yarı zamanlı /",
+        "level": "B2"
     },
     {
         "en": "partial",
         "ru": "частичный",
-        "tr": "kısmi"
+        "tr": "kısmi",
+        "level": "C1"
     },
     {
         "en": "partially",
         "ru": "частично",
-        "tr": "kısmen"
+        "tr": "kısmen",
+        "level": "C1"
     },
     {
         "en": "participation",
         "ru": "участие",
-        "tr": "katılım"
+        "tr": "katılım",
+        "level": "B2"
     },
     {
         "en": "partnership",
         "ru": "партнерство",
-        "tr": "ortaklık"
+        "tr": "ortaklık",
+        "level": "B2"
     },
     {
         "en": "passing",
         "ru": "прохождение",
-        "tr": "geçen"
+        "tr": "geçen",
+        "level": "C1"
     },
     {
         "en": "passionate",
         "ru": "страстный",
-        "tr": "tutkulu"
+        "tr": "tutkulu",
+        "level": "B2"
     },
     {
         "en": "passive",
         "ru": "пассивный",
-        "tr": "pasif"
+        "tr": "pasif",
+        "level": "C1"
     },
     {
         "en": "password",
         "ru": "пароль",
-        "tr": "şifre"
+        "tr": "şifre",
+        "level": "B2"
     },
     {
         "en": "pastor",
         "ru": "пастор",
-        "tr": "papaz"
+        "tr": "papaz",
+        "level": "C1"
     },
     {
         "en": "patch",
         "ru": "пластырь",
-        "tr": "yama"
+        "tr": "yama",
+        "level": "B2"
     },
     {
         "en": "patent",
         "ru": "патент",
-        "tr": "patent"
+        "tr": "patent",
+        "level": "C1"
     },
     {
         "en": "pathway",
         "ru": "путь",
-        "tr": "yol"
+        "tr": "yol",
+        "level": "C1"
     },
     {
         "en": "patience",
         "ru": "терпение",
-        "tr": "sabır"
+        "tr": "sabır",
+        "level": "B2"
     },
     {
         "en": "patrol",
         "ru": "патруль",
-        "tr": "devriye"
+        "tr": "devriye",
+        "level": "C1"
     },
     {
         "en": "patron",
         "ru": "покровитель",
-        "tr": "patron"
+        "tr": "patron",
+        "level": "C1"
     },
     {
         "en": "pause",
         "ru": "пауза",
-        "tr": "duraklatma"
+        "tr": "duraklatma",
+        "level": "B2"
     },
     {
         "en": "peak",
         "ru": "пик",
-        "tr": "doruğa ulaşmak"
+        "tr": "doruğa ulaşmak",
+        "level": "C1"
     },
     {
         "en": "peasant",
         "ru": "крестьянин",
-        "tr": "köylü"
+        "tr": "köylü",
+        "level": "C1"
     },
     {
         "en": "peculiar",
         "ru": "своеобразный",
-        "tr": "özel eşya"
+        "tr": "özel eşya",
+        "level": "C1"
     },
     {
         "en": "peer",
         "ru": "вглядеться",
-        "tr": "akran"
+        "tr": "akran",
+        "level": "B2"
     },
     {
         "en": "penalty",
         "ru": "штраф",
-        "tr": "penaltı"
+        "tr": "penaltı",
+        "level": "B2"
     },
     {
         "en": "pension1",
         "ru": "пенсия1",
-        "tr": "emeklilik1"
+        "tr": "emeklilik1",
+        "level": "C1"
     },
     {
         "en": "perceive",
         "ru": "воспринимать",
-        "tr": "algılamak"
+        "tr": "algılamak",
+        "level": "B2"
     },
     {
         "en": "perception",
         "ru": "восприятие",
-        "tr": "algı"
+        "tr": "algı",
+        "level": "B2"
     },
     {
         "en": "permanently",
         "ru": "навсегда",
-        "tr": "kalıcı olarak"
+        "tr": "kalıcı olarak",
+        "level": "B2"
     },
     {
         "en": "persist",
         "ru": "сопротивляться",
-        "tr": "ısrar etmek"
+        "tr": "ısrar etmek",
+        "level": "C1"
     },
     {
         "en": "persistent",
         "ru": "настойчивый",
-        "tr": "kalıcı"
+        "tr": "kalıcı",
+        "level": "C1"
     },
     {
         "en": "personnel",
         "ru": "персонал",
-        "tr": "personel"
+        "tr": "personel",
+        "level": "C1"
     },
     {
         "en": "petition",
         "ru": "петиция",
-        "tr": "dilekçe"
+        "tr": "dilekçe",
+        "level": "C1"
     },
     {
         "en": "pharmacy",
         "ru": "аптека",
-        "tr": "eczane"
+        "tr": "eczane",
+        "level": "B2"
     },
     {
-        "en": "pharmacy B2",
-        "ru": "аптека Б2",
-        "tr": "eczane B2"
+        "en": "pharmacy B",
+        "ru": "аптека Б",
+        "tr": "eczane B",
+        "level": "B2"
     },
     {
         "en": "philosopher",
         "ru": "философ",
-        "tr": "filozof"
+        "tr": "filozof",
+        "level": "C1"
     },
     {
         "en": "philosophical",
         "ru": "философский",
-        "tr": "felsefi"
+        "tr": "felsefi",
+        "level": "C1"
     },
     {
         "en": "physician",
         "ru": "врач",
-        "tr": "doktor"
+        "tr": "doktor",
+        "level": "B2"
     },
     {
         "en": "pill",
         "ru": "таблетка",
-        "tr": "hap"
+        "tr": "hap",
+        "level": "B2"
     },
     {
         "en": "pioneer",
         "ru": "пионер",
-        "tr": "öncü"
+        "tr": "öncü",
+        "level": "C1"
     },
     {
         "en": "pipeline",
         "ru": "трубопровод",
-        "tr": "boru hattı"
+        "tr": "boru hattı",
+        "level": "C1"
     },
     {
         "en": "pirate",
         "ru": "пират",
-        "tr": "korsan"
+        "tr": "korsan",
+        "level": "C1"
     },
     {
         "en": "pit",
         "ru": "яма",
-        "tr": "çukur"
+        "tr": "çukur",
+        "level": "C1"
     },
     {
         "en": "pity",
         "ru": "жалость",
-        "tr": "acımak"
+        "tr": "acımak",
+        "level": "B2"
     },
     {
         "en": "placement",
         "ru": "размещение",
-        "tr": "atama"
+        "tr": "atama",
+        "level": "B2"
     },
     {
         "en": "plea",
         "ru": "просьба",
-        "tr": "savunma"
+        "tr": "savunma",
+        "level": "C1"
     },
     {
         "en": "plead",
         "ru": "умолять",
-        "tr": "yalvarmak"
+        "tr": "yalvarmak",
+        "level": "C1"
     },
     {
         "en": "pledge",
         "ru": "приносить присягу",
-        "tr": "rehin"
+        "tr": "rehin",
+        "level": "C1"
     },
     {
         "en": "plug",
         "ru": "затыкать",
-        "tr": "fiş"
+        "tr": "fiş",
+        "level": "C1"
     },
     {
         "en": "plunge",
         "ru": "погружаться",
-        "tr": "dalma"
+        "tr": "dalma",
+        "level": "C1"
     },
     {
         "en": "pole",
         "ru": "столб",
-        "tr": "kutup"
+        "tr": "kutup",
+        "level": "C1"
     },
     {
         "en": "poll",
         "ru": "голосование",
-        "tr": "anket"
+        "tr": "anket",
+        "level": "C1"
     },
     {
         "en": "pond",
         "ru": "пруд",
-        "tr": "gölet"
+        "tr": "gölet",
+        "level": "C1"
     },
     {
         "en": "pop",
         "ru": "поп",
-        "tr": "pop"
+        "tr": "pop",
+        "level": "C1"
     },
     {
         "en": "portfolio",
         "ru": "портфель",
-        "tr": "portföy"
+        "tr": "portföy",
+        "level": "C1"
     },
     {
         "en": "portion",
         "ru": "часть",
-        "tr": "porsiyon"
+        "tr": "porsiyon",
+        "level": "B2"
     },
     {
         "en": "portray",
         "ru": "изображать",
-        "tr": "canlandırmak"
+        "tr": "canlandırmak",
+        "level": "C1"
     },
     {
         "en": "postpone",
         "ru": "откладывать",
-        "tr": "ertelemek"
+        "tr": "ertelemek",
+        "level": "C1"
     },
     {
         "en": "postwar",
         "ru": "послевоенный",
-        "tr": "savaş sonrası"
+        "tr": "savaş sonrası",
+        "level": "C1"
     },
     {
         "en": "potentially",
         "ru": "потенциально",
-        "tr": "potansiyel olarak"
+        "tr": "potansiyel olarak",
+        "level": "B2"
     },
     {
         "en": "practitioner",
         "ru": "практик",
-        "tr": "uygulayıcı"
+        "tr": "uygulayıcı",
+        "level": "C1"
     },
     {
         "en": "preach",
         "ru": "проповедовать",
-        "tr": "vaaz vermek"
+        "tr": "vaaz vermek",
+        "level": "C1"
     },
     {
         "en": "precede",
         "ru": "предшествовать",
-        "tr": "önce gelmek"
+        "tr": "önce gelmek",
+        "level": "B2"
     },
     {
         "en": "precedent",
         "ru": "прецедент",
-        "tr": "emsal"
+        "tr": "emsal",
+        "level": "C1"
     },
     {
         "en": "precious",
         "ru": "драгоценный",
-        "tr": "değerli"
+        "tr": "değerli",
+        "level": "B2"
     },
     {
         "en": "precise",
         "ru": "точный",
-        "tr": "kesin"
+        "tr": "kesin",
+        "level": "B2"
     },
     {
         "en": "precisely",
         "ru": "именно так",
-        "tr": "açık olarak"
+        "tr": "açık olarak",
+        "level": "B2"
     },
     {
         "en": "precision",
         "ru": "точность",
-        "tr": "kesinlik"
+        "tr": "kesinlik",
+        "level": "C1"
     },
     {
         "en": "predator",
         "ru": "хищник",
-        "tr": "yırtıcı hayvan"
+        "tr": "yırtıcı hayvan",
+        "level": "C1"
     },
     {
         "en": "predecessor",
         "ru": "предшественник",
-        "tr": "öncül"
+        "tr": "öncül",
+        "level": "C1"
     },
     {
         "en": "predictable",
         "ru": "предсказуемый",
-        "tr": "tahmin edilebilir"
+        "tr": "tahmin edilebilir",
+        "level": "B2"
     },
     {
         "en": "predominantly",
         "ru": "преимущественно",
-        "tr": "ağırlıklı olarak"
+        "tr": "ağırlıklı olarak",
+        "level": "C1"
     },
     {
         "en": "preference",
         "ru": "предпочтение",
-        "tr": "tercih"
+        "tr": "tercih",
+        "level": "B2"
     },
     {
         "en": "pregnancy",
         "ru": "беременность",
-        "tr": "gebelik"
+        "tr": "gebelik",
+        "level": "C1"
     },
     {
         "en": "prejudice",
         "ru": "предрассудки",
-        "tr": "ön yargı"
+        "tr": "ön yargı",
+        "level": "C1"
     },
     {
         "en": "preliminary",
         "ru": "предварительный",
-        "tr": "ön"
+        "tr": "ön",
+        "level": "C1"
     },
     {
         "en": "premier",
         "ru": "премьер",
-        "tr": "başbakan"
+        "tr": "başbakan",
+        "level": "C1"
     },
     {
         "en": "premise",
         "ru": "помещение",
-        "tr": "öncül"
+        "tr": "öncül",
+        "level": "C1"
     },
     {
         "en": "premium",
         "ru": "премия",
-        "tr": "prim"
+        "tr": "prim",
+        "level": "C1"
     },
     {
         "en": "prescribe",
         "ru": "предписывать",
-        "tr": "reçete yazmak"
+        "tr": "reçete yazmak",
+        "level": "C1"
     },
     {
         "en": "prescription",
         "ru": "рецепт",
-        "tr": "reçete"
+        "tr": "reçete",
+        "level": "C1"
     },
     {
         "en": "presently",
         "ru": "в настоящее время",
-        "tr": "şu anda"
+        "tr": "şu anda",
+        "level": "C1"
     },
     {
         "en": "preservation",
         "ru": "сохранение",
-        "tr": "koruma"
+        "tr": "koruma",
+        "level": "C1"
     },
     {
         "en": "preside",
         "ru": "председательствовать",
-        "tr": "başkanlık etmek"
+        "tr": "başkanlık etmek",
+        "level": "C1"
     },
     {
         "en": "presidency",
         "ru": "президентство",
-        "tr": "başkanlık"
+        "tr": "başkanlık",
+        "level": "C1"
     },
     {
         "en": "presidential",
         "ru": "президентский",
-        "tr": "başkanlık"
+        "tr": "başkanlık",
+        "level": "B2"
     },
     {
         "en": "prestigious",
         "ru": "престижный",
-        "tr": "prestijli"
+        "tr": "prestijli",
+        "level": "C1"
     },
     {
         "en": "presumably",
         "ru": "предположительно",
-        "tr": "muhtemelen"
+        "tr": "muhtemelen",
+        "level": "C1"
     },
     {
         "en": "presume",
         "ru": "предполагать",
-        "tr": "varsaymak"
+        "tr": "varsaymak",
+        "level": "C1"
     },
     {
         "en": "prevail",
         "ru": "преобладать",
-        "tr": "hakim olmak"
+        "tr": "hakim olmak",
+        "level": "C1"
     },
     {
         "en": "prevalence",
         "ru": "распространенность",
-        "tr": "yaygınlık"
+        "tr": "yaygınlık",
+        "level": "C1"
     },
     {
         "en": "prevention",
         "ru": "профилактика",
-        "tr": "önleme"
+        "tr": "önleme",
+        "level": "C1"
     },
     {
         "en": "prey",
         "ru": "добыча",
-        "tr": "kurban"
+        "tr": "kurban",
+        "level": "C1"
     },
     {
         "en": "pride",
         "ru": "гордость",
-        "tr": "gurur"
+        "tr": "gurur",
+        "level": "B2"
     },
     {
         "en": "primarily",
         "ru": "прежде всего",
-        "tr": "öncelikle"
-    },
-    {
-        "en": "principal",
-        "ru": "главный",
-        "tr": "müdür"
+        "tr": "öncelikle",
+        "level": "B2"
     },
     {
         "en": "principal  B2",
         "ru": "принципал B2",
-        "tr": "ana B2"
+        "tr": "ana B2",
+        "level": "C1"
     },
     {
         "en": "prior",
         "ru": "прежний",
-        "tr": "önceki"
+        "tr": "önceki",
+        "level": "B2"
     },
     {
         "en": "privatization",
         "ru": "приватизация",
-        "tr": "özelleştirme"
+        "tr": "özelleştirme",
+        "level": "C1"
     },
     {
         "en": "privilege",
         "ru": "привилегия",
-        "tr": "ayrıcalık"
+        "tr": "ayrıcalık",
+        "level": "C1"
     },
     {
         "en": "probability",
         "ru": "вероятность",
-        "tr": "olasılık"
+        "tr": "olasılık",
+        "level": "B2"
     },
     {
         "en": "probable",
         "ru": "вероятный",
-        "tr": "muhtemel"
+        "tr": "muhtemel",
+        "level": "B2"
     },
     {
         "en": "probe",
         "ru": "зонд",
-        "tr": "sonda"
+        "tr": "sonda",
+        "level": "C1"
     },
     {
         "en": "problematic",
         "ru": "проблемный",
-        "tr": "problemli"
+        "tr": "problemli",
+        "level": "C1"
     },
     {
         "en": "proceed",
         "ru": "продолжить",
-        "tr": "ilerlemek"
+        "tr": "ilerlemek",
+        "level": "B2"
     },
     {
         "en": "proceeding",
         "ru": "разбирательство",
-        "tr": "devam ediyor"
+        "tr": "devam ediyor",
+        "level": "C1"
     },
     {
         "en": "proceeds",
         "ru": "доходы",
-        "tr": "gelir"
+        "tr": "gelir",
+        "level": "C1"
     },
     {
         "en": "processing",
         "ru": "обработка",
-        "tr": "işleme"
+        "tr": "işleme",
+        "level": "C1"
     },
     {
         "en": "processor",
         "ru": "процессор",
-        "tr": "işlemci"
+        "tr": "işlemci",
+        "level": "C1"
     },
     {
         "en": "proclaim",
         "ru": "провозглашать",
-        "tr": "ilan etmek"
+        "tr": "ilan etmek",
+        "level": "C1"
     },
     {
         "en": "productive",
         "ru": "продуктивный",
-        "tr": "üretken"
+        "tr": "üretken",
+        "level": "C1"
     },
     {
         "en": "productivity",
         "ru": "производительность",
-        "tr": "üretkenlik"
+        "tr": "üretkenlik",
+        "level": "C1"
     },
     {
         "en": "profitable",
         "ru": "прибыльный",
-        "tr": "karlı"
+        "tr": "karlı",
+        "level": "C1"
     },
     {
         "en": "profound",
         "ru": "глубокий",
-        "tr": "engin"
+        "tr": "engin",
+        "level": "C1"
     },
     {
         "en": "programming",
         "ru": "программирование",
-        "tr": "programlama"
+        "tr": "programlama",
+        "level": "B2"
     },
     {
         "en": "progressive",
         "ru": "прогрессивный",
-        "tr": "ilerici"
+        "tr": "ilerici",
+        "level": "B2"
     },
     {
         "en": "prohibit",
         "ru": "запретить",
-        "tr": "yasaklamak"
+        "tr": "yasaklamak",
+        "level": "B2"
     },
     {
         "en": "projection",
         "ru": "проекция",
-        "tr": "projeksiyon"
+        "tr": "projeksiyon",
+        "level": "C1"
     },
     {
         "en": "prominent",
         "ru": "видный",
-        "tr": "öne çıkan"
+        "tr": "öne çıkan",
+        "level": "C1"
     },
     {
         "en": "promising",
         "ru": "многообещающий",
-        "tr": "umut verici"
+        "tr": "umut verici",
+        "level": "B2"
     },
     {
         "en": "promotion",
         "ru": "повышение",
-        "tr": "terfi"
+        "tr": "terfi",
+        "level": "B2"
     },
     {
         "en": "prompt",
         "ru": "быстрый",
-        "tr": "çabuk"
+        "tr": "çabuk",
+        "level": "B2"
     },
     {
         "en": "pronounced",
         "ru": "выраженный",
-        "tr": "belirgin"
+        "tr": "belirgin",
+        "level": "C1"
     },
     {
         "en": "propaganda",
         "ru": "пропаганда",
-        "tr": "propaganda"
+        "tr": "propaganda",
+        "level": "C1"
     },
     {
         "en": "proportion",
         "ru": "пропорция",
-        "tr": "oran"
+        "tr": "oran",
+        "level": "B2"
     },
     {
         "en": "proposition",
         "ru": "предложение",
-        "tr": "teklif"
+        "tr": "teklif",
+        "level": "C1"
     },
     {
         "en": "prosecute",
         "ru": "преследовать по суду",
-        "tr": "dava açmak"
+        "tr": "dava açmak",
+        "level": "C1"
     },
     {
         "en": "prosecution",
         "ru": "судебное преследование",
-        "tr": "kovuşturma"
+        "tr": "kovuşturma",
+        "level": "C1"
     },
     {
         "en": "prosecutor",
         "ru": "прокурор",
-        "tr": "savcı"
+        "tr": "savcı",
+        "level": "C1"
     },
     {
         "en": "prospective",
         "ru": "перспективный",
-        "tr": "muhtemel"
+        "tr": "muhtemel",
+        "level": "C1"
     },
     {
         "en": "prosperity",
         "ru": "процветание",
-        "tr": "refah"
+        "tr": "refah",
+        "level": "C1"
     },
     {
         "en": "protective",
         "ru": "защитный",
-        "tr": "koruyucu"
+        "tr": "koruyucu",
+        "level": "C1"
     },
     {
         "en": "protein",
         "ru": "белок",
-        "tr": "protein"
+        "tr": "protein",
+        "level": "B2"
     },
     {
         "en": "protester",
         "ru": "протестующий",
-        "tr": "protestocu"
+        "tr": "protestocu",
+        "level": "B2"
     },
     {
         "en": "protocol",
         "ru": "протокол",
-        "tr": "protokol"
+        "tr": "protokol",
+        "level": "C1"
     },
     {
         "en": "province",
         "ru": "провинция",
-        "tr": "vilayet"
+        "tr": "vilayet",
+        "level": "C1"
     },
     {
         "en": "provincial",
         "ru": "провинциальный",
-        "tr": "il"
+        "tr": "il",
+        "level": "C1"
     },
     {
         "en": "provision",
         "ru": "обеспечение",
-        "tr": "karşılık"
+        "tr": "karşılık",
+        "level": "C1"
     },
     {
         "en": "provoke",
         "ru": "провоцировать",
-        "tr": "kışkırtmak"
+        "tr": "kışkırtmak",
+        "level": "C1"
     },
     {
         "en": "psychiatric",
         "ru": "психиатрический",
-        "tr": "psikiyatrik"
+        "tr": "psikiyatrik",
+        "level": "C1"
     },
     {
         "en": "psychological",
         "ru": "психологический",
-        "tr": "psikolojik"
+        "tr": "psikolojik",
+        "level": "B2"
     },
     {
         "en": "publicity",
         "ru": "реклама",
-        "tr": "tanıtım"
+        "tr": "tanıtım",
+        "level": "B2"
     },
     {
         "en": "publishing",
         "ru": "издательский",
-        "tr": "yayınlama"
+        "tr": "yayınlama",
+        "level": "B2"
     },
     {
         "en": "pulse",
         "ru": "пульс",
-        "tr": "nabız"
+        "tr": "nabız",
+        "level": "C1"
     },
     {
         "en": "pump",
         "ru": "насос",
-        "tr": "pompa"
+        "tr": "pompa",
+        "level": "C1"
     },
     {
         "en": "punch",
         "ru": "ударить кулаком",
-        "tr": "yumruk"
+        "tr": "yumruk",
+        "level": "C1"
     },
     {
         "en": "punk",
         "ru": "панк",
-        "tr": "punk"
+        "tr": "punk",
+        "level": "B2"
     },
     {
         "en": "purely",
         "ru": "чисто",
-        "tr": "tamamen"
+        "tr": "tamamen",
+        "level": "B2"
     },
     {
         "en": "pursuit",
         "ru": "преследование",
-        "tr": "kovalama"
+        "tr": "kovalama",
+        "level": "B2"
     },
     {
         "en": "puzzle",
         "ru": "головоломка",
-        "tr": "bulmaca"
+        "tr": "bulmaca",
+        "level": "B2"
     },
     {
         "en": "query",
         "ru": "запрос",
-        "tr": "sorgu"
+        "tr": "sorgu",
+        "level": "C1"
     },
     {
         "en": "quest",
         "ru": "квест",
-        "tr": "arayış"
+        "tr": "arayış",
+        "level": "C1"
     },
     {
         "en": "questionnaire",
         "ru": "вопросник",
-        "tr": "anket"
+        "tr": "anket",
+        "level": "B2"
     },
     {
         "en": "quota",
         "ru": "квота",
-        "tr": "kota"
+        "tr": "kota",
+        "level": "C1"
     },
     {
         "en": "racial",
         "ru": "расовый",
-        "tr": "ırksal"
+        "tr": "ırksal",
+        "level": "B2"
     },
     {
         "en": "racism",
         "ru": "расизм",
-        "tr": "ırkçılık"
+        "tr": "ırkçılık",
+        "level": "B2"
     },
     {
         "en": "racist",
         "ru": "расистский",
-        "tr": "ırkçı"
+        "tr": "ırkçı",
+        "level": "B2"
     },
     {
         "en": "radar",
         "ru": "радар",
-        "tr": "radar"
+        "tr": "radar",
+        "level": "C1"
     },
     {
         "en": "radiation",
         "ru": "радиация",
-        "tr": "radyasyon"
+        "tr": "radyasyon",
+        "level": "B2"
     },
     {
         "en": "radical",
         "ru": "радикальный",
-        "tr": "radikal"
+        "tr": "radikal",
+        "level": "C1"
     },
     {
         "en": "rage",
         "ru": "ярость",
-        "tr": "öfkelenmek"
+        "tr": "öfkelenmek",
+        "level": "C1"
     },
     {
         "en": "raid",
         "ru": "рейд",
-        "tr": "yağma"
+        "tr": "yağma",
+        "level": "C1"
     },
     {
         "en": "rail",
         "ru": "рельс",
-        "tr": "demiryolu"
+        "tr": "demiryolu",
+        "level": "B2"
     },
     {
         "en": "rally",
         "ru": "митинг",
-        "tr": "miting"
+        "tr": "miting",
+        "level": "C1"
     },
     {
         "en": "random",
         "ru": "случайный",
-        "tr": "rastgele"
+        "tr": "rastgele",
+        "level": "B2"
     },
     {
         "en": "ranking",
         "ru": "рейтинг",
-        "tr": "sıralama"
+        "tr": "sıralama",
+        "level": "C1"
     },
     {
         "en": "rape",
         "ru": "изнасилование",
-        "tr": "tecavüz"
+        "tr": "tecavüz",
+        "level": "C1"
     },
     {
         "en": "rat",
         "ru": "крыса",
-        "tr": "fare"
+        "tr": "fare",
+        "level": "B2"
     },
     {
         "en": "rating",
         "ru": "рейтинг",
-        "tr": "derecelendirme"
+        "tr": "derecelendirme",
+        "level": "B2"
     },
     {
         "en": "ratio",
         "ru": "соотношение",
-        "tr": "oran"
+        "tr": "oran",
+        "level": "C1"
     },
     {
         "en": "rational",
         "ru": "рациональный",
-        "tr": "akılcı"
+        "tr": "akılcı",
+        "level": "C1"
     },
     {
         "en": "ray",
         "ru": "луч",
-        "tr": "ışın"
+        "tr": "ışın",
+        "level": "C1"
     },
     {
         "en": "readily",
         "ru": "с готовностью",
-        "tr": "kolaylıkla"
+        "tr": "kolaylıkla",
+        "level": "C1"
     },
     {
         "en": "realization",
         "ru": "реализация",
-        "tr": "gerçekleştirme"
+        "tr": "gerçekleştirme",
+        "level": "C1"
     },
     {
         "en": "realm",
         "ru": "область",
-        "tr": "bölge"
+        "tr": "bölge",
+        "level": "C1"
     },
     {
         "en": "rear",
         "ru": "задний",
-        "tr": "arka"
+        "tr": "arka",
+        "level": "C1"
     },
     {
         "en": "reasonably",
         "ru": "разумно",
-        "tr": "makul olarak"
+        "tr": "makul olarak",
+        "level": "B2"
     },
     {
         "en": "reasoning",
         "ru": "рассуждение",
-        "tr": "muhakeme"
+        "tr": "muhakeme",
+        "level": "C1"
     },
     {
         "en": "reassure",
         "ru": "успокоить",
-        "tr": "güven vermek"
+        "tr": "güven vermek",
+        "level": "C1"
     },
     {
         "en": "rebel",
         "ru": "мятежник",
-        "tr": "isyancı"
+        "tr": "isyancı",
+        "level": "C1"
     },
     {
         "en": "rebellion",
         "ru": "бунт",
-        "tr": "isyan"
+        "tr": "isyan",
+        "level": "C1"
     },
     {
         "en": "rebuild",
         "ru": "перестроить",
-        "tr": "yeniden inşa etmek"
+        "tr": "yeniden inşa etmek",
+        "level": "B2"
     },
     {
         "en": "receiver",
         "ru": "получатель",
-        "tr": "alıcı"
+        "tr": "alıcı",
+        "level": "B2"
     },
     {
         "en": "recession",
         "ru": "рецессия",
-        "tr": "durgunluk"
+        "tr": "durgunluk",
+        "level": "B2"
     },
     {
         "en": "recipient",
         "ru": "получатель",
-        "tr": "alıcı"
+        "tr": "alıcı",
+        "level": "C1"
     },
     {
         "en": "reckon",
         "ru": "считать",
-        "tr": "tahmin temek"
+        "tr": "tahmin temek",
+        "level": "B2"
     },
     {
         "en": "recognition",
         "ru": "признание",
-        "tr": "tanıma"
+        "tr": "tanıma",
+        "level": "B2"
     },
     {
         "en": "reconstruction",
         "ru": "реконструкция",
-        "tr": "yeniden yapılanma"
+        "tr": "yeniden yapılanma",
+        "level": "C1"
     },
     {
         "en": "recount",
         "ru": "пересчитывать",
-        "tr": "yeniden saymak"
+        "tr": "yeniden saymak",
+        "level": "B2"
     },
     {
         "en": "recovery",
         "ru": "восстановление",
-        "tr": "iyileşmek"
+        "tr": "iyileşmek",
+        "level": "B2"
     },
     {
         "en": "recruit",
         "ru": "нанимать",
-        "tr": "iyileştirmek"
+        "tr": "iyileştirmek",
+        "level": "B2"
     },
     {
         "en": "recruitment",
         "ru": "вербовка",
-        "tr": "işe alım"
+        "tr": "işe alım",
+        "level": "C1"
     },
     {
         "en": "referee",
         "ru": "судья",
-        "tr": "hakem"
+        "tr": "hakem",
+        "level": "B2"
     },
     {
         "en": "referendum",
         "ru": "референдум",
-        "tr": "referandum"
+        "tr": "referandum",
+        "level": "C1"
     },
     {
         "en": "reflection",
         "ru": "отражение",
-        "tr": "refleks"
+        "tr": "refleks",
+        "level": "C1"
     },
     {
         "en": "reform",
         "ru": "реформа",
-        "tr": "reform"
+        "tr": "reform",
+        "level": "C1"
     },
     {
         "en": "refuge",
         "ru": "убежище",
-        "tr": "sığınak"
+        "tr": "sığınak",
+        "level": "C1"
     },
     {
         "en": "refugee",
         "ru": "беженец",
-        "tr": "mülteci"
+        "tr": "mülteci",
+        "level": "B2"
     },
     {
         "en": "refusal",
         "ru": "отказ",
-        "tr": "ret"
+        "tr": "ret",
+        "level": "C1"
     },
     {
         "en": "regain",
         "ru": "вернуть себе",
-        "tr": "yeniden kazanmak"
+        "tr": "yeniden kazanmak",
+        "level": "C1"
     },
     {
         "en": "regardless",
         "ru": "несмотря ни на что",
-        "tr": "ne olursa olsun"
+        "tr": "ne olursa olsun",
+        "level": "C1"
     },
     {
         "en": "regime",
         "ru": "режим",
-        "tr": "rejim"
+        "tr": "rejim",
+        "level": "C1"
     },
     {
         "en": "registration",
         "ru": "регистрация",
-        "tr": "kayıt"
+        "tr": "kayıt",
+        "level": "B2"
     },
     {
         "en": "regulate",
         "ru": "регулировать",
-        "tr": "düzenlemek"
+        "tr": "düzenlemek",
+        "level": "B2"
     },
     {
         "en": "regulator",
         "ru": "регулятор",
-        "tr": "regülatör"
+        "tr": "regülatör",
+        "level": "C1"
     },
     {
         "en": "regulatory",
         "ru": "нормативный",
-        "tr": "düzenleyici"
+        "tr": "düzenleyici",
+        "level": "C1"
     },
     {
         "en": "rehabilitation",
         "ru": "реабилитация",
-        "tr": "rehabilitasyon"
+        "tr": "rehabilitasyon",
+        "level": "C1"
     },
     {
         "en": "reign",
         "ru": "править",
-        "tr": "saltanat"
+        "tr": "saltanat",
+        "level": "C1"
     },
     {
         "en": "reinforce",
         "ru": "усиливать",
-        "tr": "güçlendirmek"
+        "tr": "güçlendirmek",
+        "level": "B2"
     },
     {
         "en": "rejection",
         "ru": "отказ",
-        "tr": "ret"
+        "tr": "ret",
+        "level": "C1"
     },
     {
         "en": "relevance",
         "ru": "актуальность",
-        "tr": "alaka"
+        "tr": "alaka",
+        "level": "C1"
     },
     {
         "en": "reliability",
         "ru": "надежность",
-        "tr": "güvenilirlik"
+        "tr": "güvenilirlik",
+        "level": "C1"
     },
     {
         "en": "relieve",
         "ru": "облегчить",
-        "tr": "rahatlamak"
+        "tr": "rahatlamak",
+        "level": "B2"
     },
     {
         "en": "relieved",
         "ru": "с облегчением",
-        "tr": "rahatlamak"
+        "tr": "rahatlamak",
+        "level": "B2"
     },
     {
         "en": "reluctant",
         "ru": "вынужденный",
-        "tr": "isteksiz"
+        "tr": "isteksiz",
+        "level": "C1"
     },
     {
         "en": "remainder",
         "ru": "остаток",
-        "tr": "kalan"
+        "tr": "kalan",
+        "level": "C1"
     },
     {
         "en": "remains",
         "ru": "останки",
-        "tr": "kalıntılar"
+        "tr": "kalıntılar",
+        "level": "C1"
     },
     {
         "en": "remarkable",
         "ru": "замечательный",
-        "tr": "dikkat çekici"
+        "tr": "dikkat çekici",
+        "level": "B2"
     },
     {
         "en": "remarkably",
         "ru": "замечательно",
-        "tr": "dikkat çekici bir şekilde"
+        "tr": "dikkat çekici bir şekilde",
+        "level": "B2"
     },
     {
         "en": "remedy",
         "ru": "средство",
-        "tr": "çare"
+        "tr": "çare",
+        "level": "C1"
     },
     {
         "en": "reminder",
         "ru": "напоминание",
-        "tr": "hatırlatma"
+        "tr": "hatırlatma",
+        "level": "C1"
     },
     {
         "en": "removal",
         "ru": "удаление",
-        "tr": "kaldırma"
+        "tr": "kaldırma",
+        "level": "C1"
     },
     {
         "en": "render",
         "ru": "оказывать",
-        "tr": "oluşturmak"
+        "tr": "oluşturmak",
+        "level": "C1"
     },
     {
         "en": "renew",
         "ru": "возобновлять",
-        "tr": "yenilemek"
+        "tr": "yenilemek",
+        "level": "C1"
     },
     {
         "en": "renowned",
         "ru": "известный",
-        "tr": "ünlü"
+        "tr": "ünlü",
+        "level": "C1"
     },
     {
         "en": "rental",
         "ru": "аренда",
-        "tr": "kiralama"
+        "tr": "kiralama",
+        "level": "C1"
     },
     {
         "en": "replacement",
         "ru": "замена",
-        "tr": "yenisiyle değiştirme"
+        "tr": "yenisiyle değiştirme",
+        "level": "C1"
     },
     {
         "en": "reportedly",
         "ru": "как сообщается",
-        "tr": "bildirildiğine göre"
+        "tr": "bildirildiğine göre",
+        "level": "C1"
     },
     {
         "en": "reporting",
         "ru": "отчетность",
-        "tr": "raporlama"
+        "tr": "raporlama",
+        "level": "B2"
     },
     {
         "en": "representation",
         "ru": "представительство",
-        "tr": "temsil"
+        "tr": "temsil",
+        "level": "C1"
     },
     {
         "en": "reproduce",
         "ru": "воспроизводить",
-        "tr": "yeniden üretmek"
+        "tr": "yeniden üretmek",
+        "level": "C1"
     },
     {
         "en": "reproduction",
         "ru": "воспроизводство",
-        "tr": "üreme"
+        "tr": "üreme",
+        "level": "C1"
     },
     {
         "en": "republic",
         "ru": "республика",
-        "tr": "cumhuriyet"
+        "tr": "cumhuriyet",
+        "level": "C1"
     },
     {
         "en": "resemble",
         "ru": "напоминать",
-        "tr": "benzemek"
+        "tr": "benzemek",
+        "level": "C1"
     },
     {
         "en": "reside",
         "ru": "проживать",
-        "tr": "ikamet etmek"
+        "tr": "ikamet etmek",
+        "level": "C1"
     },
     {
         "en": "residence",
         "ru": "резиденция",
-        "tr": "ikamet"
+        "tr": "ikamet",
+        "level": "C1"
     },
     {
         "en": "residential",
         "ru": "Жилой",
-        "tr": "yerleşim"
+        "tr": "yerleşim",
+        "level": "C1"
     },
     {
         "en": "residue",
         "ru": "остаток",
-        "tr": "kalıntı"
+        "tr": "kalıntı",
+        "level": "C1"
     },
     {
         "en": "resign",
         "ru": "подать в отставку",
-        "tr": "istifa etmek"
+        "tr": "istifa etmek",
+        "level": "B2"
     },
     {
         "en": "resignation",
         "ru": "отставка",
-        "tr": "istifa"
+        "tr": "istifa",
+        "level": "C1"
     },
     {
         "en": "resistance",
         "ru": "сопротивление",
-        "tr": "rezistans"
+        "tr": "rezistans",
+        "level": "C1"
     },
     {
         "en": "resolution",
         "ru": "разрешение",
-        "tr": "çözünürlük"
+        "tr": "çözünürlük",
+        "level": "B2"
     },
     {
         "en": "respective",
         "ru": "соответствующий",
-        "tr": "saygılı"
+        "tr": "saygılı",
+        "level": "C1"
     },
     {
         "en": "respectively",
         "ru": "соответственно",
-        "tr": "sırasıyla"
+        "tr": "sırasıyla",
+        "level": "C1"
     },
     {
         "en": "restoration",
         "ru": "восстановление",
-        "tr": "restorasyon"
+        "tr": "restorasyon",
+        "level": "C1"
     },
     {
         "en": "restore",
         "ru": "восстановить",
-        "tr": "eski haline getirmek"
+        "tr": "eski haline getirmek",
+        "level": "B2"
     },
     {
         "en": "restraint",
         "ru": "сдержанность",
-        "tr": "kısıtlama"
+        "tr": "kısıtlama",
+        "level": "C1"
     },
     {
         "en": "restrict",
         "ru": "ограничивать",
-        "tr": "kısıtlamak"
+        "tr": "kısıtlamak",
+        "level": "B2"
     },
     {
         "en": "restriction",
         "ru": "ограничение",
-        "tr": "kısıtlama"
+        "tr": "kısıtlama",
+        "level": "B2"
     },
     {
         "en": "resume",
         "ru": "резюме",
-        "tr": "sürdürmek"
+        "tr": "sürdürmek",
+        "level": "C1"
     },
     {
         "en": "retail",
         "ru": "розничная торговля",
-        "tr": "perakende"
+        "tr": "perakende",
+        "level": "B2"
     },
     {
         "en": "retirement",
         "ru": "выход на пенсию",
-        "tr": "emeklilik"
+        "tr": "emeklilik",
+        "level": "B2"
     },
     {
         "en": "retreat",
         "ru": "отступление",
-        "tr": "geri çekilmek"
+        "tr": "geri çekilmek",
+        "level": "C1"
     },
     {
         "en": "retrieve",
         "ru": "забрать",
-        "tr": "geri almak"
+        "tr": "geri almak",
+        "level": "C1"
     },
     {
         "en": "reve",
         "ru": "реветь",
-        "tr": "tören"
+        "tr": "tören",
+        "level": "C1"
     },
     {
         "en": "revelation",
         "ru": "откровение",
-        "tr": "vahiy"
+        "tr": "vahiy",
+        "level": "C1"
     },
     {
         "en": "revenge",
         "ru": "месть",
-        "tr": "intikam"
+        "tr": "intikam",
+        "level": "C1"
     },
     {
         "en": "revenue",
         "ru": "доход",
-        "tr": "hasılat"
+        "tr": "hasılat",
+        "level": "B2"
     },
     {
         "en": "reverse",
         "ru": "обеспечить регресс",
-        "tr": "tersi"
+        "tr": "tersi",
+        "level": "C1"
     },
     {
         "en": "revision",
         "ru": "пересмотр",
-        "tr": "revizyon"
+        "tr": "revizyon",
+        "level": "B2"
     },
     {
         "en": "revival",
         "ru": "возрождение",
-        "tr": "canlanma"
+        "tr": "canlanma",
+        "level": "C1"
     },
     {
         "en": "revive",
         "ru": "оживить",
-        "tr": "canlandırmak"
+        "tr": "canlandırmak",
+        "level": "C1"
     },
     {
         "en": "revolutionary",
         "ru": "революционный",
-        "tr": "devrimci"
+        "tr": "devrimci",
+        "level": "C1"
     },
     {
         "en": "rhetoric",
         "ru": "риторика",
-        "tr": "retorik"
+        "tr": "retorik",
+        "level": "C1"
     },
     {
         "en": "rial",
         "ru": "риал",
-        "tr": "riyal"
+        "tr": "riyal",
+        "level": "C1"
     },
     {
         "en": "ridiculous",
         "ru": "нелепый",
-        "tr": "saçma"
+        "tr": "saçma",
+        "level": "B2"
     },
     {
         "en": "rifle",
         "ru": "винтовка",
-        "tr": "tüfek"
+        "tr": "tüfek",
+        "level": "C1"
     },
     {
         "en": "riot",
         "ru": "бунт",
-        "tr": "isyan"
+        "tr": "isyan",
+        "level": "C1"
     },
     {
         "en": "rip",
         "ru": "рвать",
-        "tr": "Huzur içinde yatsın"
+        "tr": "Huzur içinde yatsın",
+        "level": "C1"
     },
     {
         "en": "risky",
         "ru": "рискованный",
-        "tr": "riskli"
+        "tr": "riskli",
+        "level": "B2"
     },
     {
         "en": "ritual",
         "ru": "ритуал",
-        "tr": "ritüel"
+        "tr": "ritüel",
+        "level": "C1"
     },
     {
         "en": "rival",
         "ru": "соперник",
-        "tr": "rakip"
+        "tr": "rakip",
+        "level": "B2"
     },
     {
         "en": "rob",
         "ru": "грабить",
-        "tr": "soymak"
+        "tr": "soymak",
+        "level": "B2"
     },
     {
         "en": "robbery",
         "ru": "грабеж",
-        "tr": "soygun"
+        "tr": "soygun",
+        "level": "B2"
     },
     {
         "en": "robust",
         "ru": "крепкий",
-        "tr": "sağlam"
+        "tr": "sağlam",
+        "level": "C1"
     },
     {
         "en": "rock",
         "ru": "камень",
-        "tr": "kaynak"
+        "tr": "kaynak",
+        "level": "C1"
     },
     {
         "en": "rocket",
         "ru": "ракета",
-        "tr": "roket"
+        "tr": "roket",
+        "level": "B2"
     },
     {
         "en": "rod",
         "ru": "стержень",
-        "tr": "çubuk"
+        "tr": "çubuk",
+        "level": "C1"
     },
     {
         "en": "romance",
         "ru": "романтика",
-        "tr": "romantik"
+        "tr": "romantik",
+        "level": "B2"
     },
     {
         "en": "rookie",
         "ru": "новобранец",
-        "tr": "çaylak"
+        "tr": "çaylak",
+        "level": "C1"
     },
     {
         "en": "rose",
         "ru": "роза",
-        "tr": "gül"
+        "tr": "gül",
+        "level": "B2"
     },
     {
         "en": "roster",
         "ru": "список",
-        "tr": "liste"
+        "tr": "liste",
+        "level": "C1"
     },
     {
         "en": "rotate",
         "ru": "вращать",
-        "tr": "döndürmek"
+        "tr": "döndürmek",
+        "level": "C1"
     },
     {
         "en": "rotation",
         "ru": "вращение",
-        "tr": "rotasyon"
+        "tr": "rotasyon",
+        "level": "C1"
     },
     {
         "en": "roughly",
         "ru": "грубо",
-        "tr": "kabaca"
+        "tr": "kabaca",
+        "level": "B2"
     },
     {
         "en": "ruin",
         "ru": "разорение",
-        "tr": "mahvetmek"
+        "tr": "mahvetmek",
+        "level": "B2"
     },
     {
         "en": "ruling",
         "ru": "постановление",
-        "tr": "karar"
+        "tr": "karar",
+        "level": "C1"
     },
     {
         "en": "rumor",
         "ru": "слух",
-        "tr": "söylenti"
+        "tr": "söylenti",
+        "level": "C1"
     },
     {
         "en": "résumé",
         "ru": "резюме",
-        "tr": "sürdürmek"
+        "tr": "sürdürmek",
+        "level": "B2"
     },
     {
         "en": "sacred",
         "ru": "священный",
-        "tr": "kutsal"
+        "tr": "kutsal",
+        "level": "B2"
     },
     {
         "en": "sacrifice",
         "ru": "жертва",
-        "tr": "kurban etmek"
-    },
-    {
-        "en": "sacrifice ,  C1",
-        "ru": "жертва, C1",
-        "tr": "fedakarlık, C1"
+        "tr": "kurban etmek",
+        "level": "C1"
     },
     {
         "en": "saint",
         "ru": "святой",
-        "tr": "aziz"
+        "tr": "aziz",
+        "level": "C1"
     },
     {
         "en": "sake",
         "ru": "ради",
-        "tr": "hatır"
+        "tr": "hatır",
+        "level": "C1"
     },
     {
         "en": "sanction",
         "ru": "санкция",
-        "tr": "yaptırım"
-    },
-    {
-        "en": "sanction  C1",
-        "ru": "санкция С1",
-        "tr": "yaptırım C1"
+        "tr": "yaptırım",
+        "level": "C1"
     },
     {
         "en": "satisfaction",
         "ru": "удовлетворение",
-        "tr": "memnuniyet"
+        "tr": "memnuniyet",
+        "level": "B2"
     },
     {
         "en": "say",
         "ru": "сказать",
-        "tr": "söylemek"
+        "tr": "söylemek",
+        "level": "C1"
     },
     {
         "en": "scandal",
         "ru": "скандал",
-        "tr": "skandal"
+        "tr": "skandal",
+        "level": "B2"
     },
     {
         "en": "scare",
         "ru": "пугать",
-        "tr": "korkutmak"
-    },
-    {
-        "en": "scare ,  B2",
-        "ru": "напугать, Б2",
-        "tr": "korkutmak, B2"
+        "tr": "korkutmak",
+        "level": "B2"
     },
     {
         "en": "scattered",
         "ru": "разбросанный",
-        "tr": "dağınık"
-    },
-    {
-        "en": "scattered  C1",
-        "ru": "рассеянный C1",
-        "tr": "dağınık C1"
+        "tr": "dağınık",
+        "level": "C1"
     },
     {
         "en": "scenario",
         "ru": "сценарий",
-        "tr": "senaryo"
+        "tr": "senaryo",
+        "level": "B2"
     },
     {
         "en": "scholar",
         "ru": "ученый",
-        "tr": "bilgin"
-    },
-    {
-        "en": "scholar  B2",
-        "ru": "ученый B2",
-        "tr": "bilgin B2"
+        "tr": "bilgin",
+        "level": "B2"
     },
     {
         "en": "scholarship",
         "ru": "стипендия",
-        "tr": "burs"
+        "tr": "burs",
+        "level": "B2"
     },
     {
         "en": "scope",
         "ru": "объем",
-        "tr": "kapsam"
+        "tr": "kapsam",
+        "level": "C1"
     },
     {
         "en": "scratch",
         "ru": "царапать",
-        "tr": "çizik"
+        "tr": "çizik",
+        "level": "B2"
     },
     {
         "en": "scratch   B",
         "ru": "царапина Б",
-        "tr": "B'yi çiz"
-    },
-    {
-        "en": "scratch ,  B",
-        "ru": "царапина, Б",
-        "tr": "çizik, B"
+        "tr": "B'yi çiz",
+        "level": "B2"
     },
     {
         "en": "screening",
         "ru": "скрининг",
-        "tr": "tarama"
-    },
-    {
-        "en": "screening  B2",
-        "ru": "скрининг B2",
-        "tr": "B2 taraması"
+        "tr": "tarama",
+        "level": "B2"
     },
     {
         "en": "screw",
         "ru": "винт",
-        "tr": "vida"
-    },
-    {
-        "en": "screw ,  C1",
-        "ru": "винт , С1",
-        "tr": "vida, C1"
+        "tr": "vida",
+        "level": "C1"
     },
     {
         "en": "scrutiny",
         "ru": "исследование",
-        "tr": "inceleme"
+        "tr": "inceleme",
+        "level": "C1"
     },
     {
         "en": "se",
         "ru": "видишь",
-        "tr": "se"
+        "tr": "se",
+        "level": "C1"
     },
     {
         "en": "seal",
         "ru": "тюлень",
-        "tr": "fok"
+        "tr": "fok",
+        "level": "B2"
     },
     {
         "en": "secondly",
         "ru": "во-вторых",
-        "tr": "ikinci olarak"
-    },
-    {
-        "en": "secondly  C1",
-        "ru": "во-вторых С1",
-        "tr": "ikincisi C1"
+        "tr": "ikinci olarak",
+        "level": "C1"
     },
     {
         "en": "secular",
         "ru": "светский",
-        "tr": "laik"
-    },
-    {
-        "en": "secular  C1",
-        "ru": "светский C1",
-        "tr": "laik C1"
+        "tr": "laik",
+        "level": "C1"
     },
     {
         "en": "seeker",
         "ru": "искатель",
-        "tr": "arayıcı"
-    },
-    {
-        "en": "seeker  B2",
-        "ru": "искатель Б2",
-        "tr": "arayıcı B2"
+        "tr": "arayıcı",
+        "level": "B2"
     },
     {
         "en": "seemingly",
         "ru": "по-видимому",
-        "tr": "görünüşte"
-    },
-    {
-        "en": "seemingly  C1",
-        "ru": "судя по всему С1",
-        "tr": "görünüşte C1"
+        "tr": "görünüşte",
+        "level": "C1"
     },
     {
         "en": "segment",
         "ru": "сегмент",
-        "tr": "bölüm"
+        "tr": "bölüm",
+        "level": "C1"
     },
     {
         "en": "seize",
         "ru": "захватывать",
-        "tr": "ele geçirmek"
+        "tr": "ele geçirmek",
+        "level": "C1"
     },
     {
         "en": "seldom",
         "ru": "редко",
-        "tr": "nadiren"
-    },
-    {
-        "en": "seldom  C1",
-        "ru": "редко С1",
-        "tr": "nadiren C1"
+        "tr": "nadiren",
+        "level": "C1"
     },
     {
         "en": "selective",
         "ru": "избирательный",
-        "tr": "seçici"
-    },
-    {
-        "en": "selective  C1",
-        "ru": "селективный C1",
-        "tr": "seçici C1"
+        "tr": "seçici",
+        "level": "C1"
     },
     {
         "en": "seminar",
         "ru": "семинар",
-        "tr": "seminer"
-    },
-    {
-        "en": "seminar  B2",
-        "ru": "семинар Б2",
-        "tr": "seminer B2"
+        "tr": "seminer",
+        "level": "B2"
     },
     {
         "en": "sensation",
         "ru": "ощущение",
-        "tr": "duyum"
-    },
-    {
-        "en": "sensation  C1",
-        "ru": "ощущение С1",
-        "tr": "duygu C1"
+        "tr": "duyum",
+        "level": "C1"
     },
     {
         "en": "sensitivity",
         "ru": "чувствительность",
-        "tr": "hassasiyet"
-    },
-    {
-        "en": "sensitivity  C1",
-        "ru": "чувствительность С1",
-        "tr": "hassasiyet C1"
+        "tr": "hassasiyet",
+        "level": "C1"
     },
     {
         "en": "sentiment",
         "ru": "настроение",
-        "tr": "duygusallık"
-    },
-    {
-        "en": "sentiment  C1",
-        "ru": "настроение C1",
-        "tr": "duygu C1"
+        "tr": "duygusallık",
+        "level": "C1"
     },
     {
         "en": "separation",
         "ru": "разделение",
-        "tr": "ayrılma"
-    },
-    {
-        "en": "separation  C1",
-        "ru": "разделение С1",
-        "tr": "ayırma C1"
+        "tr": "ayrılma",
+        "level": "C1"
     },
     {
         "en": "serial",
         "ru": "сериал",
-        "tr": "seri"
-    },
-    {
-        "en": "serial  C1",
-        "ru": "серийный С1",
-        "tr": "seri C1"
+        "tr": "seri",
+        "level": "C1"
     },
     {
         "en": "settlement",
         "ru": "урегулирование",
-        "tr": "yerleşim"
-    },
-    {
-        "en": "settlement  C1",
-        "ru": "поселок С1",
-        "tr": "yerleşim C1"
+        "tr": "yerleşim",
+        "level": "C1"
     },
     {
         "en": "settler",
         "ru": "поселенец",
-        "tr": "yerleşimci"
+        "tr": "yerleşimci",
+        "level": "B2"
     },
     {
         "en": "setup",
         "ru": "настраивать",
-        "tr": "kurmak"
+        "tr": "kurmak",
+        "level": "C1"
     },
     {
         "en": "severely",
         "ru": "строго",
-        "tr": "şiddetli bir şekilde"
-    },
-    {
-        "en": "severely  B2",
-        "ru": "строго B2",
-        "tr": "ciddi derecede B2"
+        "tr": "şiddetli bir şekilde",
+        "level": "B2"
     },
     {
         "en": "sexuality",
         "ru": "сексуальность",
-        "tr": "cinsellik"
+        "tr": "cinsellik",
+        "level": "C1"
     },
     {
         "en": "sexy",
         "ru": "сексуальный",
-        "tr": "seksi"
+        "tr": "seksi",
+        "level": "B2"
     },
     {
         "en": "shaped",
         "ru": "сформированный",
-        "tr": "şekilli"
-    },
-    {
-        "en": "shaped  B2",
-        "ru": "фасонный B2",
-        "tr": "B2 şeklinde"
+        "tr": "şekilli",
+        "level": "B2"
     },
     {
         "en": "shareholder",
         "ru": "акционер",
-        "tr": "hissedar"
-    },
-    {
-        "en": "shareholder  C1",
-        "ru": "акционер С1",
-        "tr": "hissedar C1"
+        "tr": "hissedar",
+        "level": "C1"
     },
     {
         "en": "shatter",
         "ru": "разбить",
-        "tr": "parçalamak"
+        "tr": "parçalamak",
+        "level": "C1"
     },
     {
         "en": "shed",
         "ru": "сбрасывать",
-        "tr": "baraka"
+        "tr": "baraka",
+        "level": "C1"
     },
     {
         "en": "sheer",
         "ru": "явный",
-        "tr": "şeffaf"
-    },
-    {
-        "en": "sheer  C1",
-        "ru": "чистый C1",
-        "tr": "saf C1"
+        "tr": "şeffaf",
+        "level": "C1"
     },
     {
         "en": "shipping",
         "ru": "перевозки",
-        "tr": "Nakliye"
-    },
-    {
-        "en": "shipping  C1",
-        "ru": "доставка C1",
-        "tr": "nakliye C1"
+        "tr": "Nakliye",
+        "level": "C1"
     },
     {
         "en": "shocking",
         "ru": "шокирующий",
-        "tr": "şok edici"
-    },
-    {
-        "en": "shocking  B2",
-        "ru": "шокирующий Б2",
-        "tr": "şok edici B2"
+        "tr": "şok edici",
+        "level": "B2"
     },
     {
         "en": "shoot",
         "ru": "стрелять",
-        "tr": "film çekmek"
+        "tr": "film çekmek",
+        "level": "C1"
     },
     {
         "en": "shore",
         "ru": "берег",
-        "tr": "sahil"
+        "tr": "sahil",
+        "level": "B2"
     },
     {
         "en": "short-term",
         "ru": "короткий срок",
-        "tr": "kısa vadeli"
-    },
-    {
-        "en": "short-term  B2",
-        "ru": "краткосрочный B2",
-        "tr": "kısa vadeli B2"
+        "tr": "kısa vadeli",
+        "level": "B2"
     },
     {
         "en": "shortage",
         "ru": "нехватка",
-        "tr": "kıtlık"
-    },
-    {
-        "en": "shortage  B2",
-        "ru": "дефицит B2",
-        "tr": "kıtlık B2"
+        "tr": "kıtlık",
+        "level": "B2"
     },
     {
         "en": "shortly",
         "ru": "вскоре",
-        "tr": "kısaca"
+        "tr": "kısaca",
+        "level": "B2"
     },
     {
         "en": "shrink",
         "ru": "сокращать",
-        "tr": "çekmek"
+        "tr": "çekmek",
+        "level": "C1"
     },
     {
         "en": "shrug",
         "ru": "пожать плечами",
-        "tr": "omuz silkmek"
+        "tr": "omuz silkmek",
+        "level": "C1"
     },
     {
         "en": "sibling",
         "ru": "брат или сестра",
-        "tr": "kardeş"
-    },
-    {
-        "en": "sibling  B2",
-        "ru": "брат B2",
-        "tr": "kardeş B2"
+        "tr": "kardeş",
+        "level": "B2"
     },
     {
         "en": "sidewalk",
         "ru": "тротуар",
-        "tr": "kaldırım"
+        "tr": "kaldırım",
+        "level": "B2"
     },
     {
         "en": "sigh",
         "ru": "вздох",
-        "tr": "iç çekmek"
-    },
-    {
-        "en": "sigh ,  C1",
-        "ru": "вздох, С1",
-        "tr": "iç çek, C1"
+        "tr": "iç çekmek",
+        "level": "C1"
     },
     {
         "en": "signature",
         "ru": "подпись",
-        "tr": "imza"
-    },
-    {
-        "en": "signature  B2",
-        "ru": "подпись Б2",
-        "tr": "imza B2"
+        "tr": "imza",
+        "level": "B2"
     },
     {
         "en": "significance",
         "ru": "значение",
-        "tr": "önem"
-    },
-    {
-        "en": "significance  B2",
-        "ru": "значимость B2",
-        "tr": "önem B2"
+        "tr": "önem",
+        "level": "B2"
     },
     {
         "en": "simulate",
         "ru": "моделировать",
-        "tr": "benzetmek"
-    },
-    {
-        "en": "simulate  C1",
-        "ru": "имитировать C1",
-        "tr": "C1'i simüle et"
+        "tr": "benzetmek",
+        "level": "C1"
     },
     {
         "en": "simulation",
         "ru": "моделирование",
-        "tr": "simülasyon"
-    },
-    {
-        "en": "simulation  C1",
-        "ru": "моделирование C1",
-        "tr": "simülasyon C1"
+        "tr": "simülasyon",
+        "level": "C1"
     },
     {
         "en": "simultaneously",
         "ru": "одновременно",
-        "tr": "aynı anda"
-    },
-    {
-        "en": "simultaneously  C1",
-        "ru": "одновременно C1",
-        "tr": "aynı anda C1"
+        "tr": "aynı anda",
+        "level": "C1"
     },
     {
         "en": "sin",
         "ru": "грех",
-        "tr": "günah"
+        "tr": "günah",
+        "level": "C1"
     },
     {
         "en": "situated",
         "ru": "расположен",
-        "tr": "yer alan"
-    },
-    {
-        "en": "situated  C1",
-        "ru": "расположен C1",
-        "tr": "C1 konumunda"
+        "tr": "yer alan",
+        "level": "C1"
     },
     {
         "en": "skeptical",
         "ru": "скептический",
-        "tr": "şüpheci"
-    },
-    {
-        "en": "skeptical  C1",
-        "ru": "скептический C1",
-        "tr": "şüpheci C1"
+        "tr": "şüpheci",
+        "level": "C1"
     },
     {
         "en": "sketch",
         "ru": "эскиз",
-        "tr": "kroki"
+        "tr": "kroki",
+        "level": "C1"
     },
     {
         "en": "skilled",
         "ru": "опытный",
-        "tr": "yetenekli"
+        "tr": "yetenekli",
+        "level": "B2"
     },
     {
         "en": "skip",
         "ru": "пропускать",
-        "tr": "atlamak"
+        "tr": "atlamak",
+        "level": "C1"
     },
     {
         "en": "skull",
         "ru": "череп",
-        "tr": "kafatası"
+        "tr": "kafatası",
+        "level": "B2"
     },
     {
         "en": "slam",
         "ru": "хлопнуть",
-        "tr": "çarpmak"
+        "tr": "çarpmak",
+        "level": "C1"
     },
     {
         "en": "slap",
         "ru": "шлепок",
-        "tr": "tokat"
+        "tr": "tokat",
+        "level": "C1"
     },
     {
         "en": "slash",
         "ru": "косая черта",
-        "tr": "eğik çizgi"
+        "tr": "eğik çizgi",
+        "level": "C1"
     },
     {
         "en": "slavery",
         "ru": "рабство",
-        "tr": "kölelik"
+        "tr": "kölelik",
+        "level": "C1"
     },
     {
         "en": "slogan",
         "ru": "лозунг",
-        "tr": "slogan"
+        "tr": "slogan",
+        "level": "B2"
     },
     {
         "en": "slot",
         "ru": "слот",
-        "tr": "yuva"
+        "tr": "yuva",
+        "level": "C1"
     },
     {
         "en": "smash",
         "ru": "разгромить",
-        "tr": "paramparça etmek"
+        "tr": "paramparça etmek",
+        "level": "C1"
     },
     {
         "en": "snap",
         "ru": "щелчок",
-        "tr": "patlatmak"
+        "tr": "patlatmak",
+        "level": "C1"
     },
     {
         "en": "so-called",
         "ru": "так называемый",
-        "tr": "sözde"
+        "tr": "sözde",
+        "level": "B2"
     },
     {
         "en": "soak",
         "ru": "впитывать",
-        "tr": "emmek"
+        "tr": "emmek",
+        "level": "C1"
     },
     {
         "en": "soar",
         "ru": "парить",
-        "tr": "uçmak"
+        "tr": "uçmak",
+        "level": "C1"
     },
     {
         "en": "socialist",
         "ru": "социалистический",
-        "tr": "sosyalist"
+        "tr": "sosyalist",
+        "level": "C1"
     },
     {
         "en": "sole",
         "ru": "подошва",
-        "tr": "ayak tabanı"
+        "tr": "ayak tabanı",
+        "level": "C1"
     },
     {
         "en": "solely",
         "ru": "исключительно",
-        "tr": "sadece"
+        "tr": "sadece",
+        "level": "C1"
     },
     {
         "en": "solidarity",
         "ru": "солидарность",
-        "tr": "dayanışma"
+        "tr": "dayanışma",
+        "level": "C1"
     },
     {
         "en": "solo",
         "ru": "соло",
-        "tr": "solo"
+        "tr": "solo",
+        "level": "C1"
     },
     {
         "en": "somehow",
         "ru": "как-то",
-        "tr": "bir şekilde"
+        "tr": "bir şekilde",
+        "level": "B2"
     },
     {
         "en": "sometime",
         "ru": "когда-нибудь",
-        "tr": "bazen"
+        "tr": "bazen",
+        "level": "B2"
     },
     {
         "en": "sophisticated",
         "ru": "сложный",
-        "tr": "komplike"
+        "tr": "komplike",
+        "level": "B2"
     },
     {
         "en": "sophomore",
         "ru": "второкурсник",
-        "tr": "ikinci sınıf öğrencisi"
+        "tr": "ikinci sınıf öğrencisi",
+        "level": "C1"
     },
     {
         "en": "sound",
         "ru": "звук",
-        "tr": "ses"
+        "tr": "ses",
+        "level": "C1"
     },
     {
         "en": "sovereignty",
         "ru": "суверенитет",
-        "tr": "egemenlik"
+        "tr": "egemenlik",
+        "level": "C1"
     },
     {
         "en": "spam",
         "ru": "спам",
-        "tr": "istenmeyen e-posta"
+        "tr": "istenmeyen e-posta",
+        "level": "C1"
     },
     {
         "en": "span",
         "ru": "охватывать",
-        "tr": "açıklık"
+        "tr": "açıklık",
+        "level": "C1"
     },
     {
         "en": "spare",
         "ru": "запасной",
-        "tr": "kıyamamak"
+        "tr": "kıyamamak",
+        "level": "C1"
     },
     {
         "en": "spare  B2",
         "ru": "запасной B2",
-        "tr": "yedek B2"
+        "tr": "yedek B2",
+        "level": "C1"
     },
     {
         "en": "spark",
         "ru": "искра",
-        "tr": "kıvılcım"
+        "tr": "kıvılcım",
+        "level": "C1"
     },
     {
         "en": "specialize",
         "ru": "специализироваться",
-        "tr": "uzmanlaşmak"
-    },
-    {
-        "en": "specialize  B1",
-        "ru": "специализироваться B1",
-        "tr": "B1'de uzmanlaşmak"
+        "tr": "uzmanlaşmak",
+        "level": "B1"
     },
     {
         "en": "specialized",
         "ru": "специализированный",
-        "tr": "uzmanlaşmış"
+        "tr": "uzmanlaşmış",
+        "level": "C1"
     },
     {
         "en": "specification",
         "ru": "спецификация",
-        "tr": "Şartname"
+        "tr": "Şartname",
+        "level": "C1"
     },
     {
         "en": "specify",
         "ru": "указать",
-        "tr": "belirtmek"
+        "tr": "belirtmek",
+        "level": "B2"
     },
     {
         "en": "specimen",
         "ru": "образец",
-        "tr": "numune"
+        "tr": "numune",
+        "level": "C1"
     },
     {
         "en": "spectacle",
         "ru": "зрелище",
-        "tr": "gösteri"
+        "tr": "gösteri",
+        "level": "C1"
     },
     {
         "en": "spectacular",
         "ru": "зрелищный",
-        "tr": "muhteşem"
+        "tr": "muhteşem",
+        "level": "B2"
     },
     {
         "en": "spectator",
         "ru": "зритель",
-        "tr": "seyirci"
+        "tr": "seyirci",
+        "level": "B2"
     },
     {
         "en": "spectrum",
         "ru": "спектр",
-        "tr": "spektrum"
+        "tr": "spektrum",
+        "level": "C1"
     },
     {
         "en": "speculate",
         "ru": "спекулировать",
-        "tr": "spekülasyon yapmak"
+        "tr": "spekülasyon yapmak",
+        "level": "B2"
     },
     {
         "en": "speculation",
         "ru": "спекуляция",
-        "tr": "spekülasyon"
+        "tr": "spekülasyon",
+        "level": "B2"
     },
     {
         "en": "spell",
         "ru": "заклинание",
-        "tr": "hecelemek"
+        "tr": "hecelemek",
+        "level": "C1"
     },
     {
         "en": "sphere",
         "ru": "сфера",
-        "tr": "küre"
+        "tr": "küre",
+        "level": "C1"
     },
     {
         "en": "spice",
         "ru": "специя",
-        "tr": "baharat"
+        "tr": "baharat",
+        "level": "B2"
     },
     {
         "en": "spill",
         "ru": "разливать",
-        "tr": "dökülme"
+        "tr": "dökülme",
+        "level": "B2"
     },
     {
         "en": "spin",
         "ru": "вращаться",
-        "tr": "döndürmek"
+        "tr": "döndürmek",
+        "level": "C1"
     },
     {
         "en": "spine",
         "ru": "позвоночник",
-        "tr": "omurga"
+        "tr": "omurga",
+        "level": "C1"
     },
     {
         "en": "spite",
         "ru": "злоба",
-        "tr": "kin"
+        "tr": "kin",
+        "level": "B2"
     },
     {
         "en": "spoil",
         "ru": "портиться",
-        "tr": "şımartmak"
+        "tr": "şımartmak",
+        "level": "B2"
     },
     {
         "en": "spokesman",
         "ru": "представитель",
-        "tr": "sözcü"
+        "tr": "sözcü",
+        "level": "B2"
     },
     {
         "en": "spokesperson",
         "ru": "представитель",
-        "tr": "sözcü"
+        "tr": "sözcü",
+        "level": "B2"
     },
     {
         "en": "spokeswoman",
         "ru": "пресс-секретарь",
-        "tr": "sözcü"
+        "tr": "sözcü",
+        "level": "B2"
     },
     {
         "en": "sponsorship",
         "ru": "спонсорство",
-        "tr": "sponsorluk"
+        "tr": "sponsorluk",
+        "level": "B2"
     },
     {
         "en": "spotlight",
         "ru": "прожектор",
-        "tr": "spot ışığı"
+        "tr": "spot ışığı",
+        "level": "C1"
     },
     {
         "en": "spouse",
         "ru": "супруг",
-        "tr": "eş"
+        "tr": "eş",
+        "level": "C1"
     },
     {
         "en": "spy",
         "ru": "шпион",
-        "tr": "casus"
+        "tr": "casus",
+        "level": "C1"
     },
     {
         "en": "squad",
         "ru": "отряд",
-        "tr": "takım"
+        "tr": "takım",
+        "level": "C1"
     },
     {
         "en": "squeeze",
         "ru": "сжимать",
-        "tr": "sıkmak"
+        "tr": "sıkmak",
+        "level": "C1"
     },
     {
         "en": "stab",
         "ru": "нанести удар",
-        "tr": "bıçaklamak"
+        "tr": "bıçaklamak",
+        "level": "C1"
     },
     {
         "en": "stability",
         "ru": "стабильность",
-        "tr": "istikrar"
+        "tr": "istikrar",
+        "level": "C1"
     },
     {
         "en": "stabilize",
         "ru": "стабилизировать",
-        "tr": "stabilize etmek"
+        "tr": "stabilize etmek",
+        "level": "C1"
     },
     {
         "en": "stake",
         "ru": "ставка",
-        "tr": "hisse"
+        "tr": "hisse",
+        "level": "C1"
     },
     {
         "en": "stall",
         "ru": "ларек",
-        "tr": "durak"
+        "tr": "durak",
+        "level": "B2"
     },
     {
         "en": "stance",
         "ru": "позиция",
-        "tr": "duruş"
+        "tr": "duruş",
+        "level": "B2"
     },
     {
         "en": "standing",
         "ru": "стоя",
-        "tr": "ayakta"
+        "tr": "ayakta",
+        "level": "C1"
     },
     {
         "en": "stark",
         "ru": "резкий",
-        "tr": "katı"
+        "tr": "katı",
+        "level": "C1"
     },
     {
         "en": "starve",
         "ru": "голодать",
-        "tr": "açlıktan ölmek"
+        "tr": "açlıktan ölmek",
+        "level": "B2"
     },
     {
         "en": "statistical",
         "ru": "статистический",
-        "tr": "istatistiksel"
+        "tr": "istatistiksel",
+        "level": "C1"
     },
     {
         "en": "steadily",
         "ru": "стабильно",
-        "tr": "istikrarlı bir şekilde"
+        "tr": "istikrarlı bir şekilde",
+        "level": "B2"
     },
     {
         "en": "steam",
         "ru": "пар",
-        "tr": "buhar"
+        "tr": "buhar",
+        "level": "B2"
     },
     {
         "en": "steer",
         "ru": "управлять",
-        "tr": "yönlendirmek"
+        "tr": "yönlendirmek",
+        "level": "C1"
     },
     {
         "en": "stem",
         "ru": "корень",
-        "tr": "kök"
+        "tr": "kök",
+        "level": "C1"
     },
     {
         "en": "stereotype",
         "ru": "стереотип",
-        "tr": "stereotip"
+        "tr": "stereotip",
+        "level": "C1"
     },
     {
         "en": "stimulate",
         "ru": "стимулировать",
-        "tr": "teşvik etmek"
+        "tr": "teşvik etmek",
+        "level": "B2"
     },
     {
         "en": "stimulus",
         "ru": "стимул",
-        "tr": "uyarıcı"
+        "tr": "uyarıcı",
+        "level": "C1"
     },
     {
         "en": "stir",
         "ru": "помешивать",
-        "tr": "karıştırmak"
+        "tr": "karıştırmak",
+        "level": "C1"
     },
     {
         "en": "storage",
         "ru": "хранилище",
-        "tr": "depolamak"
+        "tr": "depolamak",
+        "level": "C1"
     },
     {
         "en": "straightforward",
         "ru": "простой",
-        "tr": "basit"
+        "tr": "basit",
+        "level": "C1"
     },
     {
         "en": "strain",
         "ru": "напряжение",
-        "tr": "gerilmek"
+        "tr": "gerilmek",
+        "level": "C1"
     },
     {
         "en": "strand",
         "ru": "прядь",
-        "tr": "iplik"
+        "tr": "iplik",
+        "level": "C1"
     },
     {
         "en": "strategic",
         "ru": "стратегический",
-        "tr": "stratejik"
+        "tr": "stratejik",
+        "level": "C1"
     },
     {
         "en": "strengthen",
         "ru": "укреплять",
-        "tr": "güçlendirmek"
+        "tr": "güçlendirmek",
+        "level": "B2"
     },
     {
         "en": "strictly",
         "ru": "строго",
-        "tr": "kesinlikle"
+        "tr": "kesinlikle",
+        "level": "B2"
     },
     {
         "en": "striking",
         "ru": "поразительный",
-        "tr": "çarpıcı"
+        "tr": "çarpıcı",
+        "level": "B2"
     },
     {
         "en": "strip",
         "ru": "полоска",
-        "tr": "şerit"
-    },
-    {
-        "en": "strip (long narrow piece)",
-        "ru": "полоска (длинный узкий кусок)",
-        "tr": "şerit (uzun dar parça)"
-    },
-    {
-        "en": "strip (remove clothes/a layer)",
-        "ru": "раздеть (снять одежду/слой)",
-        "tr": "şerit (giysileri/katmanı çıkarın)"
+        "tr": "şerit",
+        "level": "B2"
     },
     {
         "en": "strive",
         "ru": "стремиться",
-        "tr": "çabalamak"
+        "tr": "çabalamak",
+        "level": "C1"
     },
     {
         "en": "stroke",
         "ru": "гладить",
-        "tr": "felç"
+        "tr": "felç",
+        "level": "B2"
     },
     {
         "en": "structural",
         "ru": "структурный",
-        "tr": "yapısal"
+        "tr": "yapısal",
+        "level": "C1"
     },
     {
         "en": "stumble",
         "ru": "спотыкаться",
-        "tr": "yanılmak"
+        "tr": "yanılmak",
+        "level": "C1"
     },
     {
         "en": "stun",
         "ru": "оглушить",
-        "tr": "sersemletmek"
+        "tr": "sersemletmek",
+        "level": "C1"
     },
     {
-        "en": "stun C1",
-        "ru": "оглушить С1",
-        "tr": "sersemletici C1"
+        "en": "stun C",
+        "ru": "оглушить С",
+        "tr": "sersemletme C",
+        "level": "C1"
     },
     {
         "en": "stunning",
         "ru": "оглушительный",
-        "tr": "çekici"
+        "tr": "çekici",
+        "level": "B2"
     },
     {
         "en": "submission",
         "ru": "подчинение",
-        "tr": "teslimiyet"
+        "tr": "teslimiyet",
+        "level": "C1"
     },
     {
         "en": "subscriber",
         "ru": "подписчик",
-        "tr": "abone"
+        "tr": "abone",
+        "level": "C1"
     },
     {
         "en": "subscription",
         "ru": "подписка",
-        "tr": "abonelik"
+        "tr": "abonelik",
+        "level": "C1"
     },
     {
         "en": "subsequent",
         "ru": "последующий",
-        "tr": "sonraki"
+        "tr": "sonraki",
+        "level": "B2"
     },
     {
         "en": "subsequently",
         "ru": "впоследствии",
-        "tr": "daha sonra"
+        "tr": "daha sonra",
+        "level": "B2"
     },
     {
         "en": "subsidy",
         "ru": "субсидия",
-        "tr": "sübvansiyon"
+        "tr": "sübvansiyon",
+        "level": "C1"
     },
     {
         "en": "substantial",
         "ru": "существенный",
-        "tr": "varlıklı"
+        "tr": "varlıklı",
+        "level": "C1"
     },
     {
         "en": "substantially",
         "ru": "существенно",
-        "tr": "büyük ölçüde"
+        "tr": "büyük ölçüde",
+        "level": "C1"
     },
     {
         "en": "substitute",
         "ru": "заменять",
-        "tr": "yerine geçmek"
+        "tr": "yerine geçmek",
+        "level": "C1"
     },
     {
         "en": "substitution",
         "ru": "замена",
-        "tr": "ikame"
+        "tr": "ikame",
+        "level": "C1"
     },
     {
         "en": "subtle",
         "ru": "тонкий",
-        "tr": "hemen göze çarpmayan"
+        "tr": "hemen göze çarpmayan",
+        "level": "C1"
     },
     {
         "en": "suburb",
         "ru": "пригород",
-        "tr": "banliyö"
+        "tr": "banliyö",
+        "level": "B2"
     },
     {
-        "en": "suburb B2",
-        "ru": "пригород Б2",
-        "tr": "banliyö B2"
+        "en": "suburb B",
+        "ru": "пригород Б",
+        "tr": "banliyö B",
+        "level": "B2"
     },
     {
         "en": "suburban",
         "ru": "пригородный",
-        "tr": "banliyö"
+        "tr": "banliyö",
+        "level": "C1"
     },
     {
         "en": "succession",
         "ru": "преемственность",
-        "tr": "veraset"
+        "tr": "veraset",
+        "level": "C1"
     },
     {
         "en": "successive",
         "ru": "последовательный",
-        "tr": "ardışık"
+        "tr": "ardışık",
+        "level": "C1"
     },
     {
         "en": "successor",
         "ru": "преемник",
-        "tr": "varis"
+        "tr": "varis",
+        "level": "C1"
     },
     {
         "en": "suck",
         "ru": "сосать",
-        "tr": "emmek"
+        "tr": "emmek",
+        "level": "C1"
     },
     {
         "en": "sue",
         "ru": "Сью",
-        "tr": "dava açmak"
+        "tr": "dava açmak",
+        "level": "C1"
     },
     {
         "en": "suffering",
         "ru": "страдания",
-        "tr": "cefa"
+        "tr": "cefa",
+        "level": "B2"
     },
     {
         "en": "sufficient",
         "ru": "достаточный",
-        "tr": "yeterli"
+        "tr": "yeterli",
+        "level": "B2"
     },
     {
         "en": "sufficiently",
         "ru": "достаточно",
-        "tr": "yeterince"
+        "tr": "yeterince",
+        "level": "B2"
     },
     {
         "en": "suicide",
         "ru": "самоубийство",
-        "tr": "intihar"
+        "tr": "intihar",
+        "level": "C1"
     },
     {
         "en": "suite",
         "ru": "люкс",
-        "tr": "süit"
+        "tr": "süit",
+        "level": "C1"
     },
     {
         "en": "summit",
         "ru": "саммит",
-        "tr": "zirve"
+        "tr": "zirve",
+        "level": "C1"
     },
     {
         "en": "super",
         "ru": "супер",
-        "tr": "süper"
+        "tr": "süper",
+        "level": "B2"
     },
     {
         "en": "superb",
         "ru": "превосходно",
-        "tr": "muhteşem"
+        "tr": "muhteşem",
+        "level": "C1"
     },
     {
         "en": "superintendent",
         "ru": "суперинтендант",
-        "tr": "müfettiş"
+        "tr": "müfettiş",
+        "level": "C1"
     },
     {
         "en": "superior",
         "ru": "начальство",
-        "tr": "üst"
+        "tr": "üst",
+        "level": "C1"
     },
     {
         "en": "supervise",
         "ru": "контролировать",
-        "tr": "denetlemek"
+        "tr": "denetlemek",
+        "level": "C1"
     },
     {
         "en": "supervision",
         "ru": "надзор",
-        "tr": "nezaret"
+        "tr": "nezaret",
+        "level": "C1"
     },
     {
         "en": "supervisor",
         "ru": "руководитель",
-        "tr": "gözetmen"
+        "tr": "gözetmen",
+        "level": "C1"
     },
     {
         "en": "supplement",
         "ru": "добавка",
-        "tr": "ek"
+        "tr": "ek",
+        "level": "C1"
     },
     {
         "en": "supportive",
         "ru": "поддерживающий",
-        "tr": "destekleyici"
+        "tr": "destekleyici",
+        "level": "C1"
     },
     {
         "en": "supposedly",
         "ru": "предположительно",
-        "tr": "sözde"
+        "tr": "sözde",
+        "level": "C1"
     },
     {
         "en": "suppress",
         "ru": "подавлять",
-        "tr": "bastırmak"
+        "tr": "bastırmak",
+        "level": "C1"
     },
     {
         "en": "supreme",
         "ru": "верховный",
-        "tr": "yüce"
+        "tr": "yüce",
+        "level": "C1"
     },
     {
         "en": "surge",
         "ru": "всплеск",
-        "tr": "kabarmak"
+        "tr": "kabarmak",
+        "level": "C1"
     },
     {
         "en": "surgeon",
         "ru": "хирург",
-        "tr": "cerrah"
+        "tr": "cerrah",
+        "level": "B2"
     },
     {
         "en": "surgical",
         "ru": "хирургический",
-        "tr": "cerrahi"
+        "tr": "cerrahi",
+        "level": "C1"
     },
     {
         "en": "surplus",
         "ru": "излишек",
-        "tr": "fazlalık"
+        "tr": "fazlalık",
+        "level": "C1"
     },
     {
         "en": "surrender",
         "ru": "сдаваться",
-        "tr": "teslim olmak"
+        "tr": "teslim olmak",
+        "level": "C1"
     },
     {
         "en": "surveillance",
         "ru": "наблюдение",
-        "tr": "gözetim"
+        "tr": "gözetim",
+        "level": "C1"
     },
     {
         "en": "survival",
         "ru": "выживание",
-        "tr": "hayatta kalma"
+        "tr": "hayatta kalma",
+        "level": "B2"
     },
     {
         "en": "survivor",
         "ru": "выживший",
-        "tr": "hayatta kalan"
+        "tr": "hayatta kalan",
+        "level": "B2"
     },
     {
         "en": "suspend",
         "ru": "приостановить",
-        "tr": "askıya almak"
+        "tr": "askıya almak",
+        "level": "B2"
     },
     {
         "en": "suspension",
         "ru": "приостановка",
-        "tr": "süspansiyon"
+        "tr": "süspansiyon",
+        "level": "C1"
     },
     {
         "en": "suspicion",
         "ru": "подозрение",
-        "tr": "şüphe"
+        "tr": "şüphe",
+        "level": "C1"
     },
     {
         "en": "suspicious",
         "ru": "подозрительный",
-        "tr": "şüpheli"
+        "tr": "şüpheli",
+        "level": "C1"
     },
     {
         "en": "sustain",
         "ru": "поддерживать",
-        "tr": "güç vermek"
+        "tr": "güç vermek",
+        "level": "C1"
     },
     {
         "en": "sustainable",
         "ru": "устойчивый",
-        "tr": "sürdürülebilir"
+        "tr": "sürdürülebilir",
+        "level": "B2"
     },
     {
         "en": "swallow",
         "ru": "глотать",
-        "tr": "yutmak"
+        "tr": "yutmak",
+        "level": "B2"
     },
     {
         "en": "swing",
         "ru": "качать",
-        "tr": "sallanmak"
+        "tr": "sallanmak",
+        "level": "C1"
     },
     {
         "en": "sword",
         "ru": "меч",
-        "tr": "kılıç"
+        "tr": "kılıç",
+        "level": "C1"
     },
     {
         "en": "symbolic",
         "ru": "символический",
-        "tr": "sembolik"
+        "tr": "sembolik",
+        "level": "C1"
     },
     {
         "en": "sympathetic",
         "ru": "сочувствующий",
-        "tr": "sempatik"
+        "tr": "sempatik",
+        "level": "B2"
     },
     {
         "en": "syndrome",
         "ru": "синдром",
-        "tr": "sendromu"
+        "tr": "sendromu",
+        "level": "C1"
     },
     {
         "en": "synthesis",
         "ru": "синтез",
-        "tr": "sentez"
+        "tr": "sentez",
+        "level": "C1"
     },
     {
         "en": "systematic",
         "ru": "систематический",
-        "tr": "sistematik"
+        "tr": "sistematik",
+        "level": "C1"
     },
     {
         "en": "tackle",
         "ru": "взяться",
-        "tr": "olta takımı"
+        "tr": "olta takımı",
+        "level": "C1"
     },
     {
         "en": "tackle  B2",
         "ru": "снасть B2",
-        "tr": "B2 ile mücadele"
+        "tr": "B2 ile mücadele",
+        "level": "C1"
     },
     {
         "en": "tactic",
         "ru": "тактика",
-        "tr": "taktik"
+        "tr": "taktik",
+        "level": "C1"
     },
     {
         "en": "tactical",
         "ru": "тактический",
-        "tr": "taktik"
+        "tr": "taktik",
+        "level": "C1"
     },
     {
         "en": "tag",
         "ru": "ярлык",
-        "tr": "etiket"
+        "tr": "etiket",
+        "level": "B2"
     },
     {
         "en": "tap",
         "ru": "кран",
-        "tr": "musluk"
+        "tr": "musluk",
+        "level": "B2"
     },
     {
         "en": "taxpayer",
         "ru": "налогоплательщик",
-        "tr": "vergi mükellefi"
+        "tr": "vergi mükellefi",
+        "level": "C1"
     },
     {
         "en": "technological",
         "ru": "технологический",
-        "tr": "teknolojik"
+        "tr": "teknolojik",
+        "level": "B2"
     },
     {
         "en": "teen",
         "ru": "подросток",
-        "tr": "genç"
+        "tr": "genç",
+        "level": "B2"
     },
     {
         "en": "teen  adj",
         "ru": "подросток прил.",
-        "tr": "genç adj"
-    },
-    {
-        "en": "teen , adj",
-        "ru": "подросток, прил.",
-        "tr": "genç, adj"
+        "tr": "genç adj",
+        "level": "B2"
     },
     {
         "en": "temple",
         "ru": "храм",
-        "tr": "tapınak"
+        "tr": "tapınak",
+        "level": "B2"
     },
     {
         "en": "temporarily",
         "ru": "временно",
-        "tr": "geçici olarak"
+        "tr": "geçici olarak",
+        "level": "B2"
     },
     {
         "en": "tempt",
         "ru": "искушать",
-        "tr": "baştan çıkarmak"
+        "tr": "baştan çıkarmak",
+        "level": "C1"
     },
     {
         "en": "tenant",
         "ru": "жилец",
-        "tr": "kiracı"
+        "tr": "kiracı",
+        "level": "C1"
     },
     {
         "en": "tendency",
         "ru": "тенденция",
-        "tr": "eğilim"
+        "tr": "eğilim",
+        "level": "B2"
     },
     {
         "en": "tender",
         "ru": "нежный",
-        "tr": "sunmak"
+        "tr": "sunmak",
+        "level": "C1"
     },
     {
         "en": "tension",
         "ru": "напряжение",
-        "tr": "tansiyon"
+        "tr": "tansiyon",
+        "level": "B2"
     },
     {
         "en": "tenure",
         "ru": "срок владения",
-        "tr": "görev süresi"
+        "tr": "görev süresi",
+        "level": "C1"
     },
     {
         "en": "terminal",
         "ru": "Терминал",
-        "tr": "terminal"
+        "tr": "terminal",
+        "level": "C1"
     },
     {
         "en": "terminal  B2",
         "ru": "терминал В2",
-        "tr": "B2 terminali"
+        "tr": "B2 terminali",
+        "level": "C1"
     },
     {
         "en": "terminate",
         "ru": "прекратить",
-        "tr": "sonlandırmak"
+        "tr": "sonlandırmak",
+        "level": "C1"
     },
     {
         "en": "terms",
         "ru": "условия",
-        "tr": "şartlar"
+        "tr": "şartlar",
+        "level": "B2"
     },
     {
         "en": "terrain",
         "ru": "местность",
-        "tr": "arazi"
+        "tr": "arazi",
+        "level": "C1"
     },
     {
         "en": "terribly",
         "ru": "ужасно",
-        "tr": "korkunç derecede"
+        "tr": "korkunç derecede",
+        "level": "B2"
     },
     {
         "en": "terrific",
         "ru": "потрясающий",
-        "tr": "müthiş"
+        "tr": "müthiş",
+        "level": "C1"
     },
     {
         "en": "terrify",
         "ru": "пугать",
-        "tr": "dehşete düşürmek"
+        "tr": "dehşete düşürmek",
+        "level": "B2"
     },
     {
         "en": "territory",
         "ru": "территория",
-        "tr": "bölge"
+        "tr": "bölge",
+        "level": "B2"
     },
     {
         "en": "terror",
         "ru": "террор",
-        "tr": "terör"
+        "tr": "terör",
+        "level": "B2"
     },
     {
         "en": "terrorism",
         "ru": "терроризм",
-        "tr": "terörizm"
+        "tr": "terörizm",
+        "level": "B2"
     },
     {
         "en": "terrorist",
         "ru": "террорист",
-        "tr": "terörist"
+        "tr": "terörist",
+        "level": "B2"
     },
     {
         "en": "testify",
         "ru": "свидетельствовать",
-        "tr": "tanıklık etmek"
+        "tr": "tanıklık etmek",
+        "level": "C1"
     },
     {
         "en": "testimony",
         "ru": "показания",
-        "tr": "tanıklık"
+        "tr": "tanıklık",
+        "level": "C1"
     },
     {
         "en": "testing",
         "ru": "тестирование",
-        "tr": "test"
+        "tr": "test",
+        "level": "B2"
     },
     {
         "en": "textbook",
         "ru": "учебник",
-        "tr": "ders kitabı"
+        "tr": "ders kitabı",
+        "level": "B2"
     },
     {
         "en": "texture",
         "ru": "текстура",
-        "tr": "doku"
+        "tr": "doku",
+        "level": "C1"
     },
     {
         "en": "thankfully",
         "ru": "к счастью",
-        "tr": "çok şükür"
+        "tr": "çok şükür",
+        "level": "C1"
     },
     {
         "en": "theatrical",
         "ru": "театральный",
-        "tr": "teatral"
+        "tr": "teatral",
+        "level": "C1"
     },
     {
         "en": "theft",
         "ru": "кража",
-        "tr": "hırsızlık"
+        "tr": "hırsızlık",
+        "level": "B2"
     },
     {
-        "en": "theft B2",
-        "ru": "кража Б2",
-        "tr": "hırsızlık B2"
+        "en": "theft B",
+        "ru": "кража Б",
+        "tr": "hırsızlık B",
+        "level": "B2"
     },
     {
         "en": "theology",
         "ru": "богословие",
-        "tr": "teoloji"
+        "tr": "teoloji",
+        "level": "C1"
     },
     {
         "en": "theoretical",
         "ru": "теоретический",
-        "tr": "teorik"
+        "tr": "teorik",
+        "level": "C1"
     },
     {
         "en": "therapist",
         "ru": "терапевт",
-        "tr": "terapist"
+        "tr": "terapist",
+        "level": "B2"
     },
     {
         "en": "thereafter",
         "ru": "после этого",
-        "tr": "bundan sonra"
+        "tr": "bundan sonra",
+        "level": "C1"
     },
     {
         "en": "thereby",
         "ru": "тем самым",
-        "tr": "böylece"
+        "tr": "böylece",
+        "level": "C1"
     },
     {
         "en": "thesis",
         "ru": "диссертация",
-        "tr": "tez"
+        "tr": "tez",
+        "level": "B2"
     },
     {
         "en": "thorough",
         "ru": "тщательный",
-        "tr": "kapsamlı"
+        "tr": "kapsamlı",
+        "level": "B2"
     },
     {
         "en": "thoroughly",
         "ru": "тщательно",
-        "tr": "iyice"
+        "tr": "iyice",
+        "level": "B2"
     },
     {
         "en": "thought-provoking",
         "ru": "заставляет задуматься",
-        "tr": "düşündürücü"
+        "tr": "düşündürücü",
+        "level": "C1"
     },
     {
         "en": "thoughtful",
         "ru": "вдумчивый",
-        "tr": "düşünceli"
+        "tr": "düşünceli",
+        "level": "C1"
     },
     {
         "en": "thread",
         "ru": "нить",
-        "tr": "iplik"
+        "tr": "iplik",
+        "level": "C1"
     },
     {
         "en": "threshold",
         "ru": "порог",
-        "tr": "eşik"
+        "tr": "eşik",
+        "level": "C1"
     },
     {
         "en": "thrilled",
         "ru": "взволнованный",
-        "tr": "heyecanlandım"
+        "tr": "heyecanlandım",
+        "level": "C1"
     },
     {
         "en": "thrive",
         "ru": "процветать",
-        "tr": "gelişmek"
+        "tr": "gelişmek",
+        "level": "C1"
     },
     {
         "en": "thumb",
         "ru": "большой палец",
-        "tr": "baş parmak"
+        "tr": "baş parmak",
+        "level": "B2"
     },
     {
         "en": "tide",
         "ru": "прилив",
-        "tr": "gelgit"
+        "tr": "gelgit",
+        "level": "C1"
     },
     {
         "en": "tighten",
         "ru": "затягивать",
-        "tr": "sıkmak"
+        "tr": "sıkmak",
+        "level": "C1"
     },
     {
         "en": "timber",
         "ru": "древесина",
-        "tr": "kereste"
+        "tr": "kereste",
+        "level": "C1"
     },
     {
         "en": "timely",
         "ru": "своевременный",
-        "tr": "zamanında"
+        "tr": "zamanında",
+        "level": "C1"
     },
     {
         "en": "timing",
         "ru": "время",
-        "tr": "zamanlama"
+        "tr": "zamanlama",
+        "level": "B2"
     },
     {
         "en": "tissue",
         "ru": "салфетка",
-        "tr": "doku"
+        "tr": "doku",
+        "level": "B2"
     },
     {
         "en": "tobacco",
         "ru": "табак",
-        "tr": "tütün"
+        "tr": "tütün",
+        "level": "C1"
     },
     {
         "en": "tolerance",
         "ru": "терпимость",
-        "tr": "hoşgörü"
+        "tr": "hoşgörü",
+        "level": "C1"
     },
     {
         "en": "tolerate",
         "ru": "терпеть",
-        "tr": "tahammül etmek"
+        "tr": "tahammül etmek",
+        "level": "C1"
     },
     {
         "en": "toll",
         "ru": "потери",
-        "tr": "Geçiş ücreti"
+        "tr": "Geçiş ücreti",
+        "level": "C1"
     },
     {
         "en": "top",
         "ru": "вершина",
-        "tr": "tepe"
+        "tr": "tepe",
+        "level": "C1"
     },
     {
         "en": "torture",
         "ru": "пытка",
-        "tr": "işkence"
+        "tr": "işkence",
+        "level": "C1"
     },
     {
         "en": "toss",
         "ru": "бросать",
-        "tr": "atmak"
+        "tr": "atmak",
+        "level": "C1"
     },
     {
         "en": "total",
         "ru": "общий",
-        "tr": "toplam"
+        "tr": "toplam",
+        "level": "C1"
     },
     {
         "en": "tournament",
         "ru": "турнир",
-        "tr": "turnuva"
+        "tr": "turnuva",
+        "level": "B2"
     },
     {
         "en": "toxic",
         "ru": "токсичный",
-        "tr": "zehirli"
+        "tr": "zehirli",
+        "level": "C1"
     },
     {
         "en": "trace",
         "ru": "след",
-        "tr": "iz"
+        "tr": "iz",
+        "level": "C1"
     },
     {
         "en": "trace B2",
         "ru": "трасса B2",
-        "tr": "iz B2"
+        "tr": "iz B2",
+        "level": "C1"
     },
     {
         "en": "trademark",
         "ru": "товарный знак",
-        "tr": "ticari marka"
+        "tr": "ticari marka",
+        "level": "C1"
     },
     {
         "en": "trading",
         "ru": "торговля",
-        "tr": "ticaret"
+        "tr": "ticaret",
+        "level": "B2"
     },
     {
         "en": "tragedy",
         "ru": "трагедия",
-        "tr": "trajedi"
+        "tr": "trajedi",
+        "level": "B2"
     },
     {
         "en": "tragic",
         "ru": "трагический",
-        "tr": "trajik"
+        "tr": "trajik",
+        "level": "B2"
     },
     {
         "en": "trail",
         "ru": "тащить",
-        "tr": "iz"
+        "tr": "iz",
+        "level": "C1"
     },
     {
         "en": "trailer",
         "ru": "трейлер",
-        "tr": "römork"
+        "tr": "römork",
+        "level": "C1"
     },
     {
         "en": "trait",
         "ru": "черта",
-        "tr": "karakter"
+        "tr": "karakter",
+        "level": "B2"
     },
     {
         "en": "transaction",
         "ru": "сделка",
-        "tr": "işlem"
+        "tr": "işlem",
+        "level": "C1"
     },
     {
         "en": "transcript",
         "ru": "стенограмма",
-        "tr": "deşifre metni"
+        "tr": "deşifre metni",
+        "level": "C1"
     },
     {
         "en": "transformation",
         "ru": "трансформация",
-        "tr": "dönüşüm"
+        "tr": "dönüşüm",
+        "level": "C1"
     },
     {
         "en": "transit",
         "ru": "транзит",
-        "tr": "transit"
+        "tr": "transit",
+        "level": "C1"
     },
     {
         "en": "transmission",
         "ru": "передача инфекции",
-        "tr": "bulaşma"
+        "tr": "bulaşma",
+        "level": "C1"
     },
     {
         "en": "transmit",
         "ru": "передавать",
-        "tr": "iletmek"
+        "tr": "iletmek",
+        "level": "B2"
     },
     {
         "en": "transparency",
         "ru": "прозрачность",
-        "tr": "şeffaflık"
+        "tr": "şeffaflık",
+        "level": "C1"
     },
     {
         "en": "transparent",
         "ru": "прозрачный",
-        "tr": "şeffaf"
+        "tr": "şeffaf",
+        "level": "C1"
     },
     {
         "en": "trap",
         "ru": "ловушка",
-        "tr": "tuzak"
+        "tr": "tuzak",
+        "level": "B2"
     },
     {
         "en": "trauma",
         "ru": "травма",
-        "tr": "travma"
+        "tr": "travma",
+        "level": "C1"
     },
     {
         "en": "treasure",
         "ru": "сокровище",
-        "tr": "hazine"
+        "tr": "hazine",
+        "level": "B2"
     },
     {
         "en": "treaty",
         "ru": "договор",
-        "tr": "anlaşma"
+        "tr": "anlaşma",
+        "level": "C1"
     },
     {
         "en": "tremendous",
         "ru": "огромный",
-        "tr": "muazzam"
+        "tr": "muazzam",
+        "level": "C1"
     },
     {
         "en": "tribal",
         "ru": "племенной",
-        "tr": "kabile"
+        "tr": "kabile",
+        "level": "C1"
     },
     {
         "en": "tribe",
         "ru": "племя",
-        "tr": "kabile"
+        "tr": "kabile",
+        "level": "B2"
     },
     {
         "en": "tribute",
         "ru": "дань",
-        "tr": "haraç"
+        "tr": "haraç",
+        "level": "C1"
     },
     {
         "en": "trigger",
         "ru": "курок",
-        "tr": "tetiklemek"
+        "tr": "tetiklemek",
+        "level": "C1"
     },
     {
         "en": "trigger  B2",
         "ru": "триггер B2",
-        "tr": "B2'yi tetikle"
+        "tr": "B2'yi tetikle",
+        "level": "C1"
     },
     {
         "en": "trillion number",
         "ru": "число триллионов",
-        "tr": "trilyon sayısı"
+        "tr": "trilyon sayısı",
+        "level": "B2"
     },
     {
         "en": "trio",
         "ru": "трио",
-        "tr": "üçlü"
+        "tr": "üçlü",
+        "level": "C1"
     },
     {
         "en": "triumph",
         "ru": "триумф",
-        "tr": "zafer"
+        "tr": "zafer",
+        "level": "C1"
     },
     {
         "en": "troop",
         "ru": "отряд",
-        "tr": "birlik"
+        "tr": "birlik",
+        "level": "B2"
     },
     {
         "en": "trophy",
         "ru": "трофей",
-        "tr": "kupa"
+        "tr": "kupa",
+        "level": "C1"
     },
     {
         "en": "troubled",
         "ru": "обеспокоенный",
-        "tr": "sorunlu"
+        "tr": "sorunlu",
+        "level": "C1"
     },
     {
         "en": "trustee",
         "ru": "попечитель",
-        "tr": "mütevelli heyeti"
+        "tr": "mütevelli heyeti",
+        "level": "C1"
     },
     {
         "en": "tsunami",
         "ru": "цунами",
-        "tr": "tsunami"
+        "tr": "tsunami",
+        "level": "B2"
     },
     {
         "en": "tuition",
         "ru": "обучение",
-        "tr": "öğrenim ücreti"
+        "tr": "öğrenim ücreti",
+        "level": "C1"
     },
     {
         "en": "tumor",
         "ru": "опухоль",
-        "tr": "tümör"
+        "tr": "tümör",
+        "level": "C1"
     },
     {
         "en": "turnout",
         "ru": "оказаться",
-        "tr": "boşaltmak"
+        "tr": "boşaltmak",
+        "level": "C1"
     },
     {
         "en": "turnover",
         "ru": "оборот",
-        "tr": "ciro"
+        "tr": "ciro",
+        "level": "C1"
     },
     {
         "en": "twist",
         "ru": "крутить",
-        "tr": "büküm"
+        "tr": "büküm",
+        "level": "C1"
     },
     {
         "en": "ultimate",
         "ru": "окончательный",
-        "tr": "nihai"
+        "tr": "nihai",
+        "level": "B2"
     },
     {
         "en": "unacceptable",
         "ru": "неприемлемо",
-        "tr": "kabul edilemez"
+        "tr": "kabul edilemez",
+        "level": "B2"
     },
     {
         "en": "uncertainty",
         "ru": "неопределенность",
-        "tr": "belirsizlik"
+        "tr": "belirsizlik",
+        "level": "B2"
     },
     {
         "en": "unconstitutional",
         "ru": "неконституционный",
-        "tr": "anayasaya aykırı"
+        "tr": "anayasaya aykırı",
+        "level": "C1"
     },
     {
         "en": "undergo",
         "ru": "подвергаться",
-        "tr": "katlanmak"
+        "tr": "katlanmak",
+        "level": "B2"
     },
     {
         "en": "undergraduate",
         "ru": "бакалавриат",
-        "tr": "lisans"
+        "tr": "lisans",
+        "level": "C1"
     },
     {
         "en": "underlying",
         "ru": "лежащий в основе",
-        "tr": "altta yatan"
+        "tr": "altta yatan",
+        "level": "C1"
     },
     {
         "en": "undermine",
         "ru": "подрывать",
-        "tr": "baltalamak"
+        "tr": "baltalamak",
+        "level": "C1"
     },
     {
         "en": "undertake",
         "ru": "предпринимать",
-        "tr": "üstlenmek"
+        "tr": "üstlenmek",
+        "level": "B2"
     },
     {
         "en": "undoubtedly",
         "ru": "несомненно",
-        "tr": "şüphesiz"
+        "tr": "şüphesiz",
+        "level": "C1"
     },
     {
         "en": "unfold",
         "ru": "разворачиваться",
-        "tr": "açılmak"
+        "tr": "açılmak",
+        "level": "B2"
     },
     {
         "en": "unfortunate",
         "ru": "неудачный",
-        "tr": "talihsiz"
+        "tr": "talihsiz",
+        "level": "B2"
     },
     {
         "en": "unify",
         "ru": "объединить",
-        "tr": "birleştirmek"
+        "tr": "birleştirmek",
+        "level": "C1"
     },
     {
         "en": "unite",
         "ru": "объединяться",
-        "tr": "birleşmek"
+        "tr": "birleşmek",
+        "level": "B2"
     },
     {
         "en": "unity",
         "ru": "единство",
-        "tr": "birlik"
+        "tr": "birlik",
+        "level": "B2"
     },
     {
         "en": "universal",
         "ru": "универсальный",
-        "tr": "evrensel"
+        "tr": "evrensel",
+        "level": "B2"
     },
     {
         "en": "unprecedented",
         "ru": "беспрецедентный",
-        "tr": "benzeri görülmemiş"
+        "tr": "benzeri görülmemiş",
+        "level": "C1"
     },
     {
         "en": "unveil",
         "ru": "раскрыть",
-        "tr": "örtüsünü açmak"
+        "tr": "örtüsünü açmak",
+        "level": "C1"
     },
     {
         "en": "upcoming",
         "ru": "предстоящий",
-        "tr": "yaklaşan"
+        "tr": "yaklaşan",
+        "level": "C1"
     },
     {
         "en": "upgrade",
         "ru": "обновление",
-        "tr": "güncelleme"
+        "tr": "güncelleme",
+        "level": "C1"
     },
     {
         "en": "uphold",
         "ru": "поддерживать",
-        "tr": "desteklemek"
+        "tr": "desteklemek",
+        "level": "C1"
     },
     {
         "en": "urgent",
         "ru": "срочный",
-        "tr": "acil"
+        "tr": "acil",
+        "level": "B2"
     },
     {
         "en": "usage",
         "ru": "использование",
-        "tr": "kullanım"
+        "tr": "kullanım",
+        "level": "B2"
     },
     {
         "en": "useless",
         "ru": "бесполезный",
-        "tr": "kullanışsız"
+        "tr": "kullanışsız",
+        "level": "B2"
     },
     {
         "en": "utility",
         "ru": "полезность",
-        "tr": "fayda"
+        "tr": "fayda",
+        "level": "C1"
     },
     {
         "en": "utilize",
         "ru": "использовать",
-        "tr": "faydalanmak"
+        "tr": "faydalanmak",
+        "level": "C1"
     },
     {
         "en": "utterly",
         "ru": "крайне",
-        "tr": "tamamen"
+        "tr": "tamamen",
+        "level": "C1"
     },
     {
         "en": "vacuum",
         "ru": "вакуум",
-        "tr": "vakum"
+        "tr": "vakum",
+        "level": "C1"
     },
     {
         "en": "vague",
         "ru": "нечеткий",
-        "tr": "başıboş dolaşmak"
+        "tr": "başıboş dolaşmak",
+        "level": "C1"
     },
     {
         "en": "valid",
         "ru": "действительный",
-        "tr": "geçerli"
+        "tr": "geçerli",
+        "level": "B2"
     },
     {
         "en": "validity",
         "ru": "действительность",
-        "tr": "geçerlilik"
+        "tr": "geçerlilik",
+        "level": "C1"
     },
     {
         "en": "vanish",
         "ru": "исчезнуть",
-        "tr": "yok olmak"
+        "tr": "yok olmak",
+        "level": "C1"
     },
     {
         "en": "variable",
         "ru": "переменная",
-        "tr": "değişken"
+        "tr": "değişken",
+        "level": "C1"
     },
     {
         "en": "variation",
         "ru": "вариация",
-        "tr": "varyasyon"
+        "tr": "varyasyon",
+        "level": "B2"
     },
     {
         "en": "varied",
         "ru": "разнообразный",
-        "tr": "çeşitli"
+        "tr": "çeşitli",
+        "level": "C1"
     },
     {
         "en": "vein",
         "ru": "вена",
-        "tr": "damar"
+        "tr": "damar",
+        "level": "C1"
     },
     {
         "en": "venture",
         "ru": "риск",
-        "tr": "girişim"
+        "tr": "girişim",
+        "level": "C1"
     },
     {
         "en": "verbal",
         "ru": "словесный",
-        "tr": "sözlü"
+        "tr": "sözlü",
+        "level": "C1"
     },
     {
         "en": "verdict",
         "ru": "приговор",
-        "tr": "hüküm"
+        "tr": "hüküm",
+        "level": "C1"
     },
     {
         "en": "verify",
         "ru": "проверять",
-        "tr": "doğrulamak"
+        "tr": "doğrulamak",
+        "level": "C1"
     },
     {
         "en": "verse",
         "ru": "стих",
-        "tr": "ayet"
+        "tr": "ayet",
+        "level": "C1"
     },
     {
         "en": "versus",
         "ru": "против",
-        "tr": "karşı"
+        "tr": "karşı",
+        "level": "C1"
     },
     {
         "en": "vertical",
         "ru": "вертикальный",
-        "tr": "dikey"
+        "tr": "dikey",
+        "level": "B2"
     },
     {
         "en": "vessel",
         "ru": "судно",
-        "tr": "gemi"
+        "tr": "gemi",
+        "level": "C1"
     },
     {
         "en": "veteran",
         "ru": "ветеран",
-        "tr": "kıdemli"
+        "tr": "kıdemli",
+        "level": "C1"
     },
     {
         "en": "viable",
         "ru": "жизнеспособный",
-        "tr": "uygulanabilir"
+        "tr": "uygulanabilir",
+        "level": "C1"
     },
     {
         "en": "vibrant",
         "ru": "яркий",
-        "tr": "canlı"
+        "tr": "canlı",
+        "level": "C1"
     },
     {
         "en": "vice",
         "ru": "порок",
-        "tr": "mengene"
+        "tr": "mengene",
+        "level": "C1"
     },
     {
         "en": "vicious",
         "ru": "беспощадный",
-        "tr": "kısır"
+        "tr": "kısır",
+        "level": "C1"
     },
     {
         "en": "viewpoint",
         "ru": "точка зрения",
-        "tr": "bakış açısı"
+        "tr": "bakış açısı",
+        "level": "B2"
     },
     {
         "en": "violate",
         "ru": "нарушать",
-        "tr": "ihlal etmek"
+        "tr": "ihlal etmek",
+        "level": "C1"
     },
     {
         "en": "violation",
         "ru": "нарушение",
-        "tr": "ihlal"
+        "tr": "ihlal",
+        "level": "C1"
     },
     {
         "en": "virtue",
         "ru": "достоинство",
-        "tr": "erdem"
+        "tr": "erdem",
+        "level": "C1"
     },
     {
         "en": "visa",
         "ru": "виза",
-        "tr": "Visa"
+        "tr": "Visa",
+        "level": "B2"
     },
     {
         "en": "visible",
         "ru": "видимый",
-        "tr": "görünür"
+        "tr": "görünür",
+        "level": "B2"
     },
     {
         "en": "vocal",
         "ru": "вокал",
-        "tr": "vokal"
+        "tr": "vokal",
+        "level": "C1"
     },
     {
         "en": "voluntary",
         "ru": "добровольный",
-        "tr": "gönüllü"
+        "tr": "gönüllü",
+        "level": "B2"
     },
     {
         "en": "voting",
         "ru": "голосование",
-        "tr": "oy verme"
+        "tr": "oy verme",
+        "level": "B2"
     },
     {
         "en": "vow",
         "ru": "клятва",
-        "tr": "yemin"
+        "tr": "yemin",
+        "level": "C1"
     },
     {
         "en": "vulnerability",
         "ru": "уязвимость",
-        "tr": "güvenlik açığı"
+        "tr": "güvenlik açığı",
+        "level": "C1"
     },
     {
         "en": "vulnerable",
         "ru": "уязвимый",
-        "tr": "hassas"
+        "tr": "hassas",
+        "level": "C1"
     },
     {
         "en": "wander",
         "ru": "бродить",
-        "tr": "dolaşmak"
+        "tr": "dolaşmak",
+        "level": "B2"
     },
     {
         "en": "ward",
         "ru": "сторожить",
-        "tr": "koğuş"
+        "tr": "koğuş",
+        "level": "C1"
     },
     {
         "en": "warehouse",
         "ru": "склад",
-        "tr": "depo"
+        "tr": "depo",
+        "level": "C1"
     },
     {
         "en": "warfare",
         "ru": "война",
-        "tr": "savaş"
+        "tr": "savaş",
+        "level": "C1"
     },
     {
         "en": "warming",
         "ru": "потепление",
-        "tr": "ısınma"
+        "tr": "ısınma",
+        "level": "B2"
     },
     {
         "en": "warrant",
         "ru": "ордер",
-        "tr": "garanti"
+        "tr": "garanti",
+        "level": "C1"
     },
     {
         "en": "warrior",
         "ru": "воин",
-        "tr": "savaşçı"
+        "tr": "savaşçı",
+        "level": "C1"
     },
     {
         "en": "weaken",
         "ru": "ослабить",
-        "tr": "zayıflatmak"
+        "tr": "zayıflatmak",
+        "level": "C1"
     },
     {
         "en": "weave",
         "ru": "ткать",
-        "tr": "örgü"
+        "tr": "örgü",
+        "level": "C1"
     },
     {
         "en": "weed",
         "ru": "сорняк",
-        "tr": "esrar"
+        "tr": "esrar",
+        "level": "C1"
     },
     {
         "en": "weekly",
         "ru": "еженедельно",
-        "tr": "haftalık"
+        "tr": "haftalık",
+        "level": "B2"
     },
     {
         "en": "weird",
         "ru": "странный",
-        "tr": "garip"
+        "tr": "garip",
+        "level": "B2"
     },
     {
         "en": "welfare",
         "ru": "благосостояние",
-        "tr": "refah"
+        "tr": "refah",
+        "level": "B2"
     },
     {
         "en": "well",
         "ru": "хорошо",
-        "tr": "Peki"
+        "tr": "Peki",
+        "level": "C1"
     },
     {
         "en": "well-being",
         "ru": "благополучие",
-        "tr": "refah"
+        "tr": "refah",
+        "level": "C1"
     },
     {
         "en": "whatsoever",
         "ru": "что бы то ни было",
-        "tr": "ne olursa olsun"
+        "tr": "ne olursa olsun",
+        "level": "C1"
     },
     {
         "en": "wheat",
         "ru": "пшеница",
-        "tr": "buğday"
+        "tr": "buğday",
+        "level": "B2"
     },
     {
         "en": "whereby",
         "ru": "посредством чего",
-        "tr": "bu sayede"
+        "tr": "bu sayede",
+        "level": "C1"
     },
     {
         "en": "whip",
         "ru": "хлыст",
-        "tr": "kırbaç"
+        "tr": "kırbaç",
+        "level": "C1"
     },
     {
         "en": "whoever",
         "ru": "кто бы то ни было",
-        "tr": "kim olursa olsun"
+        "tr": "kim olursa olsun",
+        "level": "B2"
     },
     {
         "en": "wholly",
         "ru": "полностью",
-        "tr": "tamamen"
+        "tr": "tamamen",
+        "level": "C1"
     },
     {
         "en": "widen",
         "ru": "расширять",
-        "tr": "genişletmek"
+        "tr": "genişletmek",
+        "level": "C1"
     },
     {
         "en": "widespread",
         "ru": "широко распространенный",
-        "tr": "yaygın"
+        "tr": "yaygın",
+        "level": "B2"
     },
     {
         "en": "widow",
         "ru": "вдова",
-        "tr": "dul"
+        "tr": "dul",
+        "level": "C1"
     },
     {
         "en": "width",
         "ru": "ширина",
-        "tr": "Genişlik"
+        "tr": "Genişlik",
+        "level": "C1"
     },
     {
         "en": "willingness",
         "ru": "готовность",
-        "tr": "isteklilik"
+        "tr": "isteklilik",
+        "level": "C1"
     },
     {
         "en": "wipe",
         "ru": "вытирать",
-        "tr": "silip süpürmek"
+        "tr": "silip süpürmek",
+        "level": "C1"
     },
     {
         "en": "wisdom",
         "ru": "мудрость",
-        "tr": "bilgelik"
+        "tr": "bilgelik",
+        "level": "B2"
     },
     {
         "en": "wit",
         "ru": "остроумие",
-        "tr": "zekâ"
+        "tr": "zekâ",
+        "level": "C1"
     },
     {
         "en": "withdraw",
         "ru": "отзывать",
-        "tr": "geri çekilmek"
+        "tr": "geri çekilmek",
+        "level": "B2"
     },
     {
         "en": "withdrawal",
         "ru": "снятие",
-        "tr": "para çekme"
+        "tr": "para çekme",
+        "level": "C1"
     },
     {
         "en": "wolf",
         "ru": "волк",
-        "tr": "kurt"
+        "tr": "kurt",
+        "level": "B2"
     },
     {
         "en": "workforce",
         "ru": "рабочая сила",
-        "tr": "işgücü"
+        "tr": "işgücü",
+        "level": "B2"
     },
     {
         "en": "workout",
         "ru": "тренировка",
-        "tr": "antrenman yapmak"
+        "tr": "antrenman yapmak",
+        "level": "C1"
     },
     {
         "en": "workplace",
         "ru": "рабочее место",
-        "tr": "işyeri"
+        "tr": "işyeri",
+        "level": "B2"
     },
     {
         "en": "workshop",
         "ru": "мастерская",
-        "tr": "atölye"
+        "tr": "atölye",
+        "level": "B2"
     },
     {
         "en": "worm",
         "ru": "червь",
-        "tr": "solucan"
+        "tr": "solucan",
+        "level": "B2"
     },
     {
         "en": "worship",
         "ru": "поклонение",
-        "tr": "tapmak"
+        "tr": "tapmak",
+        "level": "C1"
     },
     {
         "en": "worthwhile",
         "ru": "стоящий",
-        "tr": "değerli"
+        "tr": "değerli",
+        "level": "C1"
     },
     {
         "en": "worthy",
         "ru": "достойный",
-        "tr": "saygıdeğer"
+        "tr": "saygıdeğer",
+        "level": "C1"
     },
     {
         "en": "wrist",
         "ru": "запястье",
-        "tr": "bilek"
+        "tr": "bilek",
+        "level": "B2"
     },
     {
-        "en": "wrist B2",
-        "ru": "запястье B2",
-        "tr": "bilek B2"
+        "en": "wrist B",
+        "ru": "запястье Б",
+        "tr": "bilek B",
+        "level": "B2"
     },
     {
         "en": "yell",
         "ru": "кричать",
-        "tr": "bağırmak"
+        "tr": "bağırmak",
+        "level": "C1"
     },
     {
         "en": "yield",
         "ru": "урожай",
-        "tr": "teslim olmak"
+        "tr": "teslim olmak",
+        "level": "C1"
     }
-],
-    'c1': []
-};
+];
 
 window.IELTS_DATA = IELTS_DATA;
