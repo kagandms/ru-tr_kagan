@@ -2000,3 +2000,63 @@ worthy
 wrist
 yell
 yield
+acid  B2
+alien  B2
+bat  B2
+craft  B2
+dynamic  B2
+extract  B2
+intellectual  B2
+pharmacy B2
+principal  B2
+revenge
+sacrifice ,  C1
+sanction  C1
+scare ,  B2
+scattered  C1
+scholar  B2
+scope
+scratch ,  B
+screening  B2
+screw ,  C1
+secondly  C1
+secular  C1
+seeker  B2
+seemingly  C1
+seldom  C1
+selective  C1
+seminar  B2
+sensation  C1
+sensitivity  C1
+sentiment  C1
+separation  C1
+serial  C1
+settlement  C1
+severely  B2
+shaped  B2
+shareholder  C1
+sheer  C1
+shipping  C1
+shocking  B2
+short-term  B2
+shortage  B2
+sibling  B2
+sigh ,  C1
+signature  B2
+significance  B2
+simulate  C1
+simulation  C1
+simultaneously  C1
+situated  C1
+skeptical  C1
+spare  B2
+specialize  B1
+stun C1
+suburb B2
+tackle  B2
+teen
+terminal  B2
+theft B2
+trace B2
+trigger  B2
+wrist B2

@@ -1,7 +1,7 @@
 
 // Auto-generated IELTS Data (B2 Level)
 // Source: ielts_words.txt
-// Count: 2002
+// Count: 2062
 
 const IELTS_DATA = {
     'b1': [],
@@ -172,6 +172,11 @@ const IELTS_DATA = {
         "tr": "asit"
     },
     {
+        "en": "acid  B2",
+        "ru": "кислота В2",
+        "tr": "asit B2"
+    },
+    {
         "en": "acquisition",
         "ru": "приобретение",
         "tr": "kazanma"
@@ -340,6 +345,11 @@ const IELTS_DATA = {
         "en": "alien",
         "ru": "чужак",
         "tr": "yabancı"
+    },
+    {
+        "en": "alien  B2",
+        "ru": "инопланетянин Б2",
+        "tr": "uzaylı B2"
     },
     {
         "en": "align",
@@ -870,6 +880,11 @@ const IELTS_DATA = {
         "en": "bat",
         "ru": "летучая мышь",
         "tr": "yarasa"
+    },
+    {
+        "en": "bat  B2",
+        "ru": "летучая мышь B2",
+        "tr": "yarasa B2"
     },
     {
         "en": "battlefield",
@@ -2227,6 +2242,11 @@ const IELTS_DATA = {
         "tr": "zanaat"
     },
     {
+        "en": "craft  B2",
+        "ru": "ремесло Б2",
+        "tr": "zanaat B2"
+    },
+    {
         "en": "crawl",
         "ru": "ползти",
         "tr": "sürünmek"
@@ -3067,6 +3087,11 @@ const IELTS_DATA = {
         "tr": "dinamik"
     },
     {
+        "en": "dynamic  B2",
+        "ru": "динамический B2",
+        "tr": "dinamik B2"
+    },
+    {
         "en": "eager",
         "ru": "жаждущий",
         "tr": "istekli"
@@ -3630,6 +3655,11 @@ const IELTS_DATA = {
         "en": "extract",
         "ru": "извлекать",
         "tr": "çıkarmak"
+    },
+    {
+        "en": "extract  B2",
+        "ru": "экстракт B2",
+        "tr": "B2'yi çıkar"
     },
     {
         "en": "extremist",
@@ -4945,6 +4975,11 @@ const IELTS_DATA = {
         "en": "intellectual",
         "ru": "интеллектуальный",
         "tr": "entelektüel"
+    },
+    {
+        "en": "intellectual  B2",
+        "ru": "интеллектуальный B2",
+        "tr": "entelektüel B2"
     },
     {
         "en": "intensify",
@@ -6657,6 +6692,11 @@ const IELTS_DATA = {
         "tr": "eczane"
     },
     {
+        "en": "pharmacy B2",
+        "ru": "аптека Б2",
+        "tr": "eczane B2"
+    },
+    {
         "en": "philosopher",
         "ru": "философ",
         "tr": "filozof"
@@ -6955,6 +6995,11 @@ const IELTS_DATA = {
         "en": "primarily",
         "ru": "прежде всего",
         "tr": "öncelikle"
+    },
+    {
+        "en": "principal  B2",
+        "ru": "принципал B2",
+        "tr": "ana B2"
     },
     {
         "en": "prior",
@@ -7752,6 +7797,11 @@ const IELTS_DATA = {
         "tr": "vahiy"
     },
     {
+        "en": "revenge",
+        "ru": "месть",
+        "tr": "intikam"
+    },
+    {
         "en": "revenue",
         "ru": "доход",
         "tr": "hasılat"
@@ -7922,6 +7972,11 @@ const IELTS_DATA = {
         "tr": "kurban etmek"
     },
     {
+        "en": "sacrifice ,  C1",
+        "ru": "жертва, C1",
+        "tr": "fedakarlık, C1"
+    },
+    {
         "en": "saint",
         "ru": "святой",
         "tr": "aziz"
@@ -7935,6 +7990,11 @@ const IELTS_DATA = {
         "en": "sanction",
         "ru": "санкция",
         "tr": "yaptırım"
+    },
+    {
+        "en": "sanction  C1",
+        "ru": "санкция С1",
+        "tr": "yaptırım C1"
     },
     {
         "en": "satisfaction",
@@ -7957,9 +8017,19 @@ const IELTS_DATA = {
         "tr": "korkutmak"
     },
     {
+        "en": "scare ,  B2",
+        "ru": "напугать, Б2",
+        "tr": "korkutmak, B2"
+    },
+    {
         "en": "scattered",
         "ru": "разбросанный",
         "tr": "dağınık"
+    },
+    {
+        "en": "scattered  C1",
+        "ru": "рассеянный C1",
+        "tr": "dağınık C1"
     },
     {
         "en": "scenario",
@@ -7972,9 +8042,19 @@ const IELTS_DATA = {
         "tr": "bilgin"
     },
     {
+        "en": "scholar  B2",
+        "ru": "ученый B2",
+        "tr": "bilgin B2"
+    },
+    {
         "en": "scholarship",
         "ru": "стипендия",
         "tr": "burs"
+    },
+    {
+        "en": "scope",
+        "ru": "объем",
+        "tr": "kapsam"
     },
     {
         "en": "scratch",
@@ -7982,14 +8062,29 @@ const IELTS_DATA = {
         "tr": "çizik"
     },
     {
+        "en": "scratch ,  B",
+        "ru": "царапина, Б",
+        "tr": "çizik, B"
+    },
+    {
         "en": "screening",
         "ru": "скрининг",
         "tr": "tarama"
     },
     {
+        "en": "screening  B2",
+        "ru": "скрининг B2",
+        "tr": "B2 taraması"
+    },
+    {
         "en": "screw",
         "ru": "винт",
         "tr": "vida"
+    },
+    {
+        "en": "screw ,  C1",
+        "ru": "винт , С1",
+        "tr": "vida, C1"
     },
     {
         "en": "scrutiny",
@@ -8012,9 +8107,19 @@ const IELTS_DATA = {
         "tr": "ikinci olarak"
     },
     {
+        "en": "secondly  C1",
+        "ru": "во-вторых С1",
+        "tr": "ikincisi C1"
+    },
+    {
         "en": "secular",
         "ru": "светский",
         "tr": "laik"
+    },
+    {
+        "en": "secular  C1",
+        "ru": "светский C1",
+        "tr": "laik C1"
     },
     {
         "en": "seeker",
@@ -8022,9 +8127,19 @@ const IELTS_DATA = {
         "tr": "arayıcı"
     },
     {
+        "en": "seeker  B2",
+        "ru": "искатель Б2",
+        "tr": "arayıcı B2"
+    },
+    {
         "en": "seemingly",
         "ru": "по-видимому",
         "tr": "görünüşte"
+    },
+    {
+        "en": "seemingly  C1",
+        "ru": "судя по всему С1",
+        "tr": "görünüşte C1"
     },
     {
         "en": "segment",
@@ -8042,9 +8157,19 @@ const IELTS_DATA = {
         "tr": "nadiren"
     },
     {
+        "en": "seldom  C1",
+        "ru": "редко С1",
+        "tr": "nadiren C1"
+    },
+    {
         "en": "selective",
         "ru": "избирательный",
         "tr": "seçici"
+    },
+    {
+        "en": "selective  C1",
+        "ru": "селективный C1",
+        "tr": "seçici C1"
     },
     {
         "en": "seminar",
@@ -8052,9 +8177,19 @@ const IELTS_DATA = {
         "tr": "seminer"
     },
     {
+        "en": "seminar  B2",
+        "ru": "семинар Б2",
+        "tr": "seminer B2"
+    },
+    {
         "en": "sensation",
         "ru": "ощущение",
         "tr": "duyum"
+    },
+    {
+        "en": "sensation  C1",
+        "ru": "ощущение С1",
+        "tr": "duygu C1"
     },
     {
         "en": "sensitivity",
@@ -8062,9 +8197,19 @@ const IELTS_DATA = {
         "tr": "hassasiyet"
     },
     {
+        "en": "sensitivity  C1",
+        "ru": "чувствительность С1",
+        "tr": "hassasiyet C1"
+    },
+    {
         "en": "sentiment",
         "ru": "настроение",
         "tr": "duygusallık"
+    },
+    {
+        "en": "sentiment  C1",
+        "ru": "настроение C1",
+        "tr": "duygu C1"
     },
     {
         "en": "separation",
@@ -8072,9 +8217,24 @@ const IELTS_DATA = {
         "tr": "ayrılma"
     },
     {
+        "en": "separation  C1",
+        "ru": "разделение С1",
+        "tr": "ayırma C1"
+    },
+    {
+        "en": "serial  C1",
+        "ru": "серийный С1",
+        "tr": "seri C1"
+    },
+    {
         "en": "settlement",
         "ru": "урегулирование",
         "tr": "yerleşim"
+    },
+    {
+        "en": "settlement  C1",
+        "ru": "поселок С1",
+        "tr": "yerleşim C1"
     },
     {
         "en": "settler",
@@ -8092,6 +8252,11 @@ const IELTS_DATA = {
         "tr": "şiddetli bir şekilde"
     },
     {
+        "en": "severely  B2",
+        "ru": "строго B2",
+        "tr": "ciddi derecede B2"
+    },
+    {
         "en": "sexuality",
         "ru": "сексуальность",
         "tr": "cinsellik"
@@ -8107,9 +8272,19 @@ const IELTS_DATA = {
         "tr": "şekilli"
     },
     {
+        "en": "shaped  B2",
+        "ru": "фасонный B2",
+        "tr": "B2 şeklinde"
+    },
+    {
         "en": "shareholder",
         "ru": "акционер",
         "tr": "hissedar"
+    },
+    {
+        "en": "shareholder  C1",
+        "ru": "акционер С1",
+        "tr": "hissedar C1"
     },
     {
         "en": "shatter",
@@ -8127,14 +8302,29 @@ const IELTS_DATA = {
         "tr": "şeffaf"
     },
     {
+        "en": "sheer  C1",
+        "ru": "чистый C1",
+        "tr": "saf C1"
+    },
+    {
         "en": "shipping",
         "ru": "перевозки",
         "tr": "Nakliye"
     },
     {
+        "en": "shipping  C1",
+        "ru": "доставка C1",
+        "tr": "nakliye C1"
+    },
+    {
         "en": "shocking",
         "ru": "шокирующий",
         "tr": "şok edici"
+    },
+    {
+        "en": "shocking  B2",
+        "ru": "шокирующий Б2",
+        "tr": "şok edici B2"
     },
     {
         "en": "shoot",
@@ -8152,9 +8342,19 @@ const IELTS_DATA = {
         "tr": "kısa vadeli"
     },
     {
+        "en": "short-term  B2",
+        "ru": "краткосрочный B2",
+        "tr": "kısa vadeli B2"
+    },
+    {
         "en": "shortage",
         "ru": "нехватка",
         "tr": "kıtlık"
+    },
+    {
+        "en": "shortage  B2",
+        "ru": "дефицит B2",
+        "tr": "kıtlık B2"
     },
     {
         "en": "shortly",
@@ -8177,6 +8377,11 @@ const IELTS_DATA = {
         "tr": "kardeş"
     },
     {
+        "en": "sibling  B2",
+        "ru": "брат B2",
+        "tr": "kardeş B2"
+    },
+    {
         "en": "sidewalk",
         "ru": "тротуар",
         "tr": "kaldırım"
@@ -8187,9 +8392,19 @@ const IELTS_DATA = {
         "tr": "iç çekmek"
     },
     {
+        "en": "sigh ,  C1",
+        "ru": "вздох, С1",
+        "tr": "iç çek, C1"
+    },
+    {
         "en": "signature",
         "ru": "подпись",
         "tr": "imza"
+    },
+    {
+        "en": "signature  B2",
+        "ru": "подпись Б2",
+        "tr": "imza B2"
     },
     {
         "en": "significance",
@@ -8197,9 +8412,19 @@ const IELTS_DATA = {
         "tr": "önem"
     },
     {
+        "en": "significance  B2",
+        "ru": "значимость B2",
+        "tr": "önem B2"
+    },
+    {
         "en": "simulate",
         "ru": "моделировать",
         "tr": "benzetmek"
+    },
+    {
+        "en": "simulate  C1",
+        "ru": "имитировать C1",
+        "tr": "C1'i simüle et"
     },
     {
         "en": "simulation",
@@ -8207,9 +8432,19 @@ const IELTS_DATA = {
         "tr": "simülasyon"
     },
     {
+        "en": "simulation  C1",
+        "ru": "моделирование C1",
+        "tr": "simülasyon C1"
+    },
+    {
         "en": "simultaneously",
         "ru": "одновременно",
         "tr": "aynı anda"
+    },
+    {
+        "en": "simultaneously  C1",
+        "ru": "одновременно C1",
+        "tr": "aynı anda C1"
     },
     {
         "en": "sin",
@@ -8222,9 +8457,19 @@ const IELTS_DATA = {
         "tr": "yer alan"
     },
     {
+        "en": "situated  C1",
+        "ru": "расположен C1",
+        "tr": "C1 konumunda"
+    },
+    {
         "en": "skeptical",
         "ru": "скептический",
         "tr": "şüpheci"
+    },
+    {
+        "en": "skeptical  C1",
+        "ru": "скептический C1",
+        "tr": "şüpheci C1"
     },
     {
         "en": "sketch",
@@ -8372,6 +8617,11 @@ const IELTS_DATA = {
         "tr": "kıyamamak"
     },
     {
+        "en": "spare  B2",
+        "ru": "запасной B2",
+        "tr": "yedek B2"
+    },
+    {
         "en": "spark",
         "ru": "искра",
         "tr": "kıvılcım"
@@ -8380,6 +8630,11 @@ const IELTS_DATA = {
         "en": "specialize",
         "ru": "специализироваться",
         "tr": "uzmanlaşmak"
+    },
+    {
+        "en": "specialize  B1",
+        "ru": "специализироваться B1",
+        "tr": "B1'de uzmanlaşmak"
     },
     {
         "en": "specialized",
@@ -8682,6 +8937,11 @@ const IELTS_DATA = {
         "tr": "sersemletmek"
     },
     {
+        "en": "stun C1",
+        "ru": "оглушить С1",
+        "tr": "sersemletici C1"
+    },
+    {
         "en": "stunning",
         "ru": "оглушительный",
         "tr": "çekici"
@@ -8745,6 +9005,11 @@ const IELTS_DATA = {
         "en": "suburb",
         "ru": "пригород",
         "tr": "banliyö"
+    },
+    {
+        "en": "suburb B2",
+        "ru": "пригород Б2",
+        "tr": "banliyö B2"
     },
     {
         "en": "suburban",
@@ -8982,6 +9247,11 @@ const IELTS_DATA = {
         "tr": "olta takımı"
     },
     {
+        "en": "tackle  B2",
+        "ru": "снасть B2",
+        "tr": "B2 ile mücadele"
+    },
+    {
         "en": "tactic",
         "ru": "тактика",
         "tr": "taktik"
@@ -9010,6 +9280,11 @@ const IELTS_DATA = {
         "en": "technological",
         "ru": "технологический",
         "tr": "teknolojik"
+    },
+    {
+        "en": "teen",
+        "ru": "подросток",
+        "tr": "genç"
     },
     {
         "en": "teen , adj",
@@ -9060,6 +9335,11 @@ const IELTS_DATA = {
         "en": "terminal",
         "ru": "Терминал",
         "tr": "terminal"
+    },
+    {
+        "en": "terminal  B2",
+        "ru": "терминал В2",
+        "tr": "B2 terminali"
     },
     {
         "en": "terminate",
@@ -9150,6 +9430,11 @@ const IELTS_DATA = {
         "en": "theft",
         "ru": "кража",
         "tr": "hırsızlık"
+    },
+    {
+        "en": "theft B2",
+        "ru": "кража Б2",
+        "tr": "hırsızlık B2"
     },
     {
         "en": "theology",
@@ -9312,6 +9597,11 @@ const IELTS_DATA = {
         "tr": "iz"
     },
     {
+        "en": "trace B2",
+        "ru": "трасса B2",
+        "tr": "iz B2"
+    },
+    {
         "en": "trademark",
         "ru": "товарный знак",
         "tr": "ticari marka"
@@ -9430,6 +9720,11 @@ const IELTS_DATA = {
         "en": "trigger",
         "ru": "курок",
         "tr": "tetiklemek"
+    },
+    {
+        "en": "trigger  B2",
+        "ru": "триггер B2",
+        "tr": "B2'yi tetikle"
     },
     {
         "en": "trillion number",
@@ -10005,6 +10300,11 @@ const IELTS_DATA = {
         "en": "wrist",
         "ru": "запястье",
         "tr": "bilek"
+    },
+    {
+        "en": "wrist B2",
+        "ru": "запястье B2",
+        "tr": "bilek B2"
     },
     {
         "en": "yell",
