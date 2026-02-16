@@ -50,7 +50,7 @@ class App {
             this.deferredPrompt.prompt();
             // Kullanıcının cevabını bekle
             const { outcome } = await this.deferredPrompt.userChoice;
-            console.log(`User response to the install prompt: ${outcome}`);
+            // Prompt used
             // Prompt bir kez kullanılabilir, sıfırla
             this.deferredPrompt = null;
             // Butonu gizle
@@ -61,7 +61,7 @@ class App {
             // Kurulum tamamlandı, butonu gizle
             installBtn.style.display = 'none';
             this.deferredPrompt = null;
-            console.log('PWA installed');
+            // PWA installed
         });
     }
 
@@ -83,7 +83,7 @@ class App {
         localStorage.setItem('theme', newTheme);
     }
 
-    // ... (previous code)
+    // ===== Navigasyon =====
 
     // ===== Navigasyon =====
     setupNavigation() {
@@ -185,14 +185,9 @@ class App {
 
     startMode(mode, questionCount = null) {
         const modeScreen = document.getElementById(`${mode}Mode`);
+        if (!modeScreen) return;
 
-        // Hata ayıklama: Mod ekranı var mı kontrol et
-        if (!modeScreen) {
-            console.error(`Mode screen for ${mode} not found!`);
-            return;
-        }
-
-        if (modeScreen) {
+        {
             document.getElementById('mainMenu').classList.add('hidden');
             modeScreen.classList.remove('hidden');
             this.currentMode = mode;
@@ -230,7 +225,7 @@ class App {
         }
     }
 
-    // ... (previous code)
+    // ===== Mod Kapatma =====
 
     closeMode() {
         if (this.currentMode) {
@@ -249,7 +244,7 @@ class App {
         }
     }
 
-    // ... (previous code)
+    // ===== Kelime Kontrolleri =====
 
 
     checkWords() {

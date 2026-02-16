@@ -81,26 +81,10 @@ class DailyMode {
     }
 
     startTest() {
-        // Bu 5 kelimeyle Quiz modunu başlat
-        // Quiz modunda customWords desteği eklememiz gerekebilir veya 
-        // Quiz moduna geçmeden basit bir test overlay'i yapabiliriz.
-        // En kolayı: app.startMode('quiz') ama quiz modu rastgele seçiyor.
-        // Quiz modunu hack'leyelim ya da app.js'e custom list support ekleyelim.
-        // Basitlik için: Quiz moduna "verilen kelimelerle başla" özelliği ekleyelim.
-
-        // Hızlı çözüm: Quiz moduna özel bir metod ekleyeceğiz veya global bir "activeQuizWords" değişkeni kullanabiliriz.
-
-        // Quiz modunun instance'ına erişip kelimeleri set edelim
+        // Use quiz mode with daily words via proper app flow
         if (window.quizMode) {
-            // Quiz modunu manuel başlat
-            document.getElementById('dailyMode').classList.add('hidden');
-            document.getElementById('quizMode').classList.remove('hidden');
-            app.currentMode = 'quiz';
-
-            // Quiz moduna özel kelimeleri ver
+            app.startMode('quiz');
             window.quizMode.startWithWords(this.dailyWords);
-        } else {
-            alert("Quiz modu yüklenemedi.");
         }
     }
 

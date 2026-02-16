@@ -291,6 +291,11 @@ class IELTSMode {
             });
         }
 
+        // Record answer for stats and daily goal/streak
+        if (typeof app !== 'undefined' && app.recordAnswer) {
+            app.recordAnswer(`ielts_${word.en}`, opt.correct);
+        }
+
         const feedbackEl = document.getElementById('ieltsQuizFeedback');
         const feedbackText = document.getElementById('ieltsQuizFeedbackText');
         if (feedbackEl) feedbackEl.classList.remove('hidden');

@@ -89,7 +89,6 @@ async function loadWords() {
             }
         });
 
-        console.log(`${WORDS.length} kelime yüklendi.`);
         return true;
 
     } catch (error) {
