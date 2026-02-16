@@ -4,7 +4,7 @@
 class IELTSMode {
     constructor() {
         this.currentLevel = 'b1';
-        this.data = {
+        this.data = window.IELTS_DATA || {
             'b1': [],
             'b2': [],
             'c1': []
