@@ -30,7 +30,17 @@ export default async function handler(req, res) {
         return res.status(429).json({ error: 'Too many requests. Please wait.' });
     }
 
+    // Periodic cleanup of stale rate limit entries (prevent memory leak)
+    if (RATE_LIMIT.size > 100) {
+        for (const [key, val] of RATE_LIMIT) {
+            if (now - val.ts > 120000) RATE_LIMIT.delete(key);
+        }
+    }
+
     const { action, word, sentence, userTranslation, correctTranslation } = req.body;
+
+    // Sanitize user inputs to prevent prompt injection
+    const sanitize = (str) => str ? String(str).slice(0, 500).replace(/[\r\n]/g, ' ').trim() : '';
 
     const API_KEY = process.env.OPENROUTER_API_KEY;
     const API_URL = 'https://openrouter.ai/api/v1/chat/completions';
@@ -45,22 +55,22 @@ export default async function handler(req, res) {
     switch (action) {
         case 'checkGrammar':
             systemPrompt = 'Sen bir Rusça dil öğretmenisin. Kullanıcının yazdığı Rusça cümleyi kontrol et. Gramer hatalarını bul ve düzelt. Cevabını Türkçe ver. Kısa ve öz ol. Yıldız işareti (*) veya markdown kullanma. Sadece düz metin kullan.';
-            userPrompt = `Şu cümleyi kontrol et: "${sentence}"`;
+            userPrompt = `Şu cümleyi kontrol et: "${sanitize(sentence)}"`;
             break;
 
         case 'generateExample':
             systemPrompt = 'Sen bir Rusça dil öğretmenisin. Verilen kelime için basit ve anlaşılır bir örnek cümle oluştur. Cümleyi hem Rusça hem Türkçe yaz. Çok kısa ol. Yıldız işareti (*) veya markdown kullanma. Sadece düz metin kullan.';
-            userPrompt = `Şu kelime için örnek cümle yaz: ${word.russian} (${word.turkish})`;
+            userPrompt = `Şu kelime için örnek cümle yaz: ${sanitize(word?.russian)} (${sanitize(word?.turkish)})`;
             break;
 
         case 'explainWord':
             systemPrompt = 'Sen bir Rusça dil öğretmenisin. Verilen kelimeyi Türkçe açıkla: kullanım alanları, dikkat edilecekler, eş/zıt anlamlar. Kısa ve öz ol. Yıldız işareti (*) veya markdown kullanma. Sadece düz metin kullan.';
-            userPrompt = `Şu kelimeyi açıkla: ${word.russian} (${word.turkish})`;
+            userPrompt = `Şu kelimeyi açıkla: ${sanitize(word?.russian)} (${sanitize(word?.turkish)})`;
             break;
 
         case 'checkTranslation':
             systemPrompt = 'Sen bir Rusça-Türkçe çeviri uzmanısın. Kullanıcının çevirisini değerlendir. Doğruysa onayla, yanlışsa düzelt ve açıkla. Türkçe cevap ver, kısa ol. Yıldız işareti (*) veya markdown kullanma. Sadece düz metin kullan.';
-            userPrompt = `Rusça: "${word.russian}"\nKullanıcının çevirisi: "${userTranslation}"\nDoğru çeviri: "${correctTranslation}"`;
+            userPrompt = `Rusça: "${sanitize(word?.russian)}"\nKullanıcının çevirisi: "${sanitize(userTranslation)}"\nDoğru çeviri: "${sanitize(correctTranslation)}"`;
             break;
 
         default:

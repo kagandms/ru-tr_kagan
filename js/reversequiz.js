@@ -70,7 +70,7 @@ class ReverseQuizMode {
     }
 
     generateOptions(correctWord) {
-        const wrongs = app.getRandomWords(3, correctWord.id);
+        const wrongs = app.getRandomWords(3, correctWord.id, correctWord.russian);
         const options = [correctWord, ...wrongs];
         return app.shuffleArray(options);
     }

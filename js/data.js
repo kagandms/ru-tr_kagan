@@ -38,7 +38,7 @@ async function loadWords() {
                     // Regex kullanarak - işaretini kontrol et (boşluklu veya boşluksuz olabilir ama standart ' - ' dedik)
 
                     // Daha gevşek kontrol: İçinde tire var mı?
-                    if (russian.includes('-') && turkish.includes('-')) {
+                    if (russian.includes(' - ') && turkish.includes(' - ')) {
                         // ' - ' ayracına göre bölmeye çalış, eğer başarısız olursa sadece '-' ile dene
                         let ruParts = russian.split(' - ').map(s => s.trim());
                         let trParts = turkish.split(' - ').map(s => s.trim());

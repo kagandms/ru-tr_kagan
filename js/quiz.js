@@ -91,7 +91,7 @@ class QuizMode {
 
     generateOptions(correctWord) {
         // Doğru cevap + 3 yanlış
-        const wrongs = app.getRandomWords(3, correctWord.id);
+        const wrongs = app.getRandomWords(3, correctWord.id, correctWord.turkish);
         const options = [correctWord, ...wrongs];
         return app.shuffleArray(options);
     }

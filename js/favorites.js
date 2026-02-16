@@ -39,7 +39,13 @@ class FavoritesManager {
     }
 
     getFavoriteWords() {
-        return WORDS.filter(word => this.isFavorite(word.id));
+        const mainFavs = WORDS.filter(word => this.isFavorite(word.id));
+        // Include IELTS favorites (stored with 'ielts_' prefix)
+        const ieltsData = Array.isArray(window.IELTS_DATA) ? window.IELTS_DATA : [];
+        const ieltsFavs = ieltsData
+            .filter(word => this.isFavorite('ielts_' + word.en))
+            .map(w => ({ id: 'ielts_' + w.en, russian: w.ru, turkish: w.tr }));
+        return [...mainFavs, ...ieltsFavs];
     }
 }
 

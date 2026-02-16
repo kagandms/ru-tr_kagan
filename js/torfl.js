@@ -40,7 +40,7 @@ class TORFLMode {
                     parsed = raw.map(item => ({
                         question: String(item.question || ''),
                         options: Array.isArray(item.options) ? item.options.map(String) : [],
-                        correct: Number(item.correct) || 0
+                        answer: Number(item.correct) || 0
                     }));
                 } else {
                     // Simple TXT parser: Question | Op1,Op2,Op3,Op4 | CorrectIndex (0-3)

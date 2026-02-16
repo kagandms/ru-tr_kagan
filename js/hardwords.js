@@ -34,11 +34,11 @@ class HardWordsMode {
             return;
         }
 
-        hardWords = app.shuffleArray(hardWords);
-
+        // Slice first (keep most-missed words), then shuffle the selection
         if (questionCount && questionCount < hardWords.length) {
             hardWords = hardWords.slice(0, questionCount);
         }
+        hardWords = app.shuffleArray(hardWords);
 
         this.words = hardWords;
         this.currentIndex = 0;
@@ -94,7 +94,7 @@ class HardWordsMode {
     }
 
     generateOptions(correctWord) {
-        const wrongs = app.getRandomWords(3, correctWord.id);
+        const wrongs = app.getRandomWords(3, correctWord.id, correctWord.turkish);
         const options = [correctWord, ...wrongs];
         return app.shuffleArray(options);
     }

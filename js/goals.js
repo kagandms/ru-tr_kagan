@@ -51,7 +51,8 @@ class GoalsManager {
     }
 
     getDateString(date = new Date()) {
-        return date.toISOString().split('T')[0];
+        // Use local date (not UTC) to prevent streak resets in UTC+3 timezone
+        return date.toLocaleDateString('sv-SE'); // YYYY-MM-DD format, local timezone
     }
 
     recordWord() {

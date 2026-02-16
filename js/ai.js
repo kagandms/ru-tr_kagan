@@ -17,8 +17,20 @@ class AIManager {
 
     saveCache() {
         try {
+            // Enforce max cache size to prevent localStorage overflow
+            const MAX_CACHE_ENTRIES = 500;
+            const keys = Object.keys(this.cache);
+            if (keys.length > MAX_CACHE_ENTRIES) {
+                // Evict oldest 100 entries
+                keys.slice(0, 100).forEach(k => delete this.cache[k]);
+            }
             localStorage.setItem('rutr_ai_cache', JSON.stringify(this.cache));
         } catch (e) {
+            // If quota exceeded, clear cache entirely and retry
+            if (e.name === 'QuotaExceededError') {
+                this.cache = {};
+                try { localStorage.setItem('rutr_ai_cache', '{}'); } catch (_) { }
+            }
             console.error('Cache save failed', e);
         }
     }

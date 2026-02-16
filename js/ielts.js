@@ -28,12 +28,15 @@ class IELTSMode {
 
     // ─── Counts ────────────────────────────────
     updateCounts() {
-        const b2Count = this.allWords.filter(w => w.level === 'B2').length;
-        const c1Count = this.allWords.filter(w => w.level === 'C1').length;
+        const counts = this.allWords.reduce((acc, w) => {
+            if (w.level === 'B2') acc.b2++;
+            else if (w.level === 'C1') acc.c1++;
+            return acc;
+        }, { b2: 0, c1: 0 });
         const b2El = document.getElementById('countB2');
         const c1El = document.getElementById('countC1');
-        if (b2El) b2El.textContent = `(${b2Count})`;
-        if (c1El) c1El.textContent = `(${c1Count})`;
+        if (b2El) b2El.textContent = `(${counts.b2})`;
+        if (c1El) c1El.textContent = `(${counts.c1})`;
     }
 
     // ─── Level Tabs ────────────────────────────
@@ -99,33 +102,34 @@ class IELTSMode {
         const modal = document.getElementById('questionCountModal');
         if (!modal) return;
 
+        // Abort any previous IELTS-specific listeners
+        if (this._modalAbort) this._modalAbort.abort();
+        this._modalAbort = new AbortController();
+        const signal = this._modalAbort.signal;
+
         // Show the modal
         modal.classList.remove('hidden');
 
-        // Clone and replace buttons to remove old listeners
-        const btnContainer = modal.querySelector('.modal-buttons');
-        const buttons = btnContainer.querySelectorAll('.modal-btn[data-count]');
+        const buttons = modal.querySelectorAll('.modal-btn[data-count]');
 
-        // Add one-time listeners for IELTS mode
-        const handler = (e) => {
-            const count = parseInt(e.target.dataset.count);
-            if (!count) return;
-            modal.classList.add('hidden');
-            this.startActivityWithCount(this.pendingActivity, count);
-            // Clean up
-            buttons.forEach(b => b.removeEventListener('click', handler));
-        };
+        // Add listeners with AbortController — automatically cleaned up
+        buttons.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const count = parseInt(e.target.dataset.count);
+                if (!count) return;
+                modal.classList.add('hidden');
+                this._modalAbort.abort(); // Clean up all listeners
+                this.startActivityWithCount(this.pendingActivity, count);
+            }, { signal });
+        });
 
-        // Temporarily override the cancel to just close
         const cancelBtn = document.getElementById('questionCountCancel');
-        const cancelHandler = () => {
-            modal.classList.add('hidden');
-            buttons.forEach(b => b.removeEventListener('click', handler));
-            cancelBtn.removeEventListener('click', cancelHandler);
-        };
-
-        buttons.forEach(b => b.addEventListener('click', handler));
-        if (cancelBtn) cancelBtn.addEventListener('click', cancelHandler);
+        if (cancelBtn) {
+            cancelBtn.addEventListener('click', () => {
+                modal.classList.add('hidden');
+                this._modalAbort.abort(); // Clean up all listeners
+            }, { signal });
+        }
     }
 
     startActivityWithCount(activity, count) {
@@ -170,6 +174,7 @@ class IELTSMode {
             return;
         }
 
+        const fragment = document.createDocumentFragment();
         this.filteredWords.forEach(word => {
             const item = document.createElement('div');
             item.className = 'word-item';
@@ -179,14 +184,15 @@ class IELTSMode {
                 <div class="word-content" style="display:flex;align-items:center;width:100%;gap:1rem;">
                     <div style="background:${badgeColor};color:white;padding:2px 6px;border-radius:4px;font-size:0.7rem;font-weight:bold;min-width:25px;text-align:center;">${word.level}</div>
                     <div style="display:grid;grid-template-columns:1fr 1fr 1fr;width:100%;gap:0.5rem;align-items:center;">
-                        <span class="english" style="font-weight:bold;color:var(--accent);">${word.en}</span>
-                        <span class="russian">${word.ru}</span>
-                        <span class="turkish" style="color:var(--text-muted);">${word.tr}</span>
+                        <span class="english" style="font-weight:bold;color:var(--accent);">${app.sanitizeHTML(word.en)}</span>
+                        <span class="russian">${app.sanitizeHTML(word.ru)}</span>
+                        <span class="turkish" style="color:var(--text-muted);">${app.sanitizeHTML(word.tr)}</span>
                     </div>
                 </div>
             `;
-            list.appendChild(item);
+            fragment.appendChild(item);
         });
+        list.appendChild(fragment);
     }
 
     // ─── Flashcard ─────────────────────────────

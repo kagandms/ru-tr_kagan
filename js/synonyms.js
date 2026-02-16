@@ -48,10 +48,9 @@ class SynonymsMode {
         const options = [answerWord];
 
         // Yanlış seçenekler (Rastgele diğer çiftlerden al)
-        const distractors = this.pairs
-            .filter(p => p.id !== pair.id)
-            .sort(() => 0.5 - Math.random())
-            .slice(0, 3)
+        const distractors = app.shuffleArray(
+            this.pairs.filter(p => p.id !== pair.id)
+        ).slice(0, 3)
             .map(p => Math.random() < 0.5 ? p.w1 : p.w2);
 
         options.push(...distractors);

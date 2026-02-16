@@ -85,6 +85,8 @@ class DailyMode {
     startTest() {
         // Use quiz mode with daily words via proper app flow
         if (window.quizMode) {
+            // Hide daily mode screen before starting quiz
+            document.getElementById('dailyMode')?.classList.add('hidden');
             app.startMode('quiz');
             window.quizMode.startWithWords(this.dailyWords);
         }

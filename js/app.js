@@ -343,6 +343,17 @@ class App {
 
     // Yardımcı fonksiyonlar
     showAllWords() {
+        const sortedWords = [...WORDS].sort((a, b) => a.russian.localeCompare(b.russian));
+        this.renderWordList(sortedWords, '📚 Tüm Kelimeler', false);
+    }
+
+    showFavorites() {
+        const favoriteWords = window.favoritesManager?.getFavoriteWords() || [];
+        const sortedWords = [...favoriteWords].sort((a, b) => a.russian.localeCompare(b.russian));
+        this.renderWordList(sortedWords, '⭐ Favoriler', true);
+    }
+
+    renderWordList(words, title, removeOnUnfav) {
         const container = document.getElementById('wordsList');
         const countSpan = document.getElementById('allwordsCount');
         const modeScreen = document.getElementById('allwordsMode');
@@ -354,16 +365,17 @@ class App {
         modeScreen.classList.remove('hidden');
         this.currentMode = 'allwords';
 
-        // Başlığı güncelle
-        if (titleEl) titleEl.textContent = '📚 Tüm Kelimeler';
-
+        if (titleEl) titleEl.textContent = title;
         container.innerHTML = '';
-        countSpan.textContent = WORDS.length;
+        countSpan.textContent = words.length;
 
-        // Kelimeleri sırala (Rusça alfabetik)
-        const sortedWords = [...WORDS].sort((a, b) => a.russian.localeCompare(b.russian));
+        if (words.length === 0) {
+            container.innerHTML = '<div class="no-favorites"><p>⭐ Henüz favori kelime yok</p><p>Kelime listesinden favori ekleyebilirsiniz.</p></div>';
+            return;
+        }
 
-        sortedWords.forEach(word => {
+        const fragment = document.createDocumentFragment();
+        words.forEach(word => {
             const item = document.createElement('div');
             item.className = 'word-item';
 
@@ -373,75 +385,20 @@ class App {
 
             item.innerHTML = `
                 <div class="word-text">
-                    <span class="russian">${word.russian}</span>
-                    <span class="turkish">${word.turkish}</span>
+                    <span class="russian">${this.sanitizeHTML(word.russian)}</span>
+                    <span class="turkish">${this.sanitizeHTML(word.turkish)}</span>
                 </div>
                 <button class="favorite-btn ${starClass}" data-id="${word.id}">${starText}</button>
             `;
 
-            // Favori butonu olayı
             const favBtn = item.querySelector('.favorite-btn');
             favBtn.onclick = (e) => {
                 e.stopPropagation();
                 const newStatus = window.favoritesManager?.toggleFavorite(word.id);
                 favBtn.classList.toggle('active', newStatus);
                 favBtn.textContent = newStatus ? '★' : '☆';
-            };
-
-            container.appendChild(item);
-        });
-    }
-
-    showFavorites() {
-        const container = document.getElementById('wordsList');
-        const countSpan = document.getElementById('allwordsCount');
-        const modeScreen = document.getElementById('allwordsMode');
-        const titleEl = modeScreen.querySelector('h2');
-
-        if (!container || !modeScreen) return;
-
-        document.getElementById('mainMenu').classList.add('hidden');
-        modeScreen.classList.remove('hidden');
-        this.currentMode = 'allwords';
-
-        // Başlığı güncelle
-        if (titleEl) titleEl.textContent = '⭐ Favoriler';
-
-        container.innerHTML = '';
-
-        // Sadece favori kelimeleri al
-        const favoriteWords = window.favoritesManager?.getFavoriteWords() || [];
-        countSpan.textContent = favoriteWords.length;
-
-        if (favoriteWords.length === 0) {
-            container.innerHTML = '<div class="no-favorites"><p>⭐ Henüz favori kelime yok</p><p>Kelime listesinden favori ekleyebilirsiniz.</p></div>';
-            return;
-        }
-
-        // Kelimeleri sırala (Rusça alfabetik)
-        const sortedWords = [...favoriteWords].sort((a, b) => a.russian.localeCompare(b.russian));
-
-        sortedWords.forEach(word => {
-            const item = document.createElement('div');
-            item.className = 'word-item';
-
-            item.innerHTML = `
-                <div class="word-text">
-                    <span class="russian">${word.russian}</span>
-                    <span class="turkish">${word.turkish}</span>
-                </div>
-                <button class="favorite-btn active" data-id="${word.id}">★</button>
-            `;
-
-            // Favori butonu olayı
-            const favBtn = item.querySelector('.favorite-btn');
-            favBtn.onclick = (e) => {
-                e.stopPropagation();
-                const newStatus = window.favoritesManager?.toggleFavorite(word.id);
-                favBtn.classList.toggle('active', newStatus);
-                favBtn.textContent = newStatus ? '★' : '☆';
-                // Favorilerden çıkarılırsa listeden kaldır
-                if (!newStatus) {
+                // Remove from list when unfavoriting in favorites view
+                if (removeOnUnfav && !newStatus) {
                     item.remove();
                     countSpan.textContent = parseInt(countSpan.textContent) - 1;
                     if (parseInt(countSpan.textContent) === 0) {
@@ -450,8 +407,9 @@ class App {
                 }
             };
 
-            container.appendChild(item);
+            fragment.appendChild(item);
         });
+        container.appendChild(fragment);
     }
 
     shuffleArray(array) {
@@ -463,12 +421,17 @@ class App {
         return shuffled;
     }
 
-    getRandomWords(count, excludeId = null) {
+    getRandomWords(count, excludeId = null, excludeText = null) {
         let available = WORDS.filter(w => w.id !== excludeId);
+        // Avoid options with same translation text as the correct answer
+        if (excludeText) {
+            available = available.filter(w => w.turkish !== excludeText && w.russian !== excludeText);
+        }
         return this.shuffleArray(available).slice(0, count);
     }
 
     showCompletion(score, total) {
+        if (total === 0) { this.closeMode(); return; }
         const modal = document.getElementById('completionModal');
         const text = document.getElementById('completionText');
         const title = modal.querySelector('h3');
