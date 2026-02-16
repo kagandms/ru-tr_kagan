@@ -14,7 +14,10 @@ def clean_line(line):
     tag_pattern = r'\b(' + '|'.join(tags) + r')'
     
     line = re.sub(tag_pattern, '', line)
-    line = re.sub(r',\s*,', ',', line) 
+    
+    # Remove content in parentheses e.g. "counter (long flat surface)"
+    line = re.sub(r'\(.*?\)', '', line)
+    
     line = re.sub(r'[,.]', '', line) # Remove remaining commas/dots
     line = re.sub(r'\d+$', '', line) # Remove trailing numbers like in "bass1"
     line = re.sub(r'^\d+\s+', '', line) # Remove leading numbers
@@ -24,7 +27,7 @@ def clean_line(line):
         
     line = line.strip()
     
-    # Remove non-alpha start
+    # Remove non-alpha start (allow letters and hyphens)
     if not line or len(line) < 2 or not re.match(r'^[a-zA-Z]', line):
         return None
         

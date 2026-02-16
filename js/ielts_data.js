@@ -1,7 +1,7 @@
 
 // Auto-generated IELTS Data (B2 Level)
 // Source: ielts_words.txt
-// Count: 2066
+// Count: 2069
 
 const IELTS_DATA = {
     'b1': [],
@@ -2192,6 +2192,11 @@ const IELTS_DATA = {
         "tr": "danışman"
     },
     {
+        "en": "counter",
+        "ru": "прилавок",
+        "tr": "tezgah"
+    },
+    {
         "en": "counter (argue against)",
         "ru": "возражать (спорить)",
         "tr": "karşı çıkmak (karşı çıkmak)"
@@ -4215,6 +4220,11 @@ const IELTS_DATA = {
         "en": "grasp",
         "ru": "понять",
         "tr": "sıkı sıkı tutmak"
+    },
+    {
+        "en": "grave",
+        "ru": "могила",
+        "tr": "mezar"
     },
     {
         "en": "grave (for dead person)",
@@ -8920,6 +8930,11 @@ const IELTS_DATA = {
         "en": "striking",
         "ru": "поразительный",
         "tr": "çarpıcı"
+    },
+    {
+        "en": "strip",
+        "ru": "полоска",
+        "tr": "şerit"
     },
     {
         "en": "strip (long narrow piece)",

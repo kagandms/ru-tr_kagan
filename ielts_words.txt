@@ -2064,3 +2064,6 @@ it includes an additional 2000 words for learners at - level which are listed he
 principal
 scratch   B
 serial
+counter
+grave
+strip
