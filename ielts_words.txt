@@ -2060,3 +2060,7 @@ theft B2
 trace B2
 trigger  B2
 wrist B2
+it includes an additional 2000 words for learners at - level which are listed here
+principal
+scratch   B
+serial

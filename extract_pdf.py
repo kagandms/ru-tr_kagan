@@ -6,8 +6,8 @@ PDF_FILE = "b2_c1.pdf"
 OUTPUT_FILE = "ielts_words.txt"
 
 def clean_line(line):
-    # Remove CEFR levels like B2, C1 at the end
-    line = re.sub(r'\s+(B2|C1)$', '', line)
+    # Remove CEFR levels globally (B1, B2, C1, etc.)
+    line = re.sub(r'\b(A1|A2|B1|B2|C1|C2)\b', '', line)
     
     # Remove parts of speech tags
     tags = [r'v\.', r'n\.', r'adj\.', r'adv\.', r'prep\.', r'pron\.', r'conj\.', r'det\.', r'num\.', r'aux\.']
@@ -15,8 +15,9 @@ def clean_line(line):
     
     line = re.sub(tag_pattern, '', line)
     line = re.sub(r',\s*,', ',', line) 
-    line = re.sub(r',\s*$', '', line)
-    line = re.sub(r'^\d+\s+', '', line)
+    line = re.sub(r'[,.]', '', line) # Remove remaining commas/dots
+    line = re.sub(r'\d+$', '', line) # Remove trailing numbers like in "bass1"
+    line = re.sub(r'^\d+\s+', '', line) # Remove leading numbers
     
     if "Oxford 5000" in line:
         return None

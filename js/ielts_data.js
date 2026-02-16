@@ -1,7 +1,7 @@
 
 // Auto-generated IELTS Data (B2 Level)
 // Source: ielts_words.txt
-// Count: 2062
+// Count: 2066
 
 const IELTS_DATA = {
     'b1': [],
@@ -5157,6 +5157,11 @@ const IELTS_DATA = {
         "tr": "izolasyon"
     },
     {
+        "en": "it includes an additional 2000 words for learners at - level which are listed here",
+        "ru": "он включает дополнительные 2000 слов для учащихся на уровне, которые перечислены здесь.",
+        "tr": "- seviyesindeki öğrenciler için burada listelenen ilave 2000 kelimeyi içerir"
+    },
+    {
         "en": "jail",
         "ru": "тюрьма",
         "tr": "hapishane"
@@ -6997,6 +7002,11 @@ const IELTS_DATA = {
         "tr": "öncelikle"
     },
     {
+        "en": "principal",
+        "ru": "главный",
+        "tr": "müdür"
+    },
+    {
         "en": "principal  B2",
         "ru": "принципал B2",
         "tr": "ana B2"
@@ -8062,6 +8072,11 @@ const IELTS_DATA = {
         "tr": "çizik"
     },
     {
+        "en": "scratch   B",
+        "ru": "царапина Б",
+        "tr": "B'yi çiz"
+    },
+    {
         "en": "scratch ,  B",
         "ru": "царапина, Б",
         "tr": "çizik, B"
@@ -8220,6 +8235,11 @@ const IELTS_DATA = {
         "en": "separation  C1",
         "ru": "разделение С1",
         "tr": "ayırma C1"
+    },
+    {
+        "en": "serial",
+        "ru": "сериал",
+        "tr": "seri"
     },
     {
         "en": "serial  C1",
