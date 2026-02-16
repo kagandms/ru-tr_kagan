@@ -282,20 +282,6 @@
                         <span class="activity-desc">Bilgini test et</span>
                     </button>
                 </div>
-
-                <!-- Count Selector (shown after clicking Flashcard/Quiz) -->
-                <div id="ieltsCountSelect" class="hidden">
-                    <h3 style="text-align:center;margin-bottom:1rem;color:var(--text-primary);" id="ieltsCountTitle">Kaç
-                        soru?</h3>
-                    <div class="ielts-count-grid">
-                        <button class="ielts-count-btn" data-count="10">10</button>
-                        <button class="ielts-count-btn" data-count="20">20</button>
-                        <button class="ielts-count-btn" data-count="50">50</button>
-                        <button class="ielts-count-btn" data-count="100">100</button>
-                        <button class="ielts-count-btn all" data-count="all">Tümü</button>
-                    </div>
-                    <button class="back-btn" id="ieltsCountBack" style="margin-top:1rem;">← Geri</button>
-                </div>
             </div>
 
             <div id="ieltsWordsView" class="ielts-subview hidden">
@@ -315,6 +301,7 @@
             <div id="ieltsFlashcardView" class="ielts-subview hidden">
                 <div class="ielts-subview-header">
                     <button class="back-btn" id="ieltsFlashcardBack">← Listeye Dön</button>
+                    <button class="favorite-btn" id="ieltsFlashcardFavorite">☆</button>
                     <span class="progress-indicator" id="ieltsFlashcardProgress">1/100</span>
                 </div>
                 <div class="flashcard-container">
@@ -341,6 +328,7 @@
             <div id="ieltsQuizView" class="ielts-subview hidden">
                 <div class="ielts-subview-header">
                     <button class="back-btn" id="ieltsQuizBack">← Listeye Dön</button>
+                    <button class="favorite-btn" id="ieltsQuizFavorite">☆</button>
                     <span class="progress-indicator" id="ieltsQuizProgress">0/10</span>
                 </div>
                 <div class="quiz-container">

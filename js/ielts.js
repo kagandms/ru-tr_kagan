@@ -21,7 +21,6 @@ class IELTSMode {
         this.updateCounts();
         this.setupTabs();
         this.setupActivities();
-        this.setupCountSelector();
         this.setupFlashcard();
         this.setupQuiz();
         this.filterByLevel(this.currentLevel);
@@ -67,9 +66,9 @@ class IELTSMode {
                 if (activity === 'words') {
                     this.showSubView('words');
                 } else {
-                    // Show count selector for flashcard/quiz
+                    // Use the global question count modal (same as quiz/flashcard modes)
                     this.pendingActivity = activity;
-                    this.showCountSelector(activity);
+                    this.showGlobalCountModal(activity);
                 }
             });
         });
@@ -81,48 +80,55 @@ class IELTSMode {
         if (wordsBack) wordsBack.addEventListener('click', () => this.hideAllSubViews());
         if (flashBack) flashBack.addEventListener('click', () => this.hideAllSubViews());
         if (quizBack) quizBack.addEventListener('click', () => this.hideAllSubViews());
-    }
 
-    // ─── Count Selector ────────────────────────
-    showCountSelector(activity) {
-        const grid = document.getElementById('ieltsActivityGrid');
-        const countDiv = document.getElementById('ieltsCountSelect');
-        const title = document.getElementById('ieltsCountTitle');
-
-        if (grid) grid.classList.add('hidden');
-        if (countDiv) countDiv.classList.remove('hidden');
-        if (title) {
-            title.textContent = activity === 'flashcard'
-                ? '🃏 Kaç kart çalışmak istiyorsun?'
-                : '❓ Kaç soru çözmek istiyorsun?';
-        }
-    }
-
-    setupCountSelector() {
-        // Count buttons
-        document.querySelectorAll('.ielts-count-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const countStr = btn.dataset.count;
-                const count = countStr === 'all' ? this.filteredWords.length : parseInt(countStr);
-                this.startActivityWithCount(this.pendingActivity, count);
-            });
+        // Favorite buttons
+        const flashFav = document.getElementById('ieltsFlashcardFavorite');
+        const quizFav = document.getElementById('ieltsQuizFavorite');
+        if (flashFav) flashFav.addEventListener('click', (e) => {
+            e.stopPropagation();
+            this.toggleFlashcardFavorite();
         });
+        if (quizFav) quizFav.addEventListener('click', (e) => {
+            e.stopPropagation();
+            this.toggleQuizFavorite();
+        });
+    }
 
-        // Back button from count selector
-        const countBack = document.getElementById('ieltsCountBack');
-        if (countBack) {
-            countBack.addEventListener('click', () => {
-                document.getElementById('ieltsCountSelect').classList.add('hidden');
-                document.getElementById('ieltsActivityGrid').classList.remove('hidden');
-            });
-        }
+    // ─── Global Count Modal ─────────────────────
+    showGlobalCountModal(activity) {
+        const modal = document.getElementById('questionCountModal');
+        if (!modal) return;
+
+        // Show the modal
+        modal.classList.remove('hidden');
+
+        // Clone and replace buttons to remove old listeners
+        const btnContainer = modal.querySelector('.modal-buttons');
+        const buttons = btnContainer.querySelectorAll('.modal-btn[data-count]');
+
+        // Add one-time listeners for IELTS mode
+        const handler = (e) => {
+            const count = parseInt(e.target.dataset.count);
+            if (!count) return;
+            modal.classList.add('hidden');
+            this.startActivityWithCount(this.pendingActivity, count);
+            // Clean up
+            buttons.forEach(b => b.removeEventListener('click', handler));
+        };
+
+        // Temporarily override the cancel to just close
+        const cancelBtn = document.getElementById('questionCountCancel');
+        const cancelHandler = () => {
+            modal.classList.add('hidden');
+            buttons.forEach(b => b.removeEventListener('click', handler));
+            cancelBtn.removeEventListener('click', cancelHandler);
+        };
+
+        buttons.forEach(b => b.addEventListener('click', handler));
+        if (cancelBtn) cancelBtn.addEventListener('click', cancelHandler);
     }
 
     startActivityWithCount(activity, count) {
-        // Hide count selector and landing
-        document.getElementById('ieltsCountSelect').classList.add('hidden');
-        document.getElementById('ieltsActivityGrid').classList.remove('hidden');
-
         // Limit words to count
         const shuffledWords = app.shuffleArray(this.filteredWords);
         this.activeWords = shuffledWords.slice(0, Math.min(count, shuffledWords.length));
@@ -222,6 +228,7 @@ class IELTSMode {
         if (ruEl) ruEl.textContent = word.ru;
         if (trEl) trEl.textContent = word.tr;
         if (progressEl) progressEl.textContent = `${this.flashcardIndex + 1}/${this.activeWords.length}`;
+        this.updateIeltsFavorite('ieltsFlashcardFavorite', word);
     }
 
     // ─── Quiz ──────────────────────────────────
@@ -259,6 +266,7 @@ class IELTSMode {
         if (wordEl) wordEl.textContent = word.en;
         if (feedbackEl) feedbackEl.classList.add('hidden');
         if (progressEl) progressEl.textContent = `${this.quizIndex + 1}/${this.quizTotal}`;
+        this.updateIeltsFavorite('ieltsQuizFavorite', word);
 
         const options = this.generateOptions(word);
         if (optionsEl) {
@@ -345,6 +353,41 @@ class IELTSMode {
                 this.setupQuiz();
                 this.startQuiz();
             };
+        }
+    }
+
+    // ─── Favorites ────────────────────────────────
+    updateIeltsFavorite(btnId, word) {
+        const btn = document.getElementById(btnId);
+        if (!btn || !word) return;
+        // Use 'ielts_' + en as a unique identifier for IELTS favorites
+        const wordKey = 'ielts_' + word.en;
+        const isFav = window.favoritesManager?.isFavorite(wordKey);
+        btn.classList.toggle('active', isFav);
+        btn.textContent = isFav ? '★' : '☆';
+    }
+
+    toggleFlashcardFavorite() {
+        const word = this.activeWords[this.flashcardIndex];
+        if (!word) return;
+        const wordKey = 'ielts_' + word.en;
+        const isNowFav = window.favoritesManager?.toggleFavorite(wordKey);
+        const btn = document.getElementById('ieltsFlashcardFavorite');
+        if (btn) {
+            btn.classList.toggle('active', isNowFav);
+            btn.textContent = isNowFav ? '★' : '☆';
+        }
+    }
+
+    toggleQuizFavorite() {
+        const word = this.quizWords[this.quizIndex];
+        if (!word) return;
+        const wordKey = 'ielts_' + word.en;
+        const isNowFav = window.favoritesManager?.toggleFavorite(wordKey);
+        const btn = document.getElementById('ieltsQuizFavorite');
+        if (btn) {
+            btn.classList.toggle('active', isNowFav);
+            btn.textContent = isNowFav ? '★' : '☆';
         }
     }
 }
