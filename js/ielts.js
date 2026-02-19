@@ -269,7 +269,7 @@ class IELTSMode {
         const feedbackEl = document.getElementById('ieltsQuizFeedback');
         const progressEl = document.getElementById('ieltsQuizProgress');
 
-        if (wordEl) wordEl.textContent = word.en;
+        if (wordEl) wordEl.innerHTML = `<span style="color:var(--accent)">${word.en}</span> <br> <span style="font-size:0.8em;color:var(--text-muted)">(${word.tr})</span>`;
         if (feedbackEl) feedbackEl.classList.add('hidden');
         if (progressEl) progressEl.textContent = `${this.quizIndex + 1}/${this.quizTotal}`;
         this.updateIeltsFavorite('ieltsQuizFavorite', word);
@@ -288,15 +288,15 @@ class IELTSMode {
     }
 
     generateOptions(correctWord) {
-        const options = [{ text: correctWord.tr, correct: true }];
+        // Hedef: Rusça anlamını bulmak
+        const options = [{ text: correctWord.ru, correct: true }];
         const pool = this.allWords.filter(w => w.en !== correctWord.en);
         if (pool.length < 3) {
-            // Not enough words for proper quiz, add all available
-            pool.forEach(w => options.push({ text: w.tr, correct: false }));
+            pool.forEach(w => options.push({ text: w.ru, correct: false }));
         } else {
             const shuffledPool = app.shuffleArray(pool);
             for (let i = 0; i < 3; i++) {
-                options.push({ text: shuffledPool[i].tr, correct: false });
+                options.push({ text: shuffledPool[i].ru, correct: false });
             }
         }
         return app.shuffleArray(options);
@@ -311,7 +311,7 @@ class IELTSMode {
         } else {
             btn.classList.add('wrong');
             document.querySelectorAll('#ieltsQuizOptions .quiz-option').forEach(b => {
-                if (b.textContent === word.tr) b.classList.add('correct');
+                if (b.textContent === word.ru) b.classList.add('correct');
             });
         }
 

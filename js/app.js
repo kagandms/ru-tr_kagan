@@ -383,11 +383,28 @@ class App {
             const starClass = isFav ? 'active' : '';
             const starText = isFav ? '★' : '☆';
 
+            let wordContent = '';
+            if (word.english) {
+                // IELTS Words: EN - RU - TR
+                wordContent = `
+                    <div class="word-text multi-line">
+                        <span class="english" style="color:var(--accent);font-weight:bold;">${this.sanitizeHTML(word.english)}</span>
+                        <span class="russian">${this.sanitizeHTML(word.russian)}</span>
+                        <span class="turkish" style="color:var(--text-muted);font-size:0.9em;">${this.sanitizeHTML(word.turkish)}</span>
+                    </div>
+                `;
+            } else {
+                // Standard Words: RU - TR
+                wordContent = `
+                    <div class="word-text">
+                        <span class="russian">${this.sanitizeHTML(word.russian)}</span>
+                        <span class="turkish">${this.sanitizeHTML(word.turkish)}</span>
+                    </div>
+                `;
+            }
+
             item.innerHTML = `
-                <div class="word-text">
-                    <span class="russian">${this.sanitizeHTML(word.russian)}</span>
-                    <span class="turkish">${this.sanitizeHTML(word.turkish)}</span>
-                </div>
+                ${wordContent}
                 <button class="favorite-btn ${starClass}" data-id="${word.id}">${starText}</button>
             `;
 

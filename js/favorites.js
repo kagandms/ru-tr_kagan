@@ -44,7 +44,7 @@ class FavoritesManager {
         const ieltsData = Array.isArray(window.IELTS_DATA) ? window.IELTS_DATA : [];
         const ieltsFavs = ieltsData
             .filter(word => this.isFavorite('ielts_' + word.en))
-            .map(w => ({ id: 'ielts_' + w.en, russian: w.ru, turkish: w.tr }));
+            .map(w => ({ id: 'ielts_' + w.en, russian: w.ru, turkish: w.tr, english: w.en }));
         return [...mainFavs, ...ieltsFavs];
     }
 }
