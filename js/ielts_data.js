@@ -190,12 +190,7 @@ const IELTS_DATA = [
         "tr": "asit",
         "level": "C1"
     },
-    {
-        "en": "acid  B2",
-        "ru": "кислота В2",
-        "tr": "asit B2",
-        "level": "C1"
-    },
+
     {
         "en": "acquisition",
         "ru": "приобретение",
@@ -400,12 +395,7 @@ const IELTS_DATA = [
         "tr": "yabancı",
         "level": "C1"
     },
-    {
-        "en": "alien  B2",
-        "ru": "инопланетянин Б2",
-        "tr": "uzaylı B2",
-        "level": "C1"
-    },
+
     {
         "en": "align",
         "ru": "выровнять",
@@ -6175,7 +6165,7 @@ const IELTS_DATA = [
     {
         "en": "jet",
         "ru": "реактивный самолет",
-        "tr": "jet",
+        "tr": "jet uçağı",
         "level": "B2"
     },
     {

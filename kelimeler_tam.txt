@@ -94,7 +94,7 @@
 Мало где : Az yer
 Много с кем дружить : Birçok kişiyle arkadaş olmak
 Он много где был : O birçok yerde bulundu
-Употребление : Usage of...
+Употребление : Kullanım
 Сушить - Высушить : Kurutmak (dış etkiyle)
 Посушить : Kısa süre kurutmak
 Сохнуть - Высохнуть : Bir şeyin kendi kendine kuruması
@@ -146,7 +146,7 @@
 В 10.40 : В без двадцати одиннадцать
 Время бежит / летит : Zaman çok hızlı
 Сверять время : Saati düzeltmek
-Ни раз : Birçok kez
+Не раз : Birçok kez
 Ни слова : Tek kelime etme
 Ни гроша : Parasız, 5 parasız
 Ни бе ни мэ ни кукареку : Cahil (Безграмотный)
@@ -285,7 +285,7 @@
 Как минимум : En az...
 Кисель : Yapısı sıvı olmayan
 Жидкий : Sıvı
-Ташнить (меня) : Midemi bulandırıyor
+Тошнить (меня) : Midemi bulandırıyor
 Грант : Hibe, burs
 Изжога : Reflü, mide ekşimesi
 ...-нибудь : Soru cümlesi ve ricalarda kullanılır (herhangi biri, fark etmez)
@@ -323,7 +323,7 @@
 Сова : Geç kalkan
 Не в моём вкусе : Bana uygun değil
 Мне не по душе : Hoşuma gitmedi
-Очевидно : Obviously
+Очевидно : Açıkçası (belli ki)
 То есть : Yani
 Вряд ли... : Pek olası değil
 Случайно : Rastgele
@@ -438,7 +438,7 @@
 
 Пересекать : Перейти (sınır vb. geçmek)
 Преобладать : Больше (ağır basmak, çoğunlukta olmak)
-Превышать : Выше (aşmak, üstünde olmak)
+Превышать : Aşmak (hız, limit vb.)
 Заявлять : Сказать, Объяснить (beyan etmek, açıklamak)
 Нарастать : Становиться сильнее (artmak, güçlenmek)
 Отдельные : Некоторые (bazı)
