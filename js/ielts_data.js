@@ -3,7 +3,7 @@
 // Source: ielts_words.txt
 // Count: 2021
 
-const IELTS_DATA = [
+window.IELTS_DATA = [
     {
         "en": "AIDS",
         "ru": "СПИД",
