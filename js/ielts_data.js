@@ -190,7 +190,12 @@ const IELTS_DATA = [
         "tr": "asit",
         "level": "C1"
     },
-
+    {
+        "en": "acid",
+        "ru": "кислота В2",
+        "tr": "asit",
+        "level": "C1"
+    },
     {
         "en": "acquisition",
         "ru": "приобретение",
@@ -395,7 +400,12 @@ const IELTS_DATA = [
         "tr": "yabancı",
         "level": "C1"
     },
-
+    {
+        "en": "alien",
+        "ru": "инопланетянин Б2",
+        "tr": "uzaylı",
+        "level": "C1"
+    },
     {
         "en": "align",
         "ru": "выровнять",
@@ -1033,9 +1043,9 @@ const IELTS_DATA = [
         "level": "C1"
     },
     {
-        "en": "bat  B2",
-        "ru": "летучая мышь B2",
-        "tr": "yarasa B2",
+        "en": "bat",
+        "ru": "летучая мышь",
+        "tr": "yarasa",
         "level": "C1"
     },
     {
@@ -2659,9 +2669,9 @@ const IELTS_DATA = [
         "level": "C1"
     },
     {
-        "en": "craft  B2",
+        "en": "craft",
         "ru": "ремесло Б2",
-        "tr": "zanaat B2",
+        "tr": "zanaat",
         "level": "C1"
     },
     {
@@ -3673,9 +3683,9 @@ const IELTS_DATA = [
         "level": "C1"
     },
     {
-        "en": "dynamic  B2",
-        "ru": "динамический B2",
-        "tr": "dinamik B2",
+        "en": "dynamic",
+        "ru": "динамический",
+        "tr": "dinamik",
         "level": "C1"
     },
     {
@@ -4357,8 +4367,8 @@ const IELTS_DATA = [
         "level": "C1"
     },
     {
-        "en": "extract  B2",
-        "ru": "экстракт B2",
+        "en": "extract",
+        "ru": "экстракт",
         "tr": "B2'yi çıkar",
         "level": "C1"
     },
@@ -5935,9 +5945,9 @@ const IELTS_DATA = [
         "level": "C1"
     },
     {
-        "en": "intellectual  B2",
-        "ru": "интеллектуальный B2",
-        "tr": "entelektüel B2",
+        "en": "intellectual",
+        "ru": "интеллектуальный",
+        "tr": "entelektüel",
         "level": "C1"
     },
     {
@@ -6165,7 +6175,7 @@ const IELTS_DATA = [
     {
         "en": "jet",
         "ru": "реактивный самолет",
-        "tr": "jet uçağı",
+        "tr": "jet",
         "level": "B2"
     },
     {
@@ -8365,9 +8375,9 @@ const IELTS_DATA = [
         "level": "B2"
     },
     {
-        "en": "principal  B2",
-        "ru": "принципал B2",
-        "tr": "ana B2",
+        "en": "principal",
+        "ru": "принципал",
+        "tr": "ana",
         "level": "C1"
     },
     {
@@ -10093,9 +10103,9 @@ const IELTS_DATA = [
         "level": "C1"
     },
     {
-        "en": "spare  B2",
-        "ru": "запасной B2",
-        "tr": "yedek B2",
+        "en": "spare",
+        "ru": "запасной",
+        "tr": "yedek",
         "level": "C1"
     },
     {
@@ -10837,8 +10847,8 @@ const IELTS_DATA = [
         "level": "C1"
     },
     {
-        "en": "tackle  B2",
-        "ru": "снасть B2",
+        "en": "tackle",
+        "ru": "снасть",
         "tr": "B2 ile mücadele",
         "level": "C1"
     },
@@ -10945,7 +10955,7 @@ const IELTS_DATA = [
         "level": "C1"
     },
     {
-        "en": "terminal  B2",
+        "en": "terminal",
         "ru": "терминал В2",
         "tr": "B2 terminali",
         "level": "C1"
@@ -11257,9 +11267,9 @@ const IELTS_DATA = [
         "level": "C1"
     },
     {
-        "en": "trace B2",
-        "ru": "трасса B2",
-        "tr": "iz B2",
+        "en": "trace",
+        "ru": "трасса",
+        "tr": "iz",
         "level": "C1"
     },
     {
@@ -11407,8 +11417,8 @@ const IELTS_DATA = [
         "level": "C1"
     },
     {
-        "en": "trigger  B2",
-        "ru": "триггер B2",
+        "en": "trigger",
+        "ru": "триггер",
         "tr": "B2'yi tetikle",
         "level": "C1"
     },
@@ -12121,5 +12131,3 @@ const IELTS_DATA = [
         "level": "C1"
     }
 ];
-
-window.IELTS_DATA = IELTS_DATA;

@@ -294,6 +294,16 @@
                     <button class="ielts-tab" data-level="c1">C1 <span class="tab-count"
                             id="countC1">(0)</span></button>
                 </div>
+                <!-- IELTS Search Bar -->
+                <div class="search-container">
+                    <div class="search-input-wrapper">
+                        <span class="search-icon" aria-hidden="true">🔍</span>
+                        <input type="search" id="ieltsSearchInput" class="search-input"
+                            placeholder="İngilizce, Rusça veya Türkçe ara..." aria-label="IELTS kelimesi ara"
+                            autocomplete="off" />
+                        <button class="search-clear-btn" id="ieltsClearBtn" aria-label="Aramayı temizle">✕</button>
+                    </div>
+                </div>
                 <div class="words-list" id="ieltsWordsList"></div>
             </div>
 
@@ -416,6 +426,15 @@
                 <span class="progress-indicator">
                     <span id="allwordsCount">0</span> kelime
                 </span>
+            </div>
+            <!-- Search Bar -->
+            <div class="search-container">
+                <div class="search-input-wrapper">
+                    <span class="search-icon" aria-hidden="true">🔍</span>
+                    <input type="search" id="allwordsSearchInput" class="search-input"
+                        placeholder="Rusça veya Türkçe ara..." aria-label="Kelime ara" autocomplete="off" />
+                    <button class="search-clear-btn" id="allwordsClearBtn" aria-label="Aramayı temizle">✕</button>
+                </div>
             </div>
             <div class="words-list" id="wordsList">
                 <!-- Words will be generated dynamically -->

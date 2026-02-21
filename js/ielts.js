@@ -168,19 +168,36 @@ class IELTSMode {
         if (landing) landing.classList.remove('hidden');
     }
 
-    // ─── Word List ─────────────────────────────
+    // ─── Word List ────────────────────────────
     loadWords() {
         const list = document.getElementById('ieltsWordsList');
         if (!list) return;
-        list.innerHTML = '';
 
         if (this.filteredWords.length === 0) {
             list.innerHTML = '<div style="text-align:center;padding:2rem;color:var(--text-muted);">Bu seviyede kelime yok.</div>';
             return;
         }
 
+        this._renderIeltsWords(this.filteredWords);
+        this.setupIeltsSearch();
+    }
+
+    /**
+     * Renders the IELTS word list from the provided words array.
+     * @param {Array} words - Words to render
+     */
+    _renderIeltsWords(words) {
+        const list = document.getElementById('ieltsWordsList');
+        if (!list) return;
+        list.innerHTML = '';
+
+        if (words.length === 0) {
+            list.innerHTML = '<div class="search-no-results">🔍 Sonuç bulunamadı.</div>';
+            return;
+        }
+
         const fragment = document.createDocumentFragment();
-        this.filteredWords.forEach(word => {
+        words.forEach(word => {
             const item = document.createElement('div');
             item.className = 'word-item';
             let badgeColor = '#8b5cf6';
@@ -198,6 +215,57 @@ class IELTSMode {
             fragment.appendChild(item);
         });
         list.appendChild(fragment);
+    }
+
+    /**
+     * Sets up live search for IELTS word list.
+     * Security: user input is only compared — never written raw to DOM.
+     */
+    setupIeltsSearch() {
+        const input = document.getElementById('ieltsSearchInput');
+        const clearBtn = document.getElementById('ieltsClearBtn');
+        if (!input || !clearBtn) return;
+
+        // Reset state
+        input.value = '';
+        clearBtn.style.display = 'none';
+
+        // Clean previous listeners via clone
+        const newInput = input.cloneNode(true);
+        const newClear = clearBtn.cloneNode(true);
+        input.parentNode.replaceChild(newInput, input);
+        clearBtn.parentNode.replaceChild(newClear, clearBtn);
+
+        newInput.addEventListener('input', () => {
+            const query = newInput.value.trim();
+            newClear.style.display = query.length > 0 ? 'block' : 'none';
+            this.handleIeltsSearch(query);
+        });
+
+        newClear.addEventListener('click', () => {
+            newInput.value = '';
+            newClear.style.display = 'none';
+            this.handleIeltsSearch('');
+            newInput.focus();
+        });
+    }
+
+    /**
+     * Filters IELTS words by query across en, ru, tr fields.
+     * @param {string} query - User input
+     */
+    handleIeltsSearch(query) {
+        const lowerQ = query.toLowerCase();
+        const results = query.length === 0
+            ? this.filteredWords
+            : this.filteredWords.filter(w => {
+                return (
+                    w.en?.toLowerCase().includes(lowerQ) ||
+                    w.ru?.toLowerCase().includes(lowerQ) ||
+                    w.tr?.toLowerCase().includes(lowerQ)
+                );
+            });
+        this._renderIeltsWords(results);
     }
 
     // ─── Flashcard ─────────────────────────────

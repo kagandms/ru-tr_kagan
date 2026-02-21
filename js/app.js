@@ -345,12 +345,134 @@ class App {
     showAllWords() {
         const sortedWords = [...WORDS].sort((a, b) => a.russian.localeCompare(b.russian));
         this.renderWordList(sortedWords, '📚 Tüm Kelimeler', false);
+        // Search'i aktif et — word list'i instance'a kaydet
+        this._currentWordList = sortedWords;
+        this.setupAllWordsSearch();
     }
 
     showFavorites() {
         const favoriteWords = window.favoritesManager?.getFavoriteWords() || [];
         const sortedWords = [...favoriteWords].sort((a, b) => a.russian.localeCompare(b.russian));
         this.renderWordList(sortedWords, '⭐ Favoriler', true);
+        // Search'i aktif et
+        this._currentWordList = sortedWords;
+        this.setupAllWordsSearch();
+    }
+
+    /**
+     * Sets up live search listener for the All Words / Favorites list.
+     * Uses this._currentWordList (set by showAllWords / showFavorites).
+     * Security: user input is only used for filtering — never injected into DOM raw.
+     */
+    setupAllWordsSearch() {
+        const input = document.getElementById('allwordsSearchInput');
+        const clearBtn = document.getElementById('allwordsClearBtn');
+        if (!input || !clearBtn) return;
+
+        // Reset input state on each open
+        input.value = '';
+        clearBtn.style.display = 'none';
+
+        // Remove previous listeners by cloning (clean slate key pattern)
+        const newInput = input.cloneNode(true);
+        const newClear = clearBtn.cloneNode(true);
+        input.parentNode.replaceChild(newInput, input);
+        clearBtn.parentNode.replaceChild(newClear, clearBtn);
+
+        newInput.addEventListener('input', () => {
+            const query = newInput.value.trim();
+            newClear.style.display = query.length > 0 ? 'block' : 'none';
+            // this._currentWordList is always set before setupAllWordsSearch is called
+            this.handleAllWordsSearch(query);
+        });
+
+        newClear.addEventListener('click', () => {
+            newInput.value = '';
+            newClear.style.display = 'none';
+            this.handleAllWordsSearch('');
+            newInput.focus();
+        });
+    }
+
+    /**
+     * Filters this._currentWordList based on query and re-renders.
+     * Matches against russian, turkish, and english (if present) fields.
+     * Guard: if _currentWordList is not set, safely returns empty.
+     * @param {string} query - Raw user input (used only for string comparison, not DOM injection)
+     */
+    handleAllWordsSearch(query) {
+        const allWords = this._currentWordList || [];
+        const container = document.getElementById('wordsList');
+        const countSpan = document.getElementById('allwordsCount');
+        if (!container) return;
+
+        // Guard: empty query shows all
+        const lowerQ = query.toLowerCase();
+        const filtered = query.length === 0
+            ? allWords
+            : allWords.filter(w => {
+                const ruMatch = w.russian?.toLowerCase().includes(lowerQ);
+                const trMatch = w.turkish?.toLowerCase().includes(lowerQ);
+                const enMatch = w.english?.toLowerCase().includes(lowerQ);
+                return ruMatch || trMatch || enMatch;
+            });
+
+        // Re-render filtered results
+        container.innerHTML = '';
+        countSpan.textContent = filtered.length;
+
+        if (filtered.length === 0) {
+            container.innerHTML = `<div class="search-no-results">🔍 "${this.sanitizeHTML(query)}" için sonuç bulunamadı.</div>`;
+            return;
+        }
+
+        // Determine if in favorites view (removeOnUnfav mode)
+        const isFavView = document.getElementById('allwordsMode')?.querySelector('h2')?.textContent?.includes('Favori');
+        const fragment = document.createDocumentFragment();
+        filtered.forEach(word => {
+            const item = document.createElement('div');
+            item.className = 'word-item';
+            const isFav = window.favoritesManager?.isFavorite(word.id);
+            const starClass = isFav ? 'active' : '';
+            const starText = isFav ? '★' : '☆';
+            let wordContent = '';
+            if (word.english) {
+                wordContent = `
+                    <div class="word-text multi-line">
+                        <span class="english" style="color:var(--accent);font-weight:bold;">${this.sanitizeHTML(word.english)}</span>
+                        <span class="russian">${this.sanitizeHTML(word.russian)}</span>
+                        <span class="turkish" style="color:var(--text-muted);font-size:0.9em;">${this.sanitizeHTML(word.turkish)}</span>
+                    </div>
+                `;
+            } else {
+                wordContent = `
+                    <div class="word-text">
+                        <span class="russian">${this.sanitizeHTML(word.russian)}</span>
+                        <span class="turkish">${this.sanitizeHTML(word.turkish)}</span>
+                    </div>
+                `;
+            }
+            item.innerHTML = `
+                ${wordContent}
+                <button class="favorite-btn ${starClass}" data-id="${word.id}">${starText}</button>
+            `;
+            const favBtn = item.querySelector('.favorite-btn');
+            favBtn.onclick = (e) => {
+                e.stopPropagation();
+                const newStatus = window.favoritesManager?.toggleFavorite(word.id);
+                favBtn.classList.toggle('active', newStatus);
+                favBtn.textContent = newStatus ? '★' : '☆';
+                if (isFavView && !newStatus) {
+                    item.remove();
+                    countSpan.textContent = parseInt(countSpan.textContent) - 1;
+                    if (parseInt(countSpan.textContent) === 0) {
+                        container.innerHTML = '<div class="no-favorites"><p>⭐ Henüz favori kelime yok</p><p>Kelime listesinden favori ekleyebilirsiniz.</p></div>';
+                    }
+                }
+            };
+            fragment.appendChild(item);
+        });
+        container.appendChild(fragment);
     }
 
     renderWordList(words, title, removeOnUnfav) {
