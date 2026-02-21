@@ -187,7 +187,7 @@ class App {
         }
 
         // Soru sayısı sorulacak modlar (Typing kaldırıldı)
-        const modesWithCount = ['flashcard', 'quiz', 'hardwords', 'reversequiz'];
+        const modesWithCount = ['flashcard', 'quiz', 'reversequiz'];
 
         if (modesWithCount.includes(mode)) {
             this.pendingMode = mode;
@@ -224,14 +224,8 @@ class App {
                 case 'reversequiz':
                     window.reverseQuizMode?.init(questionCount);
                     break;
-                case 'matching':
-                    window.matchingMode?.init();
-                    break;
                 case 'synonyms':
                     window.synonymsMode?.init();
-                    break;
-                case 'ielts':
-                    window.ieltsMode?.init();
                     break;
                 case 'torfl':
                     window.torflMode?.init();
