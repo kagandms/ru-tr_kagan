@@ -130,23 +130,33 @@ class QuizMode {
             }
         });
 
-        const feedbackText = document.getElementById('quizFeedbackText');
-
         if (isCorrect) {
             btn.classList.add('correct');
             this.score += 10;
             this.correctCount++;
-            feedbackText.textContent = '✅ Doğru!';
+
+            app.recordAnswer(correctWord.id, isCorrect);
+            this.updateScore();
+
+            await app.showSnackbar(true, 'Harika!', 'Doğru bildin.');
         } else {
             btn.classList.add('wrong');
-            await app.showWrongFeedback(feedbackText, correctWord.turkish, correctWord);
+
+            app.recordAnswer(correctWord.id, isCorrect);
+            this.updateScore();
+
+            let explanation = '';
+            if (window.aiManager) {
+                try {
+                    explanation = await window.aiManager.explainWord(correctWord);
+                } catch (e) { }
+            }
+
+            await app.showSnackbar(false, `Yanlış! Doğru cevap: ${correctWord.turkish}`, explanation ? `🤖 ${explanation}` : '');
         }
 
-        app.recordAnswer(correctWord.id, isCorrect);
-        this.updateScore();
-
-        // Geri bildirimi göster
-        document.getElementById('quizFeedback').classList.remove('hidden');
+        // Snackbar'daki "Devam Et" butonuna basılınca Promise çözülür ve direk buraya düşeriz.
+        this.nextQuestion();
     }
 
     nextQuestion() {

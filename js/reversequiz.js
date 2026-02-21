@@ -108,22 +108,32 @@ class ReverseQuizMode {
             }
         });
 
-        const feedbackText = document.getElementById('reversequizFeedbackText');
-
         if (isCorrect) {
             btn.classList.add('correct');
             this.score += 10;
             this.correctCount++;
-            feedbackText.textContent = '✅ Doğru!';
+
+            app.recordAnswer(correctWord.id, isCorrect);
+            this.updateScore();
+
+            await app.showSnackbar(true, 'Harika!', 'Doğru bildin.');
         } else {
             btn.classList.add('wrong');
-            await app.showWrongFeedback(feedbackText, correctWord.russian, correctWord);
+
+            app.recordAnswer(correctWord.id, isCorrect);
+            this.updateScore();
+
+            let explanation = '';
+            if (window.aiManager) {
+                try {
+                    explanation = await window.aiManager.explainWord(correctWord);
+                } catch (e) { }
+            }
+
+            await app.showSnackbar(false, `Yanlış! Doğru cevap: ${correctWord.russian}`, explanation ? `🤖 ${explanation}` : '');
         }
 
-        app.recordAnswer(correctWord.id, isCorrect);
-        this.updateScore();
-
-        document.getElementById('reversequizFeedback').classList.remove('hidden');
+        this.nextQuestion();
     }
 
     nextQuestion() {

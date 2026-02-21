@@ -92,6 +92,8 @@ class App {
     }
 
     async showWrongFeedback(feedbackEl, correctText, word) {
+        // Eski satıriçi (inline) bildirim sistemini (fallback olarak) tutabiliriz veya tamamen kapatabiliriz.
+        // Ancak yeni sistemde await app.showSnackbar üzerinden gideceğimiz için burası artık pek kullanılmayacak.
         feedbackEl.innerHTML = `❌ Yanlış! Doğru: <strong>${this.sanitizeHTML(correctText)}</strong>`;
         if (window.aiManager) {
             try {
@@ -101,6 +103,38 @@ class App {
                 }
             } catch (e) { /* silent */ }
         }
+    }
+
+    // ===== Gamified Snackbar (Duolingo Style Notification) =====
+    async showSnackbar(isCorrect, mainText, subText = '') {
+        return new Promise((resolve) => {
+            const snackbar = document.getElementById('snackbar');
+            const icon = document.getElementById('snackbarIcon');
+            const textEl = document.getElementById('snackbarText');
+            const btn = document.getElementById('snackbarNextBtn');
+
+            if (!snackbar) { resolve(); return; }
+
+            // Özellikleri ayarla
+            snackbar.className = `snackbar show ${isCorrect ? 'correct' : 'wrong'}`;
+            icon.textContent = isCorrect ? '✓' : '×';
+
+            let html = `<div>${this.sanitizeHTML(mainText)}</div>`;
+            if (subText) {
+                html += `<div style="font-size: 0.95rem; margin-top: 0.25rem; font-weight: 500; opacity: 0.85;">${this.sanitizeHTML(subText)}</div>`;
+            }
+            textEl.innerHTML = html;
+
+            // Birden fazla eventListener eklenmesini önlemek için butonu klonlayıp temizliyoruz.
+            const newBtn = btn.cloneNode(true);
+            btn.parentNode.replaceChild(newBtn, btn);
+
+            // "Devam Et" tıklanınca sözü (Promise) yerine getir ve sekmeyi kapat
+            newBtn.addEventListener('click', () => {
+                snackbar.classList.remove('show');
+                resolve();
+            });
+        });
     }
 
     // ===== Navigasyon =====
