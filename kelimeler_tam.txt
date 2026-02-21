@@ -531,3 +531,276 @@
 Простой - Цветной : Basit - Renkli
 
 
+
+Автомат : Otomat, makine
+Проанализировать : Analiz etmek
+Ансамбль : Topluluk
+Ангина : Boğaz ağrısı
+Аспирант/аспирантка : Yüksek lisans öğrencisi
+Аспирантура : Yüksek lisans
+Аудитория : Sınıf
+Афиша : Afiş
+Бандероль : Paket
+Банка : Kavanoz
+Батон : Somun ekmek
+Беречь/сберечь : Saklamak/Korumak
+Беспокоиться : To worry
+Бланк : Boş
+Бледный : Soluk (renk)
+Ближе : Closer
+Борода : Sakal
+Бороться : Savaşmak
+Борьба : Mücadele
+Булочка : Çörek
+Булочная : Fırın
+Бывший : Ex... (is, es vs.)
+Вверху : Yukarıda
+Вежливый : Kibar
+Велик : Büyük
+Верхний : Üst
+Вести себя : Hareket etmek
+Власть : Power, authority
+Вниз : Aşağı
+Внизу : Altında
+Внутри : İçinde
+Вовремя : Zamanında
+Воевать : Savaşmak
+Воздух : Hava
+Вокзал : Tren İstasyonu
+Воспитание : Eğitim
+Воспитывать : Yetiştirmek
+Впервые : For the first time
+Вслух : Yüksek sesle
+Вчерашний : Dünkü
+Вызывать / вызвать : Çağırmak
+Выражать : İfade etmek
+Высший : En yüksek
+Параша : Bok kabı
+Потише : Daha sessiz!
+Неудивительно : Şaşırtıcı değil, doğal olarak
+Представить : Sunmak, tanıtmak
+Замечательный : Göze çarpan, dikkate değer
+Ненадежный : Güvenilmez
+Разочарованный : Hayal kırıklığına uğramış
+Несомненно : Belliki, şüphesiz
+Ясный : Açık, belirgin
+Странный : Tuhaf
+Так оно и есть : Bu işler böyle
+Особенно : Özellikle
+Анекдот : Fıkra
+Развлекательный : Eğlenceli
+Удивленный : Şaşırtıcı
+Инфаркт : Kalp krizi
+Это ниже твоего достоинства : Bu sana yakışmadı
+Предполагать : Düşünmek, fikir yürütmek
+Великие умы думают одинаково : Aklın yolu bir
+Один в поле не воин : Bir elin nesi var iki elin sesi var
+Мудрый : Akıllıca
+Предположить : Sanmak
+Цена : Bedel
+Благо : Fayda, iyilik
+Избегать : Kaçınmak
+Ограбление : Soygun
+Копейка рубль бережёт : Damlaya damlaya göl olur
+Процедура : Prosedür, işlem
+Отлежаться : Dinlenmek (hastanın)
+Доказательство : Kanıt
+Доказывать : Göstermek
+Любой ценой : Bedeli ne olursa olsun
+Алиби : Mazeret
+Население : Nüfus
+Фонд : Ödenek
+Влиятельный : Güçlü, kuvvetli
+В это время : Bu zamanda, bu esnada
+В эти дни : Bugünlerde
+В последнее время : Son zamanlarda
+Чёткий / ровный : Good
+Угарный : Смешной
+От души : СПАСИБО
+По-братски / не в падлу : ПОЖАЛУЙСТА
+Жрать охота : Я ПРОГОЛОДАЛСЯ
+Чё как сам ваще : КАК ДЕЛА
+Развивать навыки : Becerileri geliştirmek
+Разбираться : Bir işten anlamak
+Отличаться : Farklı olmak (он мало чем отличается от тебя)
+Застенчивый : Utangaç
+Один умножить на ноль равно ноль : One times zero equals zero
+Чётные и нечётные : Even and odd
+Круг : Daire
+Квадрат : Kare
+Баранина : Koyun / kuzu eti
+Индейка : Hindi
+Зелень : Sebze
+Капуста : Lahana
+Свёкла : Pancar
+Баклажан : Patlıcan
+Чеснок : Sarımsak
+Шпинат : Ispanak
+Ягоды : Yemiş
+Дыня : Kavun
+Персик : Şeftali
+Абрикос : Kayısı
+Клубника : Çilek
+Какая картинка! : What a picture
+Кнопка : Tuş, buton
+Во время... (-in hali) : During...
+Переплатить : To overpay
+Выспаться : Uykusunu almak
+Проспать : Uyuya kalmak
+Раздумать : Vazgeçmek, fikir değiştirmek
+Жесть : Crazy
+Ржака : Really funny
+Дерьмо : Shit
+Мудак : Asshole
+Ублюдок : Bastard
+Хуйня : Bullshit
+Осёл : Jackass
+Пизда : Cunt
+Писка : Pussy
+Говно : Crap
+Урод : Ucube
+Вверху : Yukarıda
+Внизу : Aşağıda
+Впереди : Önde
+Сзади : Arkada
+Слева : Solda
+Справа : Sağда
+Вверх : Yukarıya
+Вниз : Aşağıya
+Вперёд : İleriye/öne
+Назад : Geriye/arkaya
+Налево : Sola
+Направо : Sağa
+Верхний : Üst/üstteki
+Нижний : Alt/alttaki
+Позже : Sonra
+Прикиньте : Düşünsenize
+Перед... : ...-den, -dan önce
+Борода : Sakal
+Усы : Bıyık
+Подобные : Benzer, bu tarz
+Крутиться на языке : Dilimin ucunda
+Балдеж : Классно, круто
+Не только... но... : Sadece değil... de de öyle
+Положи руки в карман : Ellerini cebine koy
+А ты кем устраиваешься? : Mesleğin ne?
+При... (-e hali) : ...sırasında
+Мероприятие : Etkinlik
+Вести себя : Davranmak
+Нам нечего терять/говорить : Kaybedecek / söyleyecek bir şeyimiz yok
+О том : Поговорим о том, какие страны...
+Легко запутаться : Kafan kolayca karışabilir
+В течение... : Süresince, boyunca
+Перед тем как : Başlamadan önce
+В общем : Kısaca, özetle
+В наши дни : Günümüzde
+Жаловаться : Şikayet etmek
+Анализировать : Analiz etmek
+Беседовать : Sohbet etmek
+Бить : Vurmak, dövmek
+Бороться : Savaşmak (борюсь, боремся...)
+Бриться : Sakal tıraşı olmak (бреюсь, ...)
+Бросать : Atmak
+Бывать : Olmak
+Воспитывать : Eğitmek, yetiştirmek
+Воевать : Savaşmak
+Возражать : Itiraz etmek
+Выбивать : Kırmak
+Вызывать : Çağırmak, neden olmak
+Выполнять : Yerine getirmek, gerçekleştirmek
+Выражать : Ifade etmek
+Грустить : Hüzünlenmek
+Добавить : Eklemek
+Доказать : Kanıtlamak, ispat etmek
+Допустим : Düşünelim ki, varsayalım
+Ебануть : S*kmek
+Забрать : Almak
+Заважничать : Hava atmak
+Заваливать : Yığmak, (sınavda) çuvallamak
+Зависеть : Bağlantılı olmak
+Замедлять : Yavaşlamak
+Занять : Meşgul olmak
+Конвертировать : Dönüştürmek
+Леденеть : Donmak
+Лидерствовать : Liderlik yapmak
+Манить : Işaret vererek çağırmak
+Надоедать : Bıkmak, usanmak
+Намекать : Ima etmek, çıtlatmak
+Обижаться : Darılmak / kırılmak
+Обмануть / обманывать : Aldatmak
+Обозначать : Başkasına benzetmek
+Одобрять : Takdir etmek
+Организовать : Organize etmek
+Останавливать / остановить : Durdurmak
+Отвыкать : Alışkanlıktan vazgeçmek
+Отказывать / отказать : Reddetmek
+Отпускать / отпустить : Salmak, salıvermek
+Отражать : Yansımak, yansıtmak
+Охладеть : Birinden, bir şeyden soğumak
+Ошибаться : Hata yapmak, yanılmak
+Переместить : Yerini değiştirmek
+Побеждать / победить : Galip gelmek
+Поддерживать : Desteklemek
+Подозревать : Şüphelenmek
+Подтверждать : Doğrulamak, teyit etmek
+Позволить : Izin vermek
+Покарать : Cezalandırmak
+Покорять : Fethetmek
+Посещать : Ziyaret etmek
+Посоветовать : Tavsiye bulunmak
+Потешить : Eğlendirmek
+Практиковать : Pratik yapmak
+Предлагать : Önermek, teklif etmek
+Представить : Sunmak, tanıtmak
+Прибывать / прибыть : Gelmek, varmak
+Привыкать : Alışmak
+Принадлежать : Ait olmak, birinin malı olmak
+Приобрести : Satın almak
+Приставать : Musallat olmak, yapışmak
+Приучать : Alıştırmak, eğitmek
+Производить : Üretmek
+Проснуться : Uyanmak
+Прыгать / прыгнуть : Zıplamak
+Увеличивать / увеличить : Arttırmak
+Угащивать : Israrla ikram etmek
+Уговорить : Razı etmek
+Угрожать : Tehdit etmek
+Ударить : Vurmak
+Умолять : Yalvarmak
+Уничтожить : Yok etmek
+Упадать : Düşmek
+Упоминать : Anmak
+Управлять : Yönetmek
+Ускорять : Hızlandırmak
+Уснуть : Uyumak
+Устраивать : Kurmak
+Уточнить : Netleştirmek, kesinleştirmek
+Ухудшать : Kötüleştirmek
+Финансировать : Finanse etmek
+Фотографировать : Fotoğraf çekilmek
+Хваливать : Övmek
+Чихать : Hapşırmak, öksürmek
+Разбивать : Kırmak, mahvetmek
+Разбудить : Uyandırmak
+Разделять : Bölmek
+Разрушать : Yıkmak, mahvetmek
+Распускать : Azat etmek
+Рассмотреть : Gözden geçirmek, incelemek
+Расстаться : Ayrılmak
+Расчувствоваться : Duygulanmak
+Реализовать : Gerçekleştirmek
+Связать : Ilişkili / bağlantılı olmak
+Скачать : Indirmek, yükлеmek
+Следовать : Takip etmek
+Соблюдать : Uymak
+Сокращать : Azaltmak
+Сомневаться : Şüphelenmek
+Сообщать : Bildirmek
+Суметь : Yapabilmek, yapmasını bilmek
+Соскучиться : Özlemek
+Состояться : Yapılmak
+Спорить : Tartışmak, münakaşa etmek
+Справиться : Üstesinden gelmek
+Строить : Inşa etmek
+Тренироваться : Antrenman yapmak
+Торговаться : Pazarlık etmek
