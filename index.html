@@ -105,6 +105,11 @@
                     <span class="mode-title">Tüm Kelimeler</span>
                     <span class="mode-desc">Kelime listesini görüntüle</span>
                 </button>
+                <button class="mode-card" data-mode="categories">
+                    <span class="mode-icon">🗂️</span>
+                    <span class="mode-title">Kategoriler</span>
+                    <span class="mode-desc">Kelimeleri ünite ünite çalış</span>
+                </button>
             </div>
         </main>
 
@@ -172,6 +177,38 @@
             <div class="quiz-feedback hidden" id="quizFeedback">
                 <p id="quizFeedbackText"></p>
                 <button class="next-btn" id="quizNext">Sonraki →</button>
+            </div>
+        </section>
+
+        <!-- Categories Mode -->
+        <section id="categoriesMode" class="mode-screen hidden">
+            <div class="mode-header">
+                <button class="back-btn" data-back>← Geri</button>
+                <h2>🗂️ Kategoriler (Üniteler)</h2>
+            </div>
+
+            <!-- Category Selection View -->
+            <div id="categoriesLanding">
+                <div class="category-grid" id="categoryGrid">
+                    <!-- Categories will be populated here -->
+                </div>
+            </div>
+
+            <!-- Category Detail View (List of words for a specific category) -->
+            <div id="categoryDetailView" class="hidden">
+                <div class="category-subview-header"
+                    style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                    <button class="back-btn" id="categoryBackBtn">← Kategorilere Dön</button>
+                    <h3 id="categoryTitle" style="margin: 0; color: var(--text);">Kategori Adı</h3>
+                </div>
+
+                <div class="category-actions" style="margin-bottom: 20px; text-align: center;">
+                    <button class="modal-btn primary" id="categoryStudyBtn">Bu Üniteyi Çalış (Flashcard)</button>
+                </div>
+
+                <div class="words-list" id="categoryWordsList">
+                    <!-- Word cards will go here -->
+                </div>
             </div>
         </section>
 
@@ -384,6 +421,7 @@
     <script src="js/app.js"></script>
     <script src="js/flashcard.js"></script>
     <script src="js/quiz.js"></script>
+    <script src="js/categories.js"></script>
 
     <script src="js/torfl.js"></script>
     <script src="js/daily.js"></script>

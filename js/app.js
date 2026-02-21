@@ -224,6 +224,9 @@ class App {
                 case 'reversequiz':
                     window.reverseQuizMode?.init(questionCount);
                     break;
+                case 'categories':
+                    window.categoriesMode?.init();
+                    break;
                 case 'synonyms':
                     window.synonymsMode?.init();
                     break;
