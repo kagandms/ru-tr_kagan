@@ -1,39 +1,51 @@
-/* ===== CSS Variables ===== */
+/* ===== CSS Variables (Gamification UI) ===== */
 :root {
-    /* Light Theme */
-    --bg-primary: #f0f4f8;
+    /* Light Theme - Duolingo-inspired vivid & soft colors */
+    --bg-primary: #f7f9fb;
     --bg-secondary: #ffffff;
     --bg-card: #ffffff;
-    --text-primary: #1a202c;
-    --text-secondary: #4a5568;
-    --text-muted: #718096;
-    --accent: #667eea;
-    --accent-light: #7c91f0;
-    --accent-dark: #5a67d8;
-    --success: #48bb78;
-    --error: #f56565;
-    --warning: #ed8936;
-    --border: #e2e8f0;
-    --shadow: rgba(0, 0, 0, 0.1);
-    --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    --gradient-card: linear-gradient(145deg, #ffffff 0%, #f7fafc 100%);
+    --text-primary: #3c424d;
+    --text-secondary: #778599;
+    --text-muted: #afbac7;
+    --accent: #58cc02;
+    /* Duolingo Green */
+    --accent-light: #79e324;
+    --accent-dark: #46a302;
+    --primary-blue: #1cb0f6;
+    /* Duolingo Blue */
+    --primary-blue-dark: #1480b3;
+    --success: #58cc02;
+    --error: #ff4b4b;
+    /* Duolingo Red */
+    --warning: #ffc800;
+    /* Duolingo Yellow */
+    --border: #e5e5e5;
+    --border-dark: #ccced1;
+    /* For 3D button bottom border */
+    --shadow: rgba(0, 0, 0, 0.05);
+    --card-shadow: 0 4px 0 var(--border-dark);
+    /* 3D Box Shadow */
+    --gradient-primary: linear-gradient(180deg, #1cb0f6 0%, #159ce0 100%);
+    --gradient-card: linear-gradient(180deg, #ffffff 0%, #ffffff 100%);
 }
 
 [data-theme="dark"] {
-    --bg-primary: #0f0f1a;
-    --bg-secondary: #1a1a2e;
-    --bg-card: #16213e;
-    --text-primary: #e8e8e8;
-    --text-secondary: #a0aec0;
-    --text-muted: #718096;
-    --accent: #667eea;
-    --accent-light: #818cf8;
-    --accent-dark: #5a67d8;
-    --border: #2d3748;
+    --bg-primary: #131f24;
+    --bg-secondary: #202f36;
+    --bg-card: #202f36;
+    --text-primary: #e5e5e5;
+    --text-secondary: #afbac7;
+    --text-muted: #778599;
+    --accent: #58cc02;
+    --accent-light: #79e324;
+    --accent-dark: #46a302;
+    --primary-blue: #1cb0f6;
+    --primary-blue-dark: #1480b3;
+    --border: #37464f;
+    --border-dark: #1b262c;
     --shadow: rgba(0, 0, 0, 0.3);
-    --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    --gradient-card: linear-gradient(145deg, #1a1a2e 0%, #16213e 100%);
+    --card-shadow: 0 4px 0 var(--border-dark);
+    --gradient-card: linear-gradient(180deg, #202f36 0%, #202f36 100%);
 }
 
 /* ===== Reset & Base ===== */
@@ -49,20 +61,21 @@ html {
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background: var(--bg-primary);
     color: var(--text-primary);
     min-height: 100vh;
     min-height: 100dvh;
     transition: background-color 0.3s ease, color 0.3s ease;
     overflow-x: hidden;
+    font-weight: 600;
 }
 
 #app {
-    max-width: 500px;
+    max-width: 550px;
     margin: 0 auto;
-    padding: 1rem;
-    padding-bottom: 2rem;
+    padding: 1.5rem;
+    padding-bottom: 2.5rem;
 }
 
 /* ===== Header ===== */
@@ -70,13 +83,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
-    margin-bottom: 1.5rem;
+    padding: 1.5rem 0;
+    margin-bottom: 2rem;
 }
 
 .header h1 {
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 1.6rem;
+    font-weight: 800;
     color: var(--text-primary);
 }
 
@@ -447,22 +460,23 @@ body {
     justify-content: center;
     gap: 0.5rem;
     padding: 1.5rem 1rem;
-    background: var(--gradient-card);
-    border: 1px solid var(--border);
+    background: var(--bg-card);
+    border: 2px solid var(--border);
+    border-bottom: 4px solid var(--border-dark);
     border-radius: 20px;
     cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: var(--card-shadow);
+    transition: all 0.1s ease;
     text-align: center;
 }
 
 .mode-card:active {
-    transform: scale(0.97);
+    transform: translateY(2px);
+    border-bottom: 2px solid var(--border-dark);
 }
 
 .mode-card:hover {
+    background: var(--bg-secondary);
     border-color: var(--accent);
-    box-shadow: 0 8px 30px rgba(102, 126, 234, 0.2);
 }
 
 .mode-icon {
@@ -646,26 +660,33 @@ body {
 .control-btn {
     flex: 1;
     padding: 1rem;
-    border: none;
+    background: var(--bg-card);
+    border: 2px solid var(--border);
+    border-bottom: 4px solid var(--border-dark);
     border-radius: 16px;
-    font-size: 1rem;
-    font-weight: 600;
+    font-size: 1.1rem;
+    font-weight: 700;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: all 0.1s ease;
 }
 
 .control-btn.wrong {
-    background: rgba(245, 101, 101, 0.15);
+    background: rgba(255, 75, 75, 0.1);
+    border-color: var(--error);
+    border-bottom-color: #d13a3a;
     color: var(--error);
 }
 
 .control-btn.correct {
-    background: rgba(72, 187, 120, 0.15);
+    background: rgba(88, 204, 2, 0.1);
+    border-color: var(--success);
+    border-bottom-color: var(--accent-dark);
     color: var(--success);
 }
 
 .control-btn:active {
-    transform: scale(0.97);
+    transform: translateY(2px);
+    border-bottom-width: 2px;
 }
 
 .direction-toggle {
@@ -727,35 +748,75 @@ body {
 }
 
 .quiz-option {
-    padding: 1rem 1.25rem;
+    padding: 1.1rem 1.25rem;
     background: var(--bg-card);
     border: 2px solid var(--border);
-    border-radius: 14px;
+    border-bottom: 4px solid var(--border-dark);
+    border-radius: 16px;
     font-size: 1.1rem;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: all 0.1s ease;
     text-align: left;
+    font-weight: 600;
+}
+
+.quiz-option:hover {
+    background: rgba(28, 176, 246, 0.05);
+    /* Light blue hover */
 }
 
 .quiz-option:active {
-    transform: scale(0.98);
+    transform: translateY(2px);
+    border-bottom-width: 2px;
 }
 
 .quiz-option.correct {
-    background: rgba(72, 187, 120, 0.2);
+    background: rgba(88, 204, 2, 0.15);
     border-color: var(--success);
+    border-bottom-color: var(--accent-dark);
     color: var(--success);
+    animation: bounce 0.4s ease;
 }
 
 .quiz-option.wrong {
-    background: rgba(245, 101, 101, 0.2);
+    background: rgba(255, 75, 75, 0.15);
     border-color: var(--error);
+    border-bottom-color: #d13a3a;
     color: var(--error);
+    animation: wiggle 0.4s ease;
 }
 
 .quiz-option.disabled {
     pointer-events: none;
     opacity: 0.6;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes wiggle {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    75% {
+        transform: translateX(5px);
+    }
 }
 
 .quiz-feedback {
@@ -772,19 +833,23 @@ body {
 
 .next-btn {
     margin-top: 1rem;
-    padding: 0.75rem 2rem;
-    background: var(--gradient-primary);
+    padding: 1rem 2rem;
+    background: var(--primary-blue);
     color: white;
-    border: none;
-    border-radius: 12px;
-    font-size: 1rem;
-    font-weight: 600;
+    border: 2px solid var(--primary-blue-dark);
+    border-bottom: 4px solid var(--primary-blue-dark);
+    border-radius: 16px;
+    font-size: 1.1rem;
+    font-weight: 700;
     cursor: pointer;
-    transition: transform 0.2s ease;
+    transition: all 0.1s ease;
+    width: 100%;
+    /* Or fit-content depending on layout, 100% works well for mobile */
 }
 
 .next-btn:active {
-    transform: scale(0.97);
+    transform: translateY(2px);
+    border-bottom-width: 2px;
 }
 
 /* ===== Typing ===== */
@@ -1176,30 +1241,32 @@ body {
 }
 
 .modal-btn {
-    padding: 0.75rem 1.5rem;
+    padding: 1rem 1.5rem;
     border: 2px solid var(--border);
-    background: var(--bg-secondary);
-    border-radius: 12px;
+    border-bottom: 4px solid var(--border-dark);
+    background: var(--bg-card);
+    border-radius: 16px;
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 700;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: all 0.1s ease;
     color: var(--text-primary);
-    min-width: 60px;
+    min-width: 100px;
 }
 
 .modal-btn:hover {
-    border-color: var(--accent);
-    background: rgba(102, 126, 234, 0.1);
+    background: rgba(28, 176, 246, 0.05);
 }
 
 .modal-btn:active {
-    transform: scale(0.97);
+    transform: translateY(2px);
+    border-bottom-width: 2px;
 }
 
 .modal-btn.primary {
-    background: var(--gradient-primary);
-    border-color: transparent;
+    background: var(--primary-blue);
+    border-color: var(--primary-blue-dark);
+    border-bottom-color: var(--primary-blue-dark);
     color: white;
 }
 
