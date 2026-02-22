@@ -252,23 +252,26 @@ class App {
                 case 'quiz':
                     window.quizMode?.init(questionCount);
                     break;
-                case 'hardwords':
-                    window.hardWordsMode?.init(questionCount);
-                    break;
                 case 'reversequiz':
                     window.reverseQuizMode?.init(questionCount);
+                    break;
+                case 'daily':
+                    window.dailyMode?.init();
+                    break;
+                case 'torfl':
+                    window.torflAPI?.init();
+                    break;
+                case 'stats':
+                    window.statsMode?.init();
+                    break;
+                case 'hardwords':
+                    window.hardWordsMode?.init(questionCount);
                     break;
                 case 'categories':
                     window.categoriesMode?.init();
                     break;
                 case 'synonyms':
                     window.synonymsMode?.init();
-                    break;
-                case 'torfl':
-                    window.torflMode?.init();
-                    break;
-                case 'daily':
-                    window.dailyMode?.init();
                     break;
             }
         }
@@ -340,6 +343,10 @@ class App {
     }
 
     recordAnswer(wordId, isCorrect) {
+        if (window.srsManager) {
+            window.srsManager.updateWord(wordId, isCorrect);
+        }
+
         if (isCorrect) {
             this.stats.totalCorrect++;
             // Günlük hedef için kaydet

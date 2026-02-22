@@ -15,7 +15,18 @@ class QuizMode {
     init(questionCount = null) {
         this.questionCount = questionCount;
         this.correctCount = 0;
-        let allWords = app.shuffleArray([...WORDS]);
+
+        let dueWords = window.srsManager ? window.srsManager.getDueWords([...WORDS]) : [...WORDS];
+        dueWords = app.shuffleArray(dueWords);
+
+        if (questionCount && dueWords.length < questionCount) {
+            const needed = questionCount - dueWords.length;
+            const remainingWords = WORDS.filter(w => !dueWords.includes(w));
+            const extraWords = app.shuffleArray(remainingWords).slice(0, needed);
+            dueWords = dueWords.concat(extraWords);
+        }
+
+        let allWords = dueWords;
 
         // Soru sayısını sınırla
         if (questionCount && questionCount < allWords.length) {

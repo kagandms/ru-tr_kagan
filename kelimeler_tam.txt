@@ -1,7 +1,6 @@
 Мир тесен : Dünya dar (deyim)
 Временный : Geçici
 В пути : На дороге (yolda)
-Отечество : Baba memleketi (ülke)
 Учиться : Nerede? Üniversitede (Где? В университете)
 Учить - Выучить : Ezberlemek
 Учить - Научить : Birinin öğretmesi
@@ -32,12 +31,11 @@
 Уважать : Saygı duymak
 Утомительный : Yorucu
 Бухгалтер : Muhasebeci
-
 Ездить : tatile gitmek
 Вы- / У- : kısa süreli quit / belirsiz quit, sevgiliden ayrılmak, terk etmek
 Переход : alt/üst geçit
 Во Владивосток : B'den sonraki B ile başlayıp ikinci harfi de sessiz ise B -> Bo olur
-Реализировать : gerçekleştirmek
+Реализировать / Реализовать : Gerçekleştirmek
 Пословица : atasözü
 Претендовать : iddia etmek (утверждать)
 Смотря (где, куда, с кем) : nerede, nereye, kiminle olduğuna bağlı
@@ -54,19 +52,17 @@
 Терпеть не могу : Dayanamıyorum, tahammül edemiyorum
 Не переставая : aralıksız, sürekli (yağmur)
 Чаще всего : en çok (Чаще всего в университете)
-Посетить : Visit
+Посетить : Visit / Побывать
 Заморозка : don
 Резкий : keskin
 Перемены : değişimler
-Заболевать : hastalanmak
+Заболевать / Заболеть : Hastalanmak
 Туча : Kara bulut
 Дуть : esmek (rüzgar)
 Град : dolu
 Дождь как ливанул : Yağmur bardaktan boşalırcasına yağdı
-
 Я промок до нитки : İpime kadar ıslandım
 Появиться : görünmek, gözükmek
-Пытаться : Denemek
 Высушить : Kurutmak
 Иначе : Başka türlü (Иначе, как могу Вам доверять?)
 Провести (проведу, проведёшь..., провёл...) : Geçirmek (bir yerde bulunmak)
@@ -124,7 +120,6 @@
 Часы спешат : Saat ileride
 Часы стоят : Saat durdu
 Часы точные : Saat doğru
-
 Оставаться / Остаться : Kalmak
 Пусть : Olsun, kalsın, yapsın...
 Правильно : Doğru (gramatik olarak)
@@ -137,7 +132,6 @@
 Чуть не : Az kalsın
 Авария : Kaza
 Бессонница : Uykusuzluk
-Заболеть : Hastalanmak
 Расчувствовать : Sezmek, hissetmek
 Потерять сознание : Bilincini kaybetmek
 Во сколько / В котором часу :
@@ -154,18 +148,17 @@
 Ни пуха ни пера : Başarılar!
 Ни рыба ни мясо : Ne öyle ne böyle (Korkaklar içinde kullanılır.)
 Ни души : Kimse yok
-
 Упасть в обморок : Bilincini kaybetmek, bayılmak
 Расходиться : Dağılmak
 Обрываться : Kopmak, kesilmek, yarıda kalmak
 Повышать : Yükseltmek
-Заваливать : Yığılmak (bir şeye)
+Заваливать : Yığılmak (bir şeye) / Yığmak, (sınavda) çuvallamak
 Восхищаться (+ ile) : Hayranlık duymak
 Располагаться : Bulunmak, konumlanmak
 Ловить : Tutmak, yakalamak (balık)
 Опадать : Dökülmek, düşmek (yaprak, meyve)
 Желтеть : Sararmak
-Сообщать : Bildirmek
+Сообщать : Bildirmek / Сказать, Написать
 Гореть : Yanmak
 Успевать : Yetişmek
 Выполнять (görevi) : Tamamlamak
@@ -180,7 +173,6 @@
 Зависимость : Bağımlılık
 Ничего себе : Vay be
 Лучше бы ... : ... iyi olur
-
 Оптимист(ка) / Пессимист
 Кашлять : Öksürmek
 Почти выздоровел : Neredeyse iyileştim
@@ -206,9 +198,8 @@
 Волноваться : Переживать
 Юноша : Молодой (человек)
 Столетие : Век
-Фотографировать : Снимать
+Фотографировать : Снимать / Fotoğraf çekilmek
 Извините : Простите
-
 Беседа : Разговор
 Дурацкий : Глупый
 Оценка : Отметка
@@ -223,8 +214,8 @@
 Смелый : Храбрый, Бесстрашный
 Абсолютно : Совершенно
 Знаменитый : Популярный
-Вернуть : Отдать
-Необходимо : Надо
+Вернуть : Отдать / Geri vermek
+Необходимо : Надо / Нужно, Надо
 Отличный : Прекрасный, Замечательный
 Ужасный : Кошмарный, Отвратительный
 Немножко : Чуть-чуть
@@ -239,20 +230,16 @@
 Тратить : Расходовать
 Умереть : Скончаться
 Применять : Использовать
-Различные : Разный
-
 Беда : Горе
 Праздновать : Отмечать
 Прогуливать : Занятия
 Внезапно : Вдруг
 Ремонтировать : Исправлять / Чинить
-Лентяй : Ленивый
 Твёрдый : Крепкий
 Думать : Размышлять
 Ссориться : Ругаться (sözlü)
 Сердиться : Злиться
-Возможно : Наверное
-Вероятно : Возможно
+Вероятно : Возможно / Наверное
 Разумеется : Конечно
 Сожалеть : Pişman olmak
 Я похож на маму, тем что у меня такой же характер
@@ -272,8 +259,7 @@
 Аптечка : İlk yardım kiti
 Интриговать : Merak uyandırmak, ilgi çekmek
 Замешательство : Şaşkınlık, ne yapacağını bilememe
-Уточнить : Açıklığa kavuşturmak, kesinleştirmek, netleştirmek
-
+Уточнить : Açıklığa kavuşturmak, kesinleştirmek, netleştirmek / Netleştirmek, kesinleştirmek
 Суета : Telaş, acele
 Соболезновать : Baş sağlığı dilemek
 Содеянное : İşlenen, yapılan (iş, eylem)
@@ -293,7 +279,7 @@
 С филax -> На глаголы (Sifattan Fiile)
 Худой : Худеть
 Толстый : Толстеть
-Бледный : Бледнеть
+Бледный : Бледнеть / Soluk (renk)
 Красный : Краснеть
 Молодой : Молодеть
 Старый : Стареть
@@ -305,10 +291,8 @@
 Поправляйся : Geçmiş olsun
 Мне становится : Bana oluyor..., hissediyorum
 Всё равно : Her şeye rağmen
-
 наладить : düzeltmek
 Радоваться : Sevinmek
-Вернуть : Geri vermek
 Занимать : Ödünç almak
 Завтраками меня не корми : Beni boş laflarla doyurma
 Выражение : Expression, ifade
@@ -338,7 +322,6 @@
 Что касается... : ... konusuna gelince (-i hali, Тебя, меня)
 В связи с этим : Bununla bağlantılı olarak...
 Занятия : Уроки
-
 Заселиться : Yerleşmek
 Новоселье : Eve taşınma partisi
 Совершить преступление : Suç işlemek
@@ -351,15 +334,12 @@
 Ни чёрта : Hiçbir şey, zerre kadar
 Ни капли : Zerre kadar
 Досрочно : Vaktinden önce
-
-Посетить : Побывать
 Совершить : Сделать
-Необходимо : Нужно, Надо
 Следует : Нужно
 Существовать : Быть
 Выполнить : Сделать
 Находиться : Быть
-Приобрести : Купить
+Приобрести : Купить / Satın almak
 Срок : Время
 Прибыть : Прийти
 Проживать : Жить
@@ -368,7 +348,7 @@
 Предоставить : Дать
 Присутствовать : Быть (на лекции)
 Отсутствовать : Не быть (на лекции)
-Иметь : У... есть
+Иметь : У... есть / Есть
 Следовательно : Значит
 Каков : Какие
 Сопоставить : Сравнить
@@ -380,12 +360,9 @@
 Таким образом : Так
 В заключение : В конце
 Большое количество : Много
-
-
 Улучшать : Становиться лучше
-Ухудшать : Становиться хуже
+Ухудшать : Становиться хуже / Kötüleştirmek
 Доходы : Получать много денег
-Расходы : Тратит
 Разрешается : Можно
 Запрещается : Нельзя
 Расширяется : Становиться шире
@@ -401,31 +378,26 @@
 Преимущественно : В основном
 Обнаружить : Найти
 Незначительный : Небольшой
-Сообщать : Сказать, Написать
 Многочисленные : Много
 Обеспечивать : Дать
 Осознавать : Понимать (Farkına varmak)
-
 Разрешить : Можно
-Позволить : Можно
-Производить : Делать (üretmek, yapmak)
+Позволить : Можно / Izin vermek
+Производить : Делать (üretmek, yapmak) / Менять (?) / Üretmek
 Изготовлять : Делать (imal etmek)
 Вырабатывать : Делать (ürün üretmek / geliştirmek)
-Принадлежать : Это его, её, мой... (ait olmak)
+Принадлежать : Это его, её, мой... (ait olmak) / Ait olmak, birinin malı olmak
 Владеть : Иметь / Знать (Sahip olmak / hakim olmak)
-Иметь : Есть
 Осуществлять : Делать (gerçekleştirmek)
-Производить : Менять (?)
-Несомненно : Конечно (şüphesiz)
+Несомненно : Конечно (şüphesiz) / Belliki, şüphesiz
 Безусловно : Конечно (şartsız)
 Я считаю : Думаю
 По моему мнению : Думаю
 На мой взгляд : Думаю
 С моей точки зрения : Я думаю
 Видимо : Наверное (görünüşe bakılırsa)
-Вероятно : Наверное (muhtemel)
 Разучиться : Beceriyi yitirmek
-Сомневаться : Şüphe duymak
+Сомневаться : Şüphe duymak / Şüphelenmek
 Отвыкнуть : Alışkanlığı bırakmak
 Отучить - Приучить : Soğutmak - Alıştırmak
 Вдоль - Поперёк : Boyunca - Karşıdan karşıya
@@ -435,7 +407,6 @@
 Трезвый : Ayık
 Снаружи : Dışarıda
 Обвинять : Suçlamak
-
 Пересекать : Перейти (sınır vb. geçmek)
 Преобладать : Больше (ağır basmak, çoğunlukta olmak)
 Превышать : Выше (aşmak, üstünde olmak)
@@ -466,7 +437,6 @@
 Трусливый : Korkak
 Кислый : Ekşi
 Толстый - Тонкий : Kalın - İnce
-
 Радость - Грусть : Neşe - Hüzün
 Молодость - Старость : Gençlik - Yaşlılık
 Грязь - Чистота : Kir - Temizlik
@@ -498,7 +468,6 @@
 Скромность - Нахальство : Alçakgönüllülük - Yüzsüzlük
 Жадность - Щедрость : Açgözlülük - Cömertlik
 Выигрыш - Проигрыш : Kazanç - Kayıp
-
 Тёща - Свекровь : Kayınvalide
 Похвала - Осуждение : Övgü - Kınama
 Смех - Слёзы : Gülme - Gözyaşı
@@ -529,11 +498,8 @@
 Солнечный - Дождливый : Güneşli - Yağmurlu
 Красавец - Урод : Güzel - Ucube
 Простой - Цветной : Basit - Renkli
-
-
-
 Автомат : Otomat, makine
-Проанализировать : Analiz etmek
+Проанализировать / Анализировать : Analiz etmek
 Ансамбль : Topluluk
 Ангина : Boğaz ağrısı
 Аспирант/аспирантка : Yüksek lisans öğrencisi
@@ -546,10 +512,9 @@
 Беречь/сберечь : Saklamak/Korumak
 Беспокоиться : To worry
 Бланк : Boş
-Бледный : Soluk (renk)
 Ближе : Closer
 Борода : Sakal
-Бороться : Savaşmak
+Бороться : Savaşmak / Savaşmak (борюсь, боремся...)
 Борьба : Mücadele
 Булочка : Çörek
 Булочная : Fırın
@@ -557,23 +522,23 @@
 Вверху : Yukarıda
 Вежливый : Kibar
 Велик : Büyük
-Верхний : Üst
-Вести себя : Hareket etmek
+Верхний : Üst / Üst/üstteki
+Вести себя : Hareket etmek / Davranmak
 Власть : Power, authority
-Вниз : Aşağı
-Внизу : Altında
+Вниз : Aşağı / Aşağıya
+Внизу : Altında / Aşağıda
 Внутри : İçinde
 Вовремя : Zamanında
 Воевать : Savaşmak
 Воздух : Hava
 Вокзал : Tren İstasyonu
 Воспитание : Eğitim
-Воспитывать : Yetiştirmek
+Воспитывать : Yetiştirmek / Eğitmek, yetiştirmek
 Впервые : For the first time
 Вслух : Yüksek sesle
 Вчерашний : Dünkü
 Вызывать / вызвать : Çağırmak
-Выражать : İfade etmek
+Выражать : İfade etmek / Ifade etmek
 Высший : En yüksek
 Параша : Bok kabı
 Потише : Daha sessiz!
@@ -582,7 +547,6 @@
 Замечательный : Göze çarpan, dikkate değer
 Ненадежный : Güvenilmez
 Разочарованный : Hayal kırıklığına uğramış
-Несомненно : Belliki, şüphesiz
 Ясный : Açık, belirgin
 Странный : Tuhaf
 Так оно и есть : Bu işler böyle
@@ -605,7 +569,6 @@
 Процедура : Prosedür, işlem
 Отлежаться : Dinlenmek (hastanın)
 Доказательство : Kanıt
-Доказывать : Göstermek
 Любой ценой : Bedeli ne olursa olsun
 Алиби : Mazeret
 Население : Nüfus
@@ -659,24 +622,18 @@
 Писка : Pussy
 Говно : Crap
 Урод : Ucube
-Вверху : Yukarıda
-Внизу : Aşağıda
 Впереди : Önde
-Сзади : Arkada
 Слева : Solda
 Справа : Sağда
 Вверх : Yukarıya
-Вниз : Aşağıya
 Вперёд : İleriye/öne
 Назад : Geriye/arkaya
 Налево : Sola
 Направо : Sağa
-Верхний : Üst/üstteki
 Нижний : Alt/alttaki
 Позже : Sonra
 Прикиньте : Düşünsenize
 Перед... : ...-den, -dan önce
-Борода : Sakal
 Усы : Bıyık
 Подобные : Benzer, bu tarz
 Крутиться на языке : Dilimin ucunda
@@ -686,7 +643,6 @@
 А ты кем устраиваешься? : Mesleğin ne?
 При... (-e hali) : ...sırasında
 Мероприятие : Etkinlik
-Вести себя : Davranmak
 Нам нечего терять/говорить : Kaybedecek / söyleyecek bir şeyimiz yok
 О том : Поговорим о том, какие страны...
 Легко запутаться : Kafan kolayca karışabilir
@@ -694,21 +650,15 @@
 Перед тем как : Başlamadan önce
 В общем : Kısaca, özetle
 В наши дни : Günümüzde
-Жаловаться : Şikayet etmek
-Анализировать : Analiz etmek
 Беседовать : Sohbet etmek
 Бить : Vurmak, dövmek
-Бороться : Savaşmak (борюсь, боремся...)
 Бриться : Sakal tıraşı olmak (бреюсь, ...)
 Бросать : Atmak
 Бывать : Olmak
-Воспитывать : Eğitmek, yetiştirmek
-Воевать : Savaşmak
 Возражать : Itiraz etmek
 Выбивать : Kırmak
 Вызывать : Çağırmak, neden olmak
 Выполнять : Yerine getirmek, gerçekleştirmek
-Выражать : Ifade etmek
 Грустить : Hüzünlenmek
 Добавить : Eklemek
 Доказать : Kanıtlamak, ispat etmek
@@ -716,7 +666,6 @@
 Ебануть : S*kmek
 Забрать : Almak
 Заважничать : Hava atmak
-Заваливать : Yığmak, (sınavda) çuvallamak
 Зависеть : Bağlantılı olmak
 Замедлять : Yavaşlamak
 Занять : Meşgul olmak
@@ -743,7 +692,6 @@
 Поддерживать : Desteklemek
 Подозревать : Şüphelenmek
 Подтверждать : Doğrulamak, teyit etmek
-Позволить : Izin vermek
 Покарать : Cezalandırmak
 Покорять : Fethetmek
 Посещать : Ziyaret etmek
@@ -751,14 +699,10 @@
 Потешить : Eğlendirmek
 Практиковать : Pratik yapmak
 Предлагать : Önermek, teklif etmek
-Представить : Sunmak, tanıtmak
 Прибывать / прибыть : Gelmek, varmak
 Привыкать : Alışmak
-Принадлежать : Ait olmak, birinin malı olmak
-Приобрести : Satın almak
 Приставать : Musallat olmak, yapışmak
 Приучать : Alıştırmak, eğitmek
-Производить : Üretmek
 Проснуться : Uyanmak
 Прыгать / прыгнуть : Zıplamak
 Увеличивать / увеличить : Arttırmak
@@ -774,10 +718,7 @@
 Ускорять : Hızlandırmak
 Уснуть : Uyumak
 Устраивать : Kurmak
-Уточнить : Netleştirmek, kesinleştirmek
-Ухудшать : Kötüleştirmek
 Финансировать : Finanse etmek
-Фотографировать : Fotoğraf çekilmek
 Хваливать : Övmek
 Чихать : Hapşırmak, öksürmek
 Разбивать : Kırmak, mahvetmek
@@ -786,16 +727,12 @@
 Разрушать : Yıkmak, mahvetmek
 Распускать : Azat etmek
 Рассмотреть : Gözden geçirmek, incelemek
-Расстаться : Ayrılmak
 Расчувствоваться : Duygulanmak
-Реализовать : Gerçekleştirmek
 Связать : Ilişkili / bağlantılı olmak
 Скачать : Indirmek, yükлеmek
 Следовать : Takip etmek
 Соблюдать : Uymak
 Сокращать : Azaltmak
-Сомневаться : Şüphelenmek
-Сообщать : Bildirmek
 Суметь : Yapabilmek, yapmasını bilmek
 Соскучиться : Özlemek
 Состояться : Yapılmak
@@ -804,3 +741,52 @@
 Строить : Inşa etmek
 Тренироваться : Antrenman yapmak
 Торговаться : Pazarlık etmek
+Отечество : Родина (Vatan)
+Пытаться : Стараться
+Различные : Разные
+Лентяй : Ленивый / Лодырь / Бездельник (Tembel)
+Возможно : Наверное / Может быть
+Временами : Иногда
+Базар : Рынок
+Обманывать : Лгать
+Ишак : Осёл
+Бросить : Кинуть
+Не женат : Холост (Bekar)
+Выздоравливай : Поправляйся
+Возникнуть : Появиться
+Битва : Сражение / Война
+Ерунда : Чепуха (Saçmalık)
+Мелочи : Пустяки (Önemsiz şey)
+Позитивный : Положительный
+Негативный : Отрицательный
+Красть : Воровать (Çalmak)
+Скрываться : Прятаться
+Неаккуратный : Неряшливый (Özensiz)
+Защищаться : Обороняться
+Восторгаться : Восхищаться
+Восторг : Восхищение
+Страдать : Мучаться (Acı çekmek)
+Различие : Разница
+Истина : Правда
+Мощный : Сильный
+Ощущать : Чувствовать
+Нечто : Что-то
+Хранить (сохранять) : Беречь
+Бодрый : Энергичный
+Шалить : Баловаться (Yaramazlık yapmak)
+Крепкий : Прочный
+Отнять : Отобрать (Birinin elinden bir şey almak)
+Передник : Фартук (Mutfak önlüğü)
+Поражаться : Удивляться
+Мертвец : Покойник (Ceset)
+Всевозможные : Разные
+Убавить : Уменьшить
+Жадный : Скупой
+Старательный : Прилежный (Çalışkan)
+Трудолюбивый : Работящий (Çalışkan)
+Прогуливать (занятия) : Пропускать
+Отремонтировать : Починить
+Подумать : Поразмышлять
+Поссориться : Поругаться
+Предпочитать : Больше любить
+Лениться : Üşenmek

@@ -51,13 +51,23 @@ function getWordCategory(ru, tr) {
 
 async function loadWords() {
     try {
-        const response = await fetch('kelimeler_tam.txt');
-        if (!response.ok) {
+        // İki dosyayı aynı anda (paralel) asenkron çek
+        const [wordsResponse, sentencesResponse] = await Promise.all([
+            fetch('kelimeler_tam.txt'),
+            fetch('sentences.json').catch(() => null) // sentences.json yoksa çökmeyi önle
+        ]);
+
+        if (!wordsResponse.ok) {
             throw new Error('Dosya yüklenemedi');
         }
 
-        const text = await response.text();
+        const text = await wordsResponse.text();
         const lines = text.split('\n');
+
+        let sentencesDb = {};
+        if (sentencesResponse && sentencesResponse.ok) {
+            sentencesDb = await sentencesResponse.json();
+        }
 
         WORDS = []; // Reset words
         let idCounter = 1;
@@ -67,7 +77,6 @@ async function loadWords() {
             if (!line) return;
 
             // "Rusça : Türkçe" formatını işle
-            // Bazen birden fazla : olabilir, ilkini ayırıcı olarak alacağız
             const separatorIndex = line.indexOf(':');
 
             if (separatorIndex !== -1) {
@@ -75,19 +84,11 @@ async function loadWords() {
                 const turkish = line.substring(separatorIndex + 1).trim();
 
                 if (russian && turkish) {
-                    // Eş/Zıt Anlam kontrolü (Her iki tarafta da "-" varsa)
-                    // Örn: Радость - Грусть : Neşe - Hüzün
-                    // Eş/Zıt Anlam kontrolü (Her iki tarafta da "-" varsa)
-                    // Örn: Радость - Грусть : Neşe - Hüzün
-                    // Regex kullanarak - işaretini kontrol et (boşluklu veya boşluksuz olabilir ama standart ' - ' dedik)
-
-                    // Daha gevşek kontrol: İçinde tire var mı?
+                    // Eş/Zıt Anlam kontrolü
                     if (russian.includes(' - ') && turkish.includes(' - ')) {
-                        // ' - ' ayracına göre bölmeye çalış, eğer başarısız olursa sadece '-' ile dene
                         let ruParts = russian.split(' - ').map(s => s.trim());
                         let trParts = turkish.split(' - ').map(s => s.trim());
 
-                        // Eğer ' - ' ile bölünemediyse ama tire varsa (örn: kelime-kelime bitişik)
                         if (ruParts.length < 2 && russian.includes('-')) {
                             ruParts = russian.split('-').map(s => s.trim());
                         }
@@ -97,38 +98,52 @@ async function loadWords() {
 
                         if (ruParts.length === 2 && trParts.length === 2) {
                             SYNONYMS.push({
-                                id: idCounter++,
+                                id: idCounter,
                                 w1: { ru: ruParts[0], tr: trParts[0] },
                                 w2: { ru: ruParts[1], tr: trParts[1] },
-                                type: 'antonym' // Varsayılan olarak zıt anlam
+                                type: 'antonym'
                             });
                         }
                     }
 
-                    // Standart kelime olarak da ekle (Flashcard vb. için)
+                    // Dinamik Cümleleri Ata
+                    const currentId = idCounter++;
+                    let wordSentences = [];
+                    if (sentencesDb[String(currentId)]) {
+                        wordSentences = sentencesDb[String(currentId)];
+                    }
+
+                    // Standart kelime olarak da ekle
                     WORDS.push({
-                        id: idCounter++,
+                        id: currentId,
                         russian: russian,
                         turkish: turkish,
                         category: getWordCategory(russian, turkish),
-                        example: { russian: "", turkish: "" }
+                        example: { russian: "", turkish: "" },
+                        sentences: wordSentences
                     });
                 }
             } else {
-                // Özel formatlı satırlar için (örn: zamanlar 12.00 = ...)
-                // Eğer = varsa onu ayıraç olarak kullan
+                // Zamanlar vb. (= ile ayrılanlar)
                 const equalIndex = line.indexOf('=');
                 if (equalIndex !== -1) {
                     const russian = line.substring(0, equalIndex).trim();
                     const turkish = line.substring(equalIndex + 1).trim();
 
                     if (russian && turkish) {
+                        const currentId = idCounter++;
+                        let wordSentences = [];
+                        if (sentencesDb[String(currentId)]) {
+                            wordSentences = sentencesDb[String(currentId)];
+                        }
+
                         WORDS.push({
-                            id: idCounter++,
+                            id: currentId,
                             russian: russian,
                             turkish: turkish,
                             category: getWordCategory(russian, turkish),
-                            example: { russian: "", turkish: "" }
+                            example: { russian: "", turkish: "" },
+                            sentences: wordSentences
                         });
                     }
                 }
@@ -138,8 +153,7 @@ async function loadWords() {
         return true;
 
     } catch (error) {
-        console.error('Kelimeler yüklenirken hata:', error);
-        // Hata durumunda boş dizi veya yedek veri kullanılabilir
+        console.error('Kelimeler ve Cümleler yüklenirken hata:', error);
         return false;
     }
 }

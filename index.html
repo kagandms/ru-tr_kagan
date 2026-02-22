@@ -54,6 +54,20 @@
 
         <!-- Main Menu -->
         <main id="mainMenu" class="main-menu">
+            <header class="main-header" style="text-align: center; margin-bottom: 1.5rem;">
+                <h1>Ru-Tr Öğrenici</h1>
+                <p style="color: var(--text-muted);">Rusça kelime dağarcığını geliştir</p>
+            </header>
+
+            <!-- Streak & Heatmap Göstergesi -->
+            <div class="tracker-section">
+                <div class="streak-header">
+                    <h3>🔥 Günlük Seri: <span id="streakCount">0</span> Gün</h3>
+                </div>
+                <!-- Mini GitHub tarzı aktivite takvimi JS ile buraya dolacak -->
+                <div class="heatmap-container" id="heatmapContainer"></div>
+            </div>
+
             <div class="stats-bar">
                 <div class="stat">
                     <span class="stat-value" id="totalWords">0</span>
@@ -113,6 +127,11 @@
                     <span class="mode-title">Kategoriler</span>
                     <span class="mode-desc">Kelimeleri ünite ünite çalış</span>
                 </button>
+                <button class="mode-card" data-mode="stats">
+                    <span class="mode-icon">📊</span>
+                    <span class="mode-title">Analiz</span>
+                    <span class="mode-desc">Öğrenme istatistiklerin</span>
+                </button>
             </div>
         </main>
 
@@ -135,6 +154,13 @@
                         <div class="flashcard-back">
                             <p class="word" id="flashcardTranslation">Çeviri</p>
                             <p class="example" id="flashcardExampleTr">Örnek çeviri</p>
+                            <div class="sentences-box hidden" id="flashcardSentences" style="margin-top: 15px;">
+                                <hr
+                                    style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin-bottom: 15px;">
+                                <ul id="sentencesList"
+                                    style="text-align: left; font-size: 0.9rem; padding-left: 20px; list-style-type: circle; color: var(--text-muted); line-height: 1.4;">
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -426,7 +452,32 @@
         </div>
     </div>
 
+    <!-- Dashboard ve Analitik Ekranı -->
+    <section id="statsMode" class="mode-screen hidden">
+        <div class="mode-header">
+            <button class="back-btn" data-back>← Geri</button>
+            <h2>Öğrenme Analitiği</h2>
+        </div>
+        <div class="stats-container"
+            style="padding: 1rem; background: var(--bg-card); border-radius: 16px; margin-bottom: 2rem;">
+            <p style="text-align: center; color: var(--text-muted); margin-bottom: 1rem;">Hangi kategorilerde daha
+                başarısız olduğunu incele ve eksiklerini kapat.</p>
+            <div style="position: relative; width: 100%; height: 300px;">
+                <canvas id="radarChart"></canvas>
+            </div>
+            <div id="statsAdvice"
+                style="margin-top: 1.5rem; padding: 1rem; background: rgba(255, 150, 0, 0.1); border-left: 4px solid #ff9600; border-radius: 8px;">
+                <strong>💡 Yapay Zeka Tavsiyesi:</strong> <span id="adviceText">Henüz yeterli veri yok.</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kütüphaneler ve Scriptler -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="js/data.js"></script>
+    <script src="js/srs.js"></script>
+    <script src="js/tracker.js"></script>
+    <script src="js/stats.js"></script>
     <script src="js/favorites.js"></script>
     <script src="js/goals.js"></script>
     <script src="js/ai.js"></script>

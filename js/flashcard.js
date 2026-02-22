@@ -114,14 +114,36 @@ class FlashcardMode {
 
         if (this.direction === 'ru-tr') {
             document.getElementById('flashcardWord').textContent = word.russian;
-            document.getElementById('flashcardExample').textContent = word.example.russian;
+            document.getElementById('flashcardExample').textContent = word.example?.russian || '';
             document.getElementById('flashcardTranslation').textContent = word.turkish;
-            document.getElementById('flashcardExampleTr').textContent = word.example.turkish;
+            document.getElementById('flashcardExampleTr').textContent = word.example?.turkish || '';
         } else {
             document.getElementById('flashcardWord').textContent = word.turkish;
-            document.getElementById('flashcardExample').textContent = word.example.turkish;
+            document.getElementById('flashcardExample').textContent = word.example?.turkish || '';
             document.getElementById('flashcardTranslation').textContent = word.russian;
-            document.getElementById('flashcardExampleTr').textContent = word.example.russian;
+            document.getElementById('flashcardExampleTr').textContent = word.example?.russian || '';
+        }
+
+        // Cümleleri Göster
+        const sentencesBox = document.getElementById('flashcardSentences');
+        const sentencesList = document.getElementById('sentencesList');
+        if (sentencesBox && sentencesList) {
+            sentencesList.innerHTML = '';
+            if (word.sentences && word.sentences.length > 0) {
+                sentencesBox.classList.remove('hidden');
+                word.sentences.forEach(s => {
+                    const li = document.createElement('li');
+                    li.style.marginBottom = '8px';
+                    if (this.direction === 'ru-tr') {
+                        li.innerHTML = `<span style="color:var(--text-primary); font-weight:600;">${s.ru}</span><br><span>${s.tr}</span>`;
+                    } else {
+                        li.innerHTML = `<span style="color:var(--text-primary); font-weight:600;">${s.tr}</span><br><span>${s.ru}</span>`;
+                    }
+                    sentencesList.appendChild(li);
+                });
+            } else {
+                sentencesBox.classList.add('hidden');
+            }
         }
     }
 
