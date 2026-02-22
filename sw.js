@@ -2,34 +2,34 @@
  * Service Worker - Offline Desteği
  */
 
-const CACHE_NAME = 'rutr-v17';
+const CACHE_NAME = 'rutr-v18';
 const ASSETS = [
-    '/',
-    '/index.html',
-    '/kelimeler_tam.txt',
-    '/sentences.json',
-    '/css/style.css',
-    '/js/app.js',
-    '/js/data.js',
-    '/js/favorites.js',
-    '/js/goals.js',
-    '/js/ai.js',
-    '/js/flashcard.js',
-    '/js/quiz.js',
-    '/js/matching.js',
-    '/js/hardwords.js',
-    '/js/reversequiz.js',
-    '/js/synonyms.js',
-    '/js/daily.js',
-    '/js/torfl.js',
-    '/js/ielts.js',
-    '/js/ielts_data.js',
-    '/js/srs.js',
-    '/js/tracker.js',
-    '/js/stats.js',
-    '/manifest.json',
-    '/icon-192.png',
-    '/icon-512.png'
+    './',
+    './index.html',
+    './kelimeler_tam.txt',
+    './sentences.json',
+    './css/style.css',
+    './js/app.js',
+    './js/data.js',
+    './js/favorites.js',
+    './js/goals.js',
+    './js/ai.js',
+    './js/flashcard.js',
+    './js/quiz.js',
+    './js/matching.js',
+    './js/hardwords.js',
+    './js/reversequiz.js',
+    './js/synonyms.js',
+    './js/daily.js',
+    './js/torfl.js',
+    './js/ielts.js',
+    './js/ielts_data.js',
+    './js/srs.js',
+    './js/tracker.js',
+    './js/stats.js',
+    './manifest.json',
+    './icon-192.png',
+    './icon-512.png'
 ];
 
 // Install - Cache assets
@@ -75,7 +75,7 @@ self.addEventListener('fetch', event => {
             .catch(() => {
                 // Offline fallback
                 if (event.request.mode === 'navigate') {
-                    return caches.match('/index.html');
+                    return caches.match('./index.html');
                 }
             })
     );
