@@ -1981,3 +1981,77 @@ body {
     margin: 0;
     white-space: pre-wrap;
 }
+
+/* ===== Tracker & Heatmap (Oyunlaştırma) ===== */
+.tracker-section {
+    background: var(--bg-card);
+    border: 2px solid var(--border);
+    border-radius: 20px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.streak-header {
+    margin-bottom: 1rem;
+}
+
+.streak-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    font-weight: 700;
+}
+
+.active-streak h3 {
+    color: #ff9600;
+    /* Duolingo turuncusu/ateş */
+    text-shadow: 0 2px 4px rgba(255, 150, 0, 0.3);
+}
+
+.heatmap-container {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+}
+
+.heatmap-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.heatmap-box {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background-color: var(--border);
+    /* empty state */
+    transition: all 0.3s ease;
+}
+
+.heatmap-box.level-1 {
+    background-color: #a1e276;
+}
+
+/* Açık yeşil */
+.heatmap-box.level-2 {
+    background-color: #58cc02;
+}
+
+/* Duolingo Yeşili */
+.heatmap-box.level-3 {
+    background-color: #46a302;
+}
+
+/* Koyu Yeşil */
+
+.heatmap-label {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-weight: 600;
+}

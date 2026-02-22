@@ -17,30 +17,36 @@ function getWordCategory(ru, tr) {
         return 'Eş/Zıt Anlamlılar';
     }
 
-    // Create word array for strict matching
-    const trWords = trLower.replace(/,/g, ' ').split(/\s+/).map(w => w.trim());
+    const trWords = trLower.replace(/[,()]/g, ' ').split(/\s+/).map(w => w.trim()).filter(w => w);
 
-    const argoTr = ['siktir', 'göt', 'amk', 'piç', 'kaltak', 'kahpe', 'am', 'yarrak', 'yuh', 'hay anasını', 'vah canına', 'bok', 'şerefsiz', 'çüş', 's*kmek', 'sıçmak', 'çuvallamak'];
+    // Helpers
+    const hasAny = (list) => trWords.some(w => list.includes(w));
+    const findPartial = (list) => list.some(item => trLower.includes(item));
+
+    const argoTr = ['siktir', 'göt', 'amk', 'piç', 'kaltak', 'kahpe', 'am', 'yarrak', 'yuh', 'bok', 'şerefsiz', 'çüş'];
     const argoRu = ['хуй', 'бля', 'пздц', 'ебать', 'ебан', 'говно', 'сука', 'мудак', 'дерьмо', 'пизда', 'ублюдок'];
-    if (trWords.some(w => argoTr.includes(w)) || argoRu.some(w => ruLower.includes(w))) return 'Argo & Günlük İfadeler';
+    if (hasAny(argoTr) || argoRu.some(w => ruLower.includes(w))) return 'Argo & Günlük İfadeler';
 
-    const yemekTr = ['yemek', 'çorba', 'ekmek', 'et', 'tavuk', 'dana', 'meyve', 'sebze', 'elma', 'armut', 'pancar', 'lahana', 'şeftali', 'kayısı', 'kavun', 'karpuz', 'çilek', 'peynir', 'zeytin', 'kahve', 'çay', 'süt', 'su', 'soğan', 'sarımsak', 'patlıcan', 'fırın', 'çörek', 'somun', 'kuzu', 'koyun', 'hindi', 'yemiş', 'içmek', 'aç', 'şeker'];
-    if (trWords.some(w => yemekTr.includes(w))) return 'Yemek & Mutfak';
+    const yemekTr = ['yemek', 'çorba', 'ekmek', 'et', 'tavuk', 'dana', 'meyve', 'sebze', 'elma', 'armut', 'pancar', 'lahana', 'peynir', 'zeytin', 'kahve', 'çay', 'süt', 'su', 'soğan', 'sarımsak', 'patlıcan', 'fırın', 'şeker', 'tatlı', 'içmek', 'aç', 'tok', 'mutfak', 'restoran', 'yemekhane'];
+    if (hasAny(yemekTr) || findPartial(['kahvalt', 'akşam yeme', 'öğle yeme'])) return 'Yemek & Mutfak';
 
-    const yonTr = ['sağ', 'sol', 'üst', 'alt', 'ileri', 'geri', 'yukarı', 'aşağı', 'iç', 'dış', 'arka', 'ön', 'burada', 'şurada', 'orada', 'bura', 'şura', 'ora', 'sağa', 'sola', 'yukarıda', 'aşağıda', 'önde', 'arkada', 'içinde', 'dışında', 'altında', 'üstünde'];
-    if (trWords.some(w => yonTr.includes(w))) return 'Yönler & Konum';
+    const yonTr = ['sağ', 'sol', 'üst', 'alt', 'ileri', 'geri', 'yukarı', 'aşağı', 'iç', 'dış', 'arka', 'ön', 'burada', 'şurada', 'orada', 'bura', 'şura', 'ora', 'sağa', 'sola', 'yakın', 'uzak', 'yanında', 'karşısında', 'ortasında', 'doğu', 'batı', 'kuzey', 'güney'];
+    if (hasAny(yonTr)) return 'Yönler & Konum';
 
-    const zamanTr = ['gün', 'ay', 'yıl', 'saat', 'dakika', 'saniye', 'sabah', 'akşam', 'dün', 'bugün', 'yarın', 'hafta', 'gece', 'zaman', 'önce', 'sonra', 'şimdi', 'bazen', 'zamanlarda', 'günlerde', 'zamanında', 'dünkü'];
-    if (trWords.some(w => zamanTr.includes(w))) return 'Zaman & Takvim';
+    const zamanTr = ['gün', 'ay', 'yıl', 'saat', 'dakika', 'saniye', 'sabah', 'akşam', 'dün', 'bugün', 'yarın', 'hafta', 'gece', 'zaman', 'önce', 'sonra', 'şimdi', 'bazen', 'erken', 'geç', 'asır', 'yüzyıl', 'haftasonu'];
+    if (hasAny(zamanTr) || findPartial(['zamanlarda', 'günlerde', 'zamanında', 'dünkü'])) return 'Zaman & Takvim';
 
-    const egitimTr = ['sınav', 'ders', 'okul', 'meslek', 'öğretmen', 'üniversite', 'lise', 'sınıf', 'eğitim', 'öğrenmek', 'öğrenci', 'lisans'];
-    if (egitimTr.some(w => trLower.includes(w))) return 'Meslek & Eğitim';
+    const egitimTr = ['sınav', 'ders', 'okul', 'meslek', 'öğretmen', 'üniversite', 'lise', 'sınıf', 'eğitim', 'öğrenmek', 'öğrenci', 'lisans', 'doktora', 'kitap', 'defter', 'kalem', 'okumak', 'yazmak', 'çalışmak'];
+    if (hasAny(egitimTr)) return 'Meslek & Eğitim';
 
-    const aileTr = ['anne', 'baba', 'kardeş', 'abi', 'abla', 'dede', 'nine', 'çocuk', 'bebek', 'adam', 'kadın', 'insan', 'arkadaş', 'eş', 'oğul', 'kız', 'nüfus'];
-    if (trWords.some(w => aileTr.includes(w))) return 'İnsan & Aile';
+    const aileTr = ['anne', 'baba', 'kardeş', 'abi', 'abla', 'dede', 'nine', 'çocuk', 'bebek', 'adam', 'kadın', 'insan', 'arkadaş', 'eş', 'oğul', 'kız', 'nüfus', 'koca', 'karı', 'teyze', 'amca', 'dayı', 'hala', 'insanlar', 'halk'];
+    if (hasAny(aileTr)) return 'İnsan & Aile';
 
-    const sifatTr = ['büyük', 'küçük', 'iyi', 'kötü', 'güzel', 'çirkin', 'hızlı', 'yavaş', 'geniş', 'dar', 'uzun', 'kısa', 'sıcak', 'soğuk', 'yeni', 'eski', 'zor', 'kolay', 'pahalı', 'ucuz', 'zengin', 'fakir', 'tuhaf', 'açık', 'belirgin', 'soluk', 'kibar', 'güçlü', 'kuvvetli'];
-    if (trWords.some(w => sifatTr.includes(w))) return 'Sıfatlar';
+    const sifatTr = ['büyük', 'küçük', 'iyi', 'kötü', 'güzel', 'çirkin', 'hızlı', 'yavaş', 'geniş', 'dar', 'uzun', 'kısa', 'sıcak', 'soğuk', 'yeni', 'eski', 'zor', 'kolay', 'pahalı', 'ucuz', 'zengin', 'fakir', 'tuhaf', 'açık', 'belirgin', 'soluk', 'kibar', 'güçlü', 'kuvvetli', 'tembel', 'sağlam', 'katı', 'hasta', 'sağlıklı', 'mutlu', 'üzgün', 'yorgun', 'dinç', 'temiz', 'pis', 'kirli', 'doğru', 'yanlış', 'önemli', 'gereksiz', 'akıllı', 'aptal', 'şişman', 'zayıf', 'ilginç', 'sıkıcı', 'komik', 'ciddi', 'korkunç', 'harika', 'mükemmel'];
+    const baglacTr = ['ama', 'fakat', 'lakin', 'ancak', 've', 'veya', 'ya da', 'belki', 'muhtemelen', 'elbette', 'çünkü', 'eğer', 'rağmen'];
+
+    if (hasAny(sifatTr) || findPartial(['renkli', 'lezzetli'])) return 'Sıfatlar';
+    if (hasAny(baglacTr) || findPartial(['tabii ki'])) return 'Bağlaç & Zarflar';
 
     if (trWords.some(w => w.endsWith('mak') || w.endsWith('mek')) || trLower.endsWith('mak') || trLower.endsWith('mek')) {
         return 'Fiiller';

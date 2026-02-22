@@ -2,11 +2,12 @@
  * Service Worker - Offline Desteği
  */
 
-const CACHE_NAME = 'rutr-v16';
+const CACHE_NAME = 'rutr-v17';
 const ASSETS = [
     '/',
     '/index.html',
     '/kelimeler_tam.txt',
+    '/sentences.json',
     '/css/style.css',
     '/js/app.js',
     '/js/data.js',
@@ -23,6 +24,9 @@ const ASSETS = [
     '/js/torfl.js',
     '/js/ielts.js',
     '/js/ielts_data.js',
+    '/js/srs.js',
+    '/js/tracker.js',
+    '/js/stats.js',
     '/manifest.json',
     '/icon-192.png',
     '/icon-512.png'
