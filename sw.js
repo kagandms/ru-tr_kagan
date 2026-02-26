@@ -2,7 +2,7 @@
  * Service Worker - Offline Desteği
  */
 
-const CACHE_NAME = 'rutr-v18';
+const CACHE_NAME = 'rutr-v19';
 const ASSETS = [
     './',
     './index.html',
@@ -16,14 +16,11 @@ const ASSETS = [
     './js/ai.js',
     './js/flashcard.js',
     './js/quiz.js',
-    './js/matching.js',
-    './js/hardwords.js',
     './js/reversequiz.js',
     './js/synonyms.js',
     './js/daily.js',
     './js/torfl.js',
-    './js/ielts.js',
-    './js/ielts_data.js',
+    './js/chart.min.js',
     './js/srs.js',
     './js/tracker.js',
     './js/stats.js',
@@ -55,28 +52,39 @@ self.addEventListener('activate', event => {
 
 // Fetch - Serve from cache, fallback to network
 self.addEventListener('fetch', event => {
+    // Only cache GET requests
+    if (event.request.method !== 'GET') return;
+
     event.respondWith(
         caches.match(event.request)
             .then(response => {
                 if (response) {
                     return response;
                 }
-                return fetch(event.request).then(fetchResponse => {
-                    // Cache new resources
-                    if (fetchResponse.status === 200) {
-                        const responseClone = fetchResponse.clone();
-                        caches.open(CACHE_NAME).then(cache => {
-                            cache.put(event.request, responseClone);
-                        });
+
+                // Construct a Request that will be sent to the network.
+                const fetchRequest = event.request.clone();
+
+                return fetch(fetchRequest).then(fetchResponse => {
+                    // Check if we received a valid response.
+                    // For opaque responses (status 0), like Google Fonts, we should also cache them.
+                    if (!fetchResponse || (fetchResponse.status !== 200 && fetchResponse.type !== 'opaque')) {
+                        return fetchResponse;
                     }
+
+                    // Cache new resources
+                    const responseToCache = fetchResponse.clone();
+                    caches.open(CACHE_NAME).then(cache => {
+                        cache.put(event.request, responseToCache);
+                    });
+
                     return fetchResponse;
+                }).catch(() => {
+                    // Offline fallback for navigation requests
+                    if (event.request.mode === 'navigate') {
+                        return caches.match('./index.html');
+                    }
                 });
-            })
-            .catch(() => {
-                // Offline fallback
-                if (event.request.mode === 'navigate') {
-                    return caches.match('./index.html');
-                }
             })
     );
 });
